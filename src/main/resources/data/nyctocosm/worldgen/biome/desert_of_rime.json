@@ -1,0 +1,68 @@
+{
+    "temperature": 0,
+    "downfall": 0,
+    "has_precipitation": true,
+    "temperature_modifier": "frozen",
+    "effects": {
+      "sky_color": 1783376,
+      "fog_color": 3566460,
+      "water_color": 46079,
+      "water_fog_color": 13419,
+      "grass_color": 4376319,
+      "foliage_color": 10479358,
+      "ambient_sound": "nyctocosm:ambience.desert_of_rime.loop",
+      "mood_sound": {
+        "sound": "nyctocosm:ambience.desert_of_rime.mood",
+        "tick_delay": 1000,
+        "block_search_extent": 8,
+        "offset": 0
+      },
+      "additions_sound": {
+        "sound": "nyctocosm:ambience.desert_of_rime.additions",
+        "tick_chance": 0.0111
+      },
+      "particle": {
+        "options": {
+          "type": "snowflake"
+        },
+        "probability": 0.01
+      }
+    },
+    "spawners": {
+      "monster": [
+        {
+          "type": "minecraft:illusioner",
+          "weight": 100,
+          "minCount": 2,
+          "maxCount": 4
+        }
+      ]
+    },
+    "spawn_costs": {},
+    "carvers": {
+      "air": [
+        "minecraft:cave",
+        "minecraft:cave_extra_underground",
+        "minecraft:canyon"
+      ]
+    },
+    "features": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        "nyctocosm:desert_of_rime/patch_soul_fire",
+        "nyctocosm:desert_of_rime/ice_geode"
+      ],
+      [],
+      [
+        "nyctocosm:desert_of_rime/crystal_pile"
+      ],
+      []
+    ]
+  }
+  

@@ -1,0 +1,24 @@
+{
+	"__credit": "Generated using Animated Java (https://animated-java.dev/)",
+	"textures": {
+		"5": "nyctocosm:sorcerer/slashsmear"
+	},
+	"elements": [
+		{
+			"faces": {
+				"up": {"uv": [6, 6, 0, 0], "texture": "#5"},
+				"down": {"uv": [6, 6, 0, 12], "texture": "#5"}
+			},
+			"to": [17.6, 5, 17.6],
+			"from": [-1.6, 5, -1.6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 8]}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, 5.6, 0],
+			"scale": [4, 4, 4],
+			"rotation": [0, 0, 0]
+		}
+	}
+}

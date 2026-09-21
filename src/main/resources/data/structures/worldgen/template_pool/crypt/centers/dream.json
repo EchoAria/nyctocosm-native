@@ -1,0 +1,15 @@
+{
+  "name": "structures:crypt/centers/dream",
+  "fallback": "structures:crypt/hallways/generic/end",
+  "elements": [
+	{
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "structures:crypt/centers/dream",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

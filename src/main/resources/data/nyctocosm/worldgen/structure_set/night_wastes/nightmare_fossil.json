@@ -1,0 +1,15 @@
+{
+    "structures": [
+      {
+        "structure": "nyctocosm:night_wastes/nightmare_fossil",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 816769336,
+      "spacing": 10,
+      "separation": 5
+    }
+  }
+  

@@ -1,0 +1,6 @@
+{
+	"parent": "animated_java:item/ajemissary/rightarm",
+	"textures": {
+		"15": "nyctocosm:emissary/emissarysword"
+	}
+}

@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved; original Nyctocosm assets by Flubberschnub"
+[[mods]]
+modId="nyctocosm"
+version="0.3.0-native-alpha.8"
+displayName="Nyctocosm Native"
+authors="Original content: Flubberschnub; native reconstruction"
+description='''Native Forge reconstruction of Nyctocosm. Work in progress, not feature parity with the original datapack.'''
+[[dependencies.nyctocosm]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.13,48)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.nyctocosm]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"

@@ -1,0 +1,24 @@
+{
+  "name": "structures:crypt/deco/soul_lantern_x",
+  "fallback": "minecraft:empty",
+  "elements": [
+	  {
+      "weight": 50,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "structures:crypt/deco/soul_lantern_hanging",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "structures:crypt/deco/no_soul_lantern_hanging",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+	"__credit": "Generated using Animated Java (https://animated-java.dev/)",
+	"textures": {
+		"0": "nyctocosm:magic/aj/cast_spell/cast_spell_circle",
+		"1": "nyctocosm:magic/aj/cast_spell/cast_spell_words"
+	},
+	"elements": [
+		{
+			"faces": {
+				"north": {"uv": [0, 0, 3, 0], "texture": "#missing"},
+				"east": {"uv": [0, 0, 3, 0], "texture": "#missing"},
+				"south": {"uv": [0, 0, 3, 0], "texture": "#missing"},
+				"west": {"uv": [0, 0, 3, 0], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+			},
+			"to": [12.8, 5.6, 12.8],
+			"from": [3.2, 5.6, 3.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.6, 8]}
+		},
+		{
+			"faces": {
+				"north": {"uv": [0, 0, 3, 0], "texture": "#1"},
+				"east": {"uv": [0, 0, 3, 0], "texture": "#1"},
+				"south": {"uv": [0, 0, 3, 0], "texture": "#1"},
+				"west": {"uv": [0, 0, 3, 0], "texture": "#1"},
+				"up": {"uv": [0, 16, 16, 0], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			},
+			"to": [12.8, 5.2, 12.8],
+			"from": [3.2, 5.2, 3.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.6, 8]}
+		},
+		{
+			"faces": {
+				"north": {"uv": [0, 0, 3, 0], "texture": "#1"},
+				"east": {"uv": [0, 0, 3, 0], "texture": "#1"},
+				"south": {"uv": [0, 0, 3, 0], "texture": "#1"},
+				"west": {"uv": [0, 0, 3, 0], "texture": "#1"},
+				"up": {"uv": [0, 16, 16, 0], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			},
+			"to": [12.8, 6, 12.8],
+			"from": [3.2, 6, 3.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9.6, 8]}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, 5.6, 0],
+			"scale": [4, 4, 4],
+			"rotation": [0, 0, 0]
+		}
+	}
+}

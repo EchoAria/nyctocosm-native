@@ -1,0 +1,73 @@
+{
+    "temperature": 0.8,
+    "downfall": 0.6,
+    "has_precipitation": true,
+    "effects": {
+      "sky_color": 13106,
+      "fog_color": 4063344,
+      "water_color": 57855,
+      "water_fog_color": 52479,
+      "grass_color": 11141324,
+      "foliage_color": 55014,
+      "ambient_sound": "nyctocosm:ambience.twilight_woodlands.loop",
+      "mood_sound": {
+        "sound": "nyctocosm:ambience.twilight_woodlands.mood",
+        "tick_delay": 1000,
+        "block_search_extent": 8,
+        "offset": 0
+      },
+      "additions_sound": {
+        "sound": "nyctocosm:ambience.twilight_woodlands.additions",
+        "tick_chance": 0.0111
+      },
+      "particle": {
+        "options": {
+          "type": "warped_spore"
+        },
+        "probability": 0.05
+      }
+    },
+    "spawners": {
+      "monster": [
+        {
+          "type": "minecraft:illusioner",
+          "weight": 100,
+          "minCount": 2,
+          "maxCount": 4
+        }
+      ]
+    },
+    "spawn_costs": {},
+    "carvers": {
+      "air": [
+        "minecraft:cave",
+        "minecraft:cave_extra_underground",
+        "minecraft:canyon"
+      ]
+    },
+    "features": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        "minecraft:spring_water",
+        "minecraft:spring_lava"
+      ],
+      [
+          "minecraft:patch_grass_forest",
+          "minecraft:patch_tall_grass",
+          "nyctocosm:twilight_woodlands/tree",
+          "nyctocosm:twilight_woodlands/big_tree",
+          "minecraft:vines",
+          "nyctocosm:twilight_woodlands/vegetation",
+          "nyctocosm:twilight_woodlands/twisting_vines"
+      ],
+      []
+    ]
+  }
+  

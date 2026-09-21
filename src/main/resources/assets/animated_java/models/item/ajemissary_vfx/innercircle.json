@@ -1,0 +1,84 @@
+{
+	"textures": {
+		"0": "nyctocosm:emissary/vfx/no_innercircle"
+	},
+	"elements": [
+		{
+			"from": [
+				-4,
+				8,
+				-4
+			],
+			"to": [
+				20,
+				8,
+				20
+			],
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						16,
+						0
+					],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [
+						0,
+						0,
+						16,
+						0
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						0,
+						0,
+						16,
+						0
+					],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [
+						0,
+						0,
+						16,
+						0
+					],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [
+						0,
+						16,
+						16,
+						0
+					],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#0"
+				}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [
+				0,
+				180,
+				0
+			]
+		}
+	}
+}

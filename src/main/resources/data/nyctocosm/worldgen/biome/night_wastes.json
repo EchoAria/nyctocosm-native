@@ -1,0 +1,67 @@
+{
+  "temperature": 2,
+  "downfall": 0,
+  "has_precipitation": false,
+  "temperature_modifier": "none",
+  "effects": {
+    "sky_color": 13106,
+    "fog_color": 4063344,
+    "water_color": 0,
+    "water_fog_color": 0,
+    "grass_color": 23636,
+    "foliage_color": 1638431,
+    "ambient_sound": "nyctocosm:ambience.night_wastes.loop",
+    "mood_sound": {
+      "sound": "nyctocosm:ambience.night_wastes.mood",
+      "tick_delay": 1000,
+      "block_search_extent": 8,
+      "offset": 0
+    },
+    "additions_sound": {
+      "sound": "nyctocosm:ambience.night_wastes.additions",
+      "tick_chance": 0.0111
+    },
+    "particle": {
+      "options": {
+        "type": "mycelium"
+      },
+      "probability": 0.13
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:illusioner",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon",
+      "nyctocosm:night_wastes/wastes_canyons"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "nyctocosm:night_wastes/nightmare_fossil",
+      "minecraft:patch_tall_grass",
+      "minecraft:patch_grass_badlands",
+      "nyctocosm:night_wastes/dead_tree"
+    ]
+  ]
+}

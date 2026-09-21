@@ -1,0 +1,54 @@
+{
+	"__credit": "Generated using Animated Java (https://animated-java.dev/)",
+	"textures": {
+		"3": "nyctocosm:sorcerer/sorcerer32"
+	},
+	"elements": [
+		{
+			"faces": {
+				"north": {"uv": [8.875, 5.125, 9.25, 6.1875], "texture": "#3"},
+				"east": {"uv": [8.625, 6.875, 9.0625, 7.9375], "texture": "#3"},
+				"south": {"uv": [9, 3.125, 9.375, 4.1875], "texture": "#3"},
+				"west": {"uv": [8.625, 8, 9.0625, 9.0625], "texture": "#3"},
+				"up": {"uv": [10.5, 0.6875, 10.125, 0.25], "texture": "#3"},
+				"down": {"uv": [10.5, 5.125, 10.125, 5.5625], "texture": "#3"}
+			},
+			"to": [8.6, 5, 8.7],
+			"from": [7.4, 1.6, 7.3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4, 8]}
+		},
+		{
+			"faces": {
+				"north": {"uv": [3, 0, 4.3125, 1.5625], "texture": "#3"},
+				"east": {"uv": [0, 0, 0, 1.5625], "texture": "#3"},
+				"south": {"uv": [3, 1.625, 4.3125, 3.1875], "texture": "#3"},
+				"west": {"uv": [0, 0, 0, 1.5625], "texture": "#3"},
+				"up": {"uv": [1.3125, 0, 0, 0], "texture": "#3"},
+				"down": {"uv": [1.3125, 0, 0, 0], "texture": "#3"}
+			},
+			"to": [10.2, 5.8, 8],
+			"from": [6, 0.8, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4, 8]}
+		},
+		{
+			"faces": {
+				"north": {"uv": [0, 0, 0, 1.5625], "texture": "#3"},
+				"east": {"uv": [3, 3.25, 4.3125, 4.8125], "texture": "#3"},
+				"south": {"uv": [0, 0, 0, 1.5625], "texture": "#3"},
+				"west": {"uv": [0, 3.625, 1.3125, 5.1875], "texture": "#3"},
+				"up": {"uv": [0, 1.3125, 0, 0], "texture": "#3"},
+				"down": {"uv": [0, 0, 0, 1.3125], "texture": "#3"}
+			},
+			"to": [8, 5.8, 10],
+			"from": [8, 0.8, 5.8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4, 8]}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, 5.6, 0],
+			"scale": [4, 4, 4],
+			"rotation": [0, 0, 0]
+		}
+	}
+}

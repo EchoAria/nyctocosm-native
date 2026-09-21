@@ -1,0 +1,28 @@
+{
+	"__credit": "Generated using Animated Java (https://animated-java.dev/)",
+	"textures": {
+		"0": "nyctocosm:items/nullpoint/nullpoint4"
+	},
+	"elements": [
+		{
+			"faces": {
+				"north": {"uv": [3, 4, 3.5, 4.5], "texture": "#0"},
+				"east": {"uv": [4, 3.75, 4.5, 4.25], "texture": "#0"},
+				"south": {"uv": [4, 4.25, 4.5, 4.75], "texture": "#0"},
+				"west": {"uv": [4.5, 0, 5, 0.5], "texture": "#0"},
+				"up": {"uv": [5, 1, 4.5, 0.5], "texture": "#0"},
+				"down": {"uv": [5, 1, 4.5, 1.5], "texture": "#0"}
+			},
+			"to": [8.52, 5.52, 8.52],
+			"from": [7.48, 4.48, 7.48],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 8.26]}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, 5.6, 0],
+			"scale": [4, 4, 4],
+			"rotation": [0, 0, 0]
+		}
+	}
+}

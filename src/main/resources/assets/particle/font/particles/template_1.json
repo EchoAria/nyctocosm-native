@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "particle:particles/template_1.png",
+            "ascent": 13,
+            "height": 13,
+            "chars": [
+                "\u000a\u000b\u000c\u000d"
+            ]
+        }
+    ]
+}

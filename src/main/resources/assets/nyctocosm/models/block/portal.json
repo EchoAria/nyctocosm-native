@@ -1,0 +1,1 @@
+{"render_type":"minecraft:translucent","textures":{"portal":"nyctocosm:portal/portal_surface_upper","particle":"nyctocosm:portal/portal_surface_upper"},"elements":[{"from":[0,0,8],"to":[16,16,8],"faces":{"north":{"uv":[0.25,0.25,0.75,0.75],"texture":"#portal"},"south":{"uv":[0.25,0.25,0.75,0.75],"texture":"#portal"}}}]}

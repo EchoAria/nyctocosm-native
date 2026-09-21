@@ -1,0 +1,7 @@
+{
+	"parent": "ajsorcerer_animated_java_rig:item/nullpoint",
+	"textures": {
+		"0": "nyctocosm:sorcerer/transparent",
+		"4": "nyctocosm:sorcerer/transparent"
+	}
+}

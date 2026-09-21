@@ -1,0 +1,8 @@
+{
+	"parent": "animated_java:item/ajemissary/rightleg",
+	"textures": {
+		"3": "nyctocosm:emissary/claw",
+		"4": "nyctocosm:emissary/claw2",
+		"5": "nyctocosm:emissary/transparent"
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "nyctocosm:magic/spell_circles/transmittance",
+		"particle": "nyctocosm:magic/spell_circles/transmittance"
+	},
+	"elements": [
+		{
+			"from": [-16, 0, -16],
+			"to": [32, 0, 32],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 6, 0], "texture": "#missing"},
+				"east": {"uv": [0, 0, 6, 0], "texture": "#missing"},
+				"south": {"uv": [0, 0, 6, 0], "texture": "#missing"},
+				"west": {"uv": [0, 0, 6, 0], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, -12, 0],
+			"scale": [3.2, 3.2, 3.2]
+		}
+	}
+}

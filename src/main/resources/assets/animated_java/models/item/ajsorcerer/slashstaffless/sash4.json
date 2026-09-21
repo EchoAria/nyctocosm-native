@@ -1,0 +1,6 @@
+{
+	"parent": "animated_java:item/ajsorcerer/sash4",
+	"textures": {
+		"0": "nyctocosm:sorcerer/transparent"
+	}
+}

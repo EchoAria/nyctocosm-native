@@ -1,0 +1,24 @@
+{
+  "name": "structures:crypt/loot/hallway_chest",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight":30,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "structures:crypt/loot/hallway_chest",
+        "processors": "minecraft:empty"
+      }
+    },
+	{
+      "weight": 70,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "structures:crypt/loot/hallway_chest_empty",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

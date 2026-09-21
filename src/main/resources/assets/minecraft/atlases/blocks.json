@@ -1,0 +1,48 @@
+{
+    "sources": [
+        {
+            "type": "directory",
+            "source": "mobs",
+            "prefix": "mobs/"
+        },
+        {
+            "type": "directory",
+            "source": "magic",
+            "prefix": "magic/"
+        },
+        {
+            "type": "directory",
+            "source": "items",
+            "prefix": "items/"
+        },
+        {
+            "type": "directory",
+            "source": "sorcerer",
+            "prefix": "sorcerer/"
+        },
+        {
+            "type": "directory",
+            "source": "emissary",
+            "prefix": "emissary/"
+        },
+        {
+            "type": "directory",
+            "source": "particles",
+            "prefix": "particles/"
+        },
+        {
+            "type": "directory",
+            "source": "portal",
+            "prefix": "portal/"
+        },
+        {
+            "type": "directory",
+            "source": "serpent",
+            "prefix": "serpent/"
+        },
+        {
+            "type": "single",
+            "resource": "particle:transparent"
+        }
+    ]
+}

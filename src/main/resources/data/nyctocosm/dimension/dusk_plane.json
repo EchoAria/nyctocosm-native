@@ -1,0 +1,27 @@
+{
+    "type": "nyctocosm:dusk",
+    "generator": {
+      "type": "minecraft:flat",
+      "settings": {
+        "biome": "nyctocosm:duskfields",
+        "lakes": false,
+        "features": false,
+        "layers": [
+          {
+            "block": "minecraft:bedrock",
+            "height": 1
+          },
+          {
+            "block": "minecraft:deepslate",
+            "height": 255
+          },
+          {
+            "block": "minecraft:grass_block",
+            "height": 1
+          }
+        ],
+        "structure_overrides": []
+      }
+    }
+  }
+  

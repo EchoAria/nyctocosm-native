@@ -1,0 +1,57 @@
+{
+	"textures": {
+		"1": "nyctocosm:magic/ajspellplane/inner_ring1"
+	},
+	"elements": [
+		{
+			"from": [
+				-3.9999999999999982,
+				8.76595744680851,
+				-3.9999999999999982
+			],
+			"to": [
+				20,
+				8.76595744680851,
+				20
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					8,
+					8,
+					8
+				]
+			},
+			"faces": {
+				"up": {
+					"uv": [
+						16,
+						16,
+						0,
+						0
+					],
+					"texture": "#1"
+				},
+				"down": {
+					"uv": [
+						16,
+						0,
+						0,
+						16
+					],
+					"texture": "#1"
+				}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [
+				0,
+				180,
+				0
+			]
+		}
+	}
+}

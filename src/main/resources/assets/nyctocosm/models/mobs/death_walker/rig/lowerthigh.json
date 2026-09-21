@@ -1,0 +1,28 @@
+{
+	"__credit": "Generated using Animated Java (https://animated-java.dev/)",
+	"textures": {
+		"0": "nyctocosm:mobs/death_walker/death_walker"
+	},
+	"elements": [
+		{
+			"faces": {
+				"north": {"uv": [3.65625, 5.1875, 3.96875, 6.4375], "texture": "#0"},
+				"east": {"uv": [4.71875, 5.28125, 5.03125, 6.53125], "texture": "#0"},
+				"south": {"uv": [5.03125, 5.28125, 5.34375, 6.53125], "texture": "#0"},
+				"west": {"uv": [5.34375, 5.28125, 5.65625, 6.53125], "texture": "#0"},
+				"up": {"uv": [7.375, 1.5625, 7.0625, 1.25], "texture": "#0"},
+				"down": {"uv": [7.375, 1.5625, 7.0625, 1.875], "texture": "#0"}
+			},
+			"to": [10, 13, 10],
+			"from": [6, -3, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 8]}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, 5.6, 0],
+			"scale": [4, 4, 4],
+			"rotation": [0, 0, 0]
+		}
+	}
+}

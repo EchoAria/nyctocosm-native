@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shaped","pattern":[" A ","QBQ","QQQ"],"key":{"A":{"item":"minecraft:anvil"},"Q":{"item":"minecraft:quartz_block"},"B":{"item":"minecraft:beacon"}},"result":{"item":"nyctocosm:dais","count":1}}

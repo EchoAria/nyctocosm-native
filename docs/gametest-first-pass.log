@@ -1,0 +1,75 @@
+[139月2026 20:13:24.631] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgegametestserveruserdev, --gameDir, ., --fml.forgeVersion, 47.4.13, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[139月2026 20:13:24.633] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.19 by Microsoft; OS Windows 11 arch amd64 version 10.0
+[139月2026 20:13:24.748] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgegametestserveruserdev
+[139月2026 20:13:24.779] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/jzy19/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=SERVER
+[139月2026 20:13:25.028] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.13\cf01e2179f72bd2829c65f5226d7dd0cfb6c686\javafmllanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[139月2026 20:13:25.031] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.13\e3f96129ea14eba84316f2d69816253e228e6e4c\lowcodelanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[139月2026 20:13:25.033] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.13\85796906112d9b621a7b2996f8bfda49da991ef0\mclanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[139月2026 20:13:25.037] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.13\f77e3021d1eb31d61f8d1b92d18ed4fb3c2806e5\fmlcore-1.20.1-47.4.13.jar is missing mods.toml file
+[139月2026 20:13:25.099] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[139月2026 20:13:26.828] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgegametestserveruserdev' with arguments [--gameDir, .]
+[139月2026 20:13:27.437] [main/WARN] [oshi.driver.windows.perfmon.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[139月2026 20:13:31.043] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.13, for MC 1.20.1 with MCP 20230612.114412
+[139月2026 20:13:31.046] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.13 Initialized
+[139月2026 20:13:31.617] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[139月2026 20:13:32.147] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[139月2026 20:13:32.186] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/jzy19/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.13_mapped_official_1.20.1/forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[139月2026 20:13:32.186] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/jzy19/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.13_mapped_official_1.20.1/forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[139月2026 20:13:32.377] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.4.13 Target: 47.4.23
+[139月2026 20:13:33.520] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[139月2026 20:13:33.591] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
+[139月2026 20:13:33.601] [main/WARN] [net.minecraftforge.registries.NamespacedWrapper/]: Not all defined tags for registry ResourceKey[minecraft:root / minecraft:block] are present in data pack: nyctocosm:passthrough
+[139月2026 20:13:33.794] [main/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [nyctocosm]
+[139月2026 20:13:33.826] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\world\serverconfig\forge-server.toml is not correct. Correcting
+[139月2026 20:13:33.827] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SimpleCommentedConfig:{}. 
+[139月2026 20:13:33.827] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringBlockEntities was corrected from null to its default, false. 
+[139月2026 20:13:33.827] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to its default, false. 
+[139月2026 20:13:33.828] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false. 
+[139月2026 20:13:33.828] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBaseSummonChance was corrected from null to its default, 0.1. 
+[139月2026 20:13:33.828] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBabyChance was corrected from null to its default, 0.05. 
+[139月2026 20:13:33.828] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.permissionHandler was corrected from null to its default, forge:default_handler. 
+[139月2026 20:13:33.828] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advertiseDedicatedServerToLan was corrected from null to its default, true. 
+[139月2026 20:13:33.828] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.useItemWithDurationZero was corrected from null to its default, false. 
+[139月2026 20:13:35.845] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[139月2026 20:13:36.199] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[139月2026 20:13:36.362] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[139月2026 20:13:36.856] [Worker-Main-7/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[139月2026 20:13:37.347] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[139月2026 20:13:37.848] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 7%
+[139月2026 20:13:38.348] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 12%
+[139月2026 20:13:38.848] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 18%
+[139月2026 20:13:39.349] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 25%
+[139月2026 20:13:39.848] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 32%
+[139月2026 20:13:40.348] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 42%
+[139月2026 20:13:40.847] [Worker-Main-5/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 49%
+[139月2026 20:13:41.347] [Worker-Main-9/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 58%
+[139月2026 20:13:41.851] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 68%
+[139月2026 20:13:42.357] [Worker-Main-5/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 77%
+[139月2026 20:13:42.847] [Worker-Main-6/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 86%
+[139月2026 20:13:43.347] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 96%
+[139月2026 20:13:43.475] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 7629 ms
+[139月2026 20:13:43.476] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: Started game test server
+[139月2026 20:13:43.481] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[139月2026 20:13:43.665] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestBatchRunner/]: Running test batch 'defaultBatch:1' (5 tests)...
+[139月2026 20:13:43.703] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: 5 tests are now running!
+[139月2026 20:13:44.183] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: [+++++]
+[139月2026 20:13:44.184] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: ========= 5 GAME TESTS COMPLETE ======================
+[139月2026 20:13:44.184] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: All 5 required tests passed :)
+[139月2026 20:13:44.185] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: ====================================================
+[139月2026 20:13:44.186] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[139月2026 20:13:44.186] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[139月2026 20:13:44.186] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[139月2026 20:13:47.343] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[139月2026 20:13:48.059] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[139月2026 20:13:48.060] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[139月2026 20:13:48.061] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/nyctocosm:dusk_plane
+[139月2026 20:13:48.062] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/nyctocosm:emissary_domain
+[139月2026 20:13:48.063] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/nyctocosm:nyctocosm
+[139月2026 20:13:48.082] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[139月2026 20:13:48.082] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[139月2026 20:13:48.082] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[139月2026 20:13:48.082] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (dusk_plane): All chunks are saved
+[139月2026 20:13:48.082] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (emissary_domain): All chunks are saved
+[139月2026 20:13:48.083] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (nyctocosm): All chunks are saved
+[139月2026 20:13:48.083] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[139月2026 20:13:48.299] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: Game test server shutting down

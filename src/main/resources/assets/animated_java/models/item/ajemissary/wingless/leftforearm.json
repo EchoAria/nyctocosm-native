@@ -1,0 +1,8 @@
+{
+	"parent": "animated_java:item/ajemissary/leftforearm",
+	"textures": {
+		"3": "nyctocosm:emissary/transparent",
+		"4": "nyctocosm:emissary/transparent",
+		"5": "nyctocosm:emissary/transparent"
+	}
+}

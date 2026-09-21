@@ -1,0 +1,8 @@
+{
+	"parent": "animated_java:item/ajemissary/sword",
+	"textures": {
+		"3": "nyctocosm:emissary/upperwing_0",
+		"4": "nyctocosm:emissary/middlewing_0",
+		"5": "nyctocosm:emissary/lowerwing_0"
+	}
+}

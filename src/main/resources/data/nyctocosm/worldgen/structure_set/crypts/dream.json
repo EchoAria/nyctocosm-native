@@ -1,0 +1,15 @@
+{
+    "structures": [
+      {
+        "structure": "nyctocosm:crypts/dream",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 20083232,
+      "spacing": 32,
+      "separation": 8
+    }
+  }
+  

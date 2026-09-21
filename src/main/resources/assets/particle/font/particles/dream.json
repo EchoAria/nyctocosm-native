@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "particle:particles/dream.png",
+            "ascent": 13,
+            "height": 13,
+            "chars": [
+                "\ue001"
+            ]
+        }
+    ]
+}

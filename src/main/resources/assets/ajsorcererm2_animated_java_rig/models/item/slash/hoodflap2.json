@@ -1,0 +1,7 @@
+{
+	"parent": "ajsorcererm2_animated_java_rig:item/hoodflap2",
+	"textures": {
+		"3": "nyctocosm:sorcerer/slashsmear",
+		"5": "nyctocosm:sorcerer/slashsmear"
+	}
+}

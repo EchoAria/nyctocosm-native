@@ -1,0 +1,28 @@
+{
+	"__credit": "Generated using Animated Java (https://animated-java.dev/)",
+	"textures": {
+		"3": "nyctocosm:sorcerer/sorcerer32"
+	},
+	"elements": [
+		{
+			"faces": {
+				"north": {"uv": [2.75, 8.625, 3.125, 10.0625], "texture": "#3"},
+				"east": {"uv": [5, 10.125, 5.125, 11.5625], "texture": "#3"},
+				"south": {"uv": [8.625, 3.375, 9, 4.8125], "texture": "#3"},
+				"west": {"uv": [5.125, 10.125, 5.25, 11.5625], "texture": "#3"},
+				"up": {"uv": [10.75, 4.75, 10.375, 4.625], "texture": "#3"},
+				"down": {"uv": [10.75, 4.75, 10.375, 4.875], "texture": "#3"}
+			},
+			"to": [9, 5.1, 8.2],
+			"from": [7.8, 0.5, 7.8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 21.3, 9.4]}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, 5.6, 0],
+			"scale": [4, 4, 4],
+			"rotation": [0, 0, 0]
+		}
+	}
+}

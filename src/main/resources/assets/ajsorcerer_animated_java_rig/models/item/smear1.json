@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"4": "nyctocosm:sorcerer/slashsmear"
+	},
+	"elements": [
+		{
+			"from": [
+				-4,
+				8,
+				-4
+			],
+			"to": [
+				20,
+				8,
+				20
+			],
+			"faces": {
+				"up": {
+					"uv": [
+						6,
+						6,
+						0,
+						0
+					],
+					"texture": "#4"
+				},
+				"down": {
+					"uv": [
+						6,
+						6,
+						0,
+						12
+					],
+					"texture": "#4"
+				}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [
+				0,
+				0,
+				0
+			]
+		}
+	}
+}

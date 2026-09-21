@@ -1,0 +1,54 @@
+{
+	"__credit": "Generated using Animated Java (https://animated-java.dev/)",
+	"textures": {
+		"0": "nyctocosm:items/nullpoint/nullpoint4"
+	},
+	"elements": [
+		{
+			"faces": {
+				"north": {"uv": [3.5, 3.75, 3.875, 5], "texture": "#0"},
+				"east": {"uv": [4, 0, 4.375, 1.25], "texture": "#0"},
+				"south": {"uv": [4, 1.25, 4.375, 2.5], "texture": "#0"},
+				"west": {"uv": [4, 2.5, 4.375, 3.75], "texture": "#0"},
+				"up": {"uv": [5.125, 2.875, 4.75, 2.5], "texture": "#0"},
+				"down": {"uv": [5.125, 3, 4.75, 3.375], "texture": "#0"}
+			},
+			"to": [7.95, 8.46, 7.95],
+			"from": [7.17, 5.86, 7.17],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.04, 4.04, 7.04]}
+		},
+		{
+			"faces": {
+				"north": {"uv": [5.5, 0, 5.875, 0.375], "texture": "#0"},
+				"east": {"uv": [5.5, 0.5, 5.875, 0.875], "texture": "#0"},
+				"south": {"uv": [6, 1.5, 6.375, 1.875], "texture": "#0"},
+				"west": {"uv": [6, 2, 6.375, 2.375], "texture": "#0"},
+				"up": {"uv": [6.375, 2.875, 6, 2.5], "texture": "#0"},
+				"down": {"uv": [6.375, 3, 6, 3.375], "texture": "#0"}
+			},
+			"to": [7.95, 2.48, 7.95],
+			"from": [7.17, 1.7, 7.17],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.04, 4.04, 7.04]}
+		},
+		{
+			"faces": {
+				"north": {"uv": [2, 2.75, 2.25, 10.375], "texture": "#0"},
+				"east": {"uv": [2.25, 2.75, 2.5, 10.375], "texture": "#0"},
+				"south": {"uv": [2.5, 2.75, 2.75, 10.375], "texture": "#0"},
+				"west": {"uv": [2.75, 2.75, 3, 10.375], "texture": "#0"},
+				"up": {"uv": [5.25, 5, 5, 4.75], "texture": "#0"},
+				"down": {"uv": [5.25, 5, 5, 5.25], "texture": "#0"}
+			},
+			"to": [7.82, 17.3, 7.82],
+			"from": [7.3, 1.44, 7.3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.04, 4.04, 7.04]}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, 5.6, 0],
+			"scale": [4, 4, 4],
+			"rotation": [0, 0, 0]
+		}
+	}
+}

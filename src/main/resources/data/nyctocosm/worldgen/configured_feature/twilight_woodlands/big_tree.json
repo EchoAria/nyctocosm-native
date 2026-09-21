@@ -1,0 +1,122 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "ignore_vines": true,
+    "force_dirt": false,
+    "minimum_size": {
+      "type": "minecraft:three_layers_feature_size",
+      "limit": 1,
+      "upper_limit": 1,
+      "lower_size": 1,
+      "middle_size": 1,
+      "upper_size": 2
+    },
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:lantern",
+        "Properties": {
+          "hanging": "true"
+        }
+      }
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dark_oak_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dark_oak_leaves",
+        "Properties": {
+          "distance": "7",
+          "persistent": "true",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "root_placer": {
+      "type": "minecraft:mangrove_root_placer",
+      "root_provider": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "minecraft:dark_oak_wood"
+        }
+      },
+      "trunk_offset_y": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 4,
+          "max_inclusive": 8
+        }
+      },
+      "above_root_placement": {
+        "above_root_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:brown_mushroom"
+          }
+        },
+        "above_root_placement_chance": 0.2
+      },
+      "mangrove_root_placement": {
+        "max_root_width": 8,
+        "max_root_length": 15,
+        "random_skew_chance": 0.2,
+        "can_grow_through": "#minecraft:mangrove_roots_can_grow_through",
+        "muddy_roots_in": "minecraft:mud",
+        "muddy_roots_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:dark_oak_wood"
+          }
+        }
+      }
+    },
+    "trunk_placer": {
+      "type": "minecraft:forking_trunk_placer",
+      "base_height": 16,
+      "height_rand_a": 15,
+      "height_rand_b": 22
+    },
+    "foliage_placer": {
+      "type": "minecraft:fancy_foliage_placer",
+      "radius": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 4,
+          "max_inclusive": 8
+        }
+      },
+      "offset": 0,
+      "height": 2
+    },
+    "decorators": [
+      {
+        "type": "minecraft:leave_vine",
+        "probability": 0.6
+      },
+      {
+        "type": "minecraft:attached_to_leaves",
+        "probability": 0.6,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
+        "required_empty_blocks": 1,
+        "block_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:verdant_froglight"
+          }
+        },
+        "directions": [
+          "down"
+        ]
+      }
+    ]
+  }
+}

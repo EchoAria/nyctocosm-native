@@ -1,0 +1,57 @@
+{
+	"textures": {
+		"1": "nyctocosm:magic/ajspellplane/thinringbroken"
+	},
+	"elements": [
+		{
+			"from": [
+				-4,
+				13.731343283582088,
+				-4
+			],
+			"to": [
+				20,
+				13.731343283582088,
+				20
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					8,
+					13.731343283582088,
+					8
+				]
+			},
+			"faces": {
+				"up": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#1"
+				},
+				"down": {
+					"uv": [
+						0,
+						16,
+						16,
+						0
+					],
+					"texture": "#1"
+				}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [
+				0,
+				0,
+				0
+			]
+		}
+	}
+}

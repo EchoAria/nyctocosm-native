@@ -1,0 +1,53 @@
+{
+    "temperature": 0.8,
+    "downfall": 0.9,
+    "has_precipitation": true,
+    "effects": {
+      "sky_color": 1779494,
+      "fog_color": 5993600,
+      "water_color": 4876062,
+      "water_fog_color": 3690523,
+      "grass_color": 4628,
+      "foliage_color": 1572905,
+      "grass_color_modifier": "none",
+      "particle": {
+        "options": {
+          "type": "spore_blossom_air"
+        },
+        "probability": 0.05
+      }
+    },
+    "spawners": {},
+    "spawn_costs": {},
+    "carvers": {
+      "air": [
+        "minecraft:cave",
+        "minecraft:cave_extra_underground",
+        "minecraft:canyon"
+      ]
+    },
+    "features": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        "minecraft:spring_water",
+        "minecraft:spring_lava"
+      ],
+      [
+        "minecraft:glow_lichen",
+        "nyctocosm:dark_mire/tree_mire",
+        "minecraft:patch_grass_normal",
+        "minecraft:patch_dead_bush",
+        "minecraft:patch_waterlily",
+        "minecraft:seagrass_swamp"
+      ],
+      []
+    ]
+  }
+  

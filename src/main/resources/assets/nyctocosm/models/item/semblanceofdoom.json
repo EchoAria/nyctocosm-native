@@ -1,0 +1,1 @@
+{"parent":"nyctocosm:items/destroying_sword","overrides":[{"predicate":{"nyctocosm:casting":1},"model":"nyctocosm:items/destroying_sword_casting"}]}

@@ -1,0 +1,7 @@
+{
+	"parent": "animated_java:item/ajemissary_vfx/outercircle",
+	"textures": {
+		"4": "nyctocosm:emissary/vfx/explosion",
+		"9": "nyctocosm:emissary/vfx/explosionatlas"
+	}
+}

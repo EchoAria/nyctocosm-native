@@ -1,0 +1,13 @@
+{
+  "display": {
+    "icon": {"item": "nyctocosm:nightmare_scale"},
+    "title": {"translate": "advancements.nyctocosm.defeat_serpent.title"},
+    "description": {"translate": "advancements.nyctocosm.defeat_serpent.description"},
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {"defeated": {"trigger": "minecraft:impossible"}}
+}

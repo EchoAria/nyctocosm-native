@@ -1,0 +1,1 @@
+{"type":"nyctocosm:nyctocosmic_ash","conditions":[{"condition":"forge:loot_table_id","loot_table_id":"minecraft:blocks/gravel"},{"condition":"minecraft:location_check","predicate":{"dimension":"nyctocosm:nyctocosm"}}]}

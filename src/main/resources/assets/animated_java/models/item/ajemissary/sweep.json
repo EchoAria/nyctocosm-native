@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"17": "nyctocosm:emissary/nosweep"
+	},
+	"elements": [
+		{
+			"from": [
+				-4,
+				8,
+				-4
+			],
+			"to": [
+				20,
+				8,
+				20
+			],
+			"faces": {
+				"up": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#17"
+				},
+				"down": {
+					"uv": [
+						0,
+						16,
+						16,
+						0
+					],
+					"texture": "#17"
+				}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [
+				0,
+				180,
+				0
+			]
+		}
+	}
+}

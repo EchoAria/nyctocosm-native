@@ -1,0 +1,27 @@
+{
+    "name": "nyctocosm:monolith",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "nyctocosm:monolith_1",
+          "processors": {
+            "processors": [
+              {
+                "processor_type": "minecraft:block_rot",
+                "integrity": 0.95,
+                "rottable_blocks": [
+                  "minecraft:basalt",
+                  "minecraft:deepslate_tile_stairs"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+  

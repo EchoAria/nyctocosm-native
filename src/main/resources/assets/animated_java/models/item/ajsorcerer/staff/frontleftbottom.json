@@ -1,0 +1,6 @@
+{
+	"parent": "animated_java:item/ajsorcerer/frontleftbottom",
+	"textures": {
+		"4": "nyctocosm:sorcerer/transparent"
+	}
+}

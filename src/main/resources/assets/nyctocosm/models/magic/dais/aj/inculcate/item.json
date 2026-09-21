@@ -1,0 +1,28 @@
+{
+	"__credit": "Generated using Animated Java (https://animated-java.dev/)",
+	"textures": {
+		"3": "nyctocosm:magic/planar_ring_e"
+	},
+	"elements": [
+		{
+			"faces": {
+				"north": {"uv": [4, 8.25, 4.5, 8.75], "rotation": 270, "texture": "#3"},
+				"east": {"uv": [4, 8.25, 4.5, 8.75], "rotation": 270, "texture": "#3"},
+				"south": {"uv": [4, 8.25, 4.5, 8.75], "rotation": 270, "texture": "#3"},
+				"west": {"uv": [4, 8.25, 4.5, 8.75], "rotation": 270, "texture": "#3"},
+				"up": {"uv": [4, 8.25, 4.5, 8.75], "rotation": 270, "texture": "#3"},
+				"down": {"uv": [4, 8.25, 4.5, 8.75], "rotation": 270, "texture": "#3"}
+			},
+			"to": [8.4, 5.4, 8.4],
+			"from": [7.6, 4.6, 7.6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 8]}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, 5.6, 0],
+			"scale": [4, 4, 4],
+			"rotation": [0, 0, 0]
+		}
+	}
+}

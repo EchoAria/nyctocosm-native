@@ -1,0 +1,7 @@
+{
+	"parent": "animated_java:item/ajemissary_vfx/innerfireball",
+	"textures": {
+		"0": "nyctocosm:emissary/vfx/innercircle",
+		"1": "nyctocosm:emissary/vfx/outercircle"
+	}
+}

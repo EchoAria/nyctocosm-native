@@ -1,0 +1,6 @@
+{
+	"parent": "animated_java:item/ajemissary/leftmiddlewing",
+	"textures": {
+		"11": "nyctocosm:emissary/transparent"
+	}
+}

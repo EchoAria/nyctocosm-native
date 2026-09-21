@@ -1,0 +1,28 @@
+{
+    "name": "nyctocosm:slatehenge",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "nyctocosm:slatehenge",
+          "processors": [
+            {
+              "processor_type": "minecraft:block_rot",
+              "integrity": 0.75,
+              "rottable_blocks": [
+                "minecraft:basalt",
+                "minecraft:deepslate_tile_stairs",
+                "minecraft:deepslate_tiles",
+                "minecraft:deepslate_brick_stairs",
+                "minecraft:cobbled_deepslate_wall"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

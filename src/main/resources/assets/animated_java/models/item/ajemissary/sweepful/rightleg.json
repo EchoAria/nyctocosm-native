@@ -1,0 +1,6 @@
+{
+	"parent": "animated_java:item/ajemissary/rightleg",
+	"textures": {
+		"17": "nyctocosm:emissary/sweep"
+	}
+}

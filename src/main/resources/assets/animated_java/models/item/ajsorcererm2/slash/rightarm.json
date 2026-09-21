@@ -1,0 +1,7 @@
+{
+	"parent": "animated_java:item/ajsorcererm2/rightarm",
+	"textures": {
+		"3": "nyctocosm:sorcerer/slashsmear",
+		"5": "nyctocosm:sorcerer/slashsmear"
+	}
+}

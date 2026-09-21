@@ -1,0 +1,7 @@
+{
+	"__credit": "Generated using Animated Java (https://animated-java.dev/)",
+	"parent": "nyctocosm:sorcerer/bigring",
+	"textures": {
+		"0": "nyctocosm:sorcerer/transparent"
+	}
+}
