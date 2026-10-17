@@ -57,7 +57,7 @@ public final class NullpointStaff extends Monster {
     public void recall(){
         if(recallRemaining>0)return;
         recallRemaining=25;play("recall",25);
-        if(level() instanceof ServerLevel server)NativeEvents.sound(server,position(),"sorcerer.fall.recall",5);
+        if(level() instanceof ServerLevel server)NativeEvents.resonanceSound(server,position(),"sorcerer.fall.recall",5,30);
     }
 
     @Override public void tick(){
@@ -65,12 +65,17 @@ public final class NullpointStaff extends Monster {
         if(level().isClientSide)return;
         ServerLevel server=(ServerLevel)level();
         if(animationRemaining>0&&--animationRemaining==0&&recallRemaining==0)play("idle",0);
-        if(recallRemaining>0&&--recallRemaining==0){discard();return;}
-        if(tickCount%4==0){
-            int count=Math.max(1,(int)Math.ceil(13*getHealth()/getMaxHealth()));
-            server.sendParticles(new DustParticleOptions(new Vector3f(.741f,0,1),1.2f),getX(),getY()+1.7,getZ(),count,.32,.75,.32,.01);
+        if(recallRemaining>0&&--recallRemaining==0){
+            particles(server,net.minecraft.core.particles.ParticleTypes.SQUID_INK,300,0,0,0,.5);discard();return;
         }
+        int count=ambientCount(getHealth());
+        if(count>0)particles(server,new DustParticleOptions(new Vector3f(.741f,0,1),1),count,.3,1,.3,0);
         if(owner()==null&&tickCount>40)discard();
+    }
+
+    static int ambientCount(float health){return Math.max(0,Math.min(13,(int)(health/20)));}
+    private void particles(ServerLevel server,net.minecraft.core.particles.ParticleOptions type,int count,double dx,double dy,double dz,double speed){
+        for(var viewer:server.players())if(viewer.distanceToSqr(this)<=512*512)server.sendParticles(viewer,type,true,getX(),getY()+2,getZ(),count,dx,dy,dz,speed);
     }
 
     @Override public boolean hurt(DamageSource source,float amount){

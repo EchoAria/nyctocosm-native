@@ -22,10 +22,12 @@ public final class NativeMod {
         MinecraftForge.EVENT_BUS.register(new NativeEvents());
     }
     private void attributes(EntityAttributeCreationEvent event) {
+        event.put(Content.SORCERER_HAIL.get(),net.minecraft.world.entity.LivingEntity.createLivingAttributes().build());
         event.put(Content.SERPENT.get(), NativeBoss.attributes(1000, 20,200).build());
-        event.put(Content.SORCERER.get(), NativeBoss.attributes(1000, 15).build());
-        event.put(Content.EMISSARY.get(), NativeBoss.attributes(1200, 35).build());
-        event.put(Content.DEATH_WALKER.get(), NativeBoss.attributes(80, 12).build());
+        event.put(Content.SORCERER.get(), NativeBoss.attributes(1000, 15, 50)
+            .add(net.minecraft.world.entity.ai.attributes.Attributes.KNOCKBACK_RESISTANCE,1).build());
+        event.put(Content.EMISSARY.get(), NativeBoss.attributes(1200, 35,300).build());
+        event.put(Content.DEATH_WALKER.get(), NativeBoss.attributes(100, 15).build());
         event.put(Content.APPARITION.get(), NativeBoss.attributes(30, 8).build());
         event.put(Content.NULLPOINT.get(), NullpointStaff.attributes().build());
     }

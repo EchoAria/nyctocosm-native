@@ -15,7 +15,8 @@ import org.joml.Quaternionf;
 public final class RigLibrary {
     public record Bone(String name,ResourceLocation model,Matrix4f rest){}
     public record Frame(int tick,Map<String,Matrix4f> poses){}
-    public record Rig(List<Bone> bones,Map<String,List<Frame>> animations,Map<String,Map<String,ResourceLocation>> variants){}
+    public record VariantFrame(int tick,List<String> variants){}
+    public record Rig(List<Bone> bones,Map<String,List<Frame>> animations,Map<String,Map<String,ResourceLocation>> variants,Map<String,List<VariantFrame>> variantFrames){}
     private static final Map<String,Rig> CACHE=new HashMap<>();
     public static void clear(){CACHE.clear();}
     public static Set<ResourceLocation> allModels(){
@@ -58,10 +59,34 @@ public final class RigLibrary {
             Map<String,ResourceLocation> models=new HashMap<>();entry.getValue().getAsJsonObject().entrySet().forEach(e->models.put(e.getKey(),new ResourceLocation(e.getValue().getAsString())));
             variants.put(entry.getKey(),models);
         }
-        return new Rig(bones,animations,variants);
+        Map<String,List<VariantFrame>> variantFrames=new LinkedHashMap<>();
+        if(root.has("variant_keyframes"))root.getAsJsonObject("variant_keyframes").entrySet().forEach(entry->{
+            List<VariantFrame> frames=new ArrayList<>();
+            for(JsonElement element:entry.getValue().getAsJsonArray()){
+                var frame=element.getAsJsonObject();List<String> names=new ArrayList<>();
+                frame.getAsJsonArray("variants").forEach(value->names.add(value.getAsString()));
+                frames.add(new VariantFrame(frame.get("tick").getAsInt(),List.copyOf(names)));
+            }
+            variantFrames.put(entry.getKey(),List.copyOf(frames));
+        });
+        return new Rig(bones,animations,variants,variantFrames);
+    }
+    public static ResourceLocation animatedModel(Rig rig,String bone,String animation,float time,ResourceLocation initial){
+        ResourceLocation model=initial;var poses=rig.animations().get(animation);
+        if(poses!=null&&!poses.isEmpty()&&animation.contains("idle")){
+            float length=poses.get(poses.size()-1).tick();if(length>0)time%=length;
+        }
+        for(var frame:rig.variantFrames().getOrDefault(animation,List.of())){
+            if(frame.tick()>time)break;
+            for(String variant:frame.variants())model=rig.variants().getOrDefault(variant,Map.of()).getOrDefault(bone,model);
+        }
+        return model;
     }
     private static Matrix4f matrix(JsonArray data){float[] values=new float[16];for(int i=0;i<16;i++)values[i]=data.get(i).getAsFloat();return new Matrix4f().set(values).transpose();}
     public static Matrix4f pose(Rig rig,Bone bone,String animation,float tick,boolean loop){
+        // The player requested the entrance's hands-close, wings-in-front stance for idle.
+        // Its source pose is rebased offline; active attacks keep their original clips.
+        if(animation.equals("phase1_idle")&&rig.animations.containsKey("phase1_idle_guarded"))animation="phase1_idle_guarded";
         List<Frame> frames=rig.animations.get(animation);if(frames==null||frames.isEmpty())return bone.rest;
         int last=frames.get(frames.size()-1).tick;
         float time=loop?tick%Math.max(1,last):Math.min(tick,last);

@@ -29,7 +29,14 @@ public final class DaisMenu extends AbstractContainerMenu {
             @Override public boolean mayPickup(Player player){return current()!=null;}
             @Override public void onTake(Player player,ItemStack stack){
                 Recipe recipe=current();
-                if(recipe!=null){crafting=true;inputs.removeItem(0,recipe.firstCount);inputs.removeItem(1,recipe.secondCount);crafting=false;slotsChanged(inputs);}
+                if(recipe!=null){
+                    crafting=true;inputs.removeItem(0,recipe.firstCount);inputs.removeItem(1,recipe.secondCount);crafting=false;slotsChanged(inputs);
+                    access.execute((level,pos)->{if(level instanceof net.minecraft.server.level.ServerLevel server){
+                        var center=net.minecraft.world.phys.Vec3.atCenterOf(pos);NativeEvents.sound(server,center,"dais.inculcate",5);
+                        server.sendParticles(net.minecraft.core.particles.ParticleTypes.ENCHANT,center.x,center.y+1,center.z,80,1.2,.8,1.2,.08);
+                        server.sendParticles(net.minecraft.core.particles.ParticleTypes.SOUL_FIRE_FLAME,center.x,center.y+1,center.z,30,.6,.6,.6,.03);
+                    }});
+                }
                 super.onTake(player,stack);
             }
         });

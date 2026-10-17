@@ -234,5 +234,11 @@
   "advancements.nyctocosm.defeat_serpent.title": "心境澄明",
   "advancements.nyctocosm.defeat_serpent.description": "放逐梦魇巨蛇",
   "advancements.nyctocosm.defeat_sorcerer.title": "目的消解",
-  "advancements.nyctocosm.defeat_sorcerer.description": "摧毁虚无巫师"
+  "advancements.nyctocosm.defeat_sorcerer.description": "摧毁虚无巫师",
+  "advancements.nyctocosm.defeat_emissary.title": "解除末日武装",
+  "advancements.nyctocosm.defeat_emissary.description": "击败天灾使者",
+  "entity.nyctocosm.celestial_defeated": "天界强敌 %s",
+  "entity.nyctocosm.celestial_defeated1": "已被击败",
+  "dialogue.nyctocosm.emissary_defeat.prompt_escape": "[逃离使者领域]",
+  "message.nyctocosm.legacy_world_warning": "检测到旧版 Nyctocosm 数据。背包物品与玩家记分板已导入，但旧 marker 实体、已开启的传送门和进行中的 Boss 战无法迁移。请先备份该存档，并使用新世界体验完整原生主线。"
 }

@@ -1,0 +1,14 @@
+{
+  "natural_rain_firing_samples": 105,
+  "natural_attacks_start": [
+    1751,
+    1819,
+    1892
+  ],
+  "natural_height_above_player": [
+    18.769791973456478,
+    21.168279168625332
+  ],
+  "scripted_rain_samples": 35,
+  "screenshots": 42
+}

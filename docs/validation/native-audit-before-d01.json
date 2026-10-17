@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "model_files": 1778,
+    "rigs": 10,
+    "animation_frames": 5607,
+    "sound_events": 247,
+    "runtime_mcfunctions": 0,
+    "mod_version": "0.3.0-native-alpha.12",
+    "jar_entries": 3002,
+    "jar": "D:\\MinecraftModDev\\DEV - 副本\\nyctocosm-native\\build\\libs\\nyctocosm-native-0.3.0-native-alpha.12.jar",
+    "jar_sha256": "5131d6e5d125ffd0c0d51b9d99618fe2aa8a82141eddd98c1204e0423071340c",
+    "jar_bytes": 55230528
+  },
+  "errors": []
+}

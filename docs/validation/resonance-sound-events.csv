@@ -1,0 +1,15 @@
+client_tick,sound
+32,nyctocosm:spells.cast.resonance
+112,nyctocosm:portal.external_resonance.first
+129,nyctocosm:portal.external_resonance.second
+144,nyctocosm:portal.external_resonance.third
+202,nyctocosm:portal.external_resonance.collapse.first
+218,nyctocosm:portal.external_resonance.collapse.second
+234,nyctocosm:portal.external_resonance.collapse.third
+332,nyctocosm:spells.cast.resonance
+412,nyctocosm:portal.external_resonance.first
+428,nyctocosm:portal.external_resonance.second
+444,nyctocosm:portal.external_resonance.third
+502,nyctocosm:portal.external_resonance.collapse.first
+518,nyctocosm:portal.external_resonance.collapse.second
+534,nyctocosm:portal.external_resonance.collapse.third

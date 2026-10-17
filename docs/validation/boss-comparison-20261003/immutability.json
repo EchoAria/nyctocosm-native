@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-03",
+  "scope": "comparison only; no implementation changes or builds",
+  "aggregation": "SHA256(canonical JSON map of relative paths to file SHA256); exclude __pycache__; production includes build.gradle",
+  "before": {
+    "source": {
+      "files": 29657,
+      "aggregate_sha256": "e75767ed38c2b83cacefb7b28db72c315071f7657db12dfcee512dd6813f3c18"
+    },
+    "production": {
+      "files": 2695,
+      "aggregate_sha256": "0536ba1130cfc908afc88b112f23db43b8d3f9e092419194305006450f3f6f46"
+    },
+    "tools": {
+      "files": 21,
+      "aggregate_sha256": "b635024c9a635b9abefc2dcc9351decb373cf2dda7380d7a7d8b3b8e3203958d"
+    },
+    "jar": {
+      "bytes": 56065908,
+      "sha256": "84c4f1ce6a1f862665ab49cdf56c03cd7f10deda0a3a2845adae410fc9c271f5"
+    }
+  },
+  "after": {
+    "source": {
+      "files": 29657,
+      "aggregate_sha256": "e75767ed38c2b83cacefb7b28db72c315071f7657db12dfcee512dd6813f3c18"
+    },
+    "production": {
+      "files": 2695,
+      "aggregate_sha256": "0536ba1130cfc908afc88b112f23db43b8d3f9e092419194305006450f3f6f46"
+    },
+    "tools": {
+      "files": 21,
+      "aggregate_sha256": "b635024c9a635b9abefc2dcc9351decb373cf2dda7380d7a7d8b3b8e3203958d"
+    },
+    "jar": {
+      "bytes": 56065908,
+      "sha256": "84c4f1ce6a1f862665ab49cdf56c03cd7f10deda0a3a2845adae410fc9c271f5"
+    }
+  },
+  "unchanged": {
+    "source": true,
+    "production": true,
+    "tools": true,
+    "jar": true
+  },
+  "all_unchanged": true,
+  "new_documents": [
+    "docs/validation/BOSS_ACTION_EFFECT_COMPARISON_20261003.md",
+    "docs/validation/boss-comparison-20261003/source-and-native-evidence.json",
+    "docs/validation/boss-comparison-20261003/immutability.json"
+  ],
+  "todo": "root MAINLINE_GAMEPLAY_PARITY_TODO.md append only",
+  "todo_append": {
+    "path": "MAINLINE_GAMEPLAY_PARITY_TODO.md",
+    "before_sha256": "686ceaa5577a73e3ded4b67f2c7604e68883385b646433763e79c48437ee3cd9",
+    "after_sha256": "d5522892f4e2ab678023f27c5a0e505bcb911807e6a2079270943b2117b655fb",
+    "original_bytes_preserved": true,
+    "appended_bytes": 2380
+  },
+  "document_hashes": {
+    "docs/validation/BOSS_ACTION_EFFECT_COMPARISON_20261003.md": "d402b0f5df41bdca67a053deb02525445da761da2c2214a59222ad845f6072ae",
+    "docs/validation/boss-comparison-20261003/source-and-native-evidence.json": "1d81bc56783695827b92c36ac44b4196ddaddcb5c15f66d563ed892912a0f56a"
+  }
+}

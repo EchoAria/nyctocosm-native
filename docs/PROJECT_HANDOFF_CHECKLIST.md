@@ -1,3 +1,5 @@
+> alpha.11 更新：补齐开门收束爆炸粒子、15 束灵魂旋流及三次镜头抖动；允许幽匿脉络覆盖门内；修复巨蛇穿地窒息伤害。69 项游戏测试通过。详细边界见 RESONANCE_PORTAL_BEHAVIOR.md。
+
 # Nyctocosm Native 项目交接与重构清单
 
 ## 1. 项目目标与真实状态
@@ -11,27 +13,29 @@
 
 **当前不是完整等价移植，而是可运行 alpha。** 构建、自动测试和资源审计通过，不代表战斗手感、动画轴向、视觉时序与原包一致。
 
-用户当前明确反馈：
+alpha.8 交接时用户明确反馈：
 
 1. Serpent 行为逻辑仍不正确。
 2. Sorcerer 身下法环持续旋转的方式不正确。
 
-后续开发必须先修复这两项，不可把 alpha.8 的相关实现视为正确规格。
+alpha.9 已针对这两项重写并增加回归及客户端连续参考；仍需完整原包实机对照与用户验收。不可把 alpha.8 的相关实现视为正确规格。详见新增的两个行为规格文档。
+
+alpha.10 按用户新增优先事项修正回响碎片激活传送门及开门粒子/音效，见 `RESONANCE_PORTAL_BEHAVIOR.md`。法阵跟随需由背包中的 Transposition artifact 启用，已列入 `FOLLOW_UP_FIXES.md`，尚未修改。
 
 ## 2. 工作区与关键路径
 
 | 内容 | 绝对路径 |
 | --- | --- |
-| 原始压缩包，只读 | `D:\MinecraftModDev\DEV\nyctocosm.zip` |
-| 解压后的原数据/资源，只读 | `D:\MinecraftModDev\DEV\_nyctocosm_source` |
-| 当前原生 Mod | `D:\MinecraftModDev\DEV\nyctocosm-native` |
-| 原 Forge MDK | `D:\MinecraftModDev\DEV\forge-1.20.1-47.4.13-mdk` |
-| 对比资料 | `D:\MinecraftModDev\DEV\_comparison` |
-| alpha.8 成品 | `D:\MinecraftModDev\DEV\nyctocosm-native\build\libs\nyctocosm-native-0.3.0-native-alpha.8.jar` |
+| 原始压缩包，只读 | `D:\MinecraftModDev\DEV - 副本\nyctocosm.zip` |
+| 解压后的原数据/资源，只读 | `D:\MinecraftModDev\DEV - 副本\_nyctocosm_source` |
+| 当前原生 Mod | `D:\MinecraftModDev\DEV - 副本\nyctocosm-native` |
+| 原 Forge MDK | `D:\MinecraftModDev\DEV - 副本\forge-1.20.1-47.4.13-mdk` |
+| 对比资料 | `D:\MinecraftModDev\DEV - 副本\_comparison` |
+| alpha.11 成品 | `D:\MinecraftModDev\DEV - 副本\nyctocosm-native\build\libs\nyctocosm-native-0.3.0-native-alpha.11.jar` |
 
 注意：
 
-- `nyctocosm-native` **目前不是 Git 仓库**。继续修改前建议先备份并初始化版本控制。
+- `nyctocosm-native` 已初始化 Git，alpha.8 基线提交为 `193a7d8`；没有添加远程仓库或推送。
 - 不要修改 `nyctocosm.zip`。
 - 原包与 Mod 使用相同命名空间，测试时不要同时加载。
 - 使用新测试世界；没有旧数据包实体、记分板和 CustomModelData 迁移器。
@@ -57,16 +61,17 @@ $env:JAVA_TOOL_OPTIONS='-Dnet.minecraftforge.gradle.check.certs=false'
 .\gradlew.bat build --offline
 .\gradlew.bat runGameTestServer --offline
 .\gradlew.bat runClient -Psmoke --offline
-python tools/audit_native.py build/libs/nyctocosm-native-0.3.0-native-alpha.8.jar
+python tools/audit_native.py build/libs/nyctocosm-native-0.3.0-native-alpha.11.jar
+.\tools\run_p0_smoke.ps1 -JavaHome $env:JAVA_HOME
 ~~~
 
 验证规则：
 
-- `run/logs/latest.log` 必须出现 `All 44 required tests passed`；不能只看 Gradle 的 `BUILD SUCCESSFUL`。
+- `run/logs/latest.log` 必须出现 `All 69 required tests passed`；不能只看 Gradle 的 `BUILD SUCCESSFUL`。
 - `ClientSmoke` 和 `NativeGameTests` 在 `src/main/java` 中，但被 JAR 任务排除。
 - 审计 `errors` 必须为空。
-- alpha.8：2978 个 JAR 条目、1778 模型、10 rig、5607 动画帧、247 声音事件、运行时 mcfunction 为 0。
-- alpha.8 SHA-256：`d58c77b7725b579081180a7af7cb54c9f5f3d2383202fd5f63683d43b94bdb9d`。
+- 历史 alpha.8：2978 个 JAR 条目、1778 模型、10 rig、5607 动画帧、247 声音事件、运行时 mcfunction 为 0。
+- 历史 alpha.8 SHA-256：`d58c77b7725b579081180a7af7cb54c9f5f3d2383202fd5f63683d43b94bdb9d`。
 - Boss 逻辑修改后，必须同时跑 GameTest 和真实客户端连续画面。
 
 ## 5. 当前原生代码地图
@@ -78,9 +83,12 @@ python tools/audit_native.py build/libs/nyctocosm-native-0.3.0-native-alpha.8.ja
 | `NativeEvents.java` | Forge 事件、玩家状态、掉落、全局流程 |
 | `Combat.java` | 六元素伤害、范围/射线命中、友军排除 |
 | `NativeBoss.java` | 三 Boss 及两普通怪的共用实体和主要状态机 |
+| `SerpentMotion.java` | 持久标记链、盘旋/Dive/Laser 状态与时间线 |
+| `SorcererPlane.java` | 原头部法环坐标变换、rise 位移关键帧 |
 | `SorcererTimeline.java` | Sorcerer 12 套攻击关键帧 |
 | `NullpointStaff.java` | Nullpoint 独立实体、生命和动画 |
 | `IceSpikeWave.java` | Nullpoint 冰刺波 |
+| `SerpentBody.java` | 40 节身体、独立尾巴、逐节跟随和状态同步 |
 | `SerpentBeamHazard.java` | Serpent 延迟光柱 |
 | `Spell.java` | 17 法术材料、基础数值、元素 |
 | `SpellBolt.java` / `SpellArea.java` | 投射物和持续区域 |
@@ -130,8 +138,8 @@ python tools/audit_native.py build/libs/nyctocosm-native-0.3.0-native-alpha.8.ja
 
 ### 仍未完成或不等价
 
-- Serpent 行为仍被用户判定错误。
-- Sorcerer 法环轴向、速度或生命周期错误。
+- Serpent alpha.8 行为已被用户判定错误；alpha.9 头部运动已重写，身段与光柱已继续按源函数修正，完整原包实机对照仍未完成。
+- Sorcerer 法环的变换与生命周期已修正并有并排客户端参考；完整战斗体验仍待原包实机对照。
 - Emissary 完整战斗和 VFX 大量简化。
 - 法术属性、弱点、超迹、耗散、反射/反制未完整等价。
 - Submergence 不是原触手。
@@ -145,46 +153,24 @@ python tools/audit_native.py build/libs/nyctocosm-native-0.3.0-native-alpha.8.ja
 
 ### 7.1 Serpent
 
-当前 Java 入口：
+alpha.9 将运动提取到 `SerpentMotion.java`，`NativeBoss.tickSerpent` 负责伤害、实体移动、音效和特效。已修复独立螺旋目标、持久标记延迟、Laser 固定扫描、攻击读档和逐节身体首次同步。
 
-- `NativeBoss.java:338`：`tickSerpent`。
-- `NativeBoss.java:349`：61 tick 盘旋。
-- `NativeBoss.java:358`：Dive。
-- `NativeBoss.java:376`：游弋和攻击选择。
-- `NativeBoss.java:396`：通用 `steerSerpent`。
-- `NativeBoss.java:404`：alpha.8 的 `steerSerpentDive`。
-- `NativeBoss.java:425`：身体轨迹采样。
-- `ClientEvents.java:79`：身体渲染。
+阅读 `docs/SERPENT_BEHAVIOR.md`，其中逐项列出来源、生命周期、tick 顺序和数值。GameTest 已用真正的 Minecraft 坐标命令对照轨迹，但这不是完整原数据包运行证据。
 
-已知风险：
+仍需优先核对：原包整体实体遍历/定时调度、真实玩家与多人、方块和大型模组生物的完整受击边界。
 
-- 当前盘旋围绕玩家计算圆形目标；原包 `attack/twirl.mcfunction` 使用独立 marker 螺旋运动，不等价。
-- alpha.8 Dive 从 `lastHead` 推导“前方 30 格”，只是 marker 链近似，不是多个持久 marker 的逐 tick 状态。
-- 现有测试只证明固定初始条件下会越过静止目标，不证明完整战斗正确。
-- 必须对照原包实机确认攻击选择、盘旋、入 Dive、转弯半径、穿越、绕回和退出。
+身段对照已直接读取 123 个原移动函数，420 tick / 17,220 个位置误差为 0；光柱延迟选点、80 格柱体与圆形判伤已有回归测试。
 
 ### 7.2 Sorcerer 法环
 
-当前 Java：
+alpha.9 的 `SorcererPlane.headTransform` 还原原盔甲架头部 Z 轴与 HEAD 物品变换；在 `NativeBoss` 中保存独立法环锚点、yaw 和旋转年龄，并由客户端渲染。首次出场接 rise，127 帧创建、破杖过渡 5 帧销毁。
 
-- `ClientEvents.java:89-94` 绘制 `magic/sorcerer_plane`。
-- `ClientEvents.java:92` 用 `Axis.YP.rotationDegrees(boss.tickCount * 2 + partial * 2)`，令整个模型绕世界 Y 轴旋转。
-- `NativeBoss.java:282-298` 的 `voidPlane` 粒子也加入 `tickCount * .035` 旋转偏移。
-
-原包：
-
-- `sorcerer/functions/summonplane.mcfunction` 创建法环。
-- `sorcerer/functions/__generated__/block/5.mcfunction` 生成 `SorcererPlane`、CMD 19 盔甲架。
-- `spells/functions/__generated__/block/158.mcfunction` 分派法环 tick。
-- `spells/functions/__generated__/block/163.mcfunction` 每 tick 修改 `Pose.Head[2]`，即头部 Z 轴姿态加 1。
-- `sorcerer/functions/killplane.mcfunction` 和 `remove.mcfunction` 控制销毁。
-
-所以不能简单把旋转速度 2 改成 1；轴、中心、速度和生命周期都需重查。
+阅读 `docs/SORCERER_PLANE_BEHAVIOR.md`。连续客户端场景提供原生法环与原版盔甲架模型参考，开发参考资源不进入 JAR。原创建冲击波仍简化，尚无完整原包战斗录像。
 
 ## 8. 原数据包文件命名与功能对照
 
-数据根：`D:\MinecraftModDev\DEV\_nyctocosm_source\datapack\data`  
-资源根：`D:\MinecraftModDev\DEV\_nyctocosm_source\resources\assets`
+数据根：`D:\MinecraftModDev\DEV - 副本\_nyctocosm_source\datapack\data`
+资源根：`D:\MinecraftModDev\DEV - 副本\_nyctocosm_source\resources\assets`
 
 ### 8.1 命名约定
 
@@ -254,8 +240,8 @@ python tools/audit_native.py build/libs/nyctocosm-native-0.3.0-native-alpha.8.ja
 | `serpent/functions/remove.mcfunction` | 清理 |
 | `serpent/functions/__generated__/block/200.mcfunction` | `SerpentInterp=2` 的 currentfacing 修正 |
 | `serpent/functions/__generated__/block/201.mcfunction` | 实时目标 marker |
-| `serpent/functions/__generated__/block/203.mcfunction` | 盘旋结束后的速度/插值切换 |
-| `serpent/functions/__generated__/block/204.mcfunction` | 进入 Dive 和播放音效 |
+| `serpent/functions/attack/__generated__/block/203.mcfunction` | 盘旋结束后的速度/插值切换 |
+| `serpent/functions/attack/dive/__generated__/block/204.mcfunction` | 进入 Dive 和播放音效 |
 
 ### 8.4 Sorcerer 文件对照
 
@@ -336,9 +322,9 @@ python tools/audit_native.py build/libs/nyctocosm-native-0.3.0-native-alpha.8.ja
 | `cutscene/start.mcfunction`、`subtick.mcfunction`、`end.mcfunction` | 过场 |
 | `die.mcfunction`、`finaldeath.mcfunction`、`defeat.mcfunction` | 死亡/奖励 |
 
-> 面向第一次接触本项目的开发者。  
-> 最后整理：2026-09-21  
-> 当前版本：`0.3.0-native-alpha.8`  
+> 面向第一次接触本项目的开发者。
+> 最后整理：2026-09-22
+> 当前版本：`0.3.0-native-alpha.9`
 > 平台：Minecraft Java 1.20.1、Forge 47.4.13、Java 17
 
 ### 8.6 17 种法术对照
@@ -422,16 +408,18 @@ python tools/audit_native.py build/libs/nyctocosm-native-0.3.0-native-alpha.8.ja
 
 - [ ] 在原数据包环境录制 Serpent 完整战斗，覆盖游弋、盘旋、Dive、Laser、Beam 和退出。
 - [ ] 每 tick 记录原包 Attack、State、Interp、Speed、目标 marker、currentfacing、towardfacing、蛇头位置/朝向。
-- [ ] 画出 marker 生命周期，确认持久实体与临时实体。
-- [ ] 用持久 Java 状态重写 marker 链，不再用单一 steering lerp 近似。
-- [ ] 精确还原 `attack/twirl.mcfunction` 的独立螺旋 marker。
+- [x] 画出 marker 生命周期，确认持久实体与临时实体。
+- [x] 用持久 Java 状态重写 marker 链，不再用单一 steering lerp 近似。
+- [x] 精确还原 `attack/twirl.mcfunction` 的独立螺旋 marker。
 - [ ] 验证移动玩家、高低差、玩家急转、多人、目标丢失、方块碰撞、穿体绕回。
-- [ ] 核对 Serpent 状态结束、重新选目标、冷却、三攻击等权选择。
-- [ ] 对照 `summonplane → block/5 → block/158 → block/163 → killplane` 全生命周期。
-- [ ] 明确 Sorcerer 法环的轴、速度、中心、偏移和出现/消失帧。
-- [ ] 删除或修正 `ClientEvents.java:92` 的世界 Y 轴旋转。
-- [ ] 单独判断 `NativeBoss.voidPlane` 粒子是否应旋转。
-- [ ] 增加法环状态测试和连续画面验证。
+- [x] 核对 Serpent 状态结束、重新选目标、冷却、三攻击等权选择。
+- [x] 对照 `summonplane → block/5 → block/158 → block/163 → killplane` 全生命周期。
+- [x] 明确 Sorcerer 法环的轴、速度、中心、偏移和出现/消失帧。
+- [x] 删除或修正 `ClientEvents.java:92` 的世界 Y 轴旋转。
+- [x] 单独判断 `NativeBoss.voidPlane` 粒子是否应旋转。
+- [x] 增加法环状态测试和连续画面验证。
+
+已完成项的范围以两个行为规格文档为准；命令对照和原版盔甲架参考不能代替尚未勾选的完整原包录像。
 
 ### P1：Boss 完整度
 
@@ -442,6 +430,9 @@ python tools/audit_native.py build/libs/nyctocosm-native-0.3.0-native-alpha.8.ja
 - [ ] 增加存档重载、区块卸载、多人目标切换测试。
 
 ### P2：法术和武器
+
+- [x] alpha.10：回响碎片直接射向门框内部激活；恢复蓄力、声波、三波开门粒子与音效、延迟开启和状态保存，见 `RESONANCE_PORTAL_BEHAVIOR.md`。
+- [ ] 用户指定后续：法阵跟随必须由背包中的 `artifact_transposition` 启用；排查 Planar Coil 的 mobile 绕过条件，见 `FOLLOW_UP_FIXES.md`。
 
 - [ ] 对照 `magic/calcstatsdamage.mcfunction`、`calcstatsspell.mcfunction` 完成属性、弱点、超迹、耗散。
 - [ ] 完成 Submergence 原触手。
@@ -459,7 +450,7 @@ python tools/audit_native.py build/libs/nyctocosm-native-0.3.0-native-alpha.8.ja
 
 ### P4：交付质量
 
-- [ ] 初始化 Git，先提交 alpha.8 基线。
+- [x] 初始化 Git，先提交 alpha.8 基线。
 - [ ] 为三个 Boss 写独立行为规格和可验证时间轴。
 - [ ] 建立原包与 Mod 同场景视频对照。
 - [ ] 进行第三方模组、多玩家、服务器性能、低配渲染测试。
@@ -512,8 +503,10 @@ python tools/audit_native.py build/libs/nyctocosm-native-0.3.0-native-alpha.8.ja
 - `docs/native-audit.json`：最近 JAR 审计。
 - `docs/sound-import.json`：声音导入、缺失和修正。
 - `run/screenshots/`：静态 smoke 截图，只作辅助。
+- `run/screenshots/p0/`：alpha.9 连续客户端帧与逐 tick 状态；`docs/validation/` 保存整理后的证据。
+- `docs/SERPENT_BEHAVIOR.md`、`docs/SORCERER_PLANE_BEHAVIOR.md`：本轮来源、状态与验证边界。
 
 ## 15. 交接结论
 
-当前工程已有可运行的原生 Forge 架构，但“可运行”和“完整还原”仍有明显距离。下一阶段不要继续堆近似功能：先把 Serpent 与 Sorcerer 法环做成有原包运行证据、逐 tick 状态记录和连续画面对照的精确实现，再扩展 Emissary 和其余系统。
+当前工程已有可运行的原生 Forge 架构，但“可运行”和“完整还原”仍有明显距离。下一阶段不要继续堆近似功能：alpha.9 已补头部标记链、法环变换、状态回归与连续参考；下一步仍应补全原包实机运行证据、装饰与整体调度差异和真实多人验证，再扩展 Emissary 和其余系统。
 

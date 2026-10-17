@@ -1,0 +1,38 @@
+{
+  "jar": {
+    "path": "D:\\MinecraftModDev\\DEV - 副本\\nyctocosm-native\\build\\libs\\nyctocosm-native-0.3.0-native-alpha.18.jar",
+    "bytes": 56163014,
+    "sha256": "060b9cd423500d2bddbb0175e5a98f0fbe4f65f02742238c7b7f7b019bdb137e",
+    "entries": 3091,
+    "class_major": [
+      61
+    ]
+  },
+  "required_tests": 276,
+  "screenshots": 37,
+  "source_unchanged": true,
+  "old_jars_unchanged": true,
+  "changed": [
+    "nyctocosm-native/build.gradle",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/BossParticleEffects.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/Content.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/EmissaryDamagePose.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/NativeBoss.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/NativeGameTests.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/NativeNetwork.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/NullpointStaff.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/SpellBolt.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/client/ClientEvents.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/client/FocusEffectController.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/client/WorldEffectController.java",
+    "nyctocosm-native/src/main/resources/assets/nyctocosm/native_rigs/emissary_damage_locators.json.gz"
+  ],
+  "added": [
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/BossEffectTimeline.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/EmissarySeekingMissile.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/EmissarySwirlEffects.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/SerpentAmbientEffects.java",
+    "nyctocosm-native/src/main/resources/assets/nyctocosm/effects/combat_repair_events.json",
+    "nyctocosm-native/src/main/resources/assets/nyctocosm/effects/combat_repair_keyframes.json"
+  ]
+}

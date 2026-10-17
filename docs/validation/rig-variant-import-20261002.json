@@ -1,0 +1,582 @@
+{
+  "ajsorcerer": {
+    "keyframes": {
+      "initial_spawn": [
+        {
+          "tick": 0,
+          "variants": [
+            "staffless"
+          ]
+        },
+        {
+          "tick": 181,
+          "variants": [
+            "staff"
+          ]
+        },
+        {
+          "tick": 231,
+          "variants": [
+            "slash"
+          ]
+        },
+        {
+          "tick": 236,
+          "variants": [
+            "staff"
+          ]
+        },
+        {
+          "tick": 252,
+          "variants": [
+            "slash"
+          ]
+        },
+        {
+          "tick": 253,
+          "variants": [
+            "slashstaffless"
+          ]
+        },
+        {
+          "tick": 255,
+          "variants": [
+            "staffless"
+          ]
+        }
+      ]
+    },
+    "source_sha256": {
+      "ajsorcerer\\zzzzzzzz\\animations\\initial_spawn\\tree\\leaf_0.mcfunction": "cb7a356b737e2a1676be91b9262159d6962690ad12db44bd7abc937bdb082c22",
+      "ajsorcerer\\zzzzzzzz\\animations\\initial_spawn\\tree\\leaf_181.mcfunction": "3af1ba96adb2346eb57c2b4efba0b3293658239cbe6ae74415b3083653bfd121",
+      "ajsorcerer\\zzzzzzzz\\animations\\initial_spawn\\tree\\leaf_231.mcfunction": "9cac687d26c28163193f87e4b7b5213c19352b781205401163aac6dda68a27d1",
+      "ajsorcerer\\zzzzzzzz\\animations\\initial_spawn\\tree\\leaf_236.mcfunction": "63da5b9fbeaef2b0889eb9b3f6db0307b6a3f34ad1a45bc5ee8dde15636b90f4",
+      "ajsorcerer\\zzzzzzzz\\animations\\initial_spawn\\tree\\leaf_252.mcfunction": "0ff7b974c051dc23250cbdfe5f347812019a7958a6f6b51c13238c9de24c9eff",
+      "ajsorcerer\\zzzzzzzz\\animations\\initial_spawn\\tree\\leaf_253.mcfunction": "7a5d3ce358aeb5b6fddb9ec2ea43e483d3e2a59ebc852b04dcf61b005d9a7797",
+      "ajsorcerer\\zzzzzzzz\\animations\\initial_spawn\\tree\\leaf_255.mcfunction": "55bf15fdb78852f1711f5fa75363016d709762bfca72eef141034966fec85d14"
+    }
+  },
+  "ajsorcererm1": {
+    "keyframes": {},
+    "source_sha256": {}
+  },
+  "ajsorcererm2": {
+    "keyframes": {
+      "dashstrike": [
+        {
+          "tick": 0,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "tick": 49,
+          "variants": [
+            "slash"
+          ]
+        },
+        {
+          "tick": 53,
+          "variants": [
+            "default"
+          ]
+        }
+      ],
+      "die": [
+        {
+          "tick": 0,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "tick": 116,
+          "variants": [
+            "invisstaff"
+          ]
+        }
+      ],
+      "fall": [
+        {
+          "tick": 0,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "tick": 37,
+          "variants": [
+            "invis"
+          ]
+        },
+        {
+          "tick": 48,
+          "variants": [
+            "default"
+          ]
+        }
+      ],
+      "javelinswing": [
+        {
+          "tick": 34,
+          "variants": [
+            "slash"
+          ]
+        },
+        {
+          "tick": 41,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "source_sha256": {
+      "ajsorcererm2\\zzzzzzzz\\animations\\dashstrike\\tree\\leaf_0.mcfunction": "30901601041d85c892b0a4adf076d82d3e8887d770c703f3f89cefd90fa45016",
+      "ajsorcererm2\\zzzzzzzz\\animations\\dashstrike\\tree\\leaf_49.mcfunction": "40ee1719d9ec41751c5eb08fd224c21434ff2db7181dcfbd558cca8ed73e08e4",
+      "ajsorcererm2\\zzzzzzzz\\animations\\dashstrike\\tree\\leaf_53.mcfunction": "211697a294ee3d30e6723ae869cb5f1ea2c8f494542341dc6d94d387c41fbdeb",
+      "ajsorcererm2\\zzzzzzzz\\animations\\die\\tree\\leaf_0.mcfunction": "657c017ce3d8b0c8c7a4099e681453b2eb5dc59a836bb4a94bdbd29ad3ad3eaa",
+      "ajsorcererm2\\zzzzzzzz\\animations\\die\\tree\\leaf_116.mcfunction": "a06cb80ec11f13235b276a9102a9ce51754b8f845ef74ff8d5df2fdc4499a31c",
+      "ajsorcererm2\\zzzzzzzz\\animations\\fall\\tree\\leaf_0.mcfunction": "4e7efb95c13f9b7c4511adce876b3ba0f44da7d1a390fcbe57a6ab08e5e27ead",
+      "ajsorcererm2\\zzzzzzzz\\animations\\fall\\tree\\leaf_37.mcfunction": "09ff1c0cc2072dc510c5419f0882f8d00e864f802b326a51700e5ccc827d7fb1",
+      "ajsorcererm2\\zzzzzzzz\\animations\\fall\\tree\\leaf_48.mcfunction": "ad77685ebdf5e61ef378532d1f0a9d0fc7b3e83f6ce41911f90061144cb2aa0d",
+      "ajsorcererm2\\zzzzzzzz\\animations\\javelinswing\\tree\\leaf_34.mcfunction": "8db207a96c86bd9ed0908f2c0d4486e54161fc424bd61ee70d857c6e3a71f3ef",
+      "ajsorcererm2\\zzzzzzzz\\animations\\javelinswing\\tree\\leaf_41.mcfunction": "9358a2ba70366d6b0f87c9b6af8df5d25283e62f46b0f954e7bc0fce9fd5eb6d"
+    }
+  },
+  "ajemissary": {
+    "keyframes": {
+      "phase1_idle": [
+        {
+          "tick": 0,
+          "variants": [
+            "wing_config_0"
+          ]
+        }
+      ],
+      "phase1_transition": [
+        {
+          "tick": 0,
+          "variants": [
+            "wing_config_0"
+          ]
+        },
+        {
+          "tick": 40,
+          "variants": [
+            "default"
+          ]
+        }
+      ],
+      "phase2.attack.sword_plunge": [
+        {
+          "tick": 0,
+          "variants": [
+            "swordless"
+          ]
+        },
+        {
+          "tick": 10,
+          "variants": [
+            "swordful"
+          ]
+        },
+        {
+          "tick": 45,
+          "variants": [
+            "swordless"
+          ]
+        }
+      ],
+      "phase2_idle": [
+        {
+          "tick": 0,
+          "variants": [
+            "wing_config_1"
+          ]
+        }
+      ],
+      "phase2_transition": [
+        {
+          "tick": 0,
+          "variants": [
+            "wing_config_1"
+          ]
+        },
+        {
+          "tick": 16,
+          "variants": [
+            "wingless"
+          ]
+        },
+        {
+          "tick": 18,
+          "variants": [
+            "wing_config_2"
+          ]
+        },
+        {
+          "tick": 19,
+          "variants": [
+            "wingless"
+          ]
+        },
+        {
+          "tick": 21,
+          "variants": [
+            "wing_config_1"
+          ]
+        },
+        {
+          "tick": 22,
+          "variants": [
+            "wingless"
+          ]
+        },
+        {
+          "tick": 24,
+          "variants": [
+            "wing_config_2"
+          ]
+        },
+        {
+          "tick": 25,
+          "variants": [
+            "wingless"
+          ]
+        },
+        {
+          "tick": 27,
+          "variants": [
+            "wing_config_1"
+          ]
+        },
+        {
+          "tick": 28,
+          "variants": [
+            "wingless"
+          ]
+        },
+        {
+          "tick": 30,
+          "variants": [
+            "wing_config_2"
+          ]
+        }
+      ],
+      "phase3.attack.cross": [
+        {
+          "tick": 0,
+          "variants": [
+            "swordless"
+          ]
+        }
+      ],
+      "phase3.attack.flame_slash": [
+        {
+          "tick": 0,
+          "variants": [
+            "swordful"
+          ]
+        },
+        {
+          "tick": 2,
+          "variants": [
+            "sweepful"
+          ]
+        },
+        {
+          "tick": 5,
+          "variants": [
+            "sweepless"
+          ]
+        },
+        {
+          "tick": 12,
+          "variants": [
+            "sweepful"
+          ]
+        },
+        {
+          "tick": 15,
+          "variants": [
+            "sweepless"
+          ]
+        },
+        {
+          "tick": 26,
+          "variants": [
+            "swordless"
+          ]
+        }
+      ],
+      "phase3.attack.ground_slam": [
+        {
+          "tick": 0,
+          "variants": [
+            "swordless"
+          ]
+        }
+      ],
+      "phase3.attack.seeking_missiles": [
+        {
+          "tick": 0,
+          "variants": [
+            "wing_config_2"
+          ]
+        }
+      ],
+      "phase3.attack.swordspin": [
+        {
+          "tick": 0,
+          "variants": [
+            "swordful"
+          ]
+        },
+        {
+          "tick": 9,
+          "variants": [
+            "sweepful"
+          ]
+        },
+        {
+          "tick": 13,
+          "variants": [
+            "sweepless"
+          ]
+        },
+        {
+          "tick": 16,
+          "variants": [
+            "swordless"
+          ]
+        }
+      ],
+      "phase3.attack.swordswing": [
+        {
+          "tick": 0,
+          "variants": [
+            "swordful"
+          ]
+        },
+        {
+          "tick": 1,
+          "variants": [
+            "sweepful"
+          ]
+        },
+        {
+          "tick": 5,
+          "variants": [
+            "sweepless"
+          ]
+        },
+        {
+          "tick": 9,
+          "variants": [
+            "swordless"
+          ]
+        }
+      ],
+      "phase3.parry": [
+        {
+          "tick": 0,
+          "variants": [
+            "swordless"
+          ]
+        }
+      ],
+      "phase3.parry.break": [
+        {
+          "tick": 0,
+          "variants": [
+            "swordless"
+          ]
+        }
+      ],
+      "phase3_transition": [
+        {
+          "tick": 0,
+          "variants": [
+            "wing_config_2"
+          ]
+        },
+        {
+          "tick": 57,
+          "variants": [
+            "wing_config_3"
+          ]
+        },
+        {
+          "tick": 171,
+          "variants": [
+            "armorless"
+          ]
+        }
+      ],
+      "phase4.attack.apocalypse_rain": [
+        {
+          "tick": 0,
+          "variants": [
+            "wing_config_3"
+          ]
+        },
+        {
+          "tick": 60,
+          "variants": [
+            "wingless"
+          ]
+        }
+      ],
+      "phase4.attack.grapple": [
+        {
+          "tick": 8,
+          "variants": [
+            "wing_config_3"
+          ]
+        },
+        {
+          "tick": 90,
+          "variants": [
+            "wingless"
+          ]
+        }
+      ],
+      "phase4.attack.grapple_grab": [
+        {
+          "tick": 0,
+          "variants": [
+            "wing_config_3"
+          ]
+        },
+        {
+          "tick": 180,
+          "variants": [
+            "wingless"
+          ]
+        }
+      ],
+      "phase4_flying_transition_idle": [
+        {
+          "tick": 12,
+          "variants": [
+            "wing_config_3"
+          ]
+        }
+      ],
+      "phase4_idle_flying": [
+        {
+          "tick": 0,
+          "variants": [
+            "wingless"
+          ]
+        }
+      ],
+      "phase4_idle_transition_flying": [
+        {
+          "tick": 10,
+          "variants": [
+            "wingless"
+          ]
+        }
+      ],
+      "spawn": [
+        {
+          "tick": 0,
+          "variants": [
+            "wing_config_0"
+          ]
+        },
+        {
+          "tick": 64,
+          "variants": [
+            "wing_config_0"
+          ]
+        }
+      ],
+      "testpose": [
+        {
+          "tick": 3,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "tick": 6,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "tick": 9,
+          "variants": [
+            "wing_config_0"
+          ]
+        },
+        {
+          "tick": 12,
+          "variants": [
+            "wing_config_2"
+          ]
+        }
+      ]
+    },
+    "source_sha256": {
+      "ajemissary\\zzzzzzzz\\animations\\phase1_idle\\tree\\leaf_0.mcfunction": "c593c45fa5b9660b0ddf295ef4affddf8bea7a1fefa72c6e4e10c5173e22e125",
+      "ajemissary\\zzzzzzzz\\animations\\phase1_transition\\tree\\leaf_0.mcfunction": "462c537c006f5b891a49a444aef7a0169330f6f5992c42b0b652d83a66cca750",
+      "ajemissary\\zzzzzzzz\\animations\\phase1_transition\\tree\\leaf_40.mcfunction": "efedc5c71b7fe69440f56756ce7b0a82dab021e96387e874eb22b0c33630b670",
+      "ajemissary\\zzzzzzzz\\animations\\phase2.attack.sword_plunge\\tree\\leaf_0.mcfunction": "6c4702ac6be6653ee0d0082ed586ea70df3a4379348e529098bb661a2849b474",
+      "ajemissary\\zzzzzzzz\\animations\\phase2.attack.sword_plunge\\tree\\leaf_10.mcfunction": "b1e6cb187261842cbd1b7c4e5b015ca48f93410c9afd7b066273eb6c955e5230",
+      "ajemissary\\zzzzzzzz\\animations\\phase2.attack.sword_plunge\\tree\\leaf_45.mcfunction": "e47459dc5187bd5dd2831d030ae625d5f130a16d633bc60e2927af29a9b82d29",
+      "ajemissary\\zzzzzzzz\\animations\\phase2_idle\\tree\\leaf_0.mcfunction": "87b60e51366477726aff5cca3350c90eb72b91093eddbb1bfb3988084a50437b",
+      "ajemissary\\zzzzzzzz\\animations\\phase2_transition\\tree\\leaf_0.mcfunction": "aaf725d100df88f9218b7f79fb8daa53dcca56ec1e0ced5e82e1b52c616ce514",
+      "ajemissary\\zzzzzzzz\\animations\\phase2_transition\\tree\\leaf_16.mcfunction": "4ecda0295ad90fcd88775d94d6ca92bc3ee985e6f46d5c48537cbce8d00e1798",
+      "ajemissary\\zzzzzzzz\\animations\\phase2_transition\\tree\\leaf_18.mcfunction": "e5e8cd6424ada52ffb46b8fd7ddae070910896d001430abbe999fe9026e4330d",
+      "ajemissary\\zzzzzzzz\\animations\\phase2_transition\\tree\\leaf_19.mcfunction": "277ee1a0a44c60c15a8bc2cd6d59e15ef43a984191d27ca1f150c5ec98c01e34",
+      "ajemissary\\zzzzzzzz\\animations\\phase2_transition\\tree\\leaf_21.mcfunction": "69e523c4016326de922db9f7273c88069a7a1b1a377065f6195b90970755b93f",
+      "ajemissary\\zzzzzzzz\\animations\\phase2_transition\\tree\\leaf_22.mcfunction": "fa5c597beccb175300e814d5d3f76f22cd835fe50dfbc905f432a5acf85ed0f8",
+      "ajemissary\\zzzzzzzz\\animations\\phase2_transition\\tree\\leaf_24.mcfunction": "3eab9866b4842c0a961649b22cabdac5c712accae6499df6e2a750619db55776",
+      "ajemissary\\zzzzzzzz\\animations\\phase2_transition\\tree\\leaf_25.mcfunction": "36efde30aee28f65684f8f3c1a9d0e9b7eeb41f77ccaaeb5aace76cfea6d490d",
+      "ajemissary\\zzzzzzzz\\animations\\phase2_transition\\tree\\leaf_27.mcfunction": "2845f4ed10dcdc4752929c32c0dbb9fa59714e51316b76c254bcf682ed63e0de",
+      "ajemissary\\zzzzzzzz\\animations\\phase2_transition\\tree\\leaf_28.mcfunction": "726dfbf783e2130311adcda83b048349fd51da5c0c04c58d7a117f5a1de9d712",
+      "ajemissary\\zzzzzzzz\\animations\\phase2_transition\\tree\\leaf_30.mcfunction": "c144a81deaf11649a0c04118526e317ee22e115e22ab1c0129c748e4c2fbd09f",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.cross\\tree\\leaf_0.mcfunction": "28c7e6c194ce4fb3728c584627a152dc76d3d2ab2be25ed8368fa79a2b77ef9e",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.flame_slash\\tree\\leaf_0.mcfunction": "d918187569044e1ce83dc49610cb0a6e91d5ad208aa8235cca95169548460877",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.flame_slash\\tree\\leaf_12.mcfunction": "161c948e7edc89b5d12817d1818f54bdb3340f6aac2b2e62bdccd5ee627364e2",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.flame_slash\\tree\\leaf_15.mcfunction": "402c16d95b5454cfc3658b387b0a6b459991267eaed6572e47bd2f3e048a552e",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.flame_slash\\tree\\leaf_2.mcfunction": "21a25eb4d17f9732b22a265c03ad240ad4fe752d61478043310c2b5621d5567c",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.flame_slash\\tree\\leaf_26.mcfunction": "35019cd3cb6ae9cb38252a88ddf7009cd9b524bb4ad702dc3b32efda684e3243",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.flame_slash\\tree\\leaf_5.mcfunction": "380eb19349501f95669ad82cbd00fe9215cdb41f5c956791d8cac4191da765c7",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.ground_slam\\tree\\leaf_0.mcfunction": "a559d58b3df7fc9c0befda830bab3dfe71642f04ed8cc7ed325225b715ae3778",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.seeking_missiles\\tree\\leaf_0.mcfunction": "c371c5279f340a51b2593dc25440162801b57bb881bbb91fa2c1d1c69be1013e",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.swordspin\\tree\\leaf_0.mcfunction": "9541ba9ec1e010567e05dfeb3ea85179cbacb19e81cffac621c5b32172b1f98d",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.swordspin\\tree\\leaf_13.mcfunction": "e0ace0e7b6f77a1946899be70f60f4fc407972edfc474488d9895fd6f765c452",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.swordspin\\tree\\leaf_16.mcfunction": "10b7457727d16972ee4d8ffbb03c082d82f5b5ff3f0f63f4dd8f6ea6823f9589",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.swordspin\\tree\\leaf_9.mcfunction": "a760ed91e9752f4a93058bb2fa6f814c46631352076087f11e1eaadfe996e373",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.swordswing\\tree\\leaf_0.mcfunction": "aa3f35125c26af30e0dbb0b8e355515833079b393cefb4cd9de54892b3a3594e",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.swordswing\\tree\\leaf_1.mcfunction": "9a8b0a2eec93451a21032a0d16bb5ac39d17a6d895998b845a14c1a645067ffe",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.swordswing\\tree\\leaf_5.mcfunction": "2d10976c329eba610d8e298b71aaa2e4efbf0ec2427ed91b4055de219e929c01",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.attack.swordswing\\tree\\leaf_9.mcfunction": "288b62edd7d99827c3cc84b0a9458ba5a2998c018eddd50968d7b873a464c7ad",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.parry\\tree\\leaf_0.mcfunction": "0c0b6ca97a9d87a6394f3b84e3049009a0698ce3e058b1278f14f70b777b4cff",
+      "ajemissary\\zzzzzzzz\\animations\\phase3.parry.break\\tree\\leaf_0.mcfunction": "63d42275b5276f51ab67d214c7fcc659aa4f44d22fcbf78fbdd238afcd70f6a3",
+      "ajemissary\\zzzzzzzz\\animations\\phase3_transition\\tree\\leaf_0.mcfunction": "13e79494cd406f45fcff61c3d6d7c1ec3c68f653f60640531988be0fefbfa9a1",
+      "ajemissary\\zzzzzzzz\\animations\\phase3_transition\\tree\\leaf_171.mcfunction": "32bf8d01c93025c76bb881ec665dcf765a7a9d14bf89daa9dc80cb5597ff276f",
+      "ajemissary\\zzzzzzzz\\animations\\phase3_transition\\tree\\leaf_57.mcfunction": "f648db061d1b72c41e8ae032cfa4f8e46a5d5e0f816d4122b862d550ea39d9ef",
+      "ajemissary\\zzzzzzzz\\animations\\phase4.attack.apocalypse_rain\\tree\\leaf_0.mcfunction": "092762c211d2da3688d862d40ee551aae6d50871ec68fc898195ab42455bea65",
+      "ajemissary\\zzzzzzzz\\animations\\phase4.attack.apocalypse_rain\\tree\\leaf_60.mcfunction": "734c8cafa20ed0363ecf6868c39c968610024723ba7db53846dd876d388d0c26",
+      "ajemissary\\zzzzzzzz\\animations\\phase4.attack.grapple\\tree\\leaf_8.mcfunction": "01e5e3001173c95652698cd4214c3a6ec91f9f9da9de3308d290191a77f419ea",
+      "ajemissary\\zzzzzzzz\\animations\\phase4.attack.grapple\\tree\\leaf_90.mcfunction": "48eba67fdc76b906b06675371cd6326a276e6e4488a78009afc08bdf2fc26c21",
+      "ajemissary\\zzzzzzzz\\animations\\phase4.attack.grapple_grab\\tree\\leaf_0.mcfunction": "de6ce9c2e86bf38cddb4dc97d3f66a293ab7950e28e858fcc4139d0471616c4b",
+      "ajemissary\\zzzzzzzz\\animations\\phase4.attack.grapple_grab\\tree\\leaf_180.mcfunction": "fe90227be08815d24d1bb22bb8ea08b797aa81cb09fb78d08ddefcb54e53192f",
+      "ajemissary\\zzzzzzzz\\animations\\phase4_flying_transition_idle\\tree\\leaf_12.mcfunction": "8a71c5e57ef81f6062956eb18156d54eba3b617f4938d0141ef2229afb77980e",
+      "ajemissary\\zzzzzzzz\\animations\\phase4_idle_flying\\tree\\leaf_0.mcfunction": "333b35eb33e180f0bab95279df3a9cccc9b9841f48fe573f03fbffeae63c287c",
+      "ajemissary\\zzzzzzzz\\animations\\phase4_idle_transition_flying\\tree\\leaf_10.mcfunction": "25e83167cc72076059824f4f8ac2a6a6261964760202e5b46d0fd3892fd0c468",
+      "ajemissary\\zzzzzzzz\\animations\\spawn\\tree\\leaf_0.mcfunction": "c406e9420c8bc72d604431b570e173dc67f686809b26f55a09a92e80ce08ed72",
+      "ajemissary\\zzzzzzzz\\animations\\spawn\\tree\\leaf_64.mcfunction": "22a52cc360e00d7ad1a42ae2f3666582e90aa73d45aadeea7c7b9c5ff22390fa",
+      "ajemissary\\zzzzzzzz\\animations\\testpose\\tree\\leaf_12.mcfunction": "227c0a11de497af0267d3bc53db27b72e0a991f14a8cf1ae8a43163f3d4d1573",
+      "ajemissary\\zzzzzzzz\\animations\\testpose\\tree\\leaf_3.mcfunction": "775be8a7f4201cb7a5ef82f15873c3088dfd98503e44a0d0bc0f7a1fc3bbc230",
+      "ajemissary\\zzzzzzzz\\animations\\testpose\\tree\\leaf_6.mcfunction": "475c23ae619ff910a512a639a38f3ba8cb1168f2c0d44d54767eedefe7168d8f",
+      "ajemissary\\zzzzzzzz\\animations\\testpose\\tree\\leaf_9.mcfunction": "944004d5d549aed8cdd123210198f61dfa9312ac6d525f0c62f54d2f15ec8c23"
+    }
+  }
+}

@@ -499,5 +499,9 @@
   "death.attack.nyctocosm.void": "%1$s was consumed by Void",
   "death.attack.nyctocosm.void.player": "%1$s was consumed by %2$s's Void",
   "death.attack.nyctocosm.dissonance": "%1$s was consumed by Dissonance",
-  "death.attack.nyctocosm.dissonance.player": "%1$s was consumed by %2$s's Dissonance"
+  "death.attack.nyctocosm.dissonance.player": "%1$s was consumed by %2$s's Dissonance",
+  "entity.nyctocosm.celestial_defeated": "Celestial %s",
+  "entity.nyctocosm.celestial_defeated1": "Defeated",
+  "dialogue.nyctocosm.emissary_defeat.prompt_escape": "[Escape the Emissary's domain]",
+  "message.nyctocosm.legacy_world_warning": "Legacy Nyctocosm data detected. Inventory items and player scores are imported, but old marker entities, active portals and boss fights cannot be migrated. Back up this world and start a new world for the full native story."
 }

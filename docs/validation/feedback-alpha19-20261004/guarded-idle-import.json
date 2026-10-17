@@ -1,0 +1,13 @@
+{
+  "source_sha256": {
+    "_nyctocosm_source\\datapack\\data\\animated_java\\functions\\ajemissary\\zzzzzzzz\\animations\\spawn\\tree\\leaf_75_as_bone.mcfunction": "ca5f3ca6ba7b9414a80fbb6a7c49407823f60874cabf10086eceed569812f74c",
+    "_nyctocosm_source\\datapack\\data\\animated_java\\functions\\ajemissary\\zzzzzzzz\\animations\\phase1_idle\\tree\\leaf_0_as_bone.mcfunction": "9255cb3bf92ed95a5fac1680f1b75a91d247ef256df21737af90cfe00b4c4b57"
+  },
+  "source_arm_pose": "spawn:75",
+  "source_wing_pose": "phase1_idle:0",
+  "anchor": "phase1_idle:0 torso",
+  "frames": 61,
+  "bones": 29,
+  "presentation_exception_requested_by_user": true,
+  "asset_sha256": "935368d3b956077cd94bc2fcad4cbbdd3412181858d7f9aa7181cb4fba526920"
+}

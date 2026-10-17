@@ -1,0 +1,252 @@
+Compiled from "SpreadPlayersCommand.java"
+class net.minecraft.server.commands.SpreadPlayersCommand$Position {
+  double x;
+
+  double z;
+
+  net.minecraft.server.commands.SpreadPlayersCommand$Position();
+    Code:
+       0: aload_0
+       1: invokespecial #20                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  double dist(net.minecraft.server.commands.SpreadPlayersCommand$Position);
+    Code:
+       0: aload_0
+       1: getfield      #26                 // Field x:D
+       4: aload_1
+       5: getfield      #26                 // Field x:D
+       8: dsub
+       9: dstore_2
+      10: aload_0
+      11: getfield      #28                 // Field z:D
+      14: aload_1
+      15: getfield      #28                 // Field z:D
+      18: dsub
+      19: dstore        4
+      21: dload_2
+      22: dload_2
+      23: dmul
+      24: dload         4
+      26: dload         4
+      28: dmul
+      29: dadd
+      30: invokestatic  #34                 // Method java/lang/Math.sqrt:(D)D
+      33: dreturn
+
+  void normalize();
+    Code:
+       0: aload_0
+       1: invokevirtual #42                 // Method getLength:()D
+       4: dstore_1
+       5: aload_0
+       6: dup
+       7: getfield      #26                 // Field x:D
+      10: dload_1
+      11: ddiv
+      12: putfield      #26                 // Field x:D
+      15: aload_0
+      16: dup
+      17: getfield      #28                 // Field z:D
+      20: dload_1
+      21: ddiv
+      22: putfield      #28                 // Field z:D
+      25: return
+
+  double getLength();
+    Code:
+       0: aload_0
+       1: getfield      #26                 // Field x:D
+       4: aload_0
+       5: getfield      #26                 // Field x:D
+       8: dmul
+       9: aload_0
+      10: getfield      #28                 // Field z:D
+      13: aload_0
+      14: getfield      #28                 // Field z:D
+      17: dmul
+      18: dadd
+      19: invokestatic  #34                 // Method java/lang/Math.sqrt:(D)D
+      22: dreturn
+
+  public void moveAway(net.minecraft.server.commands.SpreadPlayersCommand$Position);
+    Code:
+       0: aload_0
+       1: dup
+       2: getfield      #26                 // Field x:D
+       5: aload_1
+       6: getfield      #26                 // Field x:D
+       9: dsub
+      10: putfield      #26                 // Field x:D
+      13: aload_0
+      14: dup
+      15: getfield      #28                 // Field z:D
+      18: aload_1
+      19: getfield      #28                 // Field z:D
+      22: dsub
+      23: putfield      #28                 // Field z:D
+      26: return
+
+  public boolean clamp(double, double, double, double);
+    Code:
+       0: iconst_0
+       1: istore        9
+       3: aload_0
+       4: getfield      #26                 // Field x:D
+       7: dload_1
+       8: dcmpg
+       9: ifge          23
+      12: aload_0
+      13: dload_1
+      14: putfield      #26                 // Field x:D
+      17: iconst_1
+      18: istore        9
+      20: goto          42
+      23: aload_0
+      24: getfield      #26                 // Field x:D
+      27: dload         5
+      29: dcmpl
+      30: ifle          42
+      33: aload_0
+      34: dload         5
+      36: putfield      #26                 // Field x:D
+      39: iconst_1
+      40: istore        9
+      42: aload_0
+      43: getfield      #28                 // Field z:D
+      46: dload_3
+      47: dcmpg
+      48: ifge          62
+      51: aload_0
+      52: dload_3
+      53: putfield      #28                 // Field z:D
+      56: iconst_1
+      57: istore        9
+      59: goto          81
+      62: aload_0
+      63: getfield      #28                 // Field z:D
+      66: dload         7
+      68: dcmpl
+      69: ifle          81
+      72: aload_0
+      73: dload         7
+      75: putfield      #28                 // Field z:D
+      78: iconst_1
+      79: istore        9
+      81: iload         9
+      83: ireturn
+
+  public int getSpawnY(net.minecraft.world.level.BlockGetter, int);
+    Code:
+       0: new           #10                 // class net/minecraft/core/BlockPos$MutableBlockPos
+       3: dup
+       4: aload_0
+       5: getfield      #26                 // Field x:D
+       8: iload_2
+       9: iconst_1
+      10: iadd
+      11: i2d
+      12: aload_0
+      13: getfield      #28                 // Field z:D
+      16: invokespecial #58                 // Method net/minecraft/core/BlockPos$MutableBlockPos."<init>":(DDD)V
+      19: astore_3
+      20: aload_1
+      21: aload_3
+      22: invokeinterface #64,  2           // InterfaceMethod net/minecraft/world/level/BlockGetter.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      27: invokevirtual #70                 // Method net/minecraft/world/level/block/state/BlockState.isAir:()Z
+      30: istore        4
+      32: aload_3
+      33: getstatic     #76                 // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+      36: invokevirtual #80                 // Method net/minecraft/core/BlockPos$MutableBlockPos.move:(Lnet/minecraft/core/Direction;)Lnet/minecraft/core/BlockPos$MutableBlockPos;
+      39: pop
+      40: aload_1
+      41: aload_3
+      42: invokeinterface #64,  2           // InterfaceMethod net/minecraft/world/level/BlockGetter.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      47: invokevirtual #70                 // Method net/minecraft/world/level/block/state/BlockState.isAir:()Z
+      50: istore        6
+      52: aload_3
+      53: invokevirtual #84                 // Method net/minecraft/core/BlockPos$MutableBlockPos.getY:()I
+      56: aload_1
+      57: invokeinterface #87,  1           // InterfaceMethod net/minecraft/world/level/BlockGetter.getMinBuildHeight:()I
+      62: if_icmple     118
+      65: aload_3
+      66: getstatic     #76                 // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+      69: invokevirtual #80                 // Method net/minecraft/core/BlockPos$MutableBlockPos.move:(Lnet/minecraft/core/Direction;)Lnet/minecraft/core/BlockPos$MutableBlockPos;
+      72: pop
+      73: aload_1
+      74: aload_3
+      75: invokeinterface #64,  2           // InterfaceMethod net/minecraft/world/level/BlockGetter.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      80: invokevirtual #70                 // Method net/minecraft/world/level/block/state/BlockState.isAir:()Z
+      83: istore        5
+      85: iload         5
+      87: ifne          107
+      90: iload         6
+      92: ifeq          107
+      95: iload         4
+      97: ifeq          107
+     100: aload_3
+     101: invokevirtual #84                 // Method net/minecraft/core/BlockPos$MutableBlockPos.getY:()I
+     104: iconst_1
+     105: iadd
+     106: ireturn
+     107: iload         6
+     109: istore        4
+     111: iload         5
+     113: istore        6
+     115: goto          52
+     118: iload_2
+     119: iconst_1
+     120: iadd
+     121: ireturn
+
+  public boolean isSafe(net.minecraft.world.level.BlockGetter, int);
+    Code:
+       0: aload_0
+       1: getfield      #26                 // Field x:D
+       4: aload_0
+       5: aload_1
+       6: iload_2
+       7: invokevirtual #99                 // Method getSpawnY:(Lnet/minecraft/world/level/BlockGetter;I)I
+      10: iconst_1
+      11: isub
+      12: i2d
+      13: aload_0
+      14: getfield      #28                 // Field z:D
+      17: invokestatic  #103                // Method net/minecraft/core/BlockPos.containing:(DDD)Lnet/minecraft/core/BlockPos;
+      20: astore_3
+      21: aload_1
+      22: aload_3
+      23: invokeinterface #64,  2           // InterfaceMethod net/minecraft/world/level/BlockGetter.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      28: astore        4
+      30: aload_3
+      31: invokevirtual #104                // Method net/minecraft/core/BlockPos.getY:()I
+      34: iload_2
+      35: if_icmpge     61
+      38: aload         4
+      40: invokevirtual #107                // Method net/minecraft/world/level/block/state/BlockState.liquid:()Z
+      43: ifne          61
+      46: aload         4
+      48: getstatic     #113                // Field net/minecraft/tags/BlockTags.FIRE:Lnet/minecraft/tags/TagKey;
+      51: invokevirtual #117                // Method net/minecraft/world/level/block/state/BlockState.is:(Lnet/minecraft/tags/TagKey;)Z
+      54: ifne          61
+      57: iconst_1
+      58: goto          62
+      61: iconst_0
+      62: ireturn
+
+  public void randomize(net.minecraft.util.RandomSource, double, double, double, double);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: dload_2
+       3: dload         6
+       5: invokestatic  #131                // Method net/minecraft/util/Mth.nextDouble:(Lnet/minecraft/util/RandomSource;DD)D
+       8: putfield      #26                 // Field x:D
+      11: aload_0
+      12: aload_1
+      13: dload         4
+      15: dload         8
+      17: invokestatic  #131                // Method net/minecraft/util/Mth.nextDouble:(Lnet/minecraft/util/RandomSource;DD)D
+      20: putfield      #28                 // Field z:D
+      23: return
+}

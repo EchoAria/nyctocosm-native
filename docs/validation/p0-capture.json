@@ -1,0 +1,46 @@
+{
+  "version": "0.3.0-native-alpha.9",
+  "capture_frames": 811,
+  "capture_fps": 10,
+  "server_trace_rows": 1670,
+  "vanilla_armor_stand_matrix_comparison": "passed; tolerance 0.00001",
+  "serpent_helmet_pitch_comparison": "passed at -80, -30, 30, 80 degrees; tolerance 0.00001",
+  "scenes_seconds": {
+    "sorcerer_and_vanilla_reference": [
+      0,
+      29
+    ],
+    "serpent_dive_and_reload": [
+      29,
+      54
+    ],
+    "serpent_laser": [
+      54,
+      66.5
+    ],
+    "serpent_beam": [
+      66.5,
+      81.1
+    ]
+  },
+  "contact_sheet_frame_indices": [
+    65,
+    100,
+    150,
+    240,
+    300,
+    330,
+    414,
+    418,
+    550,
+    620,
+    720,
+    800
+  ],
+  "video_sha256": "6ec88f658920944535c0968532743ad42d75a934cec5bba65f9117638b5921f6",
+  "limitations": [
+    "Silent client capture; not an audio comparison.",
+    "Vanilla armor stand is a rendering reference, not the complete original datapack.",
+    "No full original-pack combat capture, real multiplayer, or third-party mob validation."
+  ]
+}

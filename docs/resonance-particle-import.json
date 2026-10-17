@@ -1,0 +1,22 @@
+{
+  "source_sha256": {
+    "elements/resonance/transmutate/__generated__/block/597.mcfunction": "82908e3d85842eba9ba596810d56a1c1179413184c44017b7a7a75e7539bc2c4",
+    "elements/resonance/transmutate/__generated__/block/595.mcfunction": "be5e31877799621cf66d571cb2326d1f250a18b7c5f2db3bc574b3523e6d3927",
+    "elements/resonance/transmutate/__generated__/block/596.mcfunction": "c3ec94196593df52cf3d1845caf6c0c5720edc4687c5218e378a11a8ecb3f3dd",
+    "shockwave/__generated__/block/36.mcfunction": "02d68b99dd7b885458069a36552ae07fbcc7d06ae0e951935c123fdb29c80d58",
+    "shockwave/__generated__/block/37.mcfunction": "91745afaeefe274e56ad651f5b3f701bb96ffe108f34f5d3ca4be029ea3f9743",
+    "shockwave/__generated__/block/38.mcfunction": "22b6e7dcb6deb85010ba53b85a58fa14d850507fa2edc404189ebc372ee3c5c1"
+  },
+  "counts": {
+    "burst": {
+      "1": 400,
+      "2": 144,
+      "3": 144
+    },
+    "shockwave": {
+      "1": 130,
+      "4": 460,
+      "6": 540
+    }
+  }
+}

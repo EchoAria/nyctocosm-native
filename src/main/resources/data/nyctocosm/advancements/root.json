@@ -1,0 +1,13 @@
+{
+  "display": {
+    "icon": {"item": "minecraft:echo_shard"},
+    "title": {"translate": "advancements.nyctocosm.root.title", "color": "dark_purple"},
+    "description": {"translate": "advancements.nyctocosm.root.description", "color": "gray"},
+    "background": "minecraft:textures/gui/advancements/backgrounds/nyctocosm.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {"entered": {"trigger": "minecraft:impossible"}}
+}

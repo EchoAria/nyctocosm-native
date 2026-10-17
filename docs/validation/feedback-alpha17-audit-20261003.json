@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "model_files": 1793,
+    "rigs": 10,
+    "animation_frames": 5607,
+    "damage_locator_bundles": 1,
+    "damage_locator_frames": 2601,
+    "sorcerer_particle_rows": 4451,
+    "feedback_particle_rows": 3373,
+    "sorcerer_beam_particle_rows": 143,
+    "sound_events": 247,
+    "runtime_mcfunctions": 0,
+    "native_structure_events": 2,
+    "mod_version": "0.3.0-native-alpha.17",
+    "jar_entries": 3085,
+    "jar": "D:\\MinecraftModDev\\DEV - 副本\\nyctocosm-native\\build\\libs\\nyctocosm-native-0.3.0-native-alpha.17.jar",
+    "jar_sha256": "84c4f1ce6a1f862665ab49cdf56c03cd7f10deda0a3a2845adae410fc9c271f5",
+    "jar_bytes": 56065908
+  },
+  "errors": []
+}

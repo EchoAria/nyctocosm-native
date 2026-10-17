@@ -13,7 +13,7 @@ public final class SorcererTimeline {
         VOID_FOCUS, SINGULARITY, BLADE_FOCUS, BLADE_SWING, FROZEN_BLADES,
         METEOR_TEAR, METEOR_RAIN, DASH_AIM, DASH_STEP, DASH_FINISH,
         VOIDWAVE_FOCUS, VOIDWAVE, JAVELIN, AIR_RISE, AIR_AIM, AIR_DASH,
-        AIR_SLAM, VOIDBEAM_AIM, VOIDBEAM, SEEKING_ORBS, ICE_SPIKES
+        AIR_SLAM, VOIDBEAM_AIM, VOIDBEAM, VOIDBEAM_FINISH, SEEKING_ORBS, ICE_SPIKES
     }
 
     public record Event(int tick, Action action, String sound) {}
@@ -83,6 +83,7 @@ public final class SorcererTimeline {
         add(map,"voidbeam",20,Action.VOIDBEAM_AIM,"sorcerer.voidbeam.aim");
         add(map,"voidbeam",27,Action.CHARGE,"sorcerer.voidbeam.shoot");
         for(int tick=30;tick<=57;tick++)add(map,"voidbeam",tick,Action.VOIDBEAM,null);
+        add(map,"voidbeam",58,Action.VOIDBEAM_FINISH,null);
 
         add(map,"seekingsingularities",0,Action.CHARGE,"sorcerer.seekingsingularities.charge");
         add(map,"seekingsingularities",30,Action.SEEKING_ORBS,"sorcerer.seekingsingularities.summon");

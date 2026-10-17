@@ -1,4 +1,5 @@
 {
+  "parent": "nyctocosm:root",
   "display": {
     "icon": {"item": "nyctocosm:null_splinter"},
     "title": {"translate": "advancements.nyctocosm.defeat_sorcerer.title"},

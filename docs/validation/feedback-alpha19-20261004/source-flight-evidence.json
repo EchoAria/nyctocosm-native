@@ -1,0 +1,1024 @@
+{
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_0.mcfunction": {
+    "sha256": "1cf0eb2288408f8c19d7bf34cbc667b205a5beee2069879ab1d97e7e6cc73897",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_0_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_0_effects_0"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_0_effects_0.mcfunction": {
+    "sha256": "fb7f917baae106ff447b5c57e8451405560c13889ad86d2fc263a28b4af8e53b",
+    "lines": [
+      "playsound nyctocosm:emissary.movement.flytransition master @a[distance=..300] ~ ~ ~ 50"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_1.mcfunction": {
+    "sha256": "26ef135cf1528bbb1ba0b7ab8cec671360451dbe5363add2fcbf7221d896f464",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_1_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run tp @s ~ ~0.80625 ~"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_10.mcfunction": {
+    "sha256": "25e83167cc72076059824f4f8ac2a6a6261964760202e5b46d0fd3892fd0c468",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_10_as_bone",
+      "function animated_java:ajemissary/zzzzzzzz/apply_variant/wingless/as_root"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_11.mcfunction": {
+    "sha256": "95ae216ac1c19a8bee2c7f40301c52adeb3a7569f8c8750044c587274d69b6e0",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_11_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_12.mcfunction": {
+    "sha256": "5a9c9d124099eed56f42629441d0322affeb860ac393ed7b47bc1c164895f578",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_12_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_13.mcfunction": {
+    "sha256": "f426775f1e85e45f9727ee569404275a306b77041a88ecae8b0a3af7eb609aa2",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_13_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_14.mcfunction": {
+    "sha256": "c056679258a74bb7d3e892a7c5471763d8544bf98b422ec506ddc96c56c1eb53",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_14_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run scoreboard players set Flying em.value 1"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_15.mcfunction": {
+    "sha256": "451fa8777928163a47822f4ff97d2d603b1a252d9d3b38ec04ce81984d4efef4",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_15_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_16.mcfunction": {
+    "sha256": "5ca436ce6cbab11ba7b08770eba183bcbdf3116c68cff7a9b76ef0c2e267c855",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_16_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_17.mcfunction": {
+    "sha256": "43bedb3530130200ec33602a6b5ad8ea2e402b02a19d970d91048a0d994e8321",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_17_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_18.mcfunction": {
+    "sha256": "25a218cb23393a7d7abf18444dd1a07c503a4de10d314dff14c11a250e1dda78",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_18_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_19.mcfunction": {
+    "sha256": "e11c4a5dad3d30a150fb293594b1dc9d8e46528dfe65235f3702baccb15d918d",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_19_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_2.mcfunction": {
+    "sha256": "1404de22104b1845f8a9f7b8ee909654d0bf87503f6a2a5eda4bf36e1e290d64",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_2_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run tp @s ~ ~0.80625 ~"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_20.mcfunction": {
+    "sha256": "2ae5f6f9c3da94e240a6bb3f0bccda93307b77cbebc0343bfdf31aa9f671a1e9",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_20_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_21.mcfunction": {
+    "sha256": "345ac2f0ef4176eb3936c1ceaf4f361c6e2fad9ea4a005673a0d0cbb4df082d3",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_21_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_22.mcfunction": {
+    "sha256": "9fd9f82e941bf57b6b22d0ae07a262b148f84a552d449f42ac774c80b1467951",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_22_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_23.mcfunction": {
+    "sha256": "33a2109e97abb426357a21b3141ad953ccd3e58f179afe84dffb3a501dcf0765",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_23_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_24.mcfunction": {
+    "sha256": "680a902f3c7c91a418341440ae7929d7c62816546cddab678a5edb770c3f7b5f",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_24_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_25.mcfunction": {
+    "sha256": "a1f915d187c7364a6ad20af4d79200b9795b031ddfd39c46fd8fa7a231790523",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_25_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_26.mcfunction": {
+    "sha256": "d042da4d5190b544e317a2c8d4981e233503dab325532c2d55caec6ef3196c2e",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_26_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_27.mcfunction": {
+    "sha256": "9bd03516bb1e1f6683c12b04038c6c82dd9501a7c6864bee54071bf886f6b70d",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_27_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_28.mcfunction": {
+    "sha256": "ce4cc4de4c64bf9994479e70acc03aed45366ab1cef342cfc2a75eb39c20753e",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_28_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_29.mcfunction": {
+    "sha256": "b1c743aca21f1bf76ef8c0081eb6314fdaf553e83db7a20f531e53e58ded6a59",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_29_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_3.mcfunction": {
+    "sha256": "72f6c91b9a619a3b55f2506cc3f77b97bd13b6b94ba454f5c37814b736301d60",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_3_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run tp @s ~ ~0.80625 ~"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_30.mcfunction": {
+    "sha256": "af13579d43c15f272bec53aec4335343b6d8745b227d0a5889d9133c931e19c9",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_30_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/end"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_4.mcfunction": {
+    "sha256": "06f223c9d864cb546e9004335eefd83aceffb1057557d3431f66ff70b7b30356",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_4_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run tp @s ~ ~0.80625 ~"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_5.mcfunction": {
+    "sha256": "94134c0274c2741cc4ba5fc9022dfc75003b4f8cd2f8aea6c68f6e75a00593f1",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_5_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run tp @s ~ ~0.80625 ~"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_6.mcfunction": {
+    "sha256": "9492a8718a2fcaf9ffcbbab3318cbb22005d608a83296b46926f76c44751bd05",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_6_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_7.mcfunction": {
+    "sha256": "700221d5043fc04a21d22b38b94706f273a6041f5031440808e35f7ed99ae44a",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_7_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_8.mcfunction": {
+    "sha256": "1b9ff93dbb39bd9bb332c1cb53c0a4e7d4b44e5514e00f0c1f95c8e587ad1cf2",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_8_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_9.mcfunction": {
+    "sha256": "419a6d22f89e9a4c52e9ccb8c31f09001bff1e3512da99ff83da10ada57911e6",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_9_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_0.mcfunction": {
+    "sha256": "503fe3683ed61a74ae50a757eddb66f38c3755922960ba87a1b23ffce3fefe5c",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_0_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_0_effects_0"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_0_effects_0.mcfunction": {
+    "sha256": "b483db3d05c73a81137b8f714aafc22a706a3db5cd41659ac027ca826af217ea",
+    "lines": [
+      "tp @s ~ ~-0.80625 ~",
+      "function emissary:attacks/phase4/decelerate"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_1.mcfunction": {
+    "sha256": "98ca6c1ad4169e7738c3adb19dade5dc4a9e5c0826b4e9f94aa7d0f9598a0c77",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_1_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run tp @s ~ ~-0.80625 ~"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_10.mcfunction": {
+    "sha256": "415d49c050bb0c46c4c97ec4f16eba60e7a2989863649f6cc69d1589323a22c6",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_10_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/decelerate"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_11.mcfunction": {
+    "sha256": "cb2945fa43eb5a5e4b635ccae98af01f6f9af80ae3b688881d6151d2d5de14e7",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_11_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/decelerate"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_12.mcfunction": {
+    "sha256": "8a71c5e57ef81f6062956eb18156d54eba3b617f4938d0141ef2229afb77980e",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_12_as_bone",
+      "function animated_java:ajemissary/zzzzzzzz/apply_variant/wing_config_3/as_root"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_13.mcfunction": {
+    "sha256": "e65cc895134648f8b1f0bd453eb9dff016fc37aa126690b260b938dfb6d3ec24",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_13_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_14.mcfunction": {
+    "sha256": "8f5f42c30fc92bea906b51fb24b65a8cd18dc9aa6ad969592fa4ef48f25a0e0d",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_14_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_15.mcfunction": {
+    "sha256": "7fa3d52e71d03fbe220db1de694822cc3263064582330e6a72c3ec193be98226",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_15_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_16.mcfunction": {
+    "sha256": "3c1bb93dcbc6de74265b0872697f2c8c6ebd8b9e1a6d2ab761e69688e1ac2279",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_16_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_17.mcfunction": {
+    "sha256": "666696894540d6a472d83709cf172e8e0f0778ef3ca2a367937178e4ab60e058",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_17_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_18.mcfunction": {
+    "sha256": "382678a3d8df0ca124b2903d828a74ef0b5d2d3075ecb27d996616e885c5c06a",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_18_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_19.mcfunction": {
+    "sha256": "751e2b04c262970e98f33d6d2be9140bf2754357967e09682ccac62e78b550e9",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_19_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_2.mcfunction": {
+    "sha256": "f1b28aa1c86c1b5a35e941184e5582dfbb617b2686ac8c1b4048911c2e74f468",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_2_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run tp @s ~ ~-0.80625 ~"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_20.mcfunction": {
+    "sha256": "b9d96453e9b57c40510d0edbe2f0815b9c1e8ebe58231b14efb2fff1598bc149",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_20_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_21.mcfunction": {
+    "sha256": "d7567a5bf6cb5fd9cf37a49c8e5f3cff15c97883cc2821d2b12e501148788327",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_21_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_22.mcfunction": {
+    "sha256": "479bd2b48c82b96e50397b9e53bb9b76571adcbc648bab598553752c21e4c83f",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_22_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_23.mcfunction": {
+    "sha256": "e7d054cf669af7b1a5067c5832b4f6df66ed8bd2ec8c92ccfec6e17a8696adff",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_23_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_24.mcfunction": {
+    "sha256": "8e259d50de2917e411c33ca52bfb3492a467f7561011173665e205cdc536492b",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_24_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_25.mcfunction": {
+    "sha256": "7c56c2539a5a0d4e6c3bd972e17e36df1b1e374bdff207c8638941170ef504ad",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_25_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_26.mcfunction": {
+    "sha256": "570acd229c716d7c4e195751e9f210c51b35a50aa565bcd2659d4c91421ad60f",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_26_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_27.mcfunction": {
+    "sha256": "c88edd68e1c76f28bd800e5f7a2a23df342f8c64df222a3d991e26e52077f684",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_27_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_28.mcfunction": {
+    "sha256": "53c08cbb178a2d2b0089917379e90c9e9bd51d23c2d80feb0cf8a1d8cef418bc",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_28_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_29.mcfunction": {
+    "sha256": "c00359db019d35860b63f53ae951563b3b360aff86453f91a1ea8cdb478aa1d7",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_29_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_3.mcfunction": {
+    "sha256": "d461f23644b3137bb083796977bb9736bb09174c3ade79b1fed8f1fdecf5ef10",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_3_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_3_effects_0"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_30.mcfunction": {
+    "sha256": "f4e38c5618c0f81649d9f52c1e56c27c76ee6fa3cadde84de00317e95e2e04c7",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_30_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/end"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_3_effects_0.mcfunction": {
+    "sha256": "1c4af9b24b0d888ea88036c5e26205922fb7a8ff5edfe7c8d98855093a966c4c",
+    "lines": [
+      "tp @s ~ ~-0.80625 ~",
+      "function emissary:attacks/phase4/decelerate"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_4.mcfunction": {
+    "sha256": "c4f5d12b43e877b330d65c8edf5ee40f751d9fb2fb7fbc7d5f2c661de766f787",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_4_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_4_effects_0"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_4_effects_0.mcfunction": {
+    "sha256": "2a785b642dd8c0ee3f7bedb8107f17313571432338405de256daab302123ae61",
+    "lines": [
+      "scoreboard players set Flying em.value 0",
+      "tp @s ~ ~-0.80625 ~",
+      "execute at @s run tp @s ~ ~ ~ ~ 0"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_5.mcfunction": {
+    "sha256": "41fe2257cca4352a1420c866772939cd1f795c28880b6531ab81e49d0eeac22f",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_5_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_6.mcfunction": {
+    "sha256": "260b739d5c97ded0485dbc35fc8689775dbfcc21d6543bfbc19bc05efbf659c7",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_6_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/decelerate"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_7.mcfunction": {
+    "sha256": "5f098c75eb12a7076982b8720fc36053f9520dee3d0dd8e203669c7aa9d54ef9",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_7_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_8.mcfunction": {
+    "sha256": "df94ef59280eb1ed3129d6c3c03892d31c610b298d16d34e197a42f97ad3c6c8",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_8_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/decelerate"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_9.mcfunction": {
+    "sha256": "a196a1d53edc5b912248bb518001fcc0c5693cd83b9e35ef237c28f732bdfa1f",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4_flying_transition_idle/tree/leaf_9_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/decelerate"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_0.mcfunction": {
+    "sha256": "092762c211d2da3688d862d40ee551aae6d50871ec68fc898195ab42455bea65",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_0_as_bone",
+      "function animated_java:ajemissary/zzzzzzzz/apply_variant/wing_config_3/as_root",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_0_effects_0"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_0_effects_0.mcfunction": {
+    "sha256": "027f4545d35c6470df076051125a9a1b79e22f256cf0ef0c5b72d162ea9b6a14",
+    "lines": [
+      "playsound nyctocosm:emissary.attack.apocalypse_rain.charge master @a[distance=..300] ~ ~ ~ 5"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_1.mcfunction": {
+    "sha256": "a63999cd5f5ab3bdf8e536fdefd4f366f8ad17b9b67e4e872b734e2a5f92cce4",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_1_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_10.mcfunction": {
+    "sha256": "ce80b0dc103ebdd600317cebf1c2a0cf33c9541fda2a2d0432504f6222d8cebf",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_10_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_11.mcfunction": {
+    "sha256": "6a81cd8041df1b2ea350a1e98b007c519430ab5ab2f1c3e35bdb04e3c66f2d7a",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_11_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_12.mcfunction": {
+    "sha256": "aa2c892262f53ba6d265bbf9f87cad5044ad2e572a6de2d7db003301eb627cc8",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_12_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_13.mcfunction": {
+    "sha256": "687c494f0827c53dfb1c5b5c483934230f4b17cf3b0546e453edee2e487a1879",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_13_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_14.mcfunction": {
+    "sha256": "8412d922b394781e7c0004b0d4b38fa09fd7e77de8799a86b9b4c183d63134f6",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_14_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_15.mcfunction": {
+    "sha256": "ba27bd79dc59e54be34edcfde423947f1677bcd6a643c1e8e894919ab7b58bac",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_15_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_16.mcfunction": {
+    "sha256": "d4f0cef1ab7fd8e511ce5ecf1691e4a3cd06d5668a10acf3a42ead574e1872a5",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_16_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_17.mcfunction": {
+    "sha256": "e1ce74aea4a783b84e7b61edf5780f116d56ef853883f4bc8ac968b73b7f92da",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_17_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_18.mcfunction": {
+    "sha256": "c37a080ff00d769fe0c229c5578a61dfee180f046c267a1bd9a85bff3baceaf6",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_18_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_19.mcfunction": {
+    "sha256": "64b06b058f5c9326ad0a48e560f12e2de7c3bedb5080132fb26fc11f0d26773a",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_19_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_2.mcfunction": {
+    "sha256": "c21fe21c0c9c4c54227d29b816e00906d0e3c850910aa038f684d329a2c078e1",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_2_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_20.mcfunction": {
+    "sha256": "27cd649ce9fc5ba24619dda5095ce4a190bf9453d5996c72616e3b50520f82d4",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_20_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_21.mcfunction": {
+    "sha256": "5f1eab0f9c11c8d2fb67b01ec3562b5e0304a3efef50e71132ef5ddcb88d9385",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_21_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_22.mcfunction": {
+    "sha256": "293fa44825364085877b11cee955d5ec546093a9865b08ae21d05020ee4a7ca8",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_22_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_23.mcfunction": {
+    "sha256": "92345b3a75503e13ee7f31d7969189130a07850595a1d42d25474d0ea010ad7a",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_23_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_24.mcfunction": {
+    "sha256": "689291f26f820452fdfc5b4d614f626e9865995dda1164b5011507735f83d82e",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_24_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_25.mcfunction": {
+    "sha256": "df104cfa5834a163e3c686be61cedc5167085ae13d3f0892746f1bb756aa64b5",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_25_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_26.mcfunction": {
+    "sha256": "d11e06291e8ebcf48f2e7fca9d8a146fe39f12a0f7776b0af1a91bd66343e25c",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_26_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_27.mcfunction": {
+    "sha256": "57eff33379ba18539aa0dbceb687fd9d4d5752a626e52f8cd73c4ab3342ceda5",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_27_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_28.mcfunction": {
+    "sha256": "658196d27137ad88d8d5f93846f4cb276b11737b6fad5d029a2efc778a91405e",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_28_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_29.mcfunction": {
+    "sha256": "38bac0657478283a0538ab73ec4530e307946ba4bd7c82ba69b273c72e516d58",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_29_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_3.mcfunction": {
+    "sha256": "8322e38d4a225e98b71c9ea7aafcafbc2820f0fb64ea2a21feb04f682b6286a4",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_3_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_30.mcfunction": {
+    "sha256": "5dd34fef86680c177e7faaf6090aee42c73bf04979952cb2f2423eb33ddc7760",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_30_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_31.mcfunction": {
+    "sha256": "f25a604290828abf80c1ed54d32710e2354b4e466d96371ed76bb3aed98e8151",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_31_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_32.mcfunction": {
+    "sha256": "af88d346be996663d85f3cb971690129191ee21d971d2e37c86222de15697a21",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_32_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_33.mcfunction": {
+    "sha256": "5240b4aae056a3b9277891b051c3e62d9cab7db2cd6c9b924b4c43b89b2cbc45",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_33_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_34.mcfunction": {
+    "sha256": "93469c69239dee4d670900b9414b4a60aa8a2fd5d515723fc85cc68c4f24fcef",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_34_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_35.mcfunction": {
+    "sha256": "08a4d6ba94c138982d2c33598a263edd787a1d381736692bb6eeaa4a52294ab8",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_35_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_36.mcfunction": {
+    "sha256": "5d15c8b9537596903e56d69f64991c00c20fa5404fffc1232c09343ffc012937",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_36_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_37.mcfunction": {
+    "sha256": "2dff6eb2d9057b6dbc71d3ed06ef6db9a1929154defcc573753173bc9ba2d586",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_37_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_38.mcfunction": {
+    "sha256": "cd9889bf615a8223ed9365e4f93c27cf826c1f0e5dae985debe0e86cccc3ff22",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_38_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_39.mcfunction": {
+    "sha256": "691cb3279bbeeb169f4060cdef40815bd7d017b444b279f973212784b9ae0ca5",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_39_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_4.mcfunction": {
+    "sha256": "8200cb1fbeaa742ef56119fdc62f1eef9029b4f880331f360df33c3b7f62ba71",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_4_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_40.mcfunction": {
+    "sha256": "a80e6f977861820083dc68776cfdc5e971fd8d08e34db3effbff80255bf42cbb",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_40_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_41.mcfunction": {
+    "sha256": "95aa220180cad7d651a66ad63c79c4b5a75c4e0e741409ebbbb5c2d952fdca94",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_41_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_42.mcfunction": {
+    "sha256": "f806553c76141cfd9ca4f0aa9e096de9bdf7eaa4fe44303b1168ed5b18c0bb27",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_42_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_43.mcfunction": {
+    "sha256": "959efa24ed7c03cf1615eabc05b6f996231eacbac83236e41f9dabc99c169fb9",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_43_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_44.mcfunction": {
+    "sha256": "5498689e98b946ce4dfbc2c389c4db1c7d6c6963b78bf94b474b2b61db85c7c7",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_44_as_bone",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/apocalypse_rain/fire"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_45.mcfunction": {
+    "sha256": "703a48bbf71e7f04af1f1adc3a1152513aadb285e4686b237aa3e17b8e234a3c",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_45_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_46.mcfunction": {
+    "sha256": "594af92b56ffa70ce2283749696a5e3b0322556b97b503ce48b27417ccc758a3",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_46_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_47.mcfunction": {
+    "sha256": "b716c8e8e2258c600dacbf363475e01c044098d71f5fca81dce53868277f648c",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_47_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_48.mcfunction": {
+    "sha256": "f47f99d4aa7d47f46bd7b1583ba7fb886ea554b3216f5a44d80f5f7a2ef70561",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_48_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_49.mcfunction": {
+    "sha256": "3f59fa392999ec3d5f70e0906594ea349d02035a0acfa8570a2fd1f2c60a6fdb",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_49_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_5.mcfunction": {
+    "sha256": "ed386527e355160afe019880f6edb8624b77eaae50cfcace2dc769197fd440b7",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_5_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_50.mcfunction": {
+    "sha256": "ccd5d0d215f5975dfc137de68d92bec0a4574df01f3a810774cf7efa19f64383",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_50_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_51.mcfunction": {
+    "sha256": "3d6b69c8cdec96c7ece4a7906759f89e96ec66e541aac46730838e9dd053e9b2",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_51_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_52.mcfunction": {
+    "sha256": "8a73a163f53046bb7b8e57ddf120d20ebcdbc4f5b64be994f474f596733f298f",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_52_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_53.mcfunction": {
+    "sha256": "805e63b8e4b7229ef82531160a026f37e5b2be37489e227620b7efa21348c984",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_53_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_54.mcfunction": {
+    "sha256": "f0845d1f3e44c9d7ccbf27fa2d73f9dae4072c00425638e67d5361c7202d3c77",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_54_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_55.mcfunction": {
+    "sha256": "af8de5c5258187f2f79a269f78cd9c45fc3bb2b39f8efa3b0aaf3b3a2fda6b12",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_55_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_56.mcfunction": {
+    "sha256": "3ffc2c6a3f0d5795b361cf98fc5e5eb8c85ea6dabff6ad144a10678239a554c9",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_56_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_57.mcfunction": {
+    "sha256": "35aba8f0fc7c640bdd623fd01de552ddc131942e8b0470fb662fcc89cc384be3",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_57_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_58.mcfunction": {
+    "sha256": "8bace01e534074155e606b3b9ad9bf4c897bdfa0af9f1dedf995ff0ff25e956f",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_58_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_59.mcfunction": {
+    "sha256": "a13411ca6a592458aba3175ae719659f7e853cd8f6e12eb1c9daf022e019068c",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_59_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_6.mcfunction": {
+    "sha256": "7bc6cd2e378c3d1e96ac903564b0cca1f47be57f044b4b494f46fdfe6fef7684",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_6_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_60.mcfunction": {
+    "sha256": "734c8cafa20ed0363ecf6868c39c968610024723ba7db53846dd876d388d0c26",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_60_as_bone",
+      "function animated_java:ajemissary/zzzzzzzz/apply_variant/wingless/as_root",
+      "execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/end"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_7.mcfunction": {
+    "sha256": "5eb451c18f2fd48722739553327a9cea33c676083a41db76f18f27afb3d55e4b",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_7_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_8.mcfunction": {
+    "sha256": "861216d7b98bf0e0dd985d067be3d3909c962ef798dd936b6d3483c99ccee2fe",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_8_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/animated_java/functions/ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_9.mcfunction": {
+    "sha256": "9788fbb5b7ee34fa6e01ca6370fd82dd8d626f7f613a2354c7b3a6e3f710b519",
+    "lines": [
+      "execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tree/leaf_9_as_bone"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/emissary/functions/ai/subtick.mcfunction": {
+    "sha256": "d9537dc2cbc9d426cd1fd7458e2c677e9f8d75ebde8e7afea8d1a59e9cc29689",
+    "lines": [
+      "#built using mc-build (https://github.com/mc-build/mc-build)",
+      "",
+      "execute if score Emissary em.health matches ..1000 if score Idle em.value matches 1 if score Emissary em.phase matches 1 run function emissary:ai/phase/transition",
+      "execute if score Emissary em.health matches ..600 if score Idle em.value matches 1 if score Emissary em.phase matches 2 run function emissary:ai/phase/transition",
+      "execute if score Emissary em.health matches ..200 if score Idle em.value matches 1 if score Emissary em.phase matches 3 run function emissary:ai/phase/transition",
+      "execute if score Emissary em.health matches ..0 if score Idle em.value matches 1 if score Emissary em.phase matches 4 run function emissary:defeat",
+      "execute if score Emissary em.health matches ..1000 unless score MusicPhase em.phase matches 1.. run function emissary:ai/__generated__/block/730",
+      "execute if score Emissary em.health matches ..800 if score MusicPhase em.phase matches 1 run function emissary:ai/__generated__/block/731",
+      "execute if score Emissary em.health matches ..600 if score MusicPhase em.phase matches 2 run function emissary:ai/__generated__/block/732",
+      "execute if score Emissary em.health matches ..400 if score MusicPhase em.phase matches 3 run function emissary:ai/__generated__/block/733",
+      "execute if score Emissary em.health matches ..200 if score MusicPhase em.phase matches 4 run function emissary:ai/__generated__/block/734",
+      "execute at @s as @a[distance=..300,tag=!music.emissary] at @s run function emissary:ai/__generated__/block/735",
+      "execute if score Idle em.value matches 1 run scoreboard players remove AttackTimer em.value 1",
+      "execute unless score AttackTimer em.value matches 1.. unless score NoAttack em.value matches 1 run function emissary:attacks/perform",
+      "execute if score Flying em.value matches 1 run function emissary:ai/__generated__/block/736"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/emissary/functions/ai/__generated__/block/736.mcfunction": {
+    "sha256": "613f73a657d408e7886e4690bd5b4c0c9c65d041b25a96111f8f15c54e2968a4",
+    "lines": [
+      "#built using mc-build (https://github.com/mc-build/mc-build)",
+      "",
+      "execute as @e[tag=emissary,tag=emissarymodel,tag=!corkscrewing,tag=!grappletry,tag=!grapplegrabbed] run scoreboard players remove FlyTimer em.value 1",
+      "execute if score FlyTimer em.value matches ..0 run function emissary:ai/__generated__/block/737"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/emissary/functions/ai/__generated__/block/737.mcfunction": {
+    "sha256": "f60fb4f43470c6435b5a888aecddd1e1dc9bbcbe10f8cbd44b1fce582615e1d5",
+    "lines": [
+      "#built using mc-build (https://github.com/mc-build/mc-build)",
+      "",
+      "execute at @e[tag=emissary,tag=emissarymodel,limit=1] run function emissary:ai/phase/4/flytarget",
+      "scoreboard players operation temp0 rng = state rng",
+      "scoreboard players operation temp0 rng *= a rng",
+      "scoreboard players operation temp0 rng += c rng",
+      "scoreboard players operation temp0 rng %= m rng",
+      "scoreboard players operation state rng = temp0 rng",
+      "scoreboard players operation FlyTimer em.value = temp0 rng",
+      "scoreboard players operation FlyTimer em.value /= #100000 rng",
+      "scoreboard players operation FlyTimer em.value %= #40 rng",
+      "scoreboard players add FlyTimer em.value 20"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/emissary/functions/ai/phase/4/flytarget.mcfunction": {
+    "sha256": "812eae13b9163b9a7cb644eac4b9ba4a2190399fc0153beab442f43f2305d481",
+    "lines": [
+      "#built using mc-build (https://github.com/mc-build/mc-build)",
+      "",
+      "kill @e[tag=emissary,tag=flytarget]",
+      "execute at @a[gamemode=!spectator,tag=!emissarydebug,distance=..300,sort=random] summon marker run function emissary:ai/phase/4/__generated__/block/787"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/emissary/functions/ai/phase/4/fly.mcfunction": {
+    "sha256": "d267a80431b0c4a750b419ad33468d92b4782d35148aa32dece2725000ea827b",
+    "lines": [
+      "#built using mc-build (https://github.com/mc-build/mc-build)",
+      "",
+      "execute at @s if entity @a[tag=emissary,tag=flytarget,distance=41..] run function emissary:attacks/phase4/accelerate",
+      "execute at @s if entity @a[tag=emissary,tag=flytarget,distance=..40] if score FlySpeed em.value matches 5.. run function emissary:attacks/phase4/decelerate",
+      "execute if score FlySpeed em.value matches 1 run function emissary:ai/phase/4/__generated__/block/754",
+      "execute if score FlySpeed em.value matches 2 run function emissary:ai/phase/4/__generated__/block/755",
+      "execute if score FlySpeed em.value matches 3 run function emissary:ai/phase/4/__generated__/block/756",
+      "execute if score FlySpeed em.value matches 4 run function emissary:ai/phase/4/__generated__/block/757",
+      "execute if score FlySpeed em.value matches 5 run function emissary:ai/phase/4/__generated__/block/758",
+      "execute if score FlySpeed em.value matches 6 run function emissary:ai/phase/4/__generated__/block/759",
+      "execute if score FlySpeed em.value matches 7 run function emissary:ai/phase/4/__generated__/block/760",
+      "execute if score FlySpeed em.value matches 8 run function emissary:ai/phase/4/__generated__/block/761",
+      "execute if score FlySpeed em.value matches 9 run function emissary:ai/phase/4/__generated__/block/762",
+      "execute if score FlySpeed em.value matches 10 run function emissary:ai/phase/4/__generated__/block/763",
+      "execute at @s run function emissary:ai/phase/4/__generated__/block/764"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/emissary/functions/ai/phase/4/movement.mcfunction": {
+    "sha256": "2f9b2adceac81ca3909bed02eda45ea464ff8dbd78761eb96caf9e62900a842d",
+    "lines": [
+      "#built using mc-build (https://github.com/mc-build/mc-build)",
+      "",
+      "execute at @s facing entity @e[tag=emissary,tag=flytarget] feet positioned ^ ^ ^0.5 rotated as @s positioned ^ ^ ^25 facing entity @s feet facing ^ ^ ^-1 positioned as @s run tp @s ~ ~ ~ ~ ~",
+      "execute at @s[tag=quickturn] facing entity @e[tag=emissary,tag=flytarget] feet positioned ^ ^ ^0.5 rotated as @s positioned ^ ^ ^10 facing entity @s feet facing ^ ^ ^-1 positioned as @s run tp @s ~ ~ ~ ~ ~",
+      "execute at @s run tp @s ^ ^ ^0.5",
+      "execute at @s unless block ~ ~ ~ #nyctocosm:passthrough positioned over world_surface run function emissary:ai/phase/4/__generated__/block/765",
+      "execute at @s if entity @e[tag=emissary,tag=flytarget,distance=..5] run function emissary:ai/phase/4/__generated__/block/767",
+      "execute as @s[tag=corkscrewing] at @s run function emissary:ai/phase/4/__generated__/block/768",
+      "execute as @s[tag=grappletry] at @s run function emissary:ai/phase/4/__generated__/block/776",
+      "execute as @s[tag=grapplegrabbed] at @s run function emissary:ai/phase/4/__generated__/block/778",
+      "execute at @s positioned ^ ^0.5 ^ run function emissary:ai/phase/4/__generated__/block/786"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/emissary/functions/attacks/phase4/choose.mcfunction": {
+    "sha256": "baa1ae1f35931d47c8f4fbb5cef0df9e3eabde3cc667874f832a9ab7e2a33960",
+    "lines": [
+      "#built using mc-build (https://github.com/mc-build/mc-build)",
+      "",
+      "scoreboard players operation temp0 rng = state rng",
+      "scoreboard players operation temp0 rng *= a rng",
+      "scoreboard players operation temp0 rng += c rng",
+      "scoreboard players operation temp0 rng %= m rng",
+      "scoreboard players operation state rng = temp0 rng",
+      "scoreboard players operation AttackTimer em.value = temp0 rng",
+      "scoreboard players operation AttackTimer em.value /= #100000 rng",
+      "scoreboard players operation AttackTimer em.value %= #30 rng",
+      "scoreboard players add AttackTimer em.value 0",
+      "scoreboard players operation temp0 rng = state rng",
+      "scoreboard players operation temp0 rng *= a rng",
+      "scoreboard players operation temp0 rng += c rng",
+      "scoreboard players operation temp0 rng %= m rng",
+      "scoreboard players operation state rng = temp0 rng",
+      "scoreboard players operation AttackChoice em.value = temp0 rng",
+      "scoreboard players operation AttackChoice em.value /= #100000 rng",
+      "scoreboard players operation AttackChoice em.value %= #100 rng",
+      "scoreboard players add AttackChoice em.value 0",
+      "execute at @s unless entity @a[distance=..60,gamemode=!spectator,tag=!emissarydebug] run function emissary:attacks/phase4/__generated__/block/661",
+      "execute as @s[tag=!decided] run function emissary:attacks/phase4/__generated__/block/662",
+      "tag @s remove decided"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/emissary/functions/attacks/phase4/__generated__/block/661.mcfunction": {
+    "sha256": "67e5038212a094d393c759d251ca49b729c40f2887562f9dd0892b9bdb2ae1bb",
+    "lines": [
+      "#built using mc-build (https://github.com/mc-build/mc-build)",
+      "",
+      "execute unless score Flying em.value matches 1 run function emissary:attacks/phase4/flying/start",
+      "tag @s add decided"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/emissary/functions/attacks/phase4/__generated__/block/662.mcfunction": {
+    "sha256": "258b6be391778718c697781b565543037e6682755a6dcefc90874e33a4116cda",
+    "lines": [
+      "#built using mc-build (https://github.com/mc-build/mc-build)",
+      "",
+      "scoreboard players set #execute LANG_MC_INTERNAL 0",
+      "execute if score Flying em.value matches 1 run function emissary:attacks/phase4/__generated__/conditional/8",
+      "execute if score #execute LANG_MC_INTERNAL matches 0 run function emissary:attacks/phase4/__generated__/conditional/9"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/emissary/functions/attacks/phase4/apocalypse_rain/__generated__/block/688.mcfunction": {
+    "sha256": "ffe900f3edc13f0c643acddf55cf19eec14bc4509c4caaabda15019ada0056a3",
+    "lines": [
+      "#built using mc-build (https://github.com/mc-build/mc-build)",
+      "",
+      "function animated_java:ajemissary/animations/pause_all",
+      "scoreboard players set #tween_duration aj.i 0",
+      "function animated_java:ajemissary/animations/phase4.attack.apocalypse_rain/play",
+      "kill @e[tag=emissary,tag=flytarget]",
+      "execute at @a[distance=..100,sort=random,limit=1,gamemode=!spectator,tag=!emissarydebug] positioned ~ ~30 ~ run summon marker ~ ~ ~ {Tags:[\"emissary\",\"flytarget\"]}"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/emissary/functions/attacks/phase4/apocalypse_rain/fire.mcfunction": {
+    "sha256": "99c1df3a4554054e3b5404757edc0b9eedb6f4ab3c3c8142d52d969112d78234",
+    "lines": [
+      "#built using mc-build (https://github.com/mc-build/mc-build)",
+      "",
+      "playsound nyctocosm:emissary.attack.apocalypse_rain.shoot master @a[distance=..200] ~ ~ ~ 20",
+      "execute rotated ~90 -70 summon marker run function emissary:attacks/phase4/apocalypse_rain/__generated__/block/692",
+      "execute rotated ~-90 -70 summon marker run function emissary:attacks/phase4/apocalypse_rain/__generated__/block/693",
+      "execute rotated ~90 60 summon marker run function emissary:attacks/phase4/apocalypse_rain/__generated__/block/694",
+      "execute rotated ~-90 60 summon marker run function emissary:attacks/phase4/apocalypse_rain/__generated__/block/695"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/emissary/functions/__generated__/block/10.mcfunction": {
+    "sha256": "a7b9cdae9c823fb0c2268a068df3df6deea53a42b29448d2ff43fe6311d7f718",
+    "lines": [
+      "#built using mc-build (https://github.com/mc-build/mc-build)",
+      "",
+      "execute at @s run tp @s ~ ~ ~ ~ ~",
+      "execute at @s run bossbar set minecraft:emissary players @a[distance=..300]",
+      "execute as @s[tag=backwardfly] at @s rotated ~ 35 run function emissary:__generated__/block/11",
+      "execute as @s[tag=backwardfly2] at @s rotated ~ 0 run function emissary:__generated__/block/15",
+      "execute as @s[tag=forwardfly] at @s rotated ~ 0 run function emissary:__generated__/block/16",
+      "execute as @s[tag=forwardslide] at @e[tag=emissary,tag=locator,tag=foot] positioned ~ ~0.2 ~ run function emissary:__generated__/block/17",
+      "execute if score Idle em.value matches 1 at @s run function emissary:__generated__/block/18",
+      "execute as @s[tag=strafingright2] at @s run function emissary:attacks/phase2/straferight/subtick",
+      "execute as @s[tag=strafingleft2] at @s run function emissary:attacks/phase2/strafeleft/subtick",
+      "execute if score Flying em.value matches 1 at @s run function emissary:ai/phase/4/fly",
+      "execute as @s[tag=flyup_godrays] run tp @s ~ ~1.5 ~",
+      "execute at @s unless entity @a[distance=..300] run function emissary:__generated__/block/19"
+    ]
+  },
+  "_nyctocosm_source/datapack/data/emissary/functions/attacks/phase4/decelerate.mcfunction": {
+    "sha256": "57f451b16164d0950f1e2a8052f7299402b0362e6467d89faa13961dd21ba663",
+    "lines": [
+      "#built using mc-build (https://github.com/mc-build/mc-build)",
+      "",
+      "scoreboard players remove FlySpeed em.value 1",
+      "execute if score FlySpeed em.value matches ..0 run scoreboard players set FlySpeed em.value 1"
+    ]
+  }
+}

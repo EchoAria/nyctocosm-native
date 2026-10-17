@@ -1,0 +1,693 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Neither the 'eclipse' nor the 'idea' plugins were found, but IDE resource copy has been enabled.
+
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createSrgToMcp UP-TO-DATE
+> Task :downloadMCMeta UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :extractNatives UP-TO-DATE
+> Task :makeSrcDirs
+> Task :prepareRuns
+> Task :prepareRunClient
+> Task :prepareRunClientCompile UP-TO-DATE
+
+> Task :runClient
+2026-10-04 04:29:34,363 main WARN Advanced terminal features are not available in this environment
+[04:29:34] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\jzy19\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.13, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[04:29:34] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.19 by Microsoft; OS Windows 11 arch amd64 version 10.0
+[04:29:34] [main/WARN] [ne.mi.fm.lo.FMLConfig/CORE]: Configuration file D:\MinecraftModDev\DEV - ����\nyctocosm-native\run-feedback19-flight-fixed-client-20261004\config\fml.toml is not correct. Correcting
+[04:29:34] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowSkipGLVersions] was corrected from null to []
+[04:29:34] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowLogHelpMessage] was corrected from null to true
+[04:29:34] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowSquir] was corrected from null to false
+[04:29:34] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowShowCPU] was corrected from null to false
+[04:29:34] [main/INFO] [ne.mi.fm.lo.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[04:29:34] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[04:29:34] [main/INFO] [EARLYDISPLAY/]: If this message is the only thing at the bottom of your log before a crash, you probably have a driver issue.
+
+Possible solutions:
+A) Make sure Minecraft is set to prefer high performance graphics in the OS and/or driver control panel
+B) Check for driver updates on the graphics brand's website
+C) Try reinstalling your graphics drivers
+D) If still not working after trying all of the above, ask for further help on the Forge forums or Discord
+
+You can safely ignore this message if the game starts up successfully.
+[04:29:34] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[04:29:35] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/jzy19/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[04:29:35] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 5070 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 610.47, NVIDIA Corporation
+[04:29:35] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.13\cf01e2179f72bd2829c65f5226d7dd0cfb6c686\javafmllanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[04:29:35] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.13\e3f96129ea14eba84316f2d69816253e228e6e4c\lowcodelanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[04:29:35] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.13\85796906112d9b621a7b2996f8bfda49da991ef0\mclanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[04:29:35] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.13\f77e3021d1eb31d61f8d1b92d18ed4fb3c2806e5\fmlcore-1.20.1-47.4.13.jar is missing mods.toml file
+[04:29:35] [main/INFO] [ne.mi.fm.lo.mo.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[04:29:36] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\jzy19\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[04:29:37] [main/WARN] [os.dr.wi.pe.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[04:29:39] [Datafixer Bootstrap/INFO] [mojang/DataFixerBuilder]: 188 Datafixer optimizations took 89 milliseconds
+[04:29:40] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/C:/Users/jzy19/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.13_mapped_official_1.20.1/forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[04:29:40] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/C:/Users/jzy19/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.13_mapped_official_1.20.1/forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[04:29:40] [Render thread/INFO] [mojang/YggdrasilAuthenticationService]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[04:29:40] [Render thread/INFO] [minecraft/Minecraft]: Setting user: Dev
+[04:29:41] [Render thread/INFO] [minecraft/Minecraft]: Backend library: LWJGL version 3.3.1 build 7
+[04:29:41] [modloading-worker-0/INFO] [ne.mi.co.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.13, for MC 1.20.1 with MCP 20230612.114412
+[04:29:41] [modloading-worker-0/INFO] [ne.mi.co.MinecraftForge/FORGE]: MinecraftForge v47.4.13 Initialized
+[04:29:41] [Render thread/INFO] [ne.mi.ga.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
+[04:29:42] [Render thread/INFO] [minecraft/ReloadableResourceManager]: Reloading ResourceManager: vanilla, mod_resources
+[04:29:42] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Configuration file D:\MinecraftModDev\DEV - ����\nyctocosm-native\run-feedback19-flight-fixed-client-20261004\config\forge-client.toml is not correct. Correcting
+[04:29:42] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client was corrected from null to its default, SimpleCommentedConfig:{}. 
+[04:29:42] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.alwaysSetupTerrainOffThread was corrected from null to its default, false. 
+[04:29:42] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.experimentalForgeLightPipelineEnabled was corrected from null to its default, false. 
+[04:29:42] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.showLoadWarnings was corrected from null to its default, true. 
+[04:29:42] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.useCombinedDepthStencilAttachment was corrected from null to its default, false. 
+[04:29:42] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.compressLanIPv6Addresses was corrected from null to its default, true. 
+[04:29:42] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.calculateAllNormals was corrected from null to its default, false. 
+[04:29:42] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.stabilizeDirectionGetNearest was corrected from null to its default, true. 
+[04:29:42] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.allowMipmapLowering was corrected from null to its default, false. 
+[04:29:42] [Worker-Main-1/INFO] [minecraft/UnihexProvider]: Found unifont_all_no_pua-15.0.06.hex, loading
+[04:29:42] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[04:29:42] [Worker-Main-7/WARN] [minecraft/SpriteLoader]: Texture nyctocosm:magic/ajspellplane/outer_circle with size 1000x1000 limits mip level from 4 to 3
+[04:29:43] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.4.13 Target: 47.4.26
+[04:29:44] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:item.goat_horn.play
+[04:29:44] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[04:29:44] [Render thread/INFO] [mojang/Library]: OpenAL initialized on device OpenAL Soft on ������ (2- USB Audio Device)
+[04:29:44] [Render thread/INFO] [minecraft/SoundEngine]: Sound engine started
+[04:29:44] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 8192x4096x4 minecraft:textures/atlas/blocks.png-atlas
+[04:29:44] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[04:29:44] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[04:29:44] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[04:29:44] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[04:29:44] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[04:29:44] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[04:29:44] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[04:29:44] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[04:29:44] [Render thread/WARN] [minecraft/ShaderInstance]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[04:29:44] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[04:29:44] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[04:29:44] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[04:29:45] [Render thread/INFO] [minecraft/RecipeManager]: Loaded 7 recipes
+[04:29:45] [Render thread/INFO] [minecraft/AdvancementList]: Loaded 1275 advancements
+[04:29:45] [Realms Notification Availability checker #1/INFO] [mojang/RealmsClient]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[04:29:45] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.20.1
+[04:29:45] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[04:29:45] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Configuration file .\saves\Feedback19\serverconfig\forge-server.toml is not correct. Correcting
+[04:29:45] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SimpleCommentedConfig:{}. 
+[04:29:45] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringBlockEntities was corrected from null to its default, false. 
+[04:29:45] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to its default, false. 
+[04:29:45] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false. 
+[04:29:45] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.zombieBaseSummonChance was corrected from null to its default, 0.1. 
+[04:29:45] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.zombieBabyChance was corrected from null to its default, 0.05. 
+[04:29:45] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.permissionHandler was corrected from null to its default, forge:default_handler. 
+[04:29:45] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.advertiseDedicatedServerToLan was corrected from null to its default, true. 
+[04:29:45] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.useItemWithDurationZero was corrected from null to its default, false. 
+[04:29:47] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[04:29:48] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[04:29:48] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[04:29:48] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 2%
+[04:29:49] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 6%
+[04:29:49] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 13%
+[04:29:50] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 20%
+[04:29:50] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 29%
+[04:29:51] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 36%
+[04:29:51] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 46%
+[04:29:52] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 55%
+[04:29:52] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 64%
+[04:29:53] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 71%
+[04:29:53] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 81%
+[04:29:54] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 89%
+[04:29:54] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 98%
+[04:29:54] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 7021 ms
+[04:29:54] [Server thread/INFO] [ne.mi.se.pe.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[04:29:54] [Server thread/INFO] [minecraft/IntegratedServer]: Changing view distance to 12, from 10
+[04:29:54] [Server thread/INFO] [minecraft/IntegratedServer]: Changing simulation distance to 12, from 0
+[04:29:54] [Render thread/WARN] [io.ne.ut.in.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[04:29:55] [Netty Local Client IO #0/INFO] [ne.mi.ne.NetworkHooks/]: Connected to a modded server.
+[04:29:55] [Server thread/INFO] [minecraft/PlayerList]: Dev[local:E:05fd93c9] logged in with entity id 220 at (40.5, 63.0, 81.5)
+[04:29:55] [Server thread/INFO] [minecraft/MinecraftServer]: Dev joined the game
+[04:29:55] [Render thread/INFO] [minecraft/AdvancementList]: Loaded 2 advancements
+FEEDBACK19_SCENE frame=30 kind=2
+FEEDBACK19_CLIENT tick=40 kind=2 clip=phase1_idle time=50.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_HEAD_APPLIED -2.528E+0 -1.592E+0  2.724E-1 -6.280E-1
+-3.099E-1 -1.846E-2 -2.984E+0  7.684E+0
+ 1.585E+0 -2.543E+0 -1.489E-1  2.563E+0
+ 0.000E+0  0.000E+0  0.000E+0  1.000E+0
+
+FEEDBACK19_MATRIX bone=righthand pose=-2.528E+0 -1.592E+0  2.724E-1 -6.280E-1
+-3.099E-1 -1.846E-2 -2.984E+0  7.684E+0
+ 1.585E+0 -2.543E+0 -1.489E-1  2.563E+0
+ 0.000E+0  0.000E+0  0.000E+0  1.000E+0
+ item= 2.528E+0 -1.592E+0 -2.724E-1 -6.280E-1
+ 3.099E-1 -1.846E-2  2.984E+0  7.684E+0
+-1.585E+0 -2.543E+0  1.489E-1  2.563E+0
+ 0.000E+0  0.000E+0 -0.000E+0  1.000E+0
+
+FEEDBACK19_MODEL bone=righthand model=animated_java:item/ajemissary/armorful/righthand head=( 0.000E+0  1.800E+2  0.000E+0) scale=( 1.000E+0  1.000E+0  1.000E+0) missing=false
+FEEDBACK19_SPRITE nyctocosm:emissary/emissary_body
+FEEDBACK19_SPRITE nyctocosm:emissary/emissary_body
+FEEDBACK19_SPRITE nyctocosm:emissary/emissary_body
+FEEDBACK19_SPRITE nyctocosm:emissary/emissary_body
+FEEDBACK19_SPRITE nyctocosm:emissary/emissary_body
+FEEDBACK19_SPRITE nyctocosm:emissary/emissary_body
+FEEDBACK19_SPRITE nyctocosm:emissary/emissaryarmor
+FEEDBACK19_SPRITE nyctocosm:emissary/emissaryarmor
+FEEDBACK19_SPRITE nyctocosm:emissary/emissaryarmor
+FEEDBACK19_SPRITE nyctocosm:emissary/emissaryarmor
+FEEDBACK19_SPRITE nyctocosm:emissary/emissaryarmor
+FEEDBACK19_SPRITE nyctocosm:emissary/emissaryarmor
+FEEDBACK19_HEAD_APPLIED -1.232E+1 -8.533E+0  7.027E-1 -2.625E+0
+-8.471E+0  1.197E+1 -3.170E+0  1.038E+1
+ 1.242E+0 -2.999E+0 -1.464E+1 -1.500E+0
+ 0.000E+0  0.000E+0  0.000E+0  1.000E+0
+
+FEEDBACK19_MATRIX bone=rightupperwing pose=-1.232E+1 -8.533E+0  7.027E-1 -2.625E+0
+-8.471E+0  1.197E+1 -3.170E+0  1.038E+1
+ 1.242E+0 -2.999E+0 -1.464E+1 -1.500E+0
+ 0.000E+0  0.000E+0  0.000E+0  1.000E+0
+ item= 1.232E+1 -8.533E+0 -7.027E-1 -2.625E+0
+ 8.471E+0  1.197E+1  3.170E+0  1.038E+1
+-1.242E+0 -2.999E+0  1.464E+1 -1.500E+0
+ 0.000E+0  0.000E+0 -0.000E+0  1.000E+0
+
+FEEDBACK19_MODEL bone=rightupperwing model=animated_java:item/ajemissary/wing_config_0/rightupperwing head=( 0.000E+0  1.800E+2  0.000E+0) scale=( 1.000E+0  1.000E+0  1.000E+0) missing=false
+FEEDBACK19_SPRITE nyctocosm:emissary/upperwing_0
+FEEDBACK19_SPRITE nyctocosm:emissary/upperwing_0
+FEEDBACK19_SPRITE nyctocosm:emissary/upperwing_0
+FEEDBACK19_SPRITE nyctocosm:emissary/upperwing_0
+FEEDBACK19_SPRITE nyctocosm:emissary/upperwing_0
+FEEDBACK19_SPRITE nyctocosm:emissary/upperwing_0
+FEEDBACK19_CLIENT tick=60 kind=2 clip=phase1_idle time=70.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=80 kind=2 clip=phase1_idle time=90.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=100 kind=2 clip=phase1_idle time=110.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=120 kind=2 clip=phase1_idle time=130.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=140 kind=2 clip=phase1_idle time=150.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=160 kind=2 clip=phase1_idle time=170.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_SCENE frame=160 kind=1
+FEEDBACK19_CLIENT tick=180 kind=1 clip=initial_spawn time=20.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=200 kind=1 clip=initial_spawn time=40.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=220 kind=1 clip=initial_spawn time=60.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=240 kind=1 clip=initial_spawn time=80.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=260 kind=1 clip=initial_spawn time=100.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=280 kind=1 clip=initial_spawn time=120.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=300 kind=1 clip=initial_spawn time=140.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=320 kind=1 clip=initial_spawn time=160.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=340 kind=1 clip=initial_spawn time=180.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=360 kind=1 clip=initial_spawn time=200.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=380 kind=1 clip=initial_spawn time=220.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=400 kind=1 clip=initial_spawn time=240.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=420 kind=1 clip=initial_spawn time=260.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=440 kind=1 clip=initial_spawn time=280.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=460 kind=1 clip=initial_spawn time=300.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=480 kind=1 clip=initial_spawn time=320.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=500 kind=1 clip=rise time=10.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=520 kind=1 clip=rise time=30.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=540 kind=1 clip=rise time=50.0 pos=(0.0, 201.20878712009173, 4.0)
+FEEDBACK19_CLIENT tick=560 kind=1 clip=rise time=70.0 pos=(0.0, 202.47065401323135, 4.0)
+FEEDBACK19_SCENE frame=570 kind=0
+FEEDBACK19_CLIENT tick=580 kind=0 clip=idle time=590.0 pos=(0.0, 201.0, -24.17914297821645)
+FEEDBACK19_CLIENT tick=600 kind=0 clip=idle time=610.0 pos=(0.0, 201.0, -11.099701556972986)
+FEEDBACK19_CLIENT tick=620 kind=0 clip=idle time=630.0 pos=(0.0, 201.0, 2.9000216046793357)
+FEEDBACK19_CLIENT tick=640 kind=0 clip=idle time=650.0 pos=(0.0, 201.0, 16.90002152142611)
+FEEDBACK19_CLIENT tick=660 kind=0 clip=idle time=670.0 pos=(11.90065304511459, 201.0, 18.999368476286485)
+FEEDBACK19_CLIENT tick=680 kind=0 clip=idle time=690.0 pos=(25.90002171131835, 201.0, 18.99999981008272)
+FEEDBACK19_CLIENT tick=700 kind=0 clip=idle time=710.0 pos=(39.90002152145818, 201.0, 18.999999999942887)
+FEEDBACK19_CLIENT tick=720 kind=0 clip=idle time=730.0 pos=(53.90002152140108, 201.0, 18.999999999999982)
+FEEDBACK19_SCENE frame=730 kind=2
+FEEDBACK19_FLIGHT frame=730 y=201.0 playerY=206.0 distance=32.38827 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=730 clip=phase4_idle_transition_flying rootY=201.0 playerY=206.0 distance=32.38827
+FEEDBACK19_CLIENT tick=740 kind=2 clip=phase4_idle_transition_flying time=10.0 pos=(0.0, 205.03125, 4.0)
+FEEDBACK19_FLIGHT frame=740 y=205.03125000000003 playerY=206.0 distance=32.01466 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=750 y=205.49843339226211 playerY=206.0 distance=18.029173 clip=phase4_idle_transition_flying timer=17 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=760 kind=2 clip=phase4_idle_transition_flying time=30.0 pos=(1.862020065491521, 206.1436111995046, -23.887405733860813)
+FEEDBACK19_FLIGHT frame=760 y=206.43274897499944 playerY=206.0 distance=3.2988408 clip=phase4_idle_transition_flying timer=7 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=761 clip=phase4_idle_flying rootY=206.52803774899806 playerY=206.0 distance=4.8984427
+FEEDBACK19_FLIGHT frame=770 y=207.1617930394132 playerY=206.0 distance=22.500977 clip=phase4_idle_flying timer=22 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=780 kind=2 clip=phase4_idle_flying time=19.0 pos=(14.436808474474883, 207.40002538113367, -61.25663942095863)
+FEEDBACK19_FLIGHT frame=780 y=207.48960899258967 playerY=206.0 distance=42.06032 clip=phase4_idle_flying timer=12 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=784 clip=phase4_flying_transition_idle rootY=206.78522045202556 playerY=206.0 distance=49.346836
+FEEDBACK19_FLIGHT frame=790 y=203.60063020791858 playerY=206.0 distance=52.851326 clip=phase4_flying_transition_idle timer=5 speed=2 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=800 kind=2 clip=phase4_flying_transition_idle time=16.0 pos=(27.9345703125, 203.6005859375, -72.801513671875)
+FEEDBACK19_FLIGHT frame=800 y=203.60063020791858 playerY=206.0 distance=52.851326 clip=phase4_flying_transition_idle timer=5 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=810 y=203.60063020791858 playerY=206.0 distance=52.851326 clip=phase4_flying_transition_idle timer=5 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=815 clip=phase4_idle rootY=203.60063020791858 playerY=206.0 distance=52.851326
+FEEDBACK19_CLIENT tick=820 kind=2 clip=phase4_idle time=5.0 pos=(27.9345703125, 203.6005859375, -72.801513671875)
+FEEDBACK19_FLIGHT frame=820 y=203.60063020791858 playerY=206.0 distance=52.851326 clip=phase4_idle timer=5 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=830 y=203.60063020791858 playerY=206.0 distance=52.851326 clip=phase4_idle timer=5 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=837 clip=phase4.attack.godrays rootY=203.60063020791858 playerY=206.0 distance=52.851326
+FEEDBACK19_CLIENT tick=840 kind=2 clip=phase4.attack.godrays time=3.0 pos=(27.9345703125, 203.6005859375, -72.801513671875)
+FEEDBACK19_FLIGHT frame=840 y=203.60063020791858 playerY=206.0 distance=52.851326 clip=phase4.attack.godrays timer=5 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=850 y=211.10063020791858 playerY=206.0 distance=53.042645 clip=phase4.attack.godrays timer=5 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=860 kind=2 clip=phase4.attack.godrays time=23.0 pos=(27.9345703125, 211.1005859375, -72.801513671875)
+FEEDBACK19_FLIGHT frame=860 y=211.10063020791858 playerY=206.0 distance=53.042645 clip=phase4.attack.godrays timer=5 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=870 y=211.10063020791858 playerY=206.0 distance=53.042645 clip=phase4.attack.godrays timer=5 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=880 kind=2 clip=phase4.attack.godrays time=43.0 pos=(27.9345703125, 211.1005859375, -72.801513671875)
+FEEDBACK19_FLIGHT frame=880 y=211.10063020791858 playerY=206.0 distance=53.042645 clip=phase4.attack.godrays timer=5 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=890 y=211.10063020791858 playerY=206.0 distance=53.042645 clip=phase4.attack.godrays timer=5 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=898 clip=phase4_idle rootY=211.10063020791858 playerY=206.0 distance=53.042645
+FEEDBACK19_CLIENT tick=900 kind=2 clip=phase4_idle time=2.0 pos=(27.9345703125, 211.1005859375, -72.801513671875)
+FEEDBACK19_FLIGHT frame=900 y=211.10063020791858 playerY=206.0 distance=53.042645 clip=phase4_idle timer=5 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=910 y=211.10063020791858 playerY=206.0 distance=53.042645 clip=phase4_idle timer=5 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=920 kind=2 clip=phase4_idle time=22.0 pos=(27.9345703125, 211.1005859375, -72.801513671875)
+FEEDBACK19_FLIGHT frame=920 y=211.10063020791858 playerY=206.0 distance=53.042645 clip=phase4_idle timer=5 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=921 clip=phase4_idle_transition_flying rootY=211.10063020791858 playerY=206.0 distance=53.042645
+FEEDBACK19_FLIGHT frame=930 y=215.1318802079186 playerY=206.0 distance=53.580753 clip=phase4_idle_transition_flying timer=5 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=940 kind=2 clip=phase4_idle_transition_flying time=19.0 pos=(24.462477695794753, 215.11861818415636, -67.27485110435957)
+FEEDBACK19_FLIGHT frame=940 y=215.15886157288335 playerY=206.0 distance=41.813236 clip=phase4_idle_transition_flying timer=20 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=950 y=215.795566560264 playerY=206.0 distance=23.036966 clip=phase4_idle_transition_flying timer=10 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=952 clip=phase4_idle_flying rootY=215.96901058361985 playerY=206.0 distance=19.613192
+FEEDBACK19_CLIENT tick=960 kind=2 clip=phase4_idle_flying time=8.0 pos=(1.77075209225221, 216.45486904210344, -35.04219368708212)
+FEEDBACK19_FLIGHT frame=960 y=216.7378266710148 playerY=206.0 distance=11.168456 clip=phase4_idle_flying timer=49 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=963 clip=phase4_flying_transition_idle rootY=215.82603193778198 playerY=206.0 distance=11.7954035
+FEEDBACK19_FLIGHT frame=970 y=212.58971897186711 playerY=206.0 distance=12.313709 clip=phase4_flying_transition_idle timer=43 speed=2 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=980 kind=2 clip=phase4_flying_transition_idle time=17.0 pos=(-9.58935546875, 212.589599609375, -23.969482421875)
+FEEDBACK19_FLIGHT frame=980 y=212.58971897186711 playerY=206.0 distance=12.313709 clip=phase4_flying_transition_idle timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=990 y=212.58971897186711 playerY=206.0 distance=12.313709 clip=phase4_flying_transition_idle timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=994 clip=phase4_idle rootY=212.58971897186711 playerY=206.0 distance=12.313709
+FEEDBACK19_CLIENT tick=1000 kind=2 clip=phase4_idle time=6.0 pos=(-9.58935546875, 212.589599609375, -23.969482421875)
+FEEDBACK19_FLIGHT frame=1000 y=212.58971897186711 playerY=206.0 distance=12.313709 clip=phase4_idle timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1010 y=212.58971897186711 playerY=206.0 distance=12.313709 clip=phase4.attack.godrays timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1010 clip=phase4.attack.godrays rootY=212.58971897186711 playerY=206.0 distance=12.313709
+FEEDBACK19_CLIENT tick=1020 kind=2 clip=phase4.attack.godrays time=10.0 pos=(-9.58935546875, 217.48466133777006, -23.969482421875)
+FEEDBACK19_FLIGHT frame=1020 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.godrays timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1030 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.godrays timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1040 kind=2 clip=phase4.attack.godrays time=30.0 pos=(-9.58935546875, 220.089599609375, -23.969482421875)
+FEEDBACK19_FLIGHT frame=1040 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.godrays timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1050 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.godrays timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1060 kind=2 clip=phase4.attack.godrays time=50.0 pos=(-9.58935546875, 220.089599609375, -23.969482421875)
+FEEDBACK19_FLIGHT frame=1060 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.godrays timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1070 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.godrays timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1071 clip=phase4_idle rootY=220.08971897186711 playerY=206.0 distance=17.513515
+FEEDBACK19_CLIENT tick=1080 kind=2 clip=phase4_idle time=9.0 pos=(-9.58935546875, 220.089599609375, -23.969482421875)
+FEEDBACK19_FLIGHT frame=1080 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4_idle timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1082 clip=phase4.attack.fireball rootY=220.08971897186711 playerY=206.0 distance=17.513515
+FEEDBACK19_FLIGHT frame=1090 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.fireball timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1100 kind=2 clip=phase4.attack.fireball time=18.0 pos=(-9.58935546875, 220.089599609375, -23.969482421875)
+FEEDBACK19_FLIGHT frame=1100 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.fireball timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1110 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.fireball timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1120 kind=2 clip=phase4.attack.fireball time=38.0 pos=(-9.58935546875, 220.089599609375, -23.969482421875)
+FEEDBACK19_FLIGHT frame=1120 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.fireball timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1123 clip=phase4_idle rootY=220.08971897186711 playerY=206.0 distance=17.513515
+FEEDBACK19_FLIGHT frame=1130 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4_idle timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1137 clip=phase4.attack.divine_blast rootY=220.08971897186711 playerY=206.0 distance=17.513515
+FEEDBACK19_CLIENT tick=1140 kind=2 clip=phase4.attack.divine_blast time=3.0 pos=(-9.58942128335184, 220.08971897186711, -23.969363033771515)
+FEEDBACK19_FLIGHT frame=1140 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.divine_blast timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1150 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.divine_blast timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1160 kind=2 clip=phase4.attack.divine_blast time=23.0 pos=(-9.58942128335184, 220.08971897186711, -23.969363033771515)
+FEEDBACK19_FLIGHT frame=1160 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.divine_blast timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1170 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.divine_blast timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1180 kind=2 clip=phase4.attack.divine_blast time=43.0 pos=(-9.58942128335184, 220.08971897186711, -23.969363033771515)
+FEEDBACK19_FLIGHT frame=1180 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.divine_blast timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1190 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.divine_blast timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1200 kind=2 clip=phase4.attack.divine_blast time=63.0 pos=(-9.58942128335184, 220.08971897186711, -23.969363033771515)
+FEEDBACK19_FLIGHT frame=1200 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4.attack.divine_blast timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1203 clip=phase4_idle rootY=220.08971897186711 playerY=206.0 distance=17.513515
+FEEDBACK19_FLIGHT frame=1210 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4_idle timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1220 kind=2 clip=phase4_idle time=17.0 pos=(-9.58942128335184, 220.08971897186711, -23.969363033771515)
+FEEDBACK19_FLIGHT frame=1220 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4_idle timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1230 y=220.08971897186711 playerY=206.0 distance=17.513515 clip=phase4_idle timer=43 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1231 clip=phase4_idle_transition_flying rootY=220.08971897186711 playerY=206.0 distance=17.513515
+FEEDBACK19_CLIENT tick=1240 kind=2 clip=phase4_idle_transition_flying time=9.0 pos=(-9.58942128335184, 224.120849609375, -23.969363033771515)
+FEEDBACK19_FLIGHT frame=1240 y=224.12096897186714 playerY=206.0 distance=20.89432 clip=phase4_idle_transition_flying timer=43 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1250 y=223.67595242708924 playerY=206.0 distance=17.757744 clip=phase4_idle_transition_flying timer=37 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1260 kind=2 clip=phase4_idle_transition_flying time=29.0 pos=(15.40034801534519, 223.07482628077486, -30.756198092868974)
+FEEDBACK19_FLIGHT frame=1260 y=222.87582585308704 playerY=206.0 distance=27.426538 clip=phase4_idle_transition_flying timer=27 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1262 clip=phase4_idle_flying rootY=222.7775710471906 playerY=206.0 distance=30.609188
+FEEDBACK19_FLIGHT frame=1270 y=222.50099870725538 playerY=206.0 distance=44.604443 clip=phase4_idle_flying timer=17 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1280 kind=2 clip=phase4_idle_flying time=18.0 pos=(55.06443023665869, 222.34575343611442, -28.93729537006235)
+FEEDBACK19_FLIGHT frame=1280 y=222.28773426148112 playerY=206.0 distance=63.001278 clip=phase4_idle_flying timer=7 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1290 y=222.192437463149 playerY=206.0 distance=80.83266 clip=phase4_idle_flying timer=19 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1300 kind=2 clip=phase4_idle_flying time=38.0 pos=(88.50161083871185, 222.21903834604385, -8.567015537602419)
+FEEDBACK19_FLIGHT frame=1300 y=222.24755965315856 playerY=206.0 distance=95.70063 clip=phase4_idle_flying timer=9 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1310 y=222.29626324502172 playerY=206.0 distance=76.07744 clip=phase4_idle_flying timer=19 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1320 kind=2 clip=phase4_idle_flying time=58.0 pos=(58.18963788539963, 222.42577627767807, -12.025039295560378)
+FEEDBACK19_FLIGHT frame=1320 y=222.48699947629942 playerY=206.0 distance=56.82883 clip=phase4_idle_flying timer=9 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1326 clip=phase4_flying_transition_idle rootY=221.8347638711508 playerY=206.0 distance=45.434067
+FEEDBACK19_FLIGHT frame=1330 y=218.6651283504616 playerY=206.0 distance=40.724445 clip=phase4_flying_transition_idle timer=20 speed=3 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1340 kind=2 clip=phase4_flying_transition_idle time=14.0 pos=(36.37646484375, 218.6650390625, -14.777587890625)
+FEEDBACK19_FLIGHT frame=1340 y=218.6651283504616 playerY=206.0 distance=40.724445 clip=phase4_flying_transition_idle timer=20 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1350 y=218.6651283504616 playerY=206.0 distance=40.724445 clip=phase4_flying_transition_idle timer=20 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1357 clip=phase4_idle rootY=218.6651283504616 playerY=206.0 distance=40.724445
+FEEDBACK19_CLIENT tick=1360 kind=2 clip=phase4_idle time=3.0 pos=(36.37646484375, 218.6650390625, -14.777587890625)
+FEEDBACK19_FLIGHT frame=1360 y=218.6651283504616 playerY=206.0 distance=40.724445 clip=phase4_idle timer=20 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1370 y=218.6651283504616 playerY=206.0 distance=40.724445 clip=phase4_idle timer=20 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1380 kind=2 clip=phase4_idle time=23.0 pos=(36.37646484375, 218.6650390625, -14.777587890625)
+FEEDBACK19_FLIGHT frame=1380 y=218.6651283504616 playerY=206.0 distance=40.724445 clip=phase4_idle timer=20 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1383 clip=phase4_idle_transition_flying rootY=218.6651283504616 playerY=206.0 distance=40.724445
+FEEDBACK19_FLIGHT frame=1390 y=222.69637835046163 playerY=206.0 distance=42.15263 clip=phase4_idle_transition_flying timer=20 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1400 kind=2 clip=phase4_idle_transition_flying time=17.0 pos=(33.37871636284722, 222.73868815104166, -15.853099681712964)
+FEEDBACK19_FLIGHT frame=1400 y=222.80672346751092 playerY=206.0 distance=35.00475 clip=phase4_idle_transition_flying timer=16 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1410 y=223.22951813015973 playerY=206.0 distance=20.298758 clip=phase4_idle_transition_flying timer=6 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1414 clip=phase4_idle_flying rootY=223.5198615959089 playerY=206.0 distance=17.753822
+FEEDBACK19_CLIENT tick=1420 kind=2 clip=phase4_idle_flying time=6.0 pos=(-3.5427103747039483, 223.6522070268973, -27.673733889484)
+FEEDBACK19_FLIGHT frame=1420 y=223.69577886928167 playerY=206.0 distance=20.06579 clip=phase4_idle_flying timer=22 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1430 y=223.667496113907 playerY=206.0 distance=33.35214 clip=phase4_idle_flying timer=12 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1440 kind=2 clip=phase4_idle_flying time=26.0 pos=(-34.08743105712016, 223.65532214890075, -8.88055792708526)
+FEEDBACK19_FLIGHT frame=1440 y=223.6516290035361 playerY=206.0 distance=46.864143 clip=phase4_idle_flying timer=2 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1441 clip=phase4_flying_transition_idle rootY=222.84442026562613 playerY=206.0 distance=47.74938
+FEEDBACK19_FLIGHT frame=1450 y=219.6380196081518 playerY=206.0 distance=49.026947 clip=phase4_flying_transition_idle timer=42 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1460 kind=2 clip=phase4_flying_transition_idle time=19.0 pos=(-35.598388671875, 219.637939453125, 2.82861328125)
+FEEDBACK19_FLIGHT frame=1460 y=219.6380196081518 playerY=206.0 distance=49.026947 clip=phase4_flying_transition_idle timer=42 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1470 y=219.6380196081518 playerY=206.0 distance=49.026947 clip=phase4_flying_transition_idle timer=42 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1472 clip=phase4_idle rootY=219.6380196081518 playerY=206.0 distance=49.026947
+FEEDBACK19_CLIENT tick=1480 kind=2 clip=phase4_idle time=8.0 pos=(-35.598388671875, 219.637939453125, 2.82861328125)
+FEEDBACK19_FLIGHT frame=1480 y=219.6380196081518 playerY=206.0 distance=49.026947 clip=phase4_idle timer=42 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1490 y=219.6380196081518 playerY=206.0 distance=49.026947 clip=phase4_idle timer=42 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1500 kind=2 clip=phase4_idle time=28.0 pos=(-35.598388671875, 219.637939453125, 2.82861328125)
+FEEDBACK19_FLIGHT frame=1500 y=219.6380196081518 playerY=206.0 distance=49.026947 clip=phase4_idle timer=42 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1501 clip=phase4.attack.divine_blast rootY=219.6380196081518 playerY=206.0 distance=49.026947
+FEEDBACK19_FLIGHT frame=1510 y=219.6380196081518 playerY=206.0 distance=49.026947 clip=phase4.attack.divine_blast timer=42 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1520 kind=2 clip=phase4.attack.divine_blast time=19.0 pos=(-35.598388671875, 219.637939453125, 2.82861328125)
+FEEDBACK19_FLIGHT frame=1520 y=219.6380196081518 playerY=206.0 distance=49.026947 clip=phase4.attack.divine_blast timer=42 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1530 y=219.6380196081518 playerY=206.0 distance=49.026947 clip=phase4.attack.divine_blast timer=42 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1540 kind=2 clip=phase4.attack.divine_blast time=39.0 pos=(-35.598422128663515, 219.6380196081518, 2.8285272812645417)
+FEEDBACK19_FLIGHT frame=1540 y=219.6380196081518 playerY=206.0 distance=49.026947 clip=phase4.attack.divine_blast timer=42 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1550 y=219.6380196081518 playerY=206.0 distance=49.026947 clip=phase4.attack.divine_blast timer=42 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1560 kind=2 clip=phase4.attack.divine_blast time=59.0 pos=(-35.598422128663515, 219.6380196081518, 2.8285272812645417)
+FEEDBACK19_FLIGHT frame=1560 y=219.6380196081518 playerY=206.0 distance=49.026947 clip=phase4.attack.divine_blast timer=42 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1567 clip=phase4_idle rootY=219.6380196081518 playerY=206.0 distance=49.026947
+FEEDBACK19_FLIGHT frame=1570 y=219.6380196081518 playerY=206.0 distance=49.026947 clip=phase4_idle timer=42 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1580 kind=2 clip=phase4_idle time=13.0 pos=(-35.598422128663515, 219.6380196081518, 2.8285272812645417)
+FEEDBACK19_FLIGHT frame=1580 y=219.6380196081518 playerY=206.0 distance=49.026947 clip=phase4_idle timer=42 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1582 clip=phase4_idle_transition_flying rootY=219.6380196081518 playerY=206.0 distance=49.026947
+FEEDBACK19_FLIGHT frame=1590 y=223.66926960815184 playerY=206.0 distance=50.297604 clip=phase4_idle_transition_flying timer=42 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1600 kind=2 clip=phase4_idle_transition_flying time=18.0 pos=(-32.02595785296131, 223.63343038676697, -0.36162542225793004)
+FEEDBACK19_FLIGHT frame=1600 y=223.59204447926462 playerY=206.0 distance=41.05631 clip=phase4_idle_transition_flying timer=37 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1610 y=223.3855863740246 playerY=206.0 distance=24.480873 clip=phase4_idle_transition_flying timer=27 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1613 clip=phase4_idle_flying rootY=223.30011952324278 playerY=206.0 distance=20.735542
+FEEDBACK19_CLIENT tick=1620 kind=2 clip=phase4_idle_flying time=7.0 pos=(-4.6784875697244415, 223.14636911074345, -28.418567447379452)
+FEEDBACK19_FLIGHT frame=1620 y=223.01023329659805 playerY=206.0 distance=17.72903 clip=phase4_idle_flying timer=17 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1630 y=222.17980093886584 playerY=206.0 distance=28.670502 clip=phase4_idle_flying timer=7 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1640 kind=2 clip=phase4_idle_flying time=27.0 pos=(19.743646314753637, 221.89172088391655, -60.02102106633314)
+FEEDBACK19_FLIGHT frame=1640 y=221.91089161280982 playerY=206.0 distance=46.41695 clip=phase4_idle_flying timer=56 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1641 clip=phase4_flying_transition_idle rootY=221.13100567642107 playerY=206.0 distance=48.041744
+FEEDBACK19_FLIGHT frame=1650 y=217.94905173853476 playerY=206.0 distance=50.993187 clip=phase4_flying_transition_idle timer=52 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1660 kind=2 clip=phase4_flying_transition_idle time=19.0 pos=(26.946044921875, 217.948974609375, -69.6103515625)
+FEEDBACK19_FLIGHT frame=1660 y=217.94905173853476 playerY=206.0 distance=50.993187 clip=phase4_flying_transition_idle timer=52 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1670 y=217.94905173853476 playerY=206.0 distance=50.993187 clip=phase4_flying_transition_idle timer=52 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1672 clip=phase4_idle rootY=217.94905173853476 playerY=206.0 distance=50.993187
+FEEDBACK19_CLIENT tick=1680 kind=2 clip=phase4_idle time=8.0 pos=(26.946044921875, 217.948974609375, -69.6103515625)
+FEEDBACK19_FLIGHT frame=1680 y=217.94905173853476 playerY=206.0 distance=50.993187 clip=phase4_idle timer=52 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1690 y=217.94905173853476 playerY=206.0 distance=50.993187 clip=phase4_idle timer=52 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1692 clip=phase4_idle_transition_flying rootY=217.94905173853476 playerY=206.0 distance=50.993187
+FEEDBACK19_CLIENT tick=1700 kind=2 clip=phase4_idle_transition_flying time=8.0 pos=(26.946044921875, 221.980224609375, -69.6103515625)
+FEEDBACK19_FLIGHT frame=1700 y=221.9803017385348 playerY=206.0 distance=52.08546 clip=phase4_idle_transition_flying timer=52 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1710 y=222.1746662362057 playerY=206.0 distance=42.75344 clip=phase4_idle_transition_flying timer=47 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1720 kind=2 clip=phase4_idle_transition_flying time=28.0 pos=(13.94702779618864, 222.54269672336326, -49.429022277259456)
+FEEDBACK19_FLIGHT frame=1720 y=222.73362967796132 playerY=206.0 distance=25.760674 clip=phase4_idle_transition_flying timer=37 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1723 clip=phase4_idle_flying rootY=222.97139198198423 playerY=206.0 distance=21.74319
+FEEDBACK19_FLIGHT frame=1730 y=223.64290857366726 playerY=206.0 distance=17.648853 clip=phase4_idle_flying timer=27 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1740 kind=2 clip=phase4_idle_flying time=17.0 pos=(-7.479279291834598, 224.20176394293387, -15.7182245955133)
+FEEDBACK19_FLIGHT frame=1740 y=224.39386890600875 playerY=206.0 distance=27.449957 clip=phase4_idle_flying timer=17 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=1741 clip=phase4.attack.apocalypse_rain rootY=224.44658969021842 playerY=206.0 distance=28.99834
+FEEDBACK19_FLIGHT frame=1750 y=224.77257777895286 playerY=206.0 distance=44.521774 clip=phase4.attack.apocalypse_rain timer=7 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_RAIN_FIRE frame=1751 age=10 rootY=224.79946906893022 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1752 age=11 rootY=224.82525796797566 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1753 age=12 rootY=224.84970479743063 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1754 age=13 rootY=224.87319299979575 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1755 age=14 rootY=224.895626704958 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1756 age=15 rootY=224.91705383598313 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1757 age=16 rootY=224.9377140491779 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1758 age=17 rootY=224.92625723144013 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1759 age=18 rootY=224.91527977055378 playerY=206.0
+FEEDBACK19_CLIENT tick=1760 kind=2 clip=phase4.attack.apocalypse_rain time=19.0 pos=(-28.817402154257152, 224.9074975611115, 18.10346347775626)
+FEEDBACK19_FLIGHT frame=1760 y=224.90463785971954 playerY=206.0 distance=63.25784 clip=phase4.attack.apocalypse_rain timer=27 speed=5 shards=40 low=207.63783420767143 high=238.7853138610299
+FEEDBACK19_RAIN_FIRE frame=1760 age=19 rootY=224.90463785971954 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1761 age=20 rootY=224.89447530759938 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1762 age=21 rootY=224.8845524343706 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1763 age=22 rootY=224.87520479433445 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1764 age=23 rootY=224.86609683505233 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1765 age=24 rootY=224.85727649169715 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1766 age=25 rootY=224.8487917024104 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1767 age=26 rootY=224.84045072097072 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1768 age=27 rootY=224.83254116627361 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1769 age=28 rootY=224.82467954744791 playerY=206.0
+FEEDBACK19_FLIGHT frame=1770 y=224.81715348344736 playerY=206.0 distance=82.309166 clip=phase4.attack.apocalypse_rain timer=17 speed=5 shards=66 low=201.628492900687 high=240.90462994184784
+FEEDBACK19_RAIN_FIRE frame=1770 age=29 rootY=224.81715348344736 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1771 age=30 rootY=224.80977122799234 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1772 age=31 rootY=224.80277246399058 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1773 age=32 rootY=224.7959175087672 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1774 age=33 rootY=224.7890625535438 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1775 age=34 rootY=224.7825431542515 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1776 age=35 rootY=224.776167563854 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1777 age=36 rootY=224.76979197345648 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1778 age=37 rootY=224.78096091088813 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1779 age=38 rootY=224.7814402798795 playerY=206.0
+FEEDBACK19_CLIENT tick=1780 kind=2 clip=phase4.attack.apocalypse_rain time=39.0 pos=(-40.94319691958916, 224.78205709882457, 53.13716203626455)
+FEEDBACK19_FLIGHT frame=1780 y=224.78191964887085 playerY=206.0 distance=91.116745 clip=phase4.attack.apocalypse_rain timer=7 speed=5 shards=86 low=202.13892741698513 high=241.3323759573905
+FEEDBACK19_RAIN_FIRE frame=1780 age=39 rootY=224.78191964887085 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1781 age=40 rootY=224.78239901786222 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1782 age=41 rootY=224.78287838685358 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1783 age=42 rootY=224.78335775584495 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1784 age=43 rootY=224.7838371248363 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1785 age=44 rootY=224.78474792585624 playerY=206.0
+FEEDBACK19_FLIGHT frame=1790 y=224.7562256767633 playerY=206.0 distance=71.659164 clip=phase4.attack.apocalypse_rain timer=38 speed=5 shards=85 low=198.08561949460275 high=241.9727660058925
+FEEDBACK19_CLIENT tick=1800 kind=2 clip=phase4.attack.apocalypse_rain time=59.0 pos=(-24.68328138229246, 224.6735810189662, 21.333319288830733)
+FEEDBACK19_FLIGHT frame=1800 y=224.63451509575683 playerY=206.0 distance=52.58123 clip=phase4.attack.apocalypse_rain timer=28 speed=5 shards=59 low=179.00605480401285 high=239.3772512716569
+FEEDBACK19_FLIGHT_ATTACK frame=1802 clip=phase4_idle_flying rootY=224.6056574803297 playerY=206.0 distance=48.85373
+FEEDBACK19_FLIGHT_ATTACK frame=1809 clip=phase4.attack.apocalypse_rain rootY=224.48471511250685 playerY=206.0 distance=36.26163
+FEEDBACK19_FLIGHT frame=1810 y=224.5180287964395 playerY=206.0 distance=34.578598 clip=phase4.attack.apocalypse_rain timer=18 speed=5 shards=49 low=159.28496389119394 high=225.94301546042337
+FEEDBACK19_RAIN_FIRE frame=1819 age=10 rootY=224.943973076086 playerY=206.0
+FEEDBACK19_CLIENT tick=1820 kind=2 clip=phase4.attack.apocalypse_rain time=11.0 pos=(-7.914686873662389, 224.83580153482416, -14.969811051937079)
+FEEDBACK19_FLIGHT frame=1820 y=225.01331539267997 playerY=206.0 distance=21.158615 clip=phase4.attack.apocalypse_rain timer=8 speed=5 shards=41 low=159.6288111522372 high=226.73507947197507
+FEEDBACK19_RAIN_FIRE frame=1820 age=11 rootY=225.01331539267997 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1821 age=12 rootY=225.08921801487307 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1822 age=13 rootY=225.17177530752818 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1823 age=14 rootY=225.26112966427903 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1824 age=15 rootY=225.3562745135496 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1825 age=16 rootY=225.45433822369526 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1826 age=17 rootY=225.55283283816973 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1827 age=18 rootY=225.64860034177403 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1828 age=19 rootY=225.7385297576184 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1829 age=20 rootY=225.75799164399362 playerY=206.0
+FEEDBACK19_FLIGHT frame=1830 y=225.77668659926715 playerY=206.0 distance=22.495535 clip=phase4.attack.apocalypse_rain timer=21 speed=5 shards=71 low=161.70662079529578 high=239.31910187473844
+FEEDBACK19_RAIN_FIRE frame=1830 age=21 rootY=225.77668659926715 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1831 age=22 rootY=225.79442288041903 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1832 age=23 rootY=225.81134428714725 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1833 age=24 rootY=225.8274987437981 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1834 age=25 rootY=225.84269450956347 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1835 age=26 rootY=225.8574109274414 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1836 age=27 rootY=225.8715521249906 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1837 age=28 rootY=225.8847346201292 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1838 age=29 rootY=225.8975336326039 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1839 age=30 rootY=225.90985329113758 playerY=206.0
+FEEDBACK19_CLIENT tick=1840 kind=2 clip=phase4.attack.apocalypse_rain time=31.0 pos=(16.036570507869037, 225.8812493445478, -45.56962775260261)
+FEEDBACK19_FLIGHT frame=1840 y=225.92164565974238 playerY=206.0 distance=35.338654 clip=phase4.attack.apocalypse_rain timer=11 speed=5 shards=80 low=159.70280322718466 high=241.4969016630421
+FEEDBACK19_RAIN_FIRE frame=1840 age=31 rootY=225.92164565974238 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1841 age=32 rootY=225.93295867242708 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1842 age=33 rootY=225.94427168511177 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1843 age=34 rootY=225.95510534024655 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1844 age=35 rootY=225.96545963724932 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1845 age=36 rootY=225.97533457483954 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1846 age=37 rootY=225.98520951242975 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1847 age=38 rootY=225.99450921706014 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1848 age=39 rootY=226.00380892169053 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1849 age=40 rootY=226.01262926504572 playerY=206.0
+FEEDBACK19_FLIGHT frame=1850 y=226.0214496084009 playerY=206.0 distance=48.311592 clip=phase4.attack.apocalypse_rain timer=1 speed=5 shards=92 low=201.0210822973386 high=241.95259552148494
+FEEDBACK19_RAIN_FIRE frame=1850 age=41 rootY=226.0214496084009 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1851 age=42 rootY=226.03026995175608 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1852 age=43 rootY=226.03026995175608 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1853 age=44 rootY=226.03026995175608 playerY=206.0
+FEEDBACK19_CLIENT tick=1860 kind=2 clip=phase4.attack.apocalypse_rain time=51.0 pos=(50.471873164394054, 226.02956274727592, -34.35514659286098)
+FEEDBACK19_FLIGHT frame=1860 y=226.03026995175608 playerY=206.0 distance=57.122704 clip=phase4.attack.apocalypse_rain timer=38 speed=5 shards=76 low=201.0186858651214 high=242.46879376740984
+FEEDBACK19_FLIGHT frame=1870 y=226.03026995175608 playerY=206.0 distance=59.789223 clip=phase4_idle_flying timer=28 speed=5 shards=48 low=197.67594051421477 high=241.07255522274502
+FEEDBACK19_FLIGHT_ATTACK frame=1870 clip=phase4_idle_flying rootY=226.03026995175608 playerY=206.0 distance=59.789223
+FEEDBACK19_CLIENT tick=1880 kind=2 clip=phase4_idle_flying time=10.0 pos=(44.330824622535914, 226.03027322377508, 0.7036279126638396)
+FEEDBACK19_FLIGHT frame=1880 y=226.03026995175608 playerY=206.0 distance=54.519672 clip=phase4_idle_flying timer=18 speed=5 shards=39 low=178.49553215564086 high=228.06508741640576
+FEEDBACK19_FLIGHT_ATTACK frame=1882 clip=phase4.attack.apocalypse_rain rootY=226.03026995175608 playerY=206.0 distance=52.603
+FEEDBACK19_FLIGHT frame=1890 y=226.19694170165897 playerY=206.0 distance=43.472546 clip=phase4.attack.apocalypse_rain timer=8 speed=5 shards=25 low=158.72107911170318 high=210.59100876116284
+FEEDBACK19_RAIN_FIRE frame=1892 age=10 rootY=226.24511641865686 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1893 age=11 rootY=226.27061774810866 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1894 age=12 rootY=226.29698182941505 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1895 age=13 rootY=226.32444829280578 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1896 age=14 rootY=226.35292126793505 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1897 age=15 rootY=226.38288004646168 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1898 age=16 rootY=226.41427666201346 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1899 age=17 rootY=226.42841785956264 playerY=206.0
+FEEDBACK19_CLIENT tick=1900 kind=2 clip=phase4.attack.apocalypse_rain time=18.0 pos=(7.179006329530211, 226.38046591389602, -0.8977988419081803)
+FEEDBACK19_FLIGHT frame=1900 y=226.44361362532803 playerY=206.0 distance=31.368902 clip=phase4.attack.apocalypse_rain timer=20 speed=5 shards=49 low=161.1139151489115 high=238.32071404062302
+FEEDBACK19_RAIN_FIRE frame=1900 age=18 rootY=226.44361362532803 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1901 age=19 rootY=226.45976808197886 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1902 age=20 rootY=226.47750436313075 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1903 age=21 rootY=226.49634311507546 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1904 age=22 rootY=226.51647606930786 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1905 age=23 rootY=226.53819079740063 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1906 age=24 rootY=226.56235004515477 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1907 age=25 rootY=226.58909754358322 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1908 age=26 rootY=226.61910422212534 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1909 age=27 rootY=226.65256164428868 playerY=206.0
+FEEDBACK19_FLIGHT frame=1910 y=226.69085941320375 playerY=206.0 distance=24.448221 clip=phase4.attack.apocalypse_rain timer=10 speed=5 shards=69 low=161.21371909757002 high=243.1536996569121
+FEEDBACK19_RAIN_FIRE frame=1910 age=28 rootY=226.69085941320375 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1911 age=29 rootY=226.73414090644658 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1912 age=30 rootY=226.78341189814822 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1913 age=31 rootY=226.83838431533516 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1914 age=32 rootY=226.89699767340065 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1915 age=33 rootY=226.95541947145105 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1916 age=34 rootY=227.00991311572582 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1917 age=35 rootY=227.05841780077756 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1918 age=36 rootY=227.1001181560205 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1919 age=37 rootY=227.1366428865222 playerY=206.0
+FEEDBACK19_CLIENT tick=1920 kind=2 clip=phase4.attack.apocalypse_rain time=38.0 pos=(-13.511315644424826, 227.04789223526527, -33.266070240574116)
+FEEDBACK19_FLIGHT frame=1920 y=227.16827916862533 playerY=206.0 distance=27.626093 clip=phase4.attack.apocalypse_rain timer=47 speed=5 shards=86 low=201.2750930890543 high=243.26545453114525
+FEEDBACK19_RAIN_FIRE frame=1920 age=38 rootY=227.16827916862533 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1921 age=39 rootY=227.095009625853 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1922 age=40 rootY=227.0285405804971 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1923 age=41 rootY=226.96877737805337 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1924 age=42 rootY=226.91442750344143 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1925 age=43 rootY=226.86525210129187 playerY=206.0
+FEEDBACK19_RAIN_FIRE frame=1926 age=44 rootY=226.8207725048633 playerY=206.0
+FEEDBACK19_FLIGHT frame=1930 y=226.67683068216868 playerY=206.0 distance=37.89454 clip=phase4.attack.apocalypse_rain timer=37 speed=5 shards=89 low=201.38948694473223 high=244.03447653908373
+FEEDBACK19_CLIENT tick=1940 kind=2 clip=phase4.attack.apocalypse_rain time=58.0 pos=(-1.8451692358038638, 226.50945691839684, -70.56917616652437)
+FEEDBACK19_FLIGHT frame=1940 y=226.44995379153264 playerY=206.0 distance=51.612347 clip=phase4.attack.apocalypse_rain timer=27 speed=5 shards=51 low=201.4414577390635 high=241.65784092197285
+FEEDBACK19_FLIGHT_ATTACK frame=1943 clip=phase4_idle_flying rootY=226.40062761338052 playerY=206.0 distance=55.808403
+FEEDBACK19_FLIGHT frame=1950 y=226.30580960478258 playerY=206.0 distance=65.014565 clip=phase4_idle_flying timer=17 speed=5 shards=33 low=201.0203803092809 high=230.00094945678578
+FEEDBACK19_CLIENT tick=1960 kind=2 clip=phase4_idle_flying time=17.0 pos=(31.297653444804066, 226.22922420292167, -89.72947019371045)
+FEEDBACK19_FLIGHT frame=1960 y=226.19871939901353 playerY=206.0 distance=74.663826 clip=phase4_idle_flying timer=7 speed=5 shards=21 low=185.64592393530623 high=213.01942332038746
+FEEDBACK19_FLIGHT frame=1970 y=226.16789606949172 playerY=206.0 distance=76.550156 clip=phase4_idle_flying timer=46 speed=5 shards=14 low=165.95972844256178 high=192.54163639709444
+FEEDBACK19_CLIENT tick=1980 kind=2 clip=phase4_idle_flying time=37.0 pos=(57.61768642190753, 226.2439394458768, -65.66091741247955)
+FEEDBACK19_FLIGHT frame=1980 y=226.27661611083752 playerY=206.0 distance=68.98244 clip=phase4_idle_flying timer=36 speed=5 shards=6 low=161.892452461143 high=173.03163700267763
+FEEDBACK19_FLIGHT frame=1990 y=226.39890192136957 playerY=206.0 distance=54.76524 clip=phase4_idle_flying timer=26 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=2000 kind=2 clip=phase4_idle_flying time=57.0 pos=(37.338645496498536, 226.50801836922423, -34.347427799302096)
+FEEDBACK19_FLIGHT frame=2000 y=226.56193234308014 playerY=206.0 distance=38.17983 clip=phase4_idle_flying timer=16 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=2007 clip=phase4_flying_transition_idle rootY=225.92177719126778 playerY=206.0 distance=27.028778
+FEEDBACK19_FLIGHT frame=2010 y=223.56433490675263 playerY=206.0 distance=22.638895 clip=phase4_flying_transition_idle timer=6 speed=3 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=2020 kind=2 clip=phase4_flying_transition_idle time=13.0 pos=(14.221435546875, 222.758056640625, -29.329345703125)
+FEEDBACK19_FLIGHT frame=2020 y=222.75808490675263 playerY=206.0 distance=22.019243 clip=phase4_flying_transition_idle timer=6 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=2030 y=222.75808490675263 playerY=206.0 distance=22.019243 clip=phase4_flying_transition_idle timer=6 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=2038 clip=phase4_idle rootY=222.75808490675263 playerY=206.0 distance=22.019243
+FEEDBACK19_CLIENT tick=2040 kind=2 clip=phase4_idle time=2.0 pos=(14.221435546875, 222.758056640625, -29.329345703125)
+FEEDBACK19_FLIGHT frame=2040 y=222.75808490675263 playerY=206.0 distance=22.019243 clip=phase4_idle timer=6 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=2050 y=222.75808490675263 playerY=206.0 distance=22.019243 clip=phase4_idle timer=6 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=2053 clip=phase4.attack.godrays rootY=222.75808490675263 playerY=206.0 distance=22.019243
+FEEDBACK19_CLIENT tick=2060 kind=2 clip=phase4.attack.godrays time=7.0 pos=(14.221435546875, 224.09138997395834, -29.329345703125)
+FEEDBACK19_FLIGHT frame=2060 y=227.25808490675263 playerY=206.0 distance=25.610933 clip=phase4.attack.godrays timer=6 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=2070 y=230.25808490675263 playerY=206.0 distance=28.150814 clip=phase4.attack.godrays timer=6 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=2080 kind=2 clip=phase4.attack.godrays time=27.0 pos=(14.221435546875, 230.258056640625, -29.329345703125)
+FEEDBACK19_FLIGHT frame=2080 y=230.25808490675263 playerY=206.0 distance=28.150814 clip=phase4.attack.godrays timer=6 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=2090 y=230.25808490675263 playerY=206.0 distance=28.150814 clip=phase4.attack.godrays timer=6 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=2100 kind=2 clip=phase4.attack.godrays time=47.0 pos=(14.221435546875, 230.258056640625, -29.329345703125)
+FEEDBACK19_FLIGHT frame=2100 y=230.25808490675263 playerY=206.0 distance=28.150814 clip=phase4.attack.godrays timer=6 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=2110 y=230.25808490675263 playerY=206.0 distance=28.150814 clip=phase4.attack.godrays timer=6 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=2114 clip=phase4_idle rootY=230.25808490675263 playerY=206.0 distance=28.150814
+FEEDBACK19_CLIENT tick=2120 kind=2 clip=phase4_idle time=6.0 pos=(14.221435546875, 230.258056640625, -29.329345703125)
+FEEDBACK19_FLIGHT frame=2120 y=230.25808490675263 playerY=206.0 distance=28.150814 clip=phase4_idle timer=6 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=2130 y=230.25808490675263 playerY=206.0 distance=28.150814 clip=phase4_idle_transition_flying timer=6 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=2130 clip=phase4_idle_transition_flying rootY=230.25808490675263 playerY=206.0 distance=28.150814
+FEEDBACK19_CLIENT tick=2140 kind=2 clip=phase4_idle_transition_flying time=10.0 pos=(14.221435546875, 234.289306640625, -29.329345703125)
+FEEDBACK19_FLIGHT frame=2140 y=234.28933490675266 playerY=206.0 distance=31.690695 clip=phase4_idle_transition_flying timer=6 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=2150 y=233.80483205444037 playerY=206.0 distance=27.83498 clip=phase4_idle_transition_flying timer=50 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=2160 kind=2 clip=phase4_idle_transition_flying time=30.0 pos=(-13.164680765035117, 233.92649563083384, -28.60870240314052)
+FEEDBACK19_FLIGHT frame=2160 y=233.97308740313022 playerY=206.0 distance=33.702282 clip=phase4_idle_transition_flying timer=40 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=2161 clip=phase4_idle_flying rootY=233.98876251538607 playerY=206.0 distance=34.744892
+FEEDBACK19_FLIGHT frame=2170 y=234.10788429088282 playerY=206.0 distance=44.99057 clip=phase4_idle_flying timer=30 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=2180 kind=2 clip=phase4_idle_flying time=19.0 pos=(-28.41792480383511, 234.1746310532789, -61.03641745553069)
+FEEDBACK19_FLIGHT frame=2180 y=234.1997787932269 playerY=206.0 distance=54.660973 clip=phase4_idle_flying timer=20 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=2189 clip=phase4_flying_transition_idle rootY=233.45608624197632 playerY=206.0 distance=58.653458
+FEEDBACK19_FLIGHT frame=2190 y=232.65635562956888 playerY=206.0 distance=58.40548 clip=phase4_flying_transition_idle timer=10 speed=4 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=2200 kind=2 clip=phase4_flying_transition_idle time=11.0 pos=(-9.292724609375, 230.249755859375, -79.2607421875)
+FEEDBACK19_FLIGHT frame=2200 y=230.24987740426877 playerY=206.0 distance=57.463734 clip=phase4_flying_transition_idle timer=8 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=2210 y=230.24987740426877 playerY=206.0 distance=57.463734 clip=phase4_flying_transition_idle timer=8 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=2220 kind=2 clip=phase4_flying_transition_idle time=31.0 pos=(-9.292724609375, 230.249755859375, -79.2607421875)
+FEEDBACK19_FLIGHT frame=2220 y=230.24987740426877 playerY=206.0 distance=57.463734 clip=phase4_idle timer=8 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=2220 clip=phase4_idle rootY=230.24987740426877 playerY=206.0 distance=57.463734
+FEEDBACK19_FLIGHT frame=2230 y=230.24987740426877 playerY=206.0 distance=57.463734 clip=phase4_idle timer=8 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=2238 clip=phase4_idle_transition_flying rootY=230.24987740426877 playerY=206.0 distance=57.463734
+FEEDBACK19_CLIENT tick=2240 kind=2 clip=phase4_idle_transition_flying time=2.0 pos=(-9.292724609375, 230.5185546875, -79.2607421875)
+FEEDBACK19_FLIGHT frame=2240 y=231.86237740426878 playerY=206.0 distance=58.16259 clip=phase4_idle_transition_flying timer=8 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=2250 y=234.2811274042688 playerY=206.0 distance=59.277706 clip=phase4_idle_transition_flying timer=8 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=2260 kind=2 clip=phase4_idle_transition_flying time=22.0 pos=(-7.992352381437185, 234.33646306655808, -67.18539170560415)
+FEEDBACK19_FLIGHT frame=2260 y=234.31804209914847 playerY=206.0 distance=44.42386 clip=phase4_idle_transition_flying timer=42 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=2269 clip=phase4_idle_flying rootY=233.89640498268275 playerY=206.0 distance=32.406734
+FEEDBACK19_FLIGHT frame=2270 y=233.83793529975085 playerY=206.0 distance=31.399075 clip=phase4_idle_flying timer=32 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=2276 clip=phase4_flying_transition_idle rootY=232.6116109840092 playerY=206.0 distance=26.796621
+FEEDBACK19_CLIENT tick=2280 kind=2 clip=phase4_flying_transition_idle time=4.0 pos=(-2.1894776924290023, 231.45930883005323, -28.87694033237421)
+FEEDBACK19_FLIGHT frame=2280 y=229.26291595040675 playerY=206.0 distance=23.388468 clip=phase4_flying_transition_idle timer=23 speed=3 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=2290 y=229.26291595040675 playerY=206.0 distance=23.388468 clip=phase4_flying_transition_idle timer=23 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=2300 kind=2 clip=phase4_flying_transition_idle time=24.0 pos=(-1.39892578125, 229.262939453125, -26.025146484375)
+FEEDBACK19_HIGH_RAIN_FIXTURE root=(0.0, 231.0, 4.0) player=(0.0, 201.0, -28.0)
+FEEDBACK19_FLIGHT frame=2300 y=231.0 playerY=201.0 distance=43.863426 clip=phase4.attack.apocalypse_rain timer=40 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT_ATTACK frame=2300 clip=phase4.attack.apocalypse_rain rootY=231.0 playerY=201.0 distance=43.863426
+FEEDBACK19_FLIGHT frame=2310 y=231.0 playerY=201.0 distance=32.31099 clip=phase4.attack.apocalypse_rain timer=30 speed=5 shards=4 low=231.0 high=231.0
+FEEDBACK19_RAIN_FIRE frame=2310 age=10 rootY=231.0 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2311 age=11 rootY=231.0 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2312 age=12 rootY=231.0 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2313 age=13 rootY=231.0 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2314 age=14 rootY=230.99118006788194 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2315 age=15 rootY=230.8677494637668 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2316 age=16 rootY=230.6022522561252 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2317 age=17 rootY=230.1941189803183 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2318 age=18 rootY=229.6434159167111 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2319 age=19 rootY=228.95100139454007 playerY=201.0
+FEEDBACK19_CLIENT tick=2320 kind=2 clip=phase4.attack.apocalypse_rain time=20.0 pos=(0.11749339989304641, 229.84771753632972, -29.867472774736708)
+FEEDBACK19_FLIGHT frame=2320 y=228.11872335150838 playerY=201.0 distance=28.150574 clip=phase4.attack.apocalypse_rain timer=20 speed=5 shards=44 low=211.66093122959137 high=245.28612703084946
+FEEDBACK19_RAIN_FIRE frame=2320 age=20 rootY=228.11872335150838 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2321 age=21 rootY=227.14962910488248 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2322 age=22 rootY=226.04781444743276 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2323 age=23 rootY=224.81904586032033 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2324 age=24 rootY=223.47012143209577 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2325 age=25 rootY=222.00915433838964 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2326 age=26 rootY=220.44527458027005 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2327 age=27 rootY=218.7889039106667 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2328 age=28 rootY=217.0513048954308 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2329 age=29 rootY=215.24380480125546 playerY=201.0
+FEEDBACK19_FLIGHT frame=2330 y=213.37808506563306 playerY=201.0 distance=23.754728 clip=phase4.attack.apocalypse_rain timer=10 speed=5 shards=74 low=202.54383588396013 high=247.0858365111053
+FEEDBACK19_RAIN_FIRE frame=2330 age=30 rootY=213.37808506563306 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2331 age=31 rootY=211.4657019264996 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2332 age=32 rootY=209.51804913952947 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2333 age=33 rootY=207.54631634429097 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2334 age=34 rootY=205.56131081655622 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2335 age=35 rootY=203.57352866604924 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2336 age=36 rootY=201.5931760855019 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2337 age=37 rootY=201.0175437051803 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2338 age=38 rootY=201.12323405221105 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2339 age=39 rootY=201.32349594309926 playerY=201.0
+FEEDBACK19_CLIENT tick=2340 kind=2 clip=phase4.attack.apocalypse_rain time=40.0 pos=(4.4267360734390975, 202.47080061326184, -47.0517895663324)
+FEEDBACK19_FLIGHT frame=2340 y=201.61887407675385 playerY=201.0 distance=16.67994 clip=phase4.attack.apocalypse_rain timer=22 speed=5 shards=64 low=201.32349594309926 high=242.2285362072289
+FEEDBACK19_RAIN_FIRE frame=2340 age=40 rootY=201.61887407675385 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2341 age=41 rootY=201.97848812118173 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2342 age=42 rootY=202.3825206719339 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2343 age=43 rootY=202.82955030724406 playerY=201.0
+FEEDBACK19_RAIN_FIRE frame=2344 age=44 rootY=203.31833808496594 playerY=201.0
+FEEDBACK19_FLIGHT frame=2350 y=207.04619914665818 playerY=201.0 distance=12.579858 clip=phase4.attack.apocalypse_rain timer=12 speed=5 shards=70 low=206.06809386610985 high=229.8920879252255
+FEEDBACK19_CLIENT tick=2360 kind=2 clip=phase4.attack.apocalypse_rain time=60.0 pos=(5.566720164275071, 212.75045943597254, -13.05866714169415)
+FEEDBACK19_FLIGHT frame=2360 y=215.3076713718474 playerY=201.0 distance=23.85816 clip=phase4.attack.apocalypse_rain timer=2 speed=5 shards=52 low=201.04338853433728 high=218.64039002731442
+FEEDBACK19_FLIGHT_ATTACK frame=2361 clip=phase4_idle_flying rootY=216.15753277018666 playerY=201.0 distance=25.11033
+FEEDBACK19_FLIGHT frame=2370 y=226.15175737813115 playerY=201.0 distance=37.16871 clip=phase4_idle_flying timer=51 speed=5 shards=13 low=183.53790459409356 high=206.43169598653913
+FEEDBACK19_CLIENT tick=2380 kind=2 clip=phase4_idle_flying time=19.0 pos=(-21.274770942679464, 236.4122287253102, -8.93857481654813)
+FEEDBACK19_FLIGHT frame=2380 y=240.71332277730107 playerY=201.0 distance=48.774944 clip=phase4_idle_flying timer=41 speed=5 shards=10 low=164.64308116212487 high=177.02960284426808
+FEEDBACK19_FLIGHT_ATTACK frame=2385 clip=phase4.attack.corkscrew rootY=246.79858909919858 playerY=201.0 distance=52.482716
+FEEDBACK19_FLIGHT frame=2390 y=250.8202831633389 playerY=201.0 distance=54.524284 clip=phase4.attack.corkscrew timer=31 speed=5 shards=10 low=145.02650103345513 high=157.46112187579274
+FEEDBACK19_CLIENT tick=2400 kind=2 clip=phase4.attack.corkscrew time=15.0 pos=(-14.528282732247877, 251.50914906344298, -40.22167233418596)
+FEEDBACK19_CAPTURE_COMPLETE
+FEEDBACK19_FLIGHT frame=2400 y=249.48430563509464 playerY=201.0 distance=52.105698 clip=phase4.attack.corkscrew timer=24 speed=5 shards=0 low=1000.0 high=-1000.0
+[04:31:55] [Render thread/INFO] [minecraft/Minecraft]: Stopping!
+[04:31:55] [Server thread/INFO] [minecraft/ServerGamePacketListenerImpl]: Dev lost connection: Disconnected
+[04:31:55] [Server thread/INFO] [minecraft/MinecraftServer]: Dev left the game
+[04:31:55] [Server thread/INFO] [minecraft/ServerGamePacketListenerImpl]: Stopping singleplayer server as player logged out
+[04:31:55] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[04:31:55] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[04:31:55] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[04:31:55] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Feedback19]'/minecraft:overworld
+[04:31:56] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Feedback19]'/minecraft:the_nether
+[04:31:56] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Feedback19]'/nyctocosm:emissary_domain
+[04:31:56] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Feedback19]'/nyctocosm:dusk_plane
+[04:31:56] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Feedback19]'/nyctocosm:nyctocosm
+[04:31:56] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Feedback19]'/minecraft:the_end
+[04:31:56] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (Feedback19): All chunks are saved
+[04:31:56] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[04:31:56] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (emissary_domain): All chunks are saved
+[04:31:56] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (dusk_plane): All chunks are saved
+[04:31:56] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (nyctocosm): All chunks are saved
+[04:31:56] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[04:31:56] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 2m 34s
+10 actionable tasks: 3 executed, 7 up-to-date

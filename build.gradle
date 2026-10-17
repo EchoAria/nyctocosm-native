@@ -2,7 +2,7 @@ plugins {
     id 'java'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
-version = '0.3.0-native-alpha.8'
+version = '0.3.0-native-alpha.20'
 group = 'com.flubberschnub.nyctocosm'
 base { archivesName = 'nyctocosm-native' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -16,13 +16,42 @@ minecraft {
             mods { nyctocosm { source sourceSets.main } }
         }
         client {
+            if (project.hasProperty('feedback19Smoke')) {
+                workingDirectory project.file(project.property('feedback19RunDir'))
+                property 'nyctocosm.feedback19Smoke', 'true'
+                if (project.hasProperty('feedback19IdleOnly')) property 'nyctocosm.feedback19IdleOnly', 'true'
+            }
+            if (project.hasProperty('bossRepairSmoke')) {
+                workingDirectory project.file(project.property('bossRepairRunDir'))
+                property 'nyctocosm.bossRepairSmoke', 'true'
+            }
+            if (project.hasProperty('sorcererRepairSmoke')) {
+                workingDirectory project.file(project.property('sorcererRepairRunDir'))
+                property 'nyctocosm.sorcererRepairSmoke', 'true'
+            }
+            if (project.hasProperty('visualRepairSmoke')) {
+                workingDirectory project.file(project.property('visualRepairRunDir'))
+                property 'nyctocosm.visualRepairSmoke', 'true'
+            }
+            if (project.hasProperty('resonanceSmoke')) {
+                property 'nyctocosm.resonanceSmoke', 'true'
+                args '--quickPlaySingleplayer', 'NativeSmoke'
+            }
+            if (project.hasProperty('p0Smoke')) {
+                property 'nyctocosm.p0Smoke', 'true'
+                args '--quickPlaySingleplayer', 'NativeSmoke'
+            }
             if (project.hasProperty('smoke')) {
                 property 'nyctocosm.clientSmoke', 'true'
                 args '--quickPlaySingleplayer', 'NativeSmoke'
             }
         }
         server { args '--nogui' }
-        gameTestServer { property 'forge.enabledGameTestNamespaces', 'nyctocosm' }
+        gameTestServer {
+            property 'forge.enabledGameTestNamespaces', 'nyctocosm'
+            // Optional isolated test world; never delete or repurpose an existing development save.
+            if (project.hasProperty('gameTestRunDir')) workingDirectory project.file(project.property('gameTestRunDir'))
+        }
         data {
             workingDirectory project.file('run-data')
             args '--mod', 'nyctocosm', '--all', '--output', file('src/generated/resources'), '--existing', file('src/main/resources')
@@ -31,6 +60,10 @@ minecraft {
 }
 dependencies { minecraft 'net.minecraftforge:forge:1.20.1-47.4.13' }
 tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('processResources').configure {
+    inputs.property 'mod_version', project.version
+    filesMatching('META-INF/mods.toml') { expand mod_version: project.version }
+}
 tasks.named('jar', Jar).configure {
     exclude '**/NativeGameTests*', '**/ClientSmoke*', 'data/nyctocosm/structures/empty.nbt', 'data/nyctocosm/structures/portal_test.nbt'
     finalizedBy 'reobfJar'

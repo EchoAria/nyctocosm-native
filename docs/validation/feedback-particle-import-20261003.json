@@ -1,0 +1,36 @@
+{
+  "source_sha256": {
+    "effects/functions/shockwave/__generated__/block/1.mcfunction": "52d8365caad9ec6067d77098eb93dfc5cae3d3ef0402fc1d6ee1409fe90bfd53",
+    "effects/functions/shockwave/__generated__/block/2.mcfunction": "8aa155b86a1658c1ce98bb8596beb9105700db8f16bc54c08201474270e7fbcf",
+    "effects/functions/shockwave/__generated__/block/3.mcfunction": "9cdf7b76ef55d5c2580dac9989c23326fda526849079f30bfb699b8c6c0b456e",
+    "effects/functions/elements/radiance/transmutate/subtick.mcfunction": "526b9798bb22e1554d7a5dd1b651221dee7750cd5252fe78f7694d2d1f2f5697",
+    "effects/functions/elements/radiance/transmutate/play.mcfunction": "b7ac8fed7769690e78ad9ded804b874675fa153daf5c69d5b87a7a479caa72a1",
+    "spells/functions/resistance/__generated__/block/458.mcfunction": "c602cc1a9aaf9462e23a9a924ad3a8d780f0c55a8c062db05778f48a9c7d6e22",
+    "emissary/functions/ai/phase/4/__generated__/block/764.mcfunction": "89624785d3cd858d61f223fc53bf4581ca760ba25b5966805a4c3e4f78c5e5f5",
+    "emissary/functions/ai/phase/4/__generated__/block/786.mcfunction": "785b7b95e73031a14ad05d4e7573b54d9f87c50538ac49a8cd116918f6d568c2",
+    "emissary/functions/attacks/phase4/divine_blast/__generated__/block/717.mcfunction": "e6c03c5cad32d6cf8da68bdd75f0d8eb1ebc1d01dcb1059dec675f0d09f9b35c",
+    "emissary/functions/attacks/phase4/godrays/__generated__/block/676.mcfunction": "ae0618107299e2f2f63b83cf4de11eae50b82b4103761bc62d9dda2a70225957",
+    "emissary/functions/attacks/phase4/godrays/__generated__/block/681.mcfunction": "e3f0edb8afbbfb50b2c08e0325a3f68b7009ae82185948bbf5b94424d1224e6d",
+    "emissary/functions/attacks/phase4/godrays/__generated__/block/679.mcfunction": "d9a32f8e5da771fad94e3999ebc58025299f2260731a013f1cd4d21b03c1a2d5",
+    "effects/functions/shockwave/__generated__/block/17.mcfunction": "9113f53941e4dd724fb124c21f69a2cf2aed8d2c8f3f8cf37dd1f47dc31e7329",
+    "effects/functions/shockwave/__generated__/block/18.mcfunction": "142d5fa41b9bec668a4661e4bea522665b66ff832bb0612889d212effe3812ce",
+    "effects/functions/shockwave/__generated__/block/19.mcfunction": "632b217b7e75b28c925188dcda6b1661e2757fd7a483b0e95a61eccb208533d1",
+    "effects/functions/shockwave/__generated__/block/21.mcfunction": "ba9bee078d0504f7410ddf1b8223bdfc56d067a4ea005c818ffcd4e0c4ff94b0",
+    "effects/functions/shockwave/__generated__/block/22.mcfunction": "a8b77c7ece5a9d6d21e8fef76cf4babe836441ae3e84ec69457db2b3ca9be4ca",
+    "emissary/functions/ai/phase/4/__generated__/block/768.mcfunction": "5eab7cd858a1e14e0900a9ce8c8ea304c00cfa1e13547009f108faaff2949a43"
+  },
+  "rows": {
+    "plane": 1000,
+    "radiance": 722,
+    "resistance": 1,
+    "flight": 10,
+    "flight_step": 4,
+    "divine_ray": 27,
+    "god_ray": 3,
+    "god_signal": 1,
+    "ray_impact": 3,
+    "meteor_ring": 1130,
+    "meteor_ring_small": 400,
+    "corkscrew": 72
+  }
+}

@@ -1,0 +1,330 @@
+Picked up JAVA_TOOL_OPTIONS: -Dnet.minecraftforge.gradle.check.certs=false
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Neither the 'eclipse' nor the 'idea' plugins were found, but IDE resource copy has been enabled.
+
+> Task :compileJava FAILED
+Picked up JAVA_TOOL_OPTIONS: -Dnet.minecraftforge.gradle.check.certs=false
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:779: ����: ��Ҫ class��interface��enum �� record
+    private void tickEmissaryWithoutTarget(ServerLevel server){
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:782: ����: ��Ҫ class��interface��enum �� record
+            if(attackAge==160){releaseEmissaryGrapple(server);chooseEmissaryFlyTarget(null);}
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:782: ����: ��Ҫ class��interface��enum �� record
+            if(attackAge==160){releaseEmissaryGrapple(server);chooseEmissaryFlyTarget(null);}
+                                                              ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:782: ����: ��Ҫ class��interface��enum �� record
+            if(attackAge==160){releaseEmissaryGrapple(server);chooseEmissaryFlyTarget(null);}
+                                                                                            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:785: ����: ��Ҫ class��interface��enum �� record
+        if(attackAge==64)emissaryCorkscrew=false;
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:786: ����: ��Ҫ class��interface��enum �� record
+    }
+    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:789: ����: ��Ҫ class��interface��enum �� record
+        return quick?aimed.scale(10).add(toward.normalize().scale(.5)).normalize():aimed;
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:790: ����: ��Ҫ class��interface��enum �� record
+    }
+    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:793: ����: ��Ҫ class��interface��enum �� record
+        return quick?SorcererCastMath.turn(turn.yaw(),turn.pitch(),toward,10):turn;
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:794: ����: ��Ҫ class��interface��enum �� record
+    }
+    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:797: ����: ��Ҫ class��interface��enum �� record
+        if(emissaryFlightAnchor==null)emissaryFlightAnchor=position();
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:798: ����: ��Ҫ class��interface��enum �� record
+        return emissaryFlightAnchor;
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:799: ����: ��Ҫ class��interface��enum �� record
+    }
+    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:802: ����: ��Ҫ class��interface��enum �� record
+        Vec3 anchor=emissaryFlightCenter(target);
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:803: ����: ��Ҫ class��interface��enum �� record
+        getNavigation().stop();setNoGravity(true);setDeltaMovement(Vec3.ZERO);
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:803: ����: ��Ҫ class��interface��enum �� record
+        getNavigation().stop();setNoGravity(true);setDeltaMovement(Vec3.ZERO);
+                               ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:803: ����: ��Ҫ class��interface��enum �� record
+        getNavigation().stop();setNoGravity(true);setDeltaMovement(Vec3.ZERO);
+                                                  ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:804: ����: ��Ҫ class��interface��enum �� record
+        if(emissaryFlyTarget==null)chooseEmissaryFlyTarget(target);
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:805: ����: ��Ҫ class��interface��enum �� record
+        for(int step=0;step<Math.max(1,emissaryFlySpeed-1);step++){
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:805: ����: ��Ҫ class��interface��enum �� record
+        for(int step=0;step<Math.max(1,emissaryFlySpeed-1);step++){
+                       ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:805: ����: ��Ҫ class��interface��enum �� record
+        for(int step=0;step<Math.max(1,emissaryFlySpeed-1);step++){
+                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:808: ����: ��Ҫ class��interface��enum �� record
+            if(position().distanceToSqr(anchor)>96*96){
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:809: ����: ��Ҫ class��interface��enum �� record
+                singleEmissaryFlyTarget(anchor.add(0,20,0));turn=SorcererCastMath.facing(emissaryFlyTarget.subtract(position()));
+                                                            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:810: ����: ��Ҫ class��interface��enum �� record
+            }
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:811: ����: ��Ҫ class��interface��enum �� record
+            setYRot(turn.yaw());setXRot(turn.pitch());yBodyRot=getYRot();
+                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:811: ����: ��Ҫ class��interface��enum �� record
+            setYRot(turn.yaw());setXRot(turn.pitch());yBodyRot=getYRot();
+                                                      ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:812: ����: ��Ҫ class��interface��enum �� record
+            Vec3 next=position().add(turn.forward().scale(.5));
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:813: ����: ��Ҫ class��interface��enum �� record
+            Vec3 fromAnchor=next.subtract(anchor);if(fromAnchor.lengthSqr()>128*128)next=anchor.add(fromAnchor.normalize().scale(128));
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:813: ����: ��Ҫ class��interface��enum �� record
+            Vec3 fromAnchor=next.subtract(anchor);if(fromAnchor.lengthSqr()>128*128)next=anchor.add(fromAnchor.normalize().scale(128));
+                                                  ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:814: ����: ��Ҫ class��interface��enum �� record
+            if(!server.hasChunkAt(BlockPos.containing(next)))break;
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:815: ����: ��Ҫ class��interface��enum �� record
+            setPos(next);fallDistance=0;
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:815: ����: ��Ҫ class��interface��enum �� record
+            setPos(next);fallDistance=0;
+                         ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:816: ����: ��Ҫ class��interface��enum �� record
+            if(!emissaryPassable(server,blockPosition())){
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:817: ����: ��Ҫ class��interface��enum �� record
+                setPos(getX(),server.getHeight(Heightmap.Types.WORLD_SURFACE,getBlockX(),getBlockZ()),getZ());setXRot(0);
+                                                                                                              ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:818: ����: ��Ҫ class��interface��enum �� record
+                if(emissarySeatId!=null){singleEmissaryFlyTarget(position().add(SerpentMotion.forward(getYRot()).scale(50)));NativeEvents.sound(server,position(),"emissary.attack.grapple.slam",3);}
+                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:818: ����: ��Ҫ class��interface��enum �� record
+                if(emissarySeatId!=null){singleEmissaryFlyTarget(position().add(SerpentMotion.forward(getYRot()).scale(50)));NativeEvents.sound(server,position(),"emissary.attack.grapple.slam",3);}
+                                                                                                                             ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:818: ����: ��Ҫ class��interface��enum �� record
+                if(emissarySeatId!=null){singleEmissaryFlyTarget(position().add(SerpentMotion.forward(getYRot()).scale(50)));NativeEvents.sound(server,position(),"emissary.attack.grapple.slam",3);}
+                                                                                                                                                                                                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:819: ����: ��Ҫ class��interface��enum �� record
+                else if(emissaryCorkscrew){chooseEmissaryFlyTarget(target);emissaryQuickTurn=false;}
+                                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:819: ����: ��Ҫ class��interface��enum �� record
+                else if(emissaryCorkscrew){chooseEmissaryFlyTarget(target);emissaryQuickTurn=false;}
+                                                                                                   ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:821: ����: ��Ҫ class��interface��enum �� record
+            if(reachedEmissaryFlyTarget()){chooseEmissaryFlyTarget(target);if(emissaryCorkscrew)emissaryQuickTurn=false;}
+                                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:821: ����: ��Ҫ class��interface��enum �� record
+            if(reachedEmissaryFlyTarget()){chooseEmissaryFlyTarget(target);if(emissaryCorkscrew)emissaryQuickTurn=false;}
+                                                                                                                        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:823: ����: ��Ҫ<��ʶ��>
+                var victims=server.getEntitiesOfClass(Player.class,getBoundingBox().inflate(1.5),p->Combat.canHit(this,p)&&p.getBoundingBox().intersects(new AABB(position().add(-1.5,-1.5,-1.5),position().add(1.5,1.5,1.5))));
+                                                                  ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:824: ����: ��Ҫ class��interface��enum �� record
+                if(!victims.isEmpty()){
+                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:825: ����: ��Ҫ class��interface��enum �� record
+                    emissaryGrappleTrying=false;singleEmissaryFlyTarget(position().add(SerpentMotion.localForward(getYRot(),-35).scale(100)));
+                                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:826: ����: ��Ҫ class��interface��enum �� record
+                    beginAttack(server,target,GRAPPLE_GRAB);
+                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:827: ����: ��Ҫ class��interface��enum �� record
+                    var seat=EmissaryGrappleSeat.create(server,this);emissarySeatId=seat.getUUID();
+                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:827: ����: ��Ҫ class��interface��enum �� record
+                    var seat=EmissaryGrappleSeat.create(server,this);emissarySeatId=seat.getUUID();
+                                                                     ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:828: ����: ��Ҫ class��interface��enum �� record
+                    for(Player player:server.getEntitiesOfClass(Player.class,getBoundingBox().inflate(5),p->Combat.canHit(this,p)&&distanceToSqr(p)<=25))player.startRiding(seat,true);
+                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:828: ����: ��Ҫ<��ʶ��>
+                    for(Player player:server.getEntitiesOfClass(Player.class,getBoundingBox().inflate(5),p->Combat.canHit(this,p)&&distanceToSqr(p)<=25))player.startRiding(seat,true);
+                                                                            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:829: ����: ��Ҫ class��interface��enum �� record
+                    NativeEvents.sound(server,position(),"emissary.attack.grapple.grab",3);
+                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:830: ����: ��Ҫ class��interface��enum �� record
+                }
+                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:833: ����: ��Ҫ class��interface��enum �� record
+            if(emissaryCorkscrew){
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:835: ����: ��Ҫ class��interface��enum �� record
+                NativeNetwork.sourceVisual(server,"corkscrew",emissaryCorkscrewScore,position(),getYRot(),getXRot());
+                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:836: ����: ��Ҫ class��interface��enum �� record
+                for(LivingEntity victim:server.getEntitiesOfClass(LivingEntity.class,getBoundingBox().inflate(2)))if(victim.hurtTime==0)emissaryPhysicalHit(this,victim,60);
+                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:836: ����: ��Ҫ<��ʶ��>
+                for(LivingEntity victim:server.getEntitiesOfClass(LivingEntity.class,getBoundingBox().inflate(2)))if(victim.hurtTime==0)emissaryPhysicalHit(this,victim,60);
+                                                                                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:837: ����: ��Ҫ class��interface��enum �� record
+            }
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:839: ����: ��Ҫ class��interface��enum �� record
+        }
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:841: ����: ��Ҫ class��interface��enum �� record
+        NativeEvents.resonanceSound(server,position(),"emissary.movement.fly",3,200);hurtMarked=true;
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:841: ����: ��Ҫ class��interface��enum �� record
+        NativeEvents.resonanceSound(server,position(),"emissary.movement.fly",3,200);hurtMarked=true;
+                                                                                     ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:842: ����: ��Ҫ class��interface��enum �� record
+    }
+    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:845: ����: ��Ҫ class��interface��enum �� record
+        for(var region:server.getEntitiesOfClass(EmissaryHitRegion.class,getBoundingBox().inflate(64),r->r.ownedBy(this)))region.discard();
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:845: ����: ��Ҫ<��ʶ��>
+        for(var region:server.getEntitiesOfClass(EmissaryHitRegion.class,getBoundingBox().inflate(64),r->r.ownedBy(this)))region.discard();
+                                                                        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:846: ����: ��Ҫ class��interface��enum �� record
+        attack=null;attackAge=0;getNavigation().stop();setDeltaMovement(Vec3.ZERO);
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:846: ����: ��Ҫ class��interface��enum �� record
+        attack=null;attackAge=0;getNavigation().stop();setDeltaMovement(Vec3.ZERO);
+                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:846: ����: ��Ҫ class��interface��enum �� record
+        attack=null;attackAge=0;getNavigation().stop();setDeltaMovement(Vec3.ZERO);
+                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:846: ����: ��Ҫ class��interface��enum �� record
+        attack=null;attackAge=0;getNavigation().stop();setDeltaMovement(Vec3.ZERO);
+                                                       ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:847: ����: ��Ҫ class��interface��enum �� record
+        boolean broken=++emissaryPoise>=7;if(broken)emissaryPoise=0;
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:847: ����: ��Ҫ class��interface��enum �� record
+        boolean broken=++emissaryPoise>=7;if(broken)emissaryPoise=0;
+                                          ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:848: ����: ��Ҫ class��interface��enum �� record
+        animate(broken?"phase3.parry.break":"phase3.parry",broken?61:21);
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:849: ����: ��Ҫ class��interface��enum �� record
+        NativeEvents.sound(server,position(),broken?"emissary.attack.parrybreak":"emissary.attack.parry",2);
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:850: ����: ��Ҫ class��interface��enum �� record
+        server.sendParticles(ParticleTypes.FLASH,getX(),getY()+1.7,getZ(),1,0,0,0,0);
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:851: ����: ��Ҫ class��interface��enum �� record
+    }
+    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:853: ����: ��Ҫ class��interface��enum �� record
+        for(int i=0;i<repeats&&distanceTo(target)>1.5;i++)setPos(position().add(SerpentMotion.forward(getYRot()).scale(step)));
+                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:853: ����: ��Ҫ class��interface��enum �� record
+        for(int i=0;i<repeats&&distanceTo(target)>1.5;i++)setPos(position().add(SerpentMotion.forward(getYRot()).scale(step)));
+                                                      ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:854: ����: ��Ҫ class��interface��enum �� record
+    }
+    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:858: ����: ��Ҫ class��interface��enum �� record
+    }
+    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:861: ����: ��Ҫ class��interface��enum �� record
+    }
+    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:863: ����: ��Ҫ class��interface��enum �� record
+        String id=attack.animation;Vec3 point=emissaryPoint==null?target.position():emissaryPoint;
+                                   ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:864: ����: ��Ҫ class��interface��enum �� record
+        if(attack.pattern==Pattern.MOVE){
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:865: ����: ��Ҫ class��interface��enum �� record
+            Vec3 toward=target.position().subtract(position());if(toward.lengthSqr()<.001)toward=getLookAngle();toward=toward.normalize();Vec3 right=new Vec3(-toward.z,0,toward.x);
+                                                               ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:865: ����: ��Ҫ class��interface��enum �� record
+            Vec3 toward=target.position().subtract(position());if(toward.lengthSqr()<.001)toward=getLookAngle();toward=toward.normalize();Vec3 right=new Vec3(-toward.z,0,toward.x);
+                                                                                                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:865: ����: ��Ҫ class��interface��enum �� record
+            Vec3 toward=target.position().subtract(position());if(toward.lengthSqr()<.001)toward=getLookAngle();toward=toward.normalize();Vec3 right=new Vec3(-toward.z,0,toward.x);
+                                                                                                                                          ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:866: ����: ��Ҫ class��interface��enum �� record
+            if(attack==STRAFE_LEFT||attack==STRAFE_RIGHT){if(attackAge>=3&&attackAge<17)setPos(position().add(right.scale(attack==STRAFE_LEFT?-4:4)));}
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:866: ����: ��Ҫ class��interface��enum �� record
+            if(attack==STRAFE_LEFT||attack==STRAFE_RIGHT){if(attackAge>=3&&attackAge<17)setPos(position().add(right.scale(attack==STRAFE_LEFT?-4:4)));}
+                                                                                                                                                      ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:867: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==STRAFE_LEFT_3||attack==STRAFE_RIGHT_3){if(attackAge<=9)setPos(position().add(right.scale(attack==STRAFE_LEFT_3?-1:1)));}
+                                                                                                                                                   ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:868: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==RUN_CLOSE){setYRot((float)(Math.toDegrees(Math.atan2(toward.z,toward.x))-90));setPos(position().add(toward.multiply(.7,0,.7)));if(distanceTo(target)<=5){finishAnimation(server);return;}if(attackAge>=10)attackAge=-1;remaining=12;}
+                                                                                                          ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:868: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==RUN_CLOSE){setYRot((float)(Math.toDegrees(Math.atan2(toward.z,toward.x))-90));setPos(position().add(toward.multiply(.7,0,.7)));if(distanceTo(target)<=5){finishAnimation(server);return;}if(attackAge>=10)attackAge=-1;remaining=12;}
+                                                                                                                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:868: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==RUN_CLOSE){setYRot((float)(Math.toDegrees(Math.atan2(toward.z,toward.x))-90));setPos(position().add(toward.multiply(.7,0,.7)));if(distanceTo(target)<=5){finishAnimation(server);return;}if(attackAge>=10)attackAge=-1;remaining=12;}
+                                                                                                                                                                                                             ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:868: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==RUN_CLOSE){setYRot((float)(Math.toDegrees(Math.atan2(toward.z,toward.x))-90));setPos(position().add(toward.multiply(.7,0,.7)));if(distanceTo(target)<=5){finishAnimation(server);return;}if(attackAge>=10)attackAge=-1;remaining=12;}
+                                                                                                                                                                                                                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:868: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==RUN_CLOSE){setYRot((float)(Math.toDegrees(Math.atan2(toward.z,toward.x))-90));setPos(position().add(toward.multiply(.7,0,.7)));if(distanceTo(target)<=5){finishAnimation(server);return;}if(attackAge>=10)attackAge=-1;remaining=12;}
+                                                                                                                                                                                                                                                   ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:868: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==RUN_CLOSE){setYRot((float)(Math.toDegrees(Math.atan2(toward.z,toward.x))-90));setPos(position().add(toward.multiply(.7,0,.7)));if(distanceTo(target)<=5){finishAnimation(server);return;}if(attackAge>=10)attackAge=-1;remaining=12;}
+                                                                                                                                                                                                                                                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:870: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==TAKE_OFF){if(attackAge==14){emissaryFlying=true;setNoGravity(true);}if(attackAge==1)NativeEvents.sound(server,position(),"emissary.movement.flytransition",5);}
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:870: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==TAKE_OFF){if(attackAge==14){emissaryFlying=true;setNoGravity(true);}if(attackAge==1)NativeEvents.sound(server,position(),"emissary.movement.flytransition",5);}
+                                                                            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:870: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==TAKE_OFF){if(attackAge==14){emissaryFlying=true;setNoGravity(true);}if(attackAge==1)NativeEvents.sound(server,position(),"emissary.movement.flytransition",5);}
+                                                                                               ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:870: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==TAKE_OFF){if(attackAge==14){emissaryFlying=true;setNoGravity(true);}if(attackAge==1)NativeEvents.sound(server,position(),"emissary.movement.flytransition",5);}
+                                                                                                                                                                                          ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:871: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==LAND){if(attackAge==0||attackAge==3||attackAge>=6&&attackAge<=11)emissaryFlySpeed=Math.max(1,emissaryFlySpeed-1);if(attackAge==4){emissaryFlying=false;setNoGravity(false);setXRot(0);}}
+                                                                                                                                             ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:871: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==LAND){if(attackAge==0||attackAge==3||attackAge>=6&&attackAge<=11)emissaryFlySpeed=Math.max(1,emissaryFlySpeed-1);if(attackAge==4){emissaryFlying=false;setNoGravity(false);setXRot(0);}}
+                                                                                                                                                                                   ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:871: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==LAND){if(attackAge==0||attackAge==3||attackAge>=6&&attackAge<=11)emissaryFlySpeed=Math.max(1,emissaryFlySpeed-1);if(attackAge==4){emissaryFlying=false;setNoGravity(false);setXRot(0);}}
+                                                                                                                                                                                                       ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:871: ����: ��Ҫ class��interface��enum �� record
+            else if(attack==LAND){if(attackAge==0||attackAge==3||attackAge>=6&&attackAge<=11)emissaryFlySpeed=Math.max(1,emissaryFlySpeed-1);if(attackAge==4){emissaryFlying=false;setNoGravity(false);setXRot(0);}}
+                                                                                                                                                                                                                  ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:873: ����: ��Ҫ class��interface��enum �� record
+            hurtMarked=true;return;
+            ^
+100 ������
+����ʾǰ 100 �����󣨹� 678 ��������Ҫ�鿴���������ʹ�� -Xmaxerrs
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+
+BUILD FAILED in 5s
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+1 actionable task: 1 executed

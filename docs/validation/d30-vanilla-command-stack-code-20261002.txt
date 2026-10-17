@@ -1,0 +1,1234 @@
+Compiled from "CommandSourceStack.java"
+public class net.minecraft.commands.CommandSourceStack implements net.minecraft.commands.SharedSuggestionProvider,net.minecraftforge.common.extensions.IForgeCommandSourceStack {
+  public static final com.mojang.brigadier.exceptions.SimpleCommandExceptionType ERROR_NOT_PLAYER;
+
+  public static final com.mojang.brigadier.exceptions.SimpleCommandExceptionType ERROR_NOT_ENTITY;
+
+  public final net.minecraft.commands.CommandSource source;
+
+  private final net.minecraft.world.phys.Vec3 worldPosition;
+
+  private final net.minecraft.server.level.ServerLevel level;
+
+  private final int permissionLevel;
+
+  private final java.lang.String textName;
+
+  private final net.minecraft.network.chat.Component displayName;
+
+  private final net.minecraft.server.MinecraftServer server;
+
+  private final boolean silent;
+
+  private final net.minecraft.world.entity.Entity entity;
+
+  private final com.mojang.brigadier.ResultConsumer<net.minecraft.commands.CommandSourceStack> consumer;
+
+  private final net.minecraft.commands.arguments.EntityAnchorArgument$Anchor anchor;
+
+  private final net.minecraft.world.phys.Vec2 rotation;
+
+  private final net.minecraft.commands.CommandSigningContext signingContext;
+
+  private final net.minecraft.util.TaskChainer chatMessageChainer;
+
+  private final java.util.function.IntConsumer returnValueConsumer;
+
+  public net.minecraft.commands.CommandSourceStack(net.minecraft.commands.CommandSource, net.minecraft.world.phys.Vec3, net.minecraft.world.phys.Vec2, net.minecraft.server.level.ServerLevel, int, java.lang.String, net.minecraft.network.chat.Component, net.minecraft.server.MinecraftServer, net.minecraft.world.entity.Entity);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: iload         5
+       8: aload         6
+      10: aload         7
+      12: aload         8
+      14: aload         9
+      16: iconst_0
+      17: invokedynamic #91,  0             // InvokeDynamic #0:onCommandComplete:()Lcom/mojang/brigadier/ResultConsumer;
+      22: getstatic     #94                 // Field net/minecraft/commands/arguments/EntityAnchorArgument$Anchor.FEET:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+      25: getstatic     #99                 // Field net/minecraft/commands/CommandSigningContext.ANONYMOUS:Lnet/minecraft/commands/CommandSigningContext;
+      28: aload         8
+      30: invokestatic  #105                // InterfaceMethod net/minecraft/util/TaskChainer.immediate:(Ljava/util/concurrent/Executor;)Lnet/minecraft/util/TaskChainer;
+      33: invokedynamic #115,  0            // InvokeDynamic #1:accept:()Ljava/util/function/IntConsumer;
+      38: invokespecial #118                // Method "<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;ZLcom/mojang/brigadier/ResultConsumer;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/commands/CommandSigningContext;Lnet/minecraft/util/TaskChainer;Ljava/util/function/IntConsumer;)V
+      41: return
+
+  protected net.minecraft.commands.CommandSourceStack(net.minecraft.commands.CommandSource, net.minecraft.world.phys.Vec3, net.minecraft.world.phys.Vec2, net.minecraft.server.level.ServerLevel, int, java.lang.String, net.minecraft.network.chat.Component, net.minecraft.server.MinecraftServer, net.minecraft.world.entity.Entity, boolean, com.mojang.brigadier.ResultConsumer<net.minecraft.commands.CommandSourceStack>, net.minecraft.commands.arguments.EntityAnchorArgument$Anchor, net.minecraft.commands.CommandSigningContext, net.minecraft.util.TaskChainer, java.util.function.IntConsumer);
+    Code:
+       0: aload_0
+       1: invokespecial #133                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+       9: aload_0
+      10: aload_2
+      11: putfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      14: aload_0
+      15: aload         4
+      17: putfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+      20: aload_0
+      21: iload         10
+      23: putfield      #141                // Field silent:Z
+      26: aload_0
+      27: aload         9
+      29: putfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+      32: aload_0
+      33: iload         5
+      35: putfield      #145                // Field permissionLevel:I
+      38: aload_0
+      39: aload         6
+      41: putfield      #147                // Field textName:Ljava/lang/String;
+      44: aload_0
+      45: aload         7
+      47: putfield      #149                // Field displayName:Lnet/minecraft/network/chat/Component;
+      50: aload_0
+      51: aload         8
+      53: putfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      56: aload_0
+      57: aload         11
+      59: putfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+      62: aload_0
+      63: aload         12
+      65: putfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+      68: aload_0
+      69: aload_3
+      70: putfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+      73: aload_0
+      74: aload         13
+      76: putfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+      79: aload_0
+      80: aload         14
+      82: putfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+      85: aload_0
+      86: aload         15
+      88: putfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+      91: return
+
+  public net.minecraft.commands.CommandSourceStack withSource(net.minecraft.commands.CommandSource);
+    Code:
+       0: aload_0
+       1: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+       4: aload_1
+       5: if_acmpne     12
+       8: aload_0
+       9: goto          76
+      12: new           #2                  // class net/minecraft/commands/CommandSourceStack
+      15: dup
+      16: aload_1
+      17: aload_0
+      18: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      21: aload_0
+      22: getfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+      25: aload_0
+      26: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+      29: aload_0
+      30: getfield      #145                // Field permissionLevel:I
+      33: aload_0
+      34: getfield      #147                // Field textName:Ljava/lang/String;
+      37: aload_0
+      38: getfield      #149                // Field displayName:Lnet/minecraft/network/chat/Component;
+      41: aload_0
+      42: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      45: aload_0
+      46: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+      49: aload_0
+      50: getfield      #141                // Field silent:Z
+      53: aload_0
+      54: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+      57: aload_0
+      58: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+      61: aload_0
+      62: getfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+      65: aload_0
+      66: getfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+      69: aload_0
+      70: getfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+      73: invokespecial #118                // Method "<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;ZLcom/mojang/brigadier/ResultConsumer;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/commands/CommandSigningContext;Lnet/minecraft/util/TaskChainer;Ljava/util/function/IntConsumer;)V
+      76: areturn
+
+  public net.minecraft.commands.CommandSourceStack withEntity(net.minecraft.world.entity.Entity);
+    Code:
+       0: aload_0
+       1: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+       4: aload_1
+       5: if_acmpne     12
+       8: aload_0
+       9: goto          81
+      12: new           #2                  // class net/minecraft/commands/CommandSourceStack
+      15: dup
+      16: aload_0
+      17: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      20: aload_0
+      21: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      24: aload_0
+      25: getfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+      28: aload_0
+      29: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+      32: aload_0
+      33: getfield      #145                // Field permissionLevel:I
+      36: aload_1
+      37: invokevirtual #189                // Method net/minecraft/world/entity/Entity.getName:()Lnet/minecraft/network/chat/Component;
+      40: invokeinterface #195,  1          // InterfaceMethod net/minecraft/network/chat/Component.getString:()Ljava/lang/String;
+      45: aload_1
+      46: invokevirtual #198                // Method net/minecraft/world/entity/Entity.getDisplayName:()Lnet/minecraft/network/chat/Component;
+      49: aload_0
+      50: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      53: aload_1
+      54: aload_0
+      55: getfield      #141                // Field silent:Z
+      58: aload_0
+      59: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+      62: aload_0
+      63: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+      66: aload_0
+      67: getfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+      70: aload_0
+      71: getfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+      74: aload_0
+      75: getfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+      78: invokespecial #118                // Method "<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;ZLcom/mojang/brigadier/ResultConsumer;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/commands/CommandSigningContext;Lnet/minecraft/util/TaskChainer;Ljava/util/function/IntConsumer;)V
+      81: areturn
+
+  public net.minecraft.commands.CommandSourceStack withPosition(net.minecraft.world.phys.Vec3);
+    Code:
+       0: aload_0
+       1: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+       4: aload_1
+       5: invokevirtual #207                // Method net/minecraft/world/phys/Vec3.equals:(Ljava/lang/Object;)Z
+       8: ifeq          15
+      11: aload_0
+      12: goto          79
+      15: new           #2                  // class net/minecraft/commands/CommandSourceStack
+      18: dup
+      19: aload_0
+      20: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      23: aload_1
+      24: aload_0
+      25: getfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+      28: aload_0
+      29: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+      32: aload_0
+      33: getfield      #145                // Field permissionLevel:I
+      36: aload_0
+      37: getfield      #147                // Field textName:Ljava/lang/String;
+      40: aload_0
+      41: getfield      #149                // Field displayName:Lnet/minecraft/network/chat/Component;
+      44: aload_0
+      45: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      48: aload_0
+      49: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+      52: aload_0
+      53: getfield      #141                // Field silent:Z
+      56: aload_0
+      57: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+      60: aload_0
+      61: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+      64: aload_0
+      65: getfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+      68: aload_0
+      69: getfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+      72: aload_0
+      73: getfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+      76: invokespecial #118                // Method "<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;ZLcom/mojang/brigadier/ResultConsumer;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/commands/CommandSigningContext;Lnet/minecraft/util/TaskChainer;Ljava/util/function/IntConsumer;)V
+      79: areturn
+
+  public net.minecraft.commands.CommandSourceStack withRotation(net.minecraft.world.phys.Vec2);
+    Code:
+       0: aload_0
+       1: getfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+       4: aload_1
+       5: invokevirtual #215                // Method net/minecraft/world/phys/Vec2.equals:(Lnet/minecraft/world/phys/Vec2;)Z
+       8: ifeq          15
+      11: aload_0
+      12: goto          79
+      15: new           #2                  // class net/minecraft/commands/CommandSourceStack
+      18: dup
+      19: aload_0
+      20: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      23: aload_0
+      24: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      27: aload_1
+      28: aload_0
+      29: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+      32: aload_0
+      33: getfield      #145                // Field permissionLevel:I
+      36: aload_0
+      37: getfield      #147                // Field textName:Ljava/lang/String;
+      40: aload_0
+      41: getfield      #149                // Field displayName:Lnet/minecraft/network/chat/Component;
+      44: aload_0
+      45: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      48: aload_0
+      49: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+      52: aload_0
+      53: getfield      #141                // Field silent:Z
+      56: aload_0
+      57: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+      60: aload_0
+      61: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+      64: aload_0
+      65: getfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+      68: aload_0
+      69: getfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+      72: aload_0
+      73: getfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+      76: invokespecial #118                // Method "<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;ZLcom/mojang/brigadier/ResultConsumer;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/commands/CommandSigningContext;Lnet/minecraft/util/TaskChainer;Ljava/util/function/IntConsumer;)V
+      79: areturn
+
+  public net.minecraft.commands.CommandSourceStack withCallback(com.mojang.brigadier.ResultConsumer<net.minecraft.commands.CommandSourceStack>);
+    Code:
+       0: aload_0
+       1: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+       4: aload_1
+       5: invokestatic  #224                // Method java/util/Objects.equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+       8: ifeq          15
+      11: aload_0
+      12: goto          79
+      15: new           #2                  // class net/minecraft/commands/CommandSourceStack
+      18: dup
+      19: aload_0
+      20: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      23: aload_0
+      24: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      27: aload_0
+      28: getfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+      31: aload_0
+      32: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+      35: aload_0
+      36: getfield      #145                // Field permissionLevel:I
+      39: aload_0
+      40: getfield      #147                // Field textName:Ljava/lang/String;
+      43: aload_0
+      44: getfield      #149                // Field displayName:Lnet/minecraft/network/chat/Component;
+      47: aload_0
+      48: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      51: aload_0
+      52: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+      55: aload_0
+      56: getfield      #141                // Field silent:Z
+      59: aload_1
+      60: aload_0
+      61: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+      64: aload_0
+      65: getfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+      68: aload_0
+      69: getfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+      72: aload_0
+      73: getfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+      76: invokespecial #118                // Method "<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;ZLcom/mojang/brigadier/ResultConsumer;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/commands/CommandSigningContext;Lnet/minecraft/util/TaskChainer;Ljava/util/function/IntConsumer;)V
+      79: areturn
+
+  public net.minecraft.commands.CommandSourceStack withCallback(com.mojang.brigadier.ResultConsumer<net.minecraft.commands.CommandSourceStack>, java.util.function.BinaryOperator<com.mojang.brigadier.ResultConsumer<net.minecraft.commands.CommandSourceStack>>);
+    Code:
+       0: aload_2
+       1: aload_0
+       2: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+       5: aload_1
+       6: invokeinterface #233,  3          // InterfaceMethod java/util/function/BinaryOperator.apply:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      11: checkcast     #235                // class com/mojang/brigadier/ResultConsumer
+      14: astore_3
+      15: aload_0
+      16: aload_3
+      17: invokevirtual #237                // Method withCallback:(Lcom/mojang/brigadier/ResultConsumer;)Lnet/minecraft/commands/CommandSourceStack;
+      20: areturn
+
+  public net.minecraft.commands.CommandSourceStack withSuppressedOutput();
+    Code:
+       0: aload_0
+       1: getfield      #141                // Field silent:Z
+       4: ifne          86
+       7: aload_0
+       8: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      11: invokeinterface #250,  1          // InterfaceMethod net/minecraft/commands/CommandSource.alwaysAccepts:()Z
+      16: ifne          86
+      19: new           #2                  // class net/minecraft/commands/CommandSourceStack
+      22: dup
+      23: aload_0
+      24: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      27: aload_0
+      28: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      31: aload_0
+      32: getfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+      35: aload_0
+      36: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+      39: aload_0
+      40: getfield      #145                // Field permissionLevel:I
+      43: aload_0
+      44: getfield      #147                // Field textName:Ljava/lang/String;
+      47: aload_0
+      48: getfield      #149                // Field displayName:Lnet/minecraft/network/chat/Component;
+      51: aload_0
+      52: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      55: aload_0
+      56: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+      59: iconst_1
+      60: aload_0
+      61: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+      64: aload_0
+      65: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+      68: aload_0
+      69: getfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+      72: aload_0
+      73: getfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+      76: aload_0
+      77: getfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+      80: invokespecial #118                // Method "<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;ZLcom/mojang/brigadier/ResultConsumer;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/commands/CommandSigningContext;Lnet/minecraft/util/TaskChainer;Ljava/util/function/IntConsumer;)V
+      83: goto          87
+      86: aload_0
+      87: areturn
+
+  public net.minecraft.commands.CommandSourceStack withPermission(int);
+    Code:
+       0: iload_1
+       1: aload_0
+       2: getfield      #145                // Field permissionLevel:I
+       5: if_icmpne     12
+       8: aload_0
+       9: goto          76
+      12: new           #2                  // class net/minecraft/commands/CommandSourceStack
+      15: dup
+      16: aload_0
+      17: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      20: aload_0
+      21: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      24: aload_0
+      25: getfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+      28: aload_0
+      29: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+      32: iload_1
+      33: aload_0
+      34: getfield      #147                // Field textName:Ljava/lang/String;
+      37: aload_0
+      38: getfield      #149                // Field displayName:Lnet/minecraft/network/chat/Component;
+      41: aload_0
+      42: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      45: aload_0
+      46: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+      49: aload_0
+      50: getfield      #141                // Field silent:Z
+      53: aload_0
+      54: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+      57: aload_0
+      58: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+      61: aload_0
+      62: getfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+      65: aload_0
+      66: getfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+      69: aload_0
+      70: getfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+      73: invokespecial #118                // Method "<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;ZLcom/mojang/brigadier/ResultConsumer;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/commands/CommandSigningContext;Lnet/minecraft/util/TaskChainer;Ljava/util/function/IntConsumer;)V
+      76: areturn
+
+  public net.minecraft.commands.CommandSourceStack withMaximumPermission(int);
+    Code:
+       0: iload_1
+       1: aload_0
+       2: getfield      #145                // Field permissionLevel:I
+       5: if_icmpgt     12
+       8: aload_0
+       9: goto          76
+      12: new           #2                  // class net/minecraft/commands/CommandSourceStack
+      15: dup
+      16: aload_0
+      17: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      20: aload_0
+      21: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      24: aload_0
+      25: getfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+      28: aload_0
+      29: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+      32: iload_1
+      33: aload_0
+      34: getfield      #147                // Field textName:Ljava/lang/String;
+      37: aload_0
+      38: getfield      #149                // Field displayName:Lnet/minecraft/network/chat/Component;
+      41: aload_0
+      42: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      45: aload_0
+      46: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+      49: aload_0
+      50: getfield      #141                // Field silent:Z
+      53: aload_0
+      54: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+      57: aload_0
+      58: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+      61: aload_0
+      62: getfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+      65: aload_0
+      66: getfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+      69: aload_0
+      70: getfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+      73: invokespecial #118                // Method "<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;ZLcom/mojang/brigadier/ResultConsumer;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/commands/CommandSigningContext;Lnet/minecraft/util/TaskChainer;Ljava/util/function/IntConsumer;)V
+      76: areturn
+
+  public net.minecraft.commands.CommandSourceStack withAnchor(net.minecraft.commands.arguments.EntityAnchorArgument$Anchor);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+       5: if_acmpne     12
+       8: aload_0
+       9: goto          76
+      12: new           #2                  // class net/minecraft/commands/CommandSourceStack
+      15: dup
+      16: aload_0
+      17: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      20: aload_0
+      21: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      24: aload_0
+      25: getfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+      28: aload_0
+      29: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+      32: aload_0
+      33: getfield      #145                // Field permissionLevel:I
+      36: aload_0
+      37: getfield      #147                // Field textName:Ljava/lang/String;
+      40: aload_0
+      41: getfield      #149                // Field displayName:Lnet/minecraft/network/chat/Component;
+      44: aload_0
+      45: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      48: aload_0
+      49: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+      52: aload_0
+      53: getfield      #141                // Field silent:Z
+      56: aload_0
+      57: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+      60: aload_1
+      61: aload_0
+      62: getfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+      65: aload_0
+      66: getfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+      69: aload_0
+      70: getfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+      73: invokespecial #118                // Method "<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;ZLcom/mojang/brigadier/ResultConsumer;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/commands/CommandSigningContext;Lnet/minecraft/util/TaskChainer;Ljava/util/function/IntConsumer;)V
+      76: areturn
+
+  public net.minecraft.commands.CommandSourceStack withLevel(net.minecraft.server.level.ServerLevel);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+       5: if_acmpne     10
+       8: aload_0
+       9: areturn
+      10: aload_0
+      11: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+      14: invokevirtual #266                // Method net/minecraft/server/level/ServerLevel.dimensionType:()Lnet/minecraft/world/level/dimension/DimensionType;
+      17: aload_1
+      18: invokevirtual #266                // Method net/minecraft/server/level/ServerLevel.dimensionType:()Lnet/minecraft/world/level/dimension/DimensionType;
+      21: invokestatic  #272                // Method net/minecraft/world/level/dimension/DimensionType.getTeleportationScale:(Lnet/minecraft/world/level/dimension/DimensionType;Lnet/minecraft/world/level/dimension/DimensionType;)D
+      24: dstore_2
+      25: new           #203                // class net/minecraft/world/phys/Vec3
+      28: dup
+      29: aload_0
+      30: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      33: getfield      #276                // Field net/minecraft/world/phys/Vec3.x:D
+      36: dload_2
+      37: dmul
+      38: aload_0
+      39: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      42: getfield      #279                // Field net/minecraft/world/phys/Vec3.y:D
+      45: aload_0
+      46: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      49: getfield      #282                // Field net/minecraft/world/phys/Vec3.z:D
+      52: dload_2
+      53: dmul
+      54: invokespecial #285                // Method net/minecraft/world/phys/Vec3."<init>":(DDD)V
+      57: astore        4
+      59: new           #2                  // class net/minecraft/commands/CommandSourceStack
+      62: dup
+      63: aload_0
+      64: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      67: aload         4
+      69: aload_0
+      70: getfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+      73: aload_1
+      74: aload_0
+      75: getfield      #145                // Field permissionLevel:I
+      78: aload_0
+      79: getfield      #147                // Field textName:Ljava/lang/String;
+      82: aload_0
+      83: getfield      #149                // Field displayName:Lnet/minecraft/network/chat/Component;
+      86: aload_0
+      87: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      90: aload_0
+      91: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+      94: aload_0
+      95: getfield      #141                // Field silent:Z
+      98: aload_0
+      99: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+     102: aload_0
+     103: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+     106: aload_0
+     107: getfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+     110: aload_0
+     111: getfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+     114: aload_0
+     115: getfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+     118: invokespecial #118                // Method "<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;ZLcom/mojang/brigadier/ResultConsumer;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/commands/CommandSigningContext;Lnet/minecraft/util/TaskChainer;Ljava/util/function/IntConsumer;)V
+     121: areturn
+
+  public net.minecraft.commands.CommandSourceStack facing(net.minecraft.world.entity.Entity, net.minecraft.commands.arguments.EntityAnchorArgument$Anchor);
+    Code:
+       0: aload_0
+       1: aload_2
+       2: aload_1
+       3: invokevirtual #293                // Method net/minecraft/commands/arguments/EntityAnchorArgument$Anchor.apply:(Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/world/phys/Vec3;
+       6: invokevirtual #295                // Method facing:(Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/commands/CommandSourceStack;
+       9: areturn
+
+  public net.minecraft.commands.CommandSourceStack facing(net.minecraft.world.phys.Vec3);
+    Code:
+       0: aload_0
+       1: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+       4: aload_0
+       5: invokevirtual #300                // Method net/minecraft/commands/arguments/EntityAnchorArgument$Anchor.apply:(Lnet/minecraft/commands/CommandSourceStack;)Lnet/minecraft/world/phys/Vec3;
+       8: astore_2
+       9: aload_1
+      10: getfield      #276                // Field net/minecraft/world/phys/Vec3.x:D
+      13: aload_2
+      14: getfield      #276                // Field net/minecraft/world/phys/Vec3.x:D
+      17: dsub
+      18: dstore_3
+      19: aload_1
+      20: getfield      #279                // Field net/minecraft/world/phys/Vec3.y:D
+      23: aload_2
+      24: getfield      #279                // Field net/minecraft/world/phys/Vec3.y:D
+      27: dsub
+      28: dstore        5
+      30: aload_1
+      31: getfield      #282                // Field net/minecraft/world/phys/Vec3.z:D
+      34: aload_2
+      35: getfield      #282                // Field net/minecraft/world/phys/Vec3.z:D
+      38: dsub
+      39: dstore        7
+      41: dload_3
+      42: dload_3
+      43: dmul
+      44: dload         7
+      46: dload         7
+      48: dmul
+      49: dadd
+      50: invokestatic  #306                // Method java/lang/Math.sqrt:(D)D
+      53: dstore        9
+      55: dload         5
+      57: dload         9
+      59: invokestatic  #312                // Method net/minecraft/util/Mth.atan2:(DD)D
+      62: ldc2_w        #313                // double 57.2957763671875d
+      65: dmul
+      66: dneg
+      67: d2f
+      68: invokestatic  #318                // Method net/minecraft/util/Mth.wrapDegrees:(F)F
+      71: fstore        11
+      73: dload         7
+      75: dload_3
+      76: invokestatic  #312                // Method net/minecraft/util/Mth.atan2:(DD)D
+      79: ldc2_w        #313                // double 57.2957763671875d
+      82: dmul
+      83: d2f
+      84: ldc_w         #319                // float 90.0f
+      87: fsub
+      88: invokestatic  #318                // Method net/minecraft/util/Mth.wrapDegrees:(F)F
+      91: fstore        12
+      93: aload_0
+      94: new           #212                // class net/minecraft/world/phys/Vec2
+      97: dup
+      98: fload         11
+     100: fload         12
+     102: invokespecial #322                // Method net/minecraft/world/phys/Vec2."<init>":(FF)V
+     105: invokevirtual #324                // Method withRotation:(Lnet/minecraft/world/phys/Vec2;)Lnet/minecraft/commands/CommandSourceStack;
+     108: areturn
+
+  public net.minecraft.commands.CommandSourceStack withSigningContext(net.minecraft.commands.CommandSigningContext);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+       5: if_acmpne     12
+       8: aload_0
+       9: goto          76
+      12: new           #2                  // class net/minecraft/commands/CommandSourceStack
+      15: dup
+      16: aload_0
+      17: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      20: aload_0
+      21: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      24: aload_0
+      25: getfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+      28: aload_0
+      29: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+      32: aload_0
+      33: getfield      #145                // Field permissionLevel:I
+      36: aload_0
+      37: getfield      #147                // Field textName:Ljava/lang/String;
+      40: aload_0
+      41: getfield      #149                // Field displayName:Lnet/minecraft/network/chat/Component;
+      44: aload_0
+      45: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      48: aload_0
+      49: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+      52: aload_0
+      53: getfield      #141                // Field silent:Z
+      56: aload_0
+      57: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+      60: aload_0
+      61: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+      64: aload_1
+      65: aload_0
+      66: getfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+      69: aload_0
+      70: getfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+      73: invokespecial #118                // Method "<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;ZLcom/mojang/brigadier/ResultConsumer;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/commands/CommandSigningContext;Lnet/minecraft/util/TaskChainer;Ljava/util/function/IntConsumer;)V
+      76: areturn
+
+  public net.minecraft.commands.CommandSourceStack withChatMessageChainer(net.minecraft.util.TaskChainer);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+       5: if_acmpne     12
+       8: aload_0
+       9: goto          76
+      12: new           #2                  // class net/minecraft/commands/CommandSourceStack
+      15: dup
+      16: aload_0
+      17: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      20: aload_0
+      21: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      24: aload_0
+      25: getfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+      28: aload_0
+      29: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+      32: aload_0
+      33: getfield      #145                // Field permissionLevel:I
+      36: aload_0
+      37: getfield      #147                // Field textName:Ljava/lang/String;
+      40: aload_0
+      41: getfield      #149                // Field displayName:Lnet/minecraft/network/chat/Component;
+      44: aload_0
+      45: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      48: aload_0
+      49: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+      52: aload_0
+      53: getfield      #141                // Field silent:Z
+      56: aload_0
+      57: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+      60: aload_0
+      61: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+      64: aload_0
+      65: getfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+      68: aload_1
+      69: aload_0
+      70: getfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+      73: invokespecial #118                // Method "<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;ZLcom/mojang/brigadier/ResultConsumer;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/commands/CommandSigningContext;Lnet/minecraft/util/TaskChainer;Ljava/util/function/IntConsumer;)V
+      76: areturn
+
+  public net.minecraft.commands.CommandSourceStack withReturnValueConsumer(java.util.function.IntConsumer);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+       5: if_acmpne     12
+       8: aload_0
+       9: goto          76
+      12: new           #2                  // class net/minecraft/commands/CommandSourceStack
+      15: dup
+      16: aload_0
+      17: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      20: aload_0
+      21: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+      24: aload_0
+      25: getfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+      28: aload_0
+      29: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+      32: aload_0
+      33: getfield      #145                // Field permissionLevel:I
+      36: aload_0
+      37: getfield      #147                // Field textName:Ljava/lang/String;
+      40: aload_0
+      41: getfield      #149                // Field displayName:Lnet/minecraft/network/chat/Component;
+      44: aload_0
+      45: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      48: aload_0
+      49: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+      52: aload_0
+      53: getfield      #141                // Field silent:Z
+      56: aload_0
+      57: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+      60: aload_0
+      61: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+      64: aload_0
+      65: getfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+      68: aload_0
+      69: getfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+      72: aload_1
+      73: invokespecial #118                // Method "<init>":(Lnet/minecraft/commands/CommandSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/server/level/ServerLevel;ILjava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/entity/Entity;ZLcom/mojang/brigadier/ResultConsumer;Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;Lnet/minecraft/commands/CommandSigningContext;Lnet/minecraft/util/TaskChainer;Ljava/util/function/IntConsumer;)V
+      76: areturn
+
+  public net.minecraft.network.chat.Component getDisplayName();
+    Code:
+       0: aload_0
+       1: getfield      #149                // Field displayName:Lnet/minecraft/network/chat/Component;
+       4: areturn
+
+  public java.lang.String getTextName();
+    Code:
+       0: aload_0
+       1: getfield      #147                // Field textName:Ljava/lang/String;
+       4: areturn
+
+  public boolean hasPermission(int);
+    Code:
+       0: aload_0
+       1: getfield      #145                // Field permissionLevel:I
+       4: iload_1
+       5: if_icmplt     12
+       8: iconst_1
+       9: goto          13
+      12: iconst_0
+      13: ireturn
+
+  public net.minecraft.world.phys.Vec3 getPosition();
+    Code:
+       0: aload_0
+       1: getfield      #137                // Field worldPosition:Lnet/minecraft/world/phys/Vec3;
+       4: areturn
+
+  public net.minecraft.server.level.ServerLevel getLevel();
+    Code:
+       0: aload_0
+       1: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+       4: areturn
+
+  public net.minecraft.world.entity.Entity getEntity();
+    Code:
+       0: aload_0
+       1: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+       4: areturn
+
+  public net.minecraft.world.entity.Entity getEntityOrException() throws com.mojang.brigadier.exceptions.CommandSyntaxException;
+    Code:
+       0: aload_0
+       1: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+       4: ifnonnull     14
+       7: getstatic     #355                // Field ERROR_NOT_ENTITY:Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+      10: invokevirtual #361                // Method com/mojang/brigadier/exceptions/SimpleCommandExceptionType.create:()Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+      13: athrow
+      14: aload_0
+      15: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+      18: areturn
+
+  public net.minecraft.server.level.ServerPlayer getPlayerOrException() throws com.mojang.brigadier.exceptions.CommandSyntaxException;
+    Code:
+       0: aload_0
+       1: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+       4: astore_1
+       5: aload_1
+       6: instanceof    #365                // class net/minecraft/server/level/ServerPlayer
+       9: ifeq          17
+      12: aload_1
+      13: checkcast     #365                // class net/minecraft/server/level/ServerPlayer
+      16: areturn
+      17: getstatic     #367                // Field ERROR_NOT_PLAYER:Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+      20: invokevirtual #361                // Method com/mojang/brigadier/exceptions/SimpleCommandExceptionType.create:()Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+      23: athrow
+
+  public net.minecraft.server.level.ServerPlayer getPlayer();
+    Code:
+       0: aload_0
+       1: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+       4: astore_1
+       5: aload_1
+       6: instanceof    #365                // class net/minecraft/server/level/ServerPlayer
+       9: ifeq          22
+      12: aload_1
+      13: checkcast     #365                // class net/minecraft/server/level/ServerPlayer
+      16: astore_3
+      17: aload_3
+      18: astore_2
+      19: goto          24
+      22: aconst_null
+      23: astore_2
+      24: aload_2
+      25: areturn
+
+  public boolean isPlayer();
+    Code:
+       0: aload_0
+       1: getfield      #143                // Field entity:Lnet/minecraft/world/entity/Entity;
+       4: instanceof    #365                // class net/minecraft/server/level/ServerPlayer
+       7: ireturn
+
+  public net.minecraft.world.phys.Vec2 getRotation();
+    Code:
+       0: aload_0
+       1: getfield      #157                // Field rotation:Lnet/minecraft/world/phys/Vec2;
+       4: areturn
+
+  public net.minecraft.server.MinecraftServer getServer();
+    Code:
+       0: aload_0
+       1: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+       4: areturn
+
+  public net.minecraft.commands.arguments.EntityAnchorArgument$Anchor getAnchor();
+    Code:
+       0: aload_0
+       1: getfield      #155                // Field anchor:Lnet/minecraft/commands/arguments/EntityAnchorArgument$Anchor;
+       4: areturn
+
+  public net.minecraft.commands.CommandSigningContext getSigningContext();
+    Code:
+       0: aload_0
+       1: getfield      #159                // Field signingContext:Lnet/minecraft/commands/CommandSigningContext;
+       4: areturn
+
+  public net.minecraft.util.TaskChainer getChatMessageChainer();
+    Code:
+       0: aload_0
+       1: getfield      #161                // Field chatMessageChainer:Lnet/minecraft/util/TaskChainer;
+       4: areturn
+
+  public java.util.function.IntConsumer getReturnValueConsumer();
+    Code:
+       0: aload_0
+       1: getfield      #163                // Field returnValueConsumer:Ljava/util/function/IntConsumer;
+       4: areturn
+
+  public boolean shouldFilterMessageTo(net.minecraft.server.level.ServerPlayer);
+    Code:
+       0: aload_0
+       1: invokevirtual #387                // Method getPlayer:()Lnet/minecraft/server/level/ServerPlayer;
+       4: astore_2
+       5: aload_1
+       6: aload_2
+       7: if_acmpne     12
+      10: iconst_0
+      11: ireturn
+      12: aload_2
+      13: ifnull        23
+      16: aload_2
+      17: invokevirtual #390                // Method net/minecraft/server/level/ServerPlayer.isTextFilteringEnabled:()Z
+      20: ifne          30
+      23: aload_1
+      24: invokevirtual #390                // Method net/minecraft/server/level/ServerPlayer.isTextFilteringEnabled:()Z
+      27: ifeq          34
+      30: iconst_1
+      31: goto          35
+      34: iconst_0
+      35: ireturn
+
+  public void sendChatMessage(net.minecraft.network.chat.OutgoingChatMessage, boolean, net.minecraft.network.chat.ChatType$Bound);
+    Code:
+       0: aload_0
+       1: getfield      #141                // Field silent:Z
+       4: ifne          48
+       7: aload_0
+       8: invokevirtual #387                // Method getPlayer:()Lnet/minecraft/server/level/ServerPlayer;
+      11: astore        4
+      13: aload         4
+      15: ifnull        29
+      18: aload         4
+      20: aload_1
+      21: iload_2
+      22: aload_3
+      23: invokevirtual #395                // Method net/minecraft/server/level/ServerPlayer.sendChatMessage:(Lnet/minecraft/network/chat/OutgoingChatMessage;ZLnet/minecraft/network/chat/ChatType$Bound;)V
+      26: goto          48
+      29: aload_0
+      30: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      33: aload_3
+      34: aload_1
+      35: invokeinterface #400,  1          // InterfaceMethod net/minecraft/network/chat/OutgoingChatMessage.content:()Lnet/minecraft/network/chat/Component;
+      40: invokevirtual #404                // Method net/minecraft/network/chat/ChatType$Bound.decorate:(Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/Component;
+      43: invokeinterface #408,  2          // InterfaceMethod net/minecraft/commands/CommandSource.sendSystemMessage:(Lnet/minecraft/network/chat/Component;)V
+      48: return
+
+  public void sendSystemMessage(net.minecraft.network.chat.Component);
+    Code:
+       0: aload_0
+       1: getfield      #141                // Field silent:Z
+       4: ifne          34
+       7: aload_0
+       8: invokevirtual #387                // Method getPlayer:()Lnet/minecraft/server/level/ServerPlayer;
+      11: astore_2
+      12: aload_2
+      13: ifnull        24
+      16: aload_2
+      17: aload_1
+      18: invokevirtual #414                // Method net/minecraft/server/level/ServerPlayer.sendSystemMessage:(Lnet/minecraft/network/chat/Component;)V
+      21: goto          34
+      24: aload_0
+      25: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      28: aload_1
+      29: invokeinterface #408,  2          // InterfaceMethod net/minecraft/commands/CommandSource.sendSystemMessage:(Lnet/minecraft/network/chat/Component;)V
+      34: return
+
+  public void sendSuccess(java.util.function.Supplier<net.minecraft.network.chat.Component>, boolean);
+    Code:
+       0: aload_0
+       1: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+       4: invokeinterface #421,  1          // InterfaceMethod net/minecraft/commands/CommandSource.acceptsSuccess:()Z
+       9: ifeq          23
+      12: aload_0
+      13: getfield      #141                // Field silent:Z
+      16: ifne          23
+      19: iconst_1
+      20: goto          24
+      23: iconst_0
+      24: istore_3
+      25: iload_2
+      26: ifeq          52
+      29: aload_0
+      30: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      33: invokeinterface #424,  1          // InterfaceMethod net/minecraft/commands/CommandSource.shouldInformAdmins:()Z
+      38: ifeq          52
+      41: aload_0
+      42: getfield      #141                // Field silent:Z
+      45: ifne          52
+      48: iconst_1
+      49: goto          53
+      52: iconst_0
+      53: istore        4
+      55: iload_3
+      56: ifne          64
+      59: iload         4
+      61: ifeq          101
+      64: aload_1
+      65: invokeinterface #430,  1          // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+      70: checkcast     #191                // class net/minecraft/network/chat/Component
+      73: astore        5
+      75: iload_3
+      76: ifeq          90
+      79: aload_0
+      80: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      83: aload         5
+      85: invokeinterface #408,  2          // InterfaceMethod net/minecraft/commands/CommandSource.sendSystemMessage:(Lnet/minecraft/network/chat/Component;)V
+      90: iload         4
+      92: ifeq          101
+      95: aload_0
+      96: aload         5
+      98: invokevirtual #433                // Method broadcastToAdmins:(Lnet/minecraft/network/chat/Component;)V
+     101: return
+
+  private void broadcastToAdmins(net.minecraft.network.chat.Component);
+    Code:
+       0: ldc_w         #442                // String chat.type.admin
+       3: iconst_2
+       4: anewarray     #4                  // class java/lang/Object
+       7: dup
+       8: iconst_0
+       9: aload_0
+      10: invokevirtual #443                // Method getDisplayName:()Lnet/minecraft/network/chat/Component;
+      13: aastore
+      14: dup
+      15: iconst_1
+      16: aload_1
+      17: aastore
+      18: invokestatic  #447                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+      21: iconst_2
+      22: anewarray     #449                // class net/minecraft/ChatFormatting
+      25: dup
+      26: iconst_0
+      27: getstatic     #453                // Field net/minecraft/ChatFormatting.GRAY:Lnet/minecraft/ChatFormatting;
+      30: aastore
+      31: dup
+      32: iconst_1
+      33: getstatic     #456                // Field net/minecraft/ChatFormatting.ITALIC:Lnet/minecraft/ChatFormatting;
+      36: aastore
+      37: invokevirtual #462                // Method net/minecraft/network/chat/MutableComponent.withStyle:([Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      40: astore_2
+      41: aload_0
+      42: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      45: invokevirtual #468                // Method net/minecraft/server/MinecraftServer.getGameRules:()Lnet/minecraft/world/level/GameRules;
+      48: getstatic     #472                // Field net/minecraft/world/level/GameRules.RULE_SENDCOMMANDFEEDBACK:Lnet/minecraft/world/level/GameRules$Key;
+      51: invokevirtual #476                // Method net/minecraft/world/level/GameRules.getBoolean:(Lnet/minecraft/world/level/GameRules$Key;)Z
+      54: ifeq          129
+      57: aload_0
+      58: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+      61: invokevirtual #480                // Method net/minecraft/server/MinecraftServer.getPlayerList:()Lnet/minecraft/server/players/PlayerList;
+      64: invokevirtual #486                // Method net/minecraft/server/players/PlayerList.getPlayers:()Ljava/util/List;
+      67: invokeinterface #492,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      72: astore_3
+      73: aload_3
+      74: invokeinterface #497,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      79: ifeq          129
+      82: aload_3
+      83: invokeinterface #500,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      88: checkcast     #365                // class net/minecraft/server/level/ServerPlayer
+      91: astore        4
+      93: aload         4
+      95: aload_0
+      96: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      99: if_acmpeq     126
+     102: aload_0
+     103: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+     106: invokevirtual #480                // Method net/minecraft/server/MinecraftServer.getPlayerList:()Lnet/minecraft/server/players/PlayerList;
+     109: aload         4
+     111: invokevirtual #504                // Method net/minecraft/server/level/ServerPlayer.getGameProfile:()Lcom/mojang/authlib/GameProfile;
+     114: invokevirtual #508                // Method net/minecraft/server/players/PlayerList.isOp:(Lcom/mojang/authlib/GameProfile;)Z
+     117: ifeq          126
+     120: aload         4
+     122: aload_2
+     123: invokevirtual #414                // Method net/minecraft/server/level/ServerPlayer.sendSystemMessage:(Lnet/minecraft/network/chat/Component;)V
+     126: goto          73
+     129: aload_0
+     130: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+     133: aload_0
+     134: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+     137: if_acmpeq     164
+     140: aload_0
+     141: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+     144: invokevirtual #468                // Method net/minecraft/server/MinecraftServer.getGameRules:()Lnet/minecraft/world/level/GameRules;
+     147: getstatic     #511                // Field net/minecraft/world/level/GameRules.RULE_LOGADMINCOMMANDS:Lnet/minecraft/world/level/GameRules$Key;
+     150: invokevirtual #476                // Method net/minecraft/world/level/GameRules.getBoolean:(Lnet/minecraft/world/level/GameRules$Key;)Z
+     153: ifeq          164
+     156: aload_0
+     157: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+     160: aload_2
+     161: invokevirtual #512                // Method net/minecraft/server/MinecraftServer.sendSystemMessage:(Lnet/minecraft/network/chat/Component;)V
+     164: return
+
+  public void sendFailure(net.minecraft.network.chat.Component);
+    Code:
+       0: aload_0
+       1: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+       4: invokeinterface #517,  1          // InterfaceMethod net/minecraft/commands/CommandSource.acceptsFailure:()Z
+       9: ifeq          41
+      12: aload_0
+      13: getfield      #141                // Field silent:Z
+      16: ifne          41
+      19: aload_0
+      20: getfield      #135                // Field source:Lnet/minecraft/commands/CommandSource;
+      23: invokestatic  #521                // InterfaceMethod net/minecraft/network/chat/Component.empty:()Lnet/minecraft/network/chat/MutableComponent;
+      26: aload_1
+      27: invokevirtual #525                // Method net/minecraft/network/chat/MutableComponent.append:(Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/MutableComponent;
+      30: getstatic     #528                // Field net/minecraft/ChatFormatting.RED:Lnet/minecraft/ChatFormatting;
+      33: invokevirtual #531                // Method net/minecraft/network/chat/MutableComponent.withStyle:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      36: invokeinterface #408,  2          // InterfaceMethod net/minecraft/commands/CommandSource.sendSystemMessage:(Lnet/minecraft/network/chat/Component;)V
+      41: return
+
+  public void onCommandComplete(com.mojang.brigadier.context.CommandContext<net.minecraft.commands.CommandSourceStack>, boolean, int);
+    Code:
+       0: aload_0
+       1: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+       4: ifnull        19
+       7: aload_0
+       8: getfield      #153                // Field consumer:Lcom/mojang/brigadier/ResultConsumer;
+      11: aload_1
+      12: iload_2
+      13: iload_3
+      14: invokeinterface #535,  4          // InterfaceMethod com/mojang/brigadier/ResultConsumer.onCommandComplete:(Lcom/mojang/brigadier/context/CommandContext;ZI)V
+      19: return
+
+  public java.util.Collection<java.lang.String> getOnlinePlayerNames();
+    Code:
+       0: aload_0
+       1: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+       4: invokevirtual #547                // Method net/minecraft/server/MinecraftServer.getPlayerNames:()[Ljava/lang/String;
+       7: invokestatic  #553                // Method com/google/common/collect/Lists.newArrayList:([Ljava/lang/Object;)Ljava/util/ArrayList;
+      10: areturn
+
+  public java.util.Collection<java.lang.String> getAllTeams();
+    Code:
+       0: aload_0
+       1: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+       4: invokevirtual #558                // Method net/minecraft/server/MinecraftServer.getScoreboard:()Lnet/minecraft/server/ServerScoreboard;
+       7: invokevirtual #563                // Method net/minecraft/server/ServerScoreboard.getTeamNames:()Ljava/util/Collection;
+      10: areturn
+
+  public java.util.stream.Stream<net.minecraft.resources.ResourceLocation> getAvailableSounds();
+    Code:
+       0: getstatic     #572                // Field net/minecraft/core/registries/BuiltInRegistries.SOUND_EVENT:Lnet/minecraft/core/Registry;
+       3: invokeinterface #577,  1          // InterfaceMethod net/minecraft/core/Registry.stream:()Ljava/util/stream/Stream;
+       8: invokedynamic #591,  0            // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+      13: invokeinterface #597,  2          // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+      18: areturn
+
+  public java.util.stream.Stream<net.minecraft.resources.ResourceLocation> getRecipeNames();
+    Code:
+       0: aload_0
+       1: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+       4: invokevirtual #602                // Method net/minecraft/server/MinecraftServer.getRecipeManager:()Lnet/minecraft/world/item/crafting/RecipeManager;
+       7: invokevirtual #607                // Method net/minecraft/world/item/crafting/RecipeManager.getRecipeIds:()Ljava/util/stream/Stream;
+      10: areturn
+
+  public java.util.concurrent.CompletableFuture<com.mojang.brigadier.suggestion.Suggestions> customSuggestion(com.mojang.brigadier.context.CommandContext<?>);
+    Code:
+       0: invokestatic  #615                // Method com/mojang/brigadier/suggestion/Suggestions.empty:()Ljava/util/concurrent/CompletableFuture;
+       3: areturn
+
+  public java.util.concurrent.CompletableFuture<com.mojang.brigadier.suggestion.Suggestions> suggestRegistryElements(net.minecraft.resources.ResourceKey<? extends net.minecraft.core.Registry<?>>, net.minecraft.commands.SharedSuggestionProvider$ElementSuggestionType, com.mojang.brigadier.suggestion.SuggestionsBuilder, com.mojang.brigadier.context.CommandContext<?>);
+    Code:
+       0: aload_0
+       1: invokevirtual #624                // Method registryAccess:()Lnet/minecraft/core/RegistryAccess;
+       4: aload_1
+       5: invokeinterface #628,  2          // InterfaceMethod net/minecraft/core/RegistryAccess.registry:(Lnet/minecraft/resources/ResourceKey;)Ljava/util/Optional;
+      10: aload_0
+      11: aload_2
+      12: aload_3
+      13: invokedynamic #638,  0            // InvokeDynamic #3:apply:(Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/commands/SharedSuggestionProvider$ElementSuggestionType;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/function/Function;
+      18: invokevirtual #643                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+      21: invokedynamic #649,  0            // InvokeDynamic #4:get:()Ljava/util/function/Supplier;
+      26: invokevirtual #653                // Method java/util/Optional.orElseGet:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+      29: checkcast     #655                // class java/util/concurrent/CompletableFuture
+      32: areturn
+
+  public java.util.Set<net.minecraft.resources.ResourceKey<net.minecraft.world.level.Level>> levels();
+    Code:
+       0: aload_0
+       1: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+       4: invokevirtual #669                // Method net/minecraft/server/MinecraftServer.levelKeys:()Ljava/util/Set;
+       7: areturn
+
+  public net.minecraft.core.RegistryAccess registryAccess();
+    Code:
+       0: aload_0
+       1: getfield      #151                // Field server:Lnet/minecraft/server/MinecraftServer;
+       4: invokevirtual #672                // Method net/minecraft/server/MinecraftServer.registryAccess:()Lnet/minecraft/core/RegistryAccess$Frozen;
+       7: areturn
+
+  public net.minecraft.world.flag.FeatureFlagSet enabledFeatures();
+    Code:
+       0: aload_0
+       1: getfield      #139                // Field level:Lnet/minecraft/server/level/ServerLevel;
+       4: invokevirtual #676                // Method net/minecraft/server/level/ServerLevel.enabledFeatures:()Lnet/minecraft/world/flag/FeatureFlagSet;
+       7: areturn
+
+  private java.util.concurrent.CompletableFuture lambda$suggestRegistryElements$2(net.minecraft.commands.SharedSuggestionProvider$ElementSuggestionType, com.mojang.brigadier.suggestion.SuggestionsBuilder, net.minecraft.core.Registry);
+    Code:
+       0: aload_0
+       1: aload_3
+       2: aload_1
+       3: aload_2
+       4: invokevirtual #679                // Method suggestRegistryElements:(Lnet/minecraft/core/Registry;Lnet/minecraft/commands/SharedSuggestionProvider$ElementSuggestionType;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)V
+       7: aload_2
+       8: invokevirtual #684                // Method com/mojang/brigadier/suggestion/SuggestionsBuilder.buildFuture:()Ljava/util/concurrent/CompletableFuture;
+      11: areturn
+
+  private static void lambda$new$1(int);
+    Code:
+       0: return
+
+  private static void lambda$new$0(com.mojang.brigadier.context.CommandContext, boolean, int);
+    Code:
+       0: return
+
+  static {};
+    Code:
+       0: new           #357                // class com/mojang/brigadier/exceptions/SimpleCommandExceptionType
+       3: dup
+       4: ldc_w         #694                // String permissions.requires.player
+       7: invokestatic  #697                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      10: invokespecial #700                // Method com/mojang/brigadier/exceptions/SimpleCommandExceptionType."<init>":(Lcom/mojang/brigadier/Message;)V
+      13: putstatic     #367                // Field ERROR_NOT_PLAYER:Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+      16: new           #357                // class com/mojang/brigadier/exceptions/SimpleCommandExceptionType
+      19: dup
+      20: ldc_w         #702                // String permissions.requires.entity
+      23: invokestatic  #697                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      26: invokespecial #700                // Method com/mojang/brigadier/exceptions/SimpleCommandExceptionType."<init>":(Lcom/mojang/brigadier/Message;)V
+      29: putstatic     #355                // Field ERROR_NOT_ENTITY:Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+      32: return
+}

@@ -1,0 +1,48 @@
+{
+  "completed": true,
+  "version": "0.3.0-native-alpha.20",
+  "jar": "D:\\MinecraftModDev\\DEV - 副本\\nyctocosm-native\\build\\libs\\nyctocosm-native-0.3.0-native-alpha.20.jar",
+  "bytes": 56178050,
+  "sha256": "28656ccfc2c9d87067b0e9f27647132b5db80bc760886e2327d88b316e5022d7",
+  "entries": 3092,
+  "class_major": [
+    61
+  ],
+  "build_succeeded": true,
+  "build_log": "D:\\MinecraftModDev\\DEV - 副本\\nyctocosm-native\\docs\\validation\\shutdown-alpha20-20261004-044310\\build.log",
+  "build_log_sha256": "217d0bd7ffc544c83fb2b18bdb0a60451a97042542042e6cd0958b918d4ae959",
+  "audit_errors": [],
+  "audit_log_sha256": "0dd6ed588b344b23e1baa5ff43a5ee78629e59e505ae76a5ce93e4ebeda51102",
+  "production_source_resources_unchanged": true,
+  "jar_changed_entries_from_alpha19": [
+    "META-INF/mods.toml"
+  ],
+  "all_production_class_resource_bytes_identical_to_alpha19": true,
+  "old_jars": {
+    "nyctocosm-native-0.3.0-native-alpha.10.jar": "6427ec14e0299e2ee112c31653d8062a9026e546d1d6db22b7620d6251950995",
+    "nyctocosm-native-0.3.0-native-alpha.11.jar": "a8a9b3e01b1e9eb1cfd634449200c33b01a1e851e848f77a2b051bc8d9c09b70",
+    "nyctocosm-native-0.3.0-native-alpha.12.jar": "e6d49d3838582607255c789ac7fbb41124a531071bd276b519b87a2377df832f",
+    "nyctocosm-native-0.3.0-native-alpha.13.jar": "1fd0e3caaac1cdcc3b7647bc9e93f92b88c0f3e4875af58024cfabfe124c604c",
+    "nyctocosm-native-0.3.0-native-alpha.14.jar": "d1ac9901cfde0b4b19dda39cdfdd4e72cdc0fd0bccfba1704ca0c12b66e4c55f",
+    "nyctocosm-native-0.3.0-native-alpha.15.jar": "7c9a89a5790962a7032ea32d8f82faace927306f4fad98cb50a7c964b037103d",
+    "nyctocosm-native-0.3.0-native-alpha.16.jar": "81a568b2acd673113e627372d8f87fea3a3c0230c501fc48517671359cc34239",
+    "nyctocosm-native-0.3.0-native-alpha.17.jar": "84c4f1ce6a1f862665ab49cdf56c03cd7f10deda0a3a2845adae410fc9c271f5",
+    "nyctocosm-native-0.3.0-native-alpha.18.jar": "060b9cd423500d2bddbb0175e5a98f0fbe4f65f02742238c7b7f7b019bdb137e",
+    "nyctocosm-native-0.3.0-native-alpha.19.jar": "2e8e7c7928dc4e6f04e39083ba39397cf97e81e14b6652c0720774d56159506b",
+    "nyctocosm-native-0.3.0-native-alpha.7.jar": "04159cdf0c835e2512a8f49aa4e2cfe987b1a36ba641edaac14de987f55a3239",
+    "nyctocosm-native-0.3.0-native-alpha.8.jar": "d58c77b7725b579081180a7af7cb54c9f5f3d2383202fd5f63683d43b94bdb9d",
+    "nyctocosm-native-0.3.0-native-alpha.9.jar": "b5b1768dd8b41bb3da7b14b39e1f08232f35f823dfc697c12049a5b29ba274cc"
+  },
+  "old_jars_unchanged": true,
+  "regression_evidence": {
+    "required_passed": 288,
+    "reused_no_new_game_tests": true,
+    "log": "D:\\MinecraftModDev\\DEV - 副本\\nyctocosm-native\\docs\\validation\\feedback-alpha19-20261004\\flight-final2.log",
+    "sha256": "a6ddb2539843d1ab290a63da5151eba9101542c6884743ba775e9360edc6560b"
+  },
+  "shutdown": {
+    "requested_by_user": true,
+    "method": "hidden helper waits20 seconds then shutdown.exe /s /t0, without /f"
+  },
+  "limits": "Prior real-survival/multiplayer/shader/FPS acceptance and unapproved gameplay choices remain pending."
+}

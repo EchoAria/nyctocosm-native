@@ -1,0 +1,12 @@
+﻿{
+    "version":  "0.3.0-native-alpha.17",
+    "jar_sha256":  "84c4f1ce6a1f862665ab49cdf56c03cd7f10deda0a3a2845adae410fc9c271f5",
+    "verified_at_utc":  "2026-10-02T19:59:44.2418128Z",
+    "helper_pid":  3264,
+    "required_tests_passed":  262,
+    "delay_seconds":  20,
+    "shutdown_command":  "shutdown.exe /s /t 0",
+    "status":  "shutdown_requested",
+    "requested_at_utc":  "2026-10-02T20:00:04.3774419Z",
+    "shutdown_exit_code":  0
+}

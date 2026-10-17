@@ -1,0 +1,1 @@
+import com.mojang.math.Transformation; import com.mojang.serialization.JsonOps; import com.google.gson.JsonParser; public class MatrixCodecProbe { public static void main(String[] args){ System.out.println(Transformation.EXTENDED_CODEC.parse(JsonOps.INSTANCE,JsonParser.parseString(args[0])).result().orElseThrow().getMatrix()); }}

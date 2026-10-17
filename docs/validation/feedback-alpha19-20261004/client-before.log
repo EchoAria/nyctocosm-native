@@ -1,0 +1,284 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Neither the 'eclipse' nor the 'idea' plugins were found, but IDE resource copy has been enabled.
+
+> Task :compileJava
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createSrgToMcp UP-TO-DATE
+> Task :downloadMCMeta UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :extractNatives UP-TO-DATE
+> Task :makeSrcDirs
+> Task :prepareRuns
+> Task :prepareRunClient
+> Task :prepareRunClientCompile
+
+> Task :runClient
+2026-10-04 03:33:01,600 main WARN Advanced terminal features are not available in this environment
+[03:33:01] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\jzy19\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.13, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[03:33:01] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.19 by Microsoft; OS Windows 11 arch amd64 version 10.0
+[03:33:01] [main/WARN] [ne.mi.fm.lo.FMLConfig/CORE]: Configuration file D:\MinecraftModDev\DEV - ����\nyctocosm-native\run-feedback19-before-client-20261004\config\fml.toml is not correct. Correcting
+[03:33:01] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowSkipGLVersions] was corrected from null to []
+[03:33:01] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowLogHelpMessage] was corrected from null to true
+[03:33:01] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowSquir] was corrected from null to false
+[03:33:01] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowShowCPU] was corrected from null to false
+[03:33:01] [main/INFO] [ne.mi.fm.lo.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[03:33:01] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[03:33:01] [main/INFO] [EARLYDISPLAY/]: If this message is the only thing at the bottom of your log before a crash, you probably have a driver issue.
+
+Possible solutions:
+A) Make sure Minecraft is set to prefer high performance graphics in the OS and/or driver control panel
+B) Check for driver updates on the graphics brand's website
+C) Try reinstalling your graphics drivers
+D) If still not working after trying all of the above, ask for further help on the Forge forums or Discord
+
+You can safely ignore this message if the game starts up successfully.
+[03:33:02] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[03:33:02] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/jzy19/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[03:33:02] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 5070 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 610.47, NVIDIA Corporation
+[03:33:02] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.13\cf01e2179f72bd2829c65f5226d7dd0cfb6c686\javafmllanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[03:33:02] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.13\e3f96129ea14eba84316f2d69816253e228e6e4c\lowcodelanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[03:33:02] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.13\85796906112d9b621a7b2996f8bfda49da991ef0\mclanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[03:33:02] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.13\f77e3021d1eb31d61f8d1b92d18ed4fb3c2806e5\fmlcore-1.20.1-47.4.13.jar is missing mods.toml file
+[03:33:02] [main/INFO] [ne.mi.fm.lo.mo.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[03:33:04] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\jzy19\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[03:33:05] [main/WARN] [os.dr.wi.pe.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[03:33:08] [Datafixer Bootstrap/INFO] [mojang/DataFixerBuilder]: 188 Datafixer optimizations took 155 milliseconds
+[03:33:09] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/C:/Users/jzy19/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.13_mapped_official_1.20.1/forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[03:33:09] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/C:/Users/jzy19/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.13_mapped_official_1.20.1/forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[03:33:09] [Render thread/INFO] [mojang/YggdrasilAuthenticationService]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[03:33:09] [Render thread/INFO] [minecraft/Minecraft]: Setting user: Dev
+[03:33:09] [Render thread/INFO] [minecraft/Minecraft]: Backend library: LWJGL version 3.3.1 build 7
+[03:33:10] [modloading-worker-0/INFO] [ne.mi.co.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.13, for MC 1.20.1 with MCP 20230612.114412
+[03:33:10] [modloading-worker-0/INFO] [ne.mi.co.MinecraftForge/FORGE]: MinecraftForge v47.4.13 Initialized
+[03:33:10] [Render thread/INFO] [ne.mi.ga.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
+[03:33:11] [Render thread/INFO] [minecraft/ReloadableResourceManager]: Reloading ResourceManager: vanilla, mod_resources
+[03:33:11] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Configuration file D:\MinecraftModDev\DEV - ����\nyctocosm-native\run-feedback19-before-client-20261004\config\forge-client.toml is not correct. Correcting
+[03:33:11] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client was corrected from null to its default, SimpleCommentedConfig:{}. 
+[03:33:11] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.alwaysSetupTerrainOffThread was corrected from null to its default, false. 
+[03:33:11] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.experimentalForgeLightPipelineEnabled was corrected from null to its default, false. 
+[03:33:11] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.showLoadWarnings was corrected from null to its default, true. 
+[03:33:11] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.useCombinedDepthStencilAttachment was corrected from null to its default, false. 
+[03:33:11] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.compressLanIPv6Addresses was corrected from null to its default, true. 
+[03:33:11] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.calculateAllNormals was corrected from null to its default, false. 
+[03:33:11] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.stabilizeDirectionGetNearest was corrected from null to its default, true. 
+[03:33:11] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.allowMipmapLowering was corrected from null to its default, false. 
+[03:33:11] [Worker-Main-2/INFO] [minecraft/UnihexProvider]: Found unifont_all_no_pua-15.0.06.hex, loading
+[03:33:11] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[03:33:11] [Worker-Main-11/WARN] [minecraft/SpriteLoader]: Texture nyctocosm:magic/ajspellplane/outer_circle with size 1000x1000 limits mip level from 4 to 3
+[03:33:12] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.4.13 Target: 47.4.26
+[03:33:14] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:item.goat_horn.play
+[03:33:14] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[03:33:14] [Render thread/INFO] [mojang/Library]: OpenAL initialized on device OpenAL Soft on ������ (2- USB Audio Device)
+[03:33:14] [Render thread/INFO] [minecraft/SoundEngine]: Sound engine started
+[03:33:14] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 8192x4096x4 minecraft:textures/atlas/blocks.png-atlas
+[03:33:14] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[03:33:14] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[03:33:14] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[03:33:14] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[03:33:14] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[03:33:14] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[03:33:14] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[03:33:14] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[03:33:14] [Render thread/WARN] [minecraft/ShaderInstance]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[03:33:14] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[03:33:14] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[03:33:14] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[03:33:15] [Render thread/INFO] [minecraft/RecipeManager]: Loaded 7 recipes
+[03:33:15] [Render thread/INFO] [minecraft/AdvancementList]: Loaded 1275 advancements
+[03:33:15] [Realms Notification Availability checker #1/INFO] [mojang/RealmsClient]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[03:33:15] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.20.1
+[03:33:15] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[03:33:16] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Configuration file .\saves\Feedback19\serverconfig\forge-server.toml is not correct. Correcting
+[03:33:16] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SimpleCommentedConfig:{}. 
+[03:33:16] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringBlockEntities was corrected from null to its default, false. 
+[03:33:16] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to its default, false. 
+[03:33:16] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false. 
+[03:33:16] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.zombieBaseSummonChance was corrected from null to its default, 0.1. 
+[03:33:16] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.zombieBabyChance was corrected from null to its default, 0.05. 
+[03:33:16] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.permissionHandler was corrected from null to its default, forge:default_handler. 
+[03:33:16] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.advertiseDedicatedServerToLan was corrected from null to its default, true. 
+[03:33:16] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.useItemWithDurationZero was corrected from null to its default, false. 
+[03:33:17] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[03:33:18] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[03:33:18] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[03:33:18] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 1%
+[03:33:19] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 5%
+[03:33:19] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 10%
+[03:33:20] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 16%
+[03:33:20] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 23%
+[03:33:21] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 32%
+[03:33:21] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 40%
+[03:33:22] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 48%
+[03:33:22] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 57%
+[03:33:23] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 67%
+[03:33:23] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 75%
+[03:33:24] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 85%
+[03:33:24] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 95%
+[03:33:25] [Server thread/INFO] [ne.mi.se.pe.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[03:33:25] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 7204 ms
+[03:33:25] [Server thread/INFO] [minecraft/IntegratedServer]: Changing view distance to 12, from 10
+[03:33:25] [Server thread/INFO] [minecraft/IntegratedServer]: Changing simulation distance to 12, from 0
+[03:33:25] [Render thread/WARN] [io.ne.ut.in.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[03:33:26] [Netty Local Client IO #0/INFO] [ne.mi.ne.NetworkHooks/]: Connected to a modded server.
+[03:33:26] [Server thread/INFO] [minecraft/PlayerList]: Dev[local:E:76390037] logged in with entity id 230 at (54.5, 70.0, 85.5)
+[03:33:26] [Server thread/INFO] [minecraft/MinecraftServer]: Dev joined the game
+[03:33:26] [Render thread/INFO] [minecraft/AdvancementList]: Loaded 2 advancements
+FEEDBACK19_SCENE frame=30 kind=2
+FEEDBACK19_CLIENT tick=40 kind=2 clip=phase1_idle time=48.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=60 kind=2 clip=phase1_idle time=69.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=80 kind=2 clip=phase1_idle time=89.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=100 kind=2 clip=phase1_idle time=109.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=120 kind=2 clip=phase1_idle time=129.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=140 kind=2 clip=phase1_idle time=149.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=160 kind=2 clip=phase1_idle time=169.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_SCENE frame=160 kind=1
+FEEDBACK19_CLIENT tick=180 kind=1 clip=initial_spawn time=20.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=200 kind=1 clip=initial_spawn time=40.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=220 kind=1 clip=initial_spawn time=60.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=240 kind=1 clip=initial_spawn time=80.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=260 kind=1 clip=initial_spawn time=100.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=280 kind=1 clip=initial_spawn time=120.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=300 kind=1 clip=initial_spawn time=140.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=320 kind=1 clip=initial_spawn time=160.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=340 kind=1 clip=initial_spawn time=180.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=360 kind=1 clip=initial_spawn time=200.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=380 kind=1 clip=initial_spawn time=220.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=400 kind=1 clip=initial_spawn time=240.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=420 kind=1 clip=initial_spawn time=260.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=440 kind=1 clip=initial_spawn time=280.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=460 kind=1 clip=initial_spawn time=300.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=480 kind=1 clip=initial_spawn time=320.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=500 kind=1 clip=rise time=10.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=520 kind=1 clip=rise time=30.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_CLIENT tick=540 kind=1 clip=rise time=50.0 pos=(0.0, 201.20878712009173, 4.0)
+FEEDBACK19_CLIENT tick=560 kind=1 clip=rise time=70.0 pos=(0.0, 202.47065401323135, 4.0)
+FEEDBACK19_SCENE frame=570 kind=0
+FEEDBACK19_CLIENT tick=580 kind=0 clip=idle time=589.0 pos=(0.0, 201.0, -24.17914297821645)
+FEEDBACK19_CLIENT tick=600 kind=0 clip=idle time=609.0 pos=(0.0, 201.0, -11.099701556972986)
+FEEDBACK19_CLIENT tick=620 kind=0 clip=idle time=629.0 pos=(0.0, 201.0, 2.9000216046793357)
+FEEDBACK19_CLIENT tick=640 kind=0 clip=idle time=649.0 pos=(0.0, 201.0, 16.90002152142611)
+FEEDBACK19_CLIENT tick=660 kind=0 clip=idle time=669.0 pos=(11.90065304511459, 201.0, 18.999368476286485)
+FEEDBACK19_CLIENT tick=680 kind=0 clip=idle time=689.0 pos=(25.90002171131835, 201.0, 18.99999981008272)
+FEEDBACK19_CLIENT tick=700 kind=0 clip=idle time=709.0 pos=(39.90002152145818, 201.0, 18.999999999942887)
+FEEDBACK19_CLIENT tick=720 kind=0 clip=idle time=729.0 pos=(53.90002152140108, 201.0, 18.999999999999982)
+FEEDBACK19_SCENE frame=730 kind=2
+FEEDBACK19_FLIGHT frame=730 y=201.0 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=740 kind=2 clip=phase4_idle_transition_flying time=10.0 pos=(0.0, 201.0, 4.0)
+FEEDBACK19_FLIGHT frame=740 y=201.0 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=750 y=201.5114960274659 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=760 kind=2 clip=phase4_idle_transition_flying time=30.0 pos=(-3.552394063728198, 202.11633271618084, -23.681260521870673)
+FEEDBACK19_FLIGHT frame=760 y=202.39269190235063 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=770 y=203.36098590353504 clip=phase4_idle_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=780 kind=2 clip=phase4.attack.corkscrew time=8.0 pos=(-18.56874542146488, 203.9702222117718, -60.492996241193055)
+FEEDBACK19_FLIGHT frame=780 y=204.21077899402007 clip=phase4.attack.corkscrew timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=790 y=204.5511774480692 clip=phase4.attack.corkscrew timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=800 kind=2 clip=phase4.attack.corkscrew time=28.0 pos=(-45.54711919900944, 204.5971447051596, -73.2337362970687)
+FEEDBACK19_FLIGHT frame=800 y=204.6157482629642 clip=phase4.attack.corkscrew timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=810 y=204.68731780833332 clip=phase4.attack.corkscrew timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=820 kind=2 clip=phase4.attack.corkscrew time=48.0 pos=(-22.058558025142727, 204.763392272442, -44.406465235798265)
+FEEDBACK19_FLIGHT frame=820 y=204.8044265251374 clip=phase4.attack.corkscrew timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=830 y=205.17221192258876 clip=phase4.attack.corkscrew timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=840 kind=2 clip=phase4.attack.corkscrew time=68.0 pos=(10.142000406556782, 205.70069440955123, -20.717107631838463)
+FEEDBACK19_FLIGHT frame=840 y=205.82419573434163 clip=phase4.attack.corkscrew timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=850 y=206.02744201663882 clip=phase4.attack.corkscrew timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=860 kind=2 clip=phase4_idle_flying time=7.0 pos=(46.124326704613324, 206.1159961593771, -3.782841504788293)
+FEEDBACK19_FLIGHT frame=860 y=206.1489608125994 clip=phase4_idle_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=870 y=206.23390457354253 clip=phase4_idle_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=880 kind=2 clip=phase4_flying_transition_idle time=6.0 pos=(82.28961046849481, 206.2427177004803, -5.4787939101036365)
+FEEDBACK19_FLIGHT frame=880 y=206.03799879958356 clip=phase4_flying_transition_idle timer=0 speed=2 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=890 y=200.58324201279868 clip=phase4_flying_transition_idle timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=900 kind=2 clip=phase4_flying_transition_idle time=26.0 pos=(83.20968416173689, 192.85457439505117, -5.819477593957405)
+FEEDBACK19_FLIGHT frame=900 y=188.9555609923339 clip=phase4_flying_transition_idle timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=910 y=172.28415045990425 clip=phase4_idle timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=920 kind=2 clip=phase4_idle time=15.0 pos=(83.20996085426559, 158.00350845190903, -5.819580047305073)
+FEEDBACK19_FLIGHT frame=920 y=151.49164489587392 clip=phase4_idle timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=930 y=136.89351635099607 clip=phase4.attack.fireball timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=940 kind=2 clip=phase4.attack.fireball time=13.0 pos=(83.20996093748123, 133.11613732384362, -5.819580078118048)
+FEEDBACK19_FLIGHT frame=940 y=130.76385458064686 clip=phase4.attack.fireball timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=950 y=118.58472694355217 clip=phase4.attack.fireball timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=960 kind=2 clip=phase4.attack.fireball time=33.0 pos=(83.20996093749999, 106.92815906670873, -5.819580078124998)
+FEEDBACK19_FLIGHT frame=960 y=101.46274428853042 clip=phase4.attack.fireball timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=970 y=80.30208842393635 clip=phase4_idle timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=980 kind=2 clip=phase4_idle_transition_flying time=6.0 pos=(83.20992763158088, 75.83700820402504, -5.819661832446905)
+FEEDBACK19_FLIGHT frame=980 y=74.0 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=990 y=103.62920761164912 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1000 kind=2 clip=phase4_idle_transition_flying time=26.0 pos=(58.62129971814217, 115.74878358551575, -12.373846059390727)
+FEEDBACK19_FLIGHT frame=1000 y=121.1524581914831 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1010 y=128.68686977644154 clip=phase4_idle_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1020 kind=2 clip=phase4_idle_flying time=15.0 pos=(26.90033312004004, 129.32614483870293, -20.829029512522443)
+FEEDBACK19_FLIGHT frame=1020 y=129.6177949706156 clip=phase4_idle_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1030 y=129.91922794216683 clip=phase4_flying_transition_idle timer=0 speed=2 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1040 kind=2 clip=phase4_flying_transition_idle time=16.0 pos=(9.550467310571008, 126.606675532583, -25.45360078660015)
+FEEDBACK19_FLIGHT frame=1040 y=124.46447115538194 clip=phase4_flying_transition_idle timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1050 y=112.8367901349172 clip=phase4_flying_transition_idle timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1060 kind=2 clip=phase4_idle time=5.0 pos=(9.533940518450141, 101.5023375709388, -25.458006487181006)
+FEEDBACK19_FLIGHT frame=1060 y=96.16537960248756 clip=phase4_idle timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1070 y=75.37287403845725 clip=phase4_idle timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1080 kind=2 clip=phase4.attack.fireball time=7.0 pos=(9.53393554799632, 70.02159370649865, -25.45800781220108)
+FEEDBACK19_FLIGHT frame=1080 y=68.67923069010682 clip=phase4.attack.fireball timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1090 y=62.0 clip=phase4.attack.fireball timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1100 kind=2 clip=phase4.attack.fireball time=27.0 pos=(9.533864121943921, 62.0, -25.457904932501847)
+FEEDBACK19_FLIGHT frame=1100 y=62.0 clip=phase4.attack.fireball timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1110 y=62.0 clip=phase4.attack.fireball timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1120 kind=2 clip=phase4_idle_transition_flying time=4.0 pos=(9.533864121943921, 62.0, -25.457904932501847)
+FEEDBACK19_FLIGHT frame=1120 y=62.0 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1130 y=79.79705040743676 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1140 kind=2 clip=phase4_idle_transition_flying time=24.0 pos=(7.585584258479517, 93.56769705783965, -25.977418567678498)
+FEEDBACK19_FLIGHT frame=1140 y=99.761955192593 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1150 y=112.09704972179708 clip=phase4_flying_transition_idle timer=0 speed=4 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1160 kind=2 clip=phase4_flying_transition_idle time=11.0 pos=(-2.9975780024126477, 111.2024525222666, -28.79935373408269)
+FEEDBACK19_FLIGHT frame=1160 y=110.07677430840265 clip=phase4_flying_transition_idle timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1170 y=101.37980074513369 clip=phase4_flying_transition_idle timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1180 kind=2 clip=phase4_flying_transition_idle time=31.0 pos=(-3.109097312233826, 91.75720377693548, -28.829092616475428)
+FEEDBACK19_FLIGHT frame=1180 y=87.1029920469764 clip=phase4_idle timer=0 speed=1 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1190 y=81.5618424929328 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1200 kind=2 clip=phase4_idle_transition_flying time=17.0 pos=(-3.0346046654659675, 81.05097084105489, -28.809154367195216)
+FEEDBACK19_FLIGHT frame=1200 y=85.5381306636307 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1210 y=105.53343620180819 clip=phase4_idle_transition_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1220 kind=2 clip=phase4_idle_flying time=6.0 pos=(5.663827102001638, 111.59544041312516, -26.489789551981662)
+FEEDBACK19_FLIGHT frame=1220 y=112.22612781293425 clip=phase4_idle_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1230 y=113.65758989594612 clip=phase4_idle_flying timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_CLIENT tick=1240 kind=2 clip=phase4.attack.apocalypse_rain time=6.0 pos=(0.8569541034046686, 114.34624517746525, -27.76986411474388)
+FEEDBACK19_FLIGHT frame=1240 y=114.64502292714748 clip=phase4.attack.apocalypse_rain timer=0 speed=5 shards=0 low=1000.0 high=-1000.0
+FEEDBACK19_FLIGHT frame=1250 y=115.633124539924 clip=phase4.attack.apocalypse_rain timer=0 speed=5 shards=28 low=103.90047476470205 high=125.06069085776541
+FEEDBACK19_CLIENT tick=1260 kind=2 clip=phase4.attack.apocalypse_rain time=26.0 pos=(-26.83210619354413, 117.4794585016786, -35.150783361116325)
+FEEDBACK19_FLIGHT frame=1260 y=117.94466874684873 clip=phase4.attack.apocalypse_rain timer=0 speed=5 shards=68 low=84.16596970736715 high=132.2253834217015
+FEEDBACK19_FLIGHT frame=1270 y=118.92377718195054 clip=phase4.attack.apocalypse_rain timer=0 speed=5 shards=106 low=64.41238246142599 high=134.19548756193103
+FEEDBACK19_CLIENT tick=1280 kind=2 clip=phase4.attack.apocalypse_rain time=46.0 pos=(10.48546601417139, 119.61748517130789, -25.20790547288123)
+FEEDBACK19_CAPTURE_COMPLETE
+FEEDBACK19_FLIGHT frame=1280 y=119.91427146952334 clip=phase4.attack.apocalypse_rain timer=0 speed=5 shards=120 low=63.41960958979759 high=135.15852034866543
+[03:34:30] [Render thread/INFO] [minecraft/Minecraft]: Stopping!
+[03:34:30] [Server thread/INFO] [minecraft/ServerGamePacketListenerImpl]: Dev lost connection: Disconnected
+[03:34:30] [Server thread/INFO] [minecraft/MinecraftServer]: Dev left the game
+[03:34:30] [Server thread/INFO] [minecraft/ServerGamePacketListenerImpl]: Stopping singleplayer server as player logged out
+[03:34:30] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[03:34:30] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[03:34:30] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[03:34:30] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Feedback19]'/minecraft:overworld
+[03:34:31] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Feedback19]'/nyctocosm:dusk_plane
+[03:34:31] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Feedback19]'/minecraft:the_nether
+[03:34:31] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Feedback19]'/nyctocosm:nyctocosm
+[03:34:31] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Feedback19]'/minecraft:the_end
+[03:34:31] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Feedback19]'/nyctocosm:emissary_domain
+[03:34:31] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (Feedback19): All chunks are saved
+[03:34:31] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (dusk_plane): All chunks are saved
+[03:34:31] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[03:34:31] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (nyctocosm): All chunks are saved
+[03:34:31] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[03:34:31] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (emissary_domain): All chunks are saved
+[03:34:31] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 1m 44s
+10 actionable tasks: 4 executed, 6 up-to-date

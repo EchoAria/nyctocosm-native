@@ -20,6 +20,28 @@ build
 # other
 eclipse
 run
+run-emissary-gametest/
 
 # Files from Forge MDK
 forge*changelog.txt
+
+# Derived Python and visual validation outputs
+__pycache__/
+*.pyc
+docs/validation/*.mp4
+docs/validation/*.png
+
+# Isolated game runs and generated delivery archives
+/run*/
+/logs/
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+docs/validation/**/*.mp4
+docs/validation/**/*.png
+
+# Local credentials and environment settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key

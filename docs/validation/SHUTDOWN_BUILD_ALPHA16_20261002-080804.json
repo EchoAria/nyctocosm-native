@@ -1,0 +1,19 @@
+{
+  "version": "0.3.0-native-alpha.16",
+  "jar": "D:\\MinecraftModDev\\DEV - 副本\\nyctocosm-native\\build\\libs\\nyctocosm-native-0.3.0-native-alpha.16.jar",
+  "bytes": 56026248,
+  "sha256": "81a568b2acd673113e627372d8f87fea3a3c0230c501fc48517671359cc34239",
+  "jar_entries": 3078,
+  "java_class_major_versions": [
+    61
+  ],
+  "build_succeeded": true,
+  "build_log": "D:\\MinecraftModDev\\DEV - 副本\\nyctocosm-native\\docs\\validation\\shutdown-build-alpha16-20261002-080804.log",
+  "build_log_sha256": "b4792601cff2ea03b82ddc5cacdea8f07a4347157c9a963f48a81b672d362bd0",
+  "audit_errors": [],
+  "production_class_bytes_identical_to_alpha15": true,
+  "previous_alpha15_sha256": "7c9a89a5790962a7032ea32d8f82faace927306f4fad98cb50a7c964b037103d",
+  "gameplay_regression_evidence": "sorcerer-repair-alpha15-final2-20261002.log:248/248; source behavior unchanged; no new GameTest run claimed",
+  "pending": "Existing D28/gameplay decisions and real survival/multiplayer/shader/FPS acceptance remain pending.",
+  "shutdown": "User requested shutdown after successful build; separate helper requests graceful Windows shutdown after20 seconds."
+}

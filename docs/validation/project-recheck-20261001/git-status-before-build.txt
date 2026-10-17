@@ -1,0 +1,299 @@
+ M .gitignore
+ M README.md
+ M build.gradle
+ M docs/MIGRATION.md
+ M docs/PROJECT_HANDOFF_CHECKLIST.md
+ M docs/baseline-gametest-console.log
+ M docs/native-audit.json
+ M docs/structure-import.json
+ M src/main/java/com/flubberschnub/nyctocosm/Combat.java
+ M src/main/java/com/flubberschnub/nyctocosm/Content.java
+ M src/main/java/com/flubberschnub/nyctocosm/DaisMenu.java
+ M src/main/java/com/flubberschnub/nyctocosm/FocusItem.java
+ M src/main/java/com/flubberschnub/nyctocosm/IceSpikeWave.java
+ M src/main/java/com/flubberschnub/nyctocosm/NativeBoss.java
+ M src/main/java/com/flubberschnub/nyctocosm/NativeEvents.java
+ M src/main/java/com/flubberschnub/nyctocosm/NativeGameTests.java
+ M src/main/java/com/flubberschnub/nyctocosm/NativeMod.java
+ M src/main/java/com/flubberschnub/nyctocosm/NativeNetwork.java
+ M src/main/java/com/flubberschnub/nyctocosm/NativePortalBlock.java
+ M src/main/java/com/flubberschnub/nyctocosm/RigTransforms.java
+ M src/main/java/com/flubberschnub/nyctocosm/SafeTravel.java
+ M src/main/java/com/flubberschnub/nyctocosm/SeelicField.java
+ M src/main/java/com/flubberschnub/nyctocosm/SerpentBeamHazard.java
+ M src/main/java/com/flubberschnub/nyctocosm/SpellArea.java
+ M src/main/java/com/flubberschnub/nyctocosm/SpellBolt.java
+ M src/main/java/com/flubberschnub/nyctocosm/WeaponItem.java
+ M src/main/java/com/flubberschnub/nyctocosm/client/ClientEvents.java
+ M src/main/java/com/flubberschnub/nyctocosm/client/WeaponEffectController.java
+ M src/main/resources/META-INF/mods.toml
+ M src/main/resources/assets/nyctocosm/lang/en_us.json
+ M src/main/resources/assets/nyctocosm/lang/zh_cn.json
+ M src/main/resources/data/nyctocosm/advancements/bosses/defeat_serpent.json
+ M src/main/resources/data/nyctocosm/advancements/bosses/defeat_sorcerer.json
+ M src/main/resources/data/nyctocosm/loot_tables/structures/slatehenge.json
+ D src/main/resources/data/nyctocosm/recipes/dais.json
+ D src/main/resources/data/nyctocosm/recipes/soul_bottle.json
+ M src/main/resources/data/nyctocosm/structures/slatehenge.nbt
+ M src/main/resources/data/structures/structures/crypt/hallways/generic/end.nbt
+ M tools/__pycache__/nbt_assets.cpython-314.pyc
+ M tools/audit_native.py
+ M tools/nbt_assets.py
+?? docs/EMISSARY_ARRIVAL_BEHAVIOR.md
+?? docs/FOLLOW_UP_FIXES.md
+?? docs/RESONANCE_PORTAL_BEHAVIOR.md
+?? docs/SERPENT_BEHAVIOR.md
+?? docs/SORCERER_PLANE_BEHAVIOR.md
+?? docs/native-audit-after-d15-unified-20261001.json
+?? docs/native-audit-after-d16-collision-20261001.json
+?? docs/native-audit-after-d18-pitch-20261001.json
+?? docs/native-audit-after-d19-20261001.json
+?? docs/native-audit-after-d19-targeting-20261001.json
+?? docs/native-audit-after-d34-20260930.json
+?? docs/native-audit-after-d36-20261001.json
+?? docs/native-audit-after-d45-20261001.json
+?? docs/native-audit-after-d48-20260930.json
+?? docs/native-audit-after-d51-20261001.json
+?? docs/native-audit-before-d15-unified-20261001.json
+?? docs/native-audit-before-d16-collision-20261001.json
+?? docs/native-audit-before-d18-pitch-20261001.json
+?? docs/native-audit-before-d19-20261001.json
+?? docs/native-audit-before-d19-targeting-20261001.json
+?? docs/native-audit-before-d34-20260930.json
+?? docs/native-audit-before-d36-20261001.json
+?? docs/native-audit-before-d45-20261001.json
+?? docs/native-audit-before-d48-20260930.json
+?? docs/native-audit-before-d51-20261001.json
+?? docs/p0-build-console.log
+?? docs/p0-client-console.log
+?? docs/p0-gametest-console.log
+?? docs/p0-red-gametest-console.log
+?? docs/portal-polish-gametest.log
+?? docs/portal-polish-red.log
+?? docs/resonance-client-red.log
+?? docs/resonance-client.log
+?? docs/resonance-gametest.log
+?? docs/resonance-particle-import.json
+?? docs/resonance-red-gametest.log
+?? docs/validation/
+?? run-d01-diagnostic-20260930/
+?? run-d01-diagnostic2-20260930/
+?? run-d01-emissary-post-20260930/
+?? run-d01-emissary-red-20260930/
+?? run-d01-verified-20260930/
+?? run-d01-verified2-20260930/
+?? run-d01-verified3-20260930/
+?? run-d01-verified4-20260930/
+?? run-d01-verified5-20260930/
+?? run-d01-verify-clean-20260930/
+?? run-d02-context-20260930/
+?? run-d02-mode-d46-cooldowns-20260930/
+?? run-d02-mode-d46-final-20260930/
+?? run-d02-mode-d46-final2-20260930/
+?? run-d04-final-20260930/
+?? run-d04-final2-20260930/
+?? run-d04-templates-red-20260930/
+?? run-d04-verified-20260930/
+?? run-d04-verified2-20260930/
+?? run-d05-verified2-20260930/
+?? run-d06-core-verified2-20260930/
+?? run-d06-core-verified3-20260930/
+?? run-d06-core-verified4-20260930/
+?? run-d06-core-verified5-20260930/
+?? run-d06-red-boss-immobile-20260930/
+?? run-d07-wingblast-final-20260930/
+?? run-d07-wingblast-second-20260930/
+?? run-d07-wingblast-verified1-20260930/
+?? run-d07-wingblast-verified2-20260930/
+?? run-d08-cloud-slice2-20260930/
+?? run-d08-pillar-final-20260930/
+?? run-d08-pillar-final2-20260930/
+?? run-d09-geysers-final-20260930/
+?? run-d09-geysers-final10-20260930/
+?? run-d09-geysers-final3-20260930/
+?? run-d09-geysers-final4-20260930/
+?? run-d09-geysers-final5-20260930/
+?? run-d09-geysers-final6-20260930/
+?? run-d09-geysers-final7-20260930/
+?? run-d09-geysers-final8-20260930/
+?? run-d09-geysers-final9-20260930/
+?? run-d10-rain-diagnostic2-20260930/
+?? run-d10-rain-final1-20260930/
+?? run-d10-rain-final4-20260930/
+?? run-d10-rain-final5-20260930/
+?? run-d10-rain-final6-20260930/
+?? run-d10-rain-final7-20260930/
+?? run-d10-rain-verified3-20260930/
+?? run-d11-celestial-diagnostic2-20260930/
+?? run-d11-celestial-final1-20260930/
+?? run-d11-celestial-final3-20260930/
+?? run-d11-celestial-isolated1-20260930/
+?? run-d11-celestial-verified1-20260930/
+?? run-d11-celestial-verified2-20260930/
+?? run-d12-flame-slash-final1-20260930/
+?? run-d12-flame-slash-final2-20260930/
+?? run-d12-flame-slash-final3-20260930/
+?? run-d12-flame-slash-final4-20260930/
+?? run-d12-flame-slash-final5-20260930/
+?? run-d12-flame-slash-final6-20260930/
+?? run-d13-followup-20260930/
+?? run-d13-followup2-20260930/
+?? run-d13-followup3-20260930/
+?? run-d13-verified-20260930/
+?? run-d13-verified2-20260930/
+?? run-d13-verified3-20260930/
+?? run-d13-verified4-20260930/
+?? run-d14-followup4-20260930/
+?? run-d14-followup5-20260930/
+?? run-d14-source-audit-20260930/
+?? run-d14-verified-20260930/
+?? run-d14-verified10-20260930/
+?? run-d14-verified2-20260930/
+?? run-d14-verified3-20260930/
+?? run-d14-verified4-20260930/
+?? run-d14-verified8-20260930/
+?? run-d14-verified9-20260930/
+?? run-d15-bolt-reflect-20260930/
+?? run-d15-bolt-reflect-final2-20260930/
+?? run-d15-reflectance-verified-20261001/
+?? run-d15-reflectance-verified2-20261001/
+?? run-d15-reflectance-verified3-20261001/
+?? run-d16-collision-final-20261001/
+?? run-d16-collision-final-verified2-20261001/
+?? run-d16-collision-final2-20261001/
+?? run-d16-collision-source-20261001/
+?? run-d16-collision-source-debug-20261001/
+?? run-d16-collision-source-verified-20261001/
+?? run-d16-collision-verified-final-20261001/
+?? run-d16-collision-verified3-20261001/
+?? run-d17-attack-restore-20260930/
+?? run-d17-attack-restore-final-20260930/
+?? run-d17-attack-restore-verified-20260930/
+?? run-d17-fresh-entity-restore-20260930/
+?? run-d17-server-restart-smoke-20260930/
+?? run-d17-target-restore-verified-20260930/
+?? run-d18-emissary-nodes-final-20261001/
+?? run-d18-emissary-pose-verified-20261001/
+?? run-d18-locator-pitch-verified2-20261001/
+?? run-d18-pitch-nodes-verified3-20261001/
+?? run-d19-debug-20261001/
+?? run-d19-fireball-impact-final-20261001/
+?? run-d19-fireball-profile-20261001/
+?? run-d19-fireball-profile-final-20261001/
+?? run-d19-fireball-profile-verified-20261001/
+?? run-d19-fireball-profile-verified2-20261001/
+?? run-d19-fireball-profile-verified3-20261001/
+?? run-d19-fireball-profile-y240-20261001/
+?? run-d19-fireball-targeting-final-20261001/
+?? run-d19-fireball-targeting-final2-20261001/
+?? run-d27-red-20260930/
+?? run-d27-verified-20260930/
+?? run-d27-verified2-20260930/
+?? run-d27-verified3-20260930/
+?? run-d27-verified4-20260930/
+?? run-d27-verified5-20260930/
+?? run-d27-verified6-20260930/
+?? run-d28-d26-final-20260930/
+?? run-d28-d26-verified1-20260930/
+?? run-d28-d26-verified2-20260930/
+?? run-d28-d26-verified3-20260930/
+?? run-d28-d26-verified4-20260930/
+?? run-d28-d26-verified5-20260930/
+?? run-d28-d26-verified6-20260930/
+?? run-d34-boundary-red-20260930/
+?? run-d34-boundary-red2-20260930/
+?? run-d34-inclusive-reflect-final-20260930/
+?? run-d34-red-20260930/
+?? run-d34-selector-debug-20260930/
+?? run-d34-source-feedback-final-20260930/
+?? run-d34-source-steering-final-20260930/
+?? run-d34-source-steering-final2-20260930/
+?? run-d34-source-steering-final3-20260930/
+?? run-d34-source-steering-final4-20260930/
+?? run-d34-source-steering-final5-20260930/
+?? run-d34-status-final-20260930/
+?? run-d34-wall-debug-20260930/
+?? run-d34-wall-player-fixture-final-20260930/
+?? run-d35-diagnostic-20260930/
+?? run-d35-finaltest-20260930/
+?? run-d35-green-20260930/
+?? run-d35-red-20260930/
+?? run-d35-source-score-final-20260930/
+?? run-d35-verify-20260930/
+?? run-d36-red-20260930/
+?? run-d36-source-origins-verified-20260930/
+?? run-d38-verified-20260930/
+?? run-d38-verified2-20260930/
+?? run-d38-verified3-20260930/
+?? run-d38-verified4-20260930/
+?? run-d38-verified5-20260930/
+?? run-d38-verified6-20260930/
+?? run-d38-verified7-20260930/
+?? run-d45-red-20261001/
+?? run-d45-source-samples-diagnostic-20261001/
+?? run-d45-source-samples-final-20261001/
+?? run-d45-source-samples-final2-20261001/
+?? run-d45-source-samples-verified-20261001/
+?? run-d45-source-tag-verified-20261001/
+?? run-d46-source-cooldowns-20260930/
+?? run-d46-source-cooldowns-retry-20260930/
+?? run-d48-red-20260930/
+?? run-d48-source-samples-final-20260930/
+?? run-d51-feet-red-20261001/
+?? run-d51-feet-verified-20261001/
+?? run-parity-baseline-20260930-4efc4769/
+?? run-project-recheck-baseline-20261001/
+?? run-project-recheck-green-20261001/
+?? run-project-recheck-regressions-red-20261001/
+?? run-project-recheck-regressions-red2-20261001/
+?? src/main/java/com/flubberschnub/nyctocosm/ClientSmokeP0.java
+?? src/main/java/com/flubberschnub/nyctocosm/ClientSmokeResonance.java
+?? src/main/java/com/flubberschnub/nyctocosm/CryptSlatehengeTrigger.java
+?? src/main/java/com/flubberschnub/nyctocosm/EmissaryCelestialTear.java
+?? src/main/java/com/flubberschnub/nyctocosm/EmissaryDamagePose.java
+?? src/main/java/com/flubberschnub/nyctocosm/EmissaryFlameGeyser.java
+?? src/main/java/com/flubberschnub/nyctocosm/EmissaryFlameSlashWave.java
+?? src/main/java/com/flubberschnub/nyctocosm/EmissaryGrappleSeat.java
+?? src/main/java/com/flubberschnub/nyctocosm/EmissaryHazard.java
+?? src/main/java/com/flubberschnub/nyctocosm/EmissaryHitRegion.java
+?? src/main/java/com/flubberschnub/nyctocosm/EmissaryPillar.java
+?? src/main/java/com/flubberschnub/nyctocosm/EmissaryPose.java
+?? src/main/java/com/flubberschnub/nyctocosm/EmissaryRainShard.java
+?? src/main/java/com/flubberschnub/nyctocosm/EmissarySwordPlunge.java
+?? src/main/java/com/flubberschnub/nyctocosm/EmissaryWingBlastRay.java
+?? src/main/java/com/flubberschnub/nyctocosm/ExpulsionBurst.java
+?? src/main/java/com/flubberschnub/nyctocosm/HypertraceService.java
+?? src/main/java/com/flubberschnub/nyctocosm/LegacyMigration.java
+?? src/main/java/com/flubberschnub/nyctocosm/PortalActivation.java
+?? src/main/java/com/flubberschnub/nyctocosm/ReflectableAttack.java
+?? src/main/java/com/flubberschnub/nyctocosm/Reflectance.java
+?? src/main/java/com/flubberschnub/nyctocosm/ResonanceEffects.java
+?? src/main/java/com/flubberschnub/nyctocosm/ResonanceSpell.java
+?? src/main/java/com/flubberschnub/nyctocosm/SerpentBody.java
+?? src/main/java/com/flubberschnub/nyctocosm/SerpentMotion.java
+?? src/main/java/com/flubberschnub/nyctocosm/SlatehengeEffect.java
+?? src/main/java/com/flubberschnub/nyctocosm/SorcererPlane.java
+?? src/main/java/com/flubberschnub/nyctocosm/SoulEntity.java
+?? src/main/java/com/flubberschnub/nyctocosm/SpellCollisionPolicy.java
+?? src/main/java/com/flubberschnub/nyctocosm/StructureEventSavedData.java
+?? src/main/java/com/flubberschnub/nyctocosm/TonyManager.java
+?? src/main/java/com/flubberschnub/nyctocosm/WeaponAbilityCooldowns.java
+?? src/main/java/com/flubberschnub/nyctocosm/client/EmissarySwordPlungeRenderer.java
+?? src/main/java/com/flubberschnub/nyctocosm/client/PortalCameraEffects.java
+?? src/main/resources/assets/nyctocosm/effects/
+?? src/main/resources/assets/nyctocosm/lang/fr_ca.json
+?? src/main/resources/assets/nyctocosm/lang/fr_fr.json
+?? src/main/resources/assets/nyctocosm/models/item/emissary_sword_visual.json
+?? src/main/resources/assets/nyctocosm/native_rigs/emissary_damage_locators.json.gz
+?? src/main/resources/data/nyctocosm/advancements/bosses/defeat_emissary.json
+?? src/main/resources/data/nyctocosm/advancements/root.json
+?? src/main/resources/data/nyctocosm/recipes/seelic_scythe.json
+?? src/main/resources/data/nyctocosm/tags/entity_types/
+?? tools/export_emissary_damage_locators.py
+?? tools/import_crypt_structure_events.py
+?? tools/import_resonance_effects.py
+?? tools/package_p0_capture.py
+?? tools/package_resonance_capture.py
+?? tools/package_serpent_comparison.py
+?? tools/run_p0_smoke.ps1
+?? tools/run_resonance_smoke.ps1

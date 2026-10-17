@@ -1,0 +1,73 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Neither the 'eclipse' nor the 'idea' plugins were found, but IDE resource copy has been enabled.
+
+> Task :compileJava FAILED
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:30: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        for(String model:EXTRA)event.register(new ResourceLocation("nyctocosm",model));
+                                              ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:31: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        for(Spell spell:Spell.values())event.register(new ResourceLocation("nyctocosm","magic/spell_circles/"+spell.id()));
+                                                      ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:39: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        for(String id:new String[]{"seelic_scythe","wyrmsliver","nullfissure","semblanceofdoom"})ItemProperties.register(Content.get(id),new ResourceLocation("nyctocosm","casting"),(stack,level,entity,seed)->weaponCoolingDown(stack,entity)?1:0);
+                                                                                                                                         ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:40: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        ItemProperties.register(Content.get("planar_coil"),new ResourceLocation("nyctocosm","casting"),(stack,level,entity,seed)->entity instanceof net.minecraft.world.entity.player.Player player&&player.getCooldowns().isOnCooldown(stack.getItem())?1:0);
+                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:157: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                    model(new ResourceLocation("nyctocosm",EXTRA[6]),pose,buffers,LightTexture.FULL_BRIGHT);pose.popPose();
+                          ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:162: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                if(boss.kind==4)legacyHeadModel(new ResourceLocation("nyctocosm",EXTRA[3]),pose,buffers,light);
+                                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:176: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            if(field.spell()!=null)model(new ResourceLocation("nyctocosm","magic/spell_circles/"+field.spell().id()),pose,buffers,LightTexture.FULL_BRIGHT);
+                                         ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:181: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                legacyHeadModel(new ResourceLocation("nyctocosm","magic/spell_circles/luminescence"),pose,buffers,LightTexture.FULL_BRIGHT);pose.popPose();
+                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:204: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                    legacyHeadModel(new ResourceLocation("nyctocosm",EXTRA[5]),pose,buffers,LightTexture.FULL_BRIGHT);pose.popPose();
+                                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:215: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            model(new ResourceLocation("nyctocosm","magic/spell_circles/"+area.spell().id()),pose,buffers,LightTexture.FULL_BRIGHT);pose.popPose();
+                  ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeNetwork.java:17: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        new ResourceLocation(NativeMod.ID,"main"),()->VERSION,VERSION::equals,VERSION::equals);
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\SerpentWorldRenderer.java:35: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                ClientEvents.serpentModel(new ResourceLocation(NativeMod.ID,"serpent/"+model),yaw,pitch,pose,buffers,light);
+                                          ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\ClientSmokeFeedback19.java:28: ����: �����ݵ�����: String�޷�ת��ΪResourceLocation
+            var key=new net.minecraft.client.resources.model.ModelResourceLocation("minecraft:orange_dye","inventory");
+                                                                                   ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\ClientSmokeFeedback19.java:34: ����: [removal] ResourceLocation �е� ResourceLocation(String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                            if(stack.hasTag()&&stack.getTag().contains("FeedbackRigModel"))return Minecraft.getInstance().getModelManager().getModel(new net.minecraft.resources.ResourceLocation(stack.getTag().getString("FeedbackRigModel")));
+                                                                                                                                                     ^
+ע: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+ע: ĳЩ��Ϣ�Ѿ�����; ��ʹ�� -Xdiags:verbose ���±����Ի���������
+1 ������
+13 ������
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 8s
+1 actionable task: 1 executed

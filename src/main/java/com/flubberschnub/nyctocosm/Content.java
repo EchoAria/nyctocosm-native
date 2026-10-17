@@ -29,12 +29,14 @@ public final class Content {
     public static final RegistryObject<EntityType<NativeBoss>> SERPENT = boss("serpent", 0, 3, 3);
     public static final RegistryObject<EntityType<NativeBoss>> SORCERER = boss("sorcerer", 1, 1.2f, 3.6f);
     public static final RegistryObject<EntityType<NativeBoss>> EMISSARY = boss("emissary", 2, 2, 5);
-    public static final RegistryObject<EntityType<NativeBoss>> DEATH_WALKER = boss("death_walker", 3, 1.2f, 3);
+    public static final RegistryObject<EntityType<NativeBoss>> DEATH_WALKER = boss("death_walker", 3, 3.6f, 12);
     public static final RegistryObject<EntityType<NativeBoss>> APPARITION = boss("nightmare_apparition", 4, 1, 2.5f);
     public static final RegistryObject<EntityType<SpellBolt>> BOLT = ENTITIES.register("spell_bolt", () ->
         EntityType.Builder.<SpellBolt>of(SpellBolt::new, MobCategory.MISC).sized(.35f,.35f).clientTrackingRange(96).updateInterval(1).build("nyctocosm:spell_bolt"));
     public static final RegistryObject<EntityType<SeelicField>> FIELD = ENTITIES.register("seelic_field", () ->
         EntityType.Builder.<SeelicField>of(SeelicField::new, MobCategory.MISC).sized(1,.2f).clientTrackingRange(64).updateInterval(1).build("nyctocosm:seelic_field"));
+    public static final RegistryObject<EntityType<PortalActivation>> PORTAL_ACTIVATION = ENTITIES.register("portal_activation", () ->
+        EntityType.Builder.<PortalActivation>of(PortalActivation::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:portal_activation"));
     public static final RegistryObject<EntityType<SpellArea>> AREA = ENTITIES.register("spell_area", () ->
         EntityType.Builder.<SpellArea>of(SpellArea::new,MobCategory.MISC).sized(1,.2f).clientTrackingRange(64).updateInterval(1).build("nyctocosm:spell_area"));
     public static final RegistryObject<EntityType<NullpointStaff>> NULLPOINT = ENTITIES.register("nullpoint_staff", () ->
@@ -43,6 +45,46 @@ public final class Content {
         EntityType.Builder.<IceSpikeWave>of(IceSpikeWave::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(96).updateInterval(1).build("nyctocosm:ice_spike_wave"));
     public static final RegistryObject<EntityType<SerpentBeamHazard>> SERPENT_BEAM = ENTITIES.register("serpent_beam_hazard", () ->
         EntityType.Builder.<SerpentBeamHazard>of(SerpentBeamHazard::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:serpent_beam_hazard"));
+    public static final RegistryObject<EntityType<SoulEntity>> SOUL = ENTITIES.register("soul", () ->
+        EntityType.Builder.<SoulEntity>of(SoulEntity::new,MobCategory.MISC).sized(.2f,.2f).clientTrackingRange(32).updateInterval(5).build("nyctocosm:soul"));
+    public static final RegistryObject<EntityType<ExpulsionBurst>> EXPULSION_BURST = ENTITIES.register("expulsion_burst", () ->
+        EntityType.Builder.<ExpulsionBurst>of(ExpulsionBurst::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(32).updateInterval(20).build("nyctocosm:expulsion_burst"));
+    public static final RegistryObject<EntityType<EmissaryGrappleSeat>> EMISSARY_GRAPPLE = ENTITIES.register("emissary_grapple", () ->
+        EntityType.Builder.<EmissaryGrappleSeat>of(EmissaryGrappleSeat::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:emissary_grapple"));
+    public static final RegistryObject<EntityType<EmissaryHitRegion>> EMISSARY_HIT_REGION = ENTITIES.register("emissary_hit_region", () ->
+        EntityType.Builder.<EmissaryHitRegion>of(EmissaryHitRegion::new,MobCategory.MISC).sized(1,1).clientTrackingRange(96).updateInterval(1).build("nyctocosm:emissary_hit_region"));
+    public static final RegistryObject<EntityType<EmissaryHazard>> EMISSARY_HAZARD = ENTITIES.register("emissary_hazard", () ->
+        EntityType.Builder.<EmissaryHazard>of(EmissaryHazard::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:emissary_hazard"));
+    public static final RegistryObject<EntityType<EmissarySeekingMissile>> EMISSARY_SEEKING_MISSILE = ENTITIES.register("emissary_seeking_missile", () ->
+        EntityType.Builder.<EmissarySeekingMissile>of(EmissarySeekingMissile::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:emissary_seeking_missile"));
+    public static final RegistryObject<EntityType<EmissarySwordPlunge>> EMISSARY_SWORD_PLUNGE = ENTITIES.register("emissary_sword_plunge", () ->
+        EntityType.Builder.<EmissarySwordPlunge>of(EmissarySwordPlunge::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:emissary_sword_plunge"));
+    public static final RegistryObject<EntityType<EmissaryWingBlastRay>> EMISSARY_WING_BLAST_RAY = ENTITIES.register("emissary_wing_blast_ray", () ->
+        EntityType.Builder.<EmissaryWingBlastRay>of(EmissaryWingBlastRay::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:emissary_wing_blast_ray"));
+    public static final RegistryObject<EntityType<EmissaryPillar>> EMISSARY_PILLAR = ENTITIES.register("emissary_pillar", () ->
+        EntityType.Builder.<EmissaryPillar>of(EmissaryPillar::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:emissary_pillar"));
+    public static final RegistryObject<EntityType<EmissaryFlameGeyser>> EMISSARY_FLAME_GEYSER = ENTITIES.register("emissary_flame_geyser", () ->
+        EntityType.Builder.<EmissaryFlameGeyser>of(EmissaryFlameGeyser::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:emissary_flame_geyser"));
+    public static final RegistryObject<EntityType<EmissaryRainShard>> EMISSARY_RAIN_SHARD = ENTITIES.register("emissary_rain_shard", () ->
+        EntityType.Builder.<EmissaryRainShard>of(EmissaryRainShard::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:emissary_rain_shard"));
+    public static final RegistryObject<EntityType<EmissaryCelestialTear>> EMISSARY_CELESTIAL_TEAR = ENTITIES.register("emissary_celestial_tear", () ->
+        EntityType.Builder.<EmissaryCelestialTear>of(EmissaryCelestialTear::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:emissary_celestial_tear"));
+    public static final RegistryObject<EntityType<EmissaryFlameSlashWave>> EMISSARY_FLAME_SLASH_WAVE = ENTITIES.register("emissary_flame_slash_wave", () ->
+        EntityType.Builder.<EmissaryFlameSlashWave>of(EmissaryFlameSlashWave::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:emissary_flame_slash_wave"));
+    /** Internal render carrier for the source giant-sword item model; deliberately omitted from the creative tab. */
+    public static final RegistryObject<Item> EMISSARY_SWORD_VISUAL = ITEMS.register("emissary_sword_visual", () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> SORCERER_VOID_PARTICLE_VISUAL = ITEMS.register("sorcerer_void_particle_visual", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SORCERER_ICICLE_VISUAL = ITEMS.register("sorcerer_icicle_visual", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<EntityType<SorcererHail>> SORCERER_HAIL = ENTITIES.register("sorcerer_hail", () ->
+        EntityType.Builder.<SorcererHail>of(SorcererHail::new,MobCategory.MISC).sized(.5f,1.975f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:sorcerer_hail"));
+    public static final RegistryObject<EntityType<FrozenBlade>> FROZEN_BLADE = ENTITIES.register("frozen_blade", () ->
+        EntityType.Builder.<FrozenBlade>of(FrozenBlade::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:frozen_blade"));
+    public static final RegistryObject<EntityType<SorcererBeamNode>> SORCERER_BEAM_NODE = ENTITIES.register("sorcerer_beam_node", () ->
+        EntityType.Builder.<SorcererBeamNode>of(SorcererBeamNode::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:sorcerer_beam_node"));
+    public static final RegistryObject<EntityType<CryptSlatehengeTrigger>> CRYPT_SLATEHENGE_TRIGGER = ENTITIES.register("crypt_slatehenge_trigger", () ->
+        EntityType.Builder.<CryptSlatehengeTrigger>of(CryptSlatehengeTrigger::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(32).updateInterval(20).build("nyctocosm:crypt_slatehenge_trigger"));
+    public static final RegistryObject<EntityType<SlatehengeEffect>> SLATEHENGE_EFFECT = ENTITIES.register("slatehenge_effect", () ->
+        EntityType.Builder.<SlatehengeEffect>of(SlatehengeEffect::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(32).updateInterval(20).build("nyctocosm:slatehenge_effect"));
     static {
         try(var input=Content.class.getResourceAsStream("/assets/nyctocosm/sounds.json")) {
             var sounds=com.google.gson.JsonParser.parseReader(new java.io.InputStreamReader(java.util.Objects.requireNonNull(input),java.nio.charset.StandardCharsets.UTF_8)).getAsJsonObject();

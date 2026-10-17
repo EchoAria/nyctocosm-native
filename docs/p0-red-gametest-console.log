@@ -1,0 +1,129 @@
+Picked up JAVA_TOOL_OPTIONS: -Dnet.minecraftforge.gradle.check.certs=false
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Neither the 'eclipse' nor the 'idea' plugins were found, but IDE resource copy has been enabled.
+
+> Task :compileJava
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:240: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            var advancement=helper.getLevel().getServer().getAdvancements().getAdvancement(new net.minecraft.resources.ResourceLocation(NativeMod.ID,"bosses/defeat_sorcerer"));
+                                                                                           ^
+1 ������
+
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createSrgToMcp UP-TO-DATE
+> Task :downloadMCMeta UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :extractNatives UP-TO-DATE
+> Task :makeSrcDirs
+> Task :prepareRuns
+> Task :prepareRunGameTestServer
+> Task :prepareRunGameTestServerCompile
+
+> Task :runGameTestServer
+Picked up JAVA_TOOL_OPTIONS: -Dnet.minecraftforge.gradle.check.certs=false
+2026-09-21 20:05:16,908 main WARN Advanced terminal features are not available in this environment
+[20:05:17] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgegametestserveruserdev, --gameDir, ., --fml.forgeVersion, 47.4.13, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[20:05:17] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.19 by Microsoft; OS Windows 11 arch amd64 version 10.0
+[20:05:17] [main/INFO] [ne.mi.fm.lo.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgegametestserveruserdev
+[20:05:17] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/jzy19/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=SERVER
+[20:05:17] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.13\cf01e2179f72bd2829c65f5226d7dd0cfb6c686\javafmllanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[20:05:17] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.13\e3f96129ea14eba84316f2d69816253e228e6e4c\lowcodelanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[20:05:17] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.13\85796906112d9b621a7b2996f8bfda49da991ef0\mclanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[20:05:17] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.13\f77e3021d1eb31d61f8d1b92d18ed4fb3c2806e5\fmlcore-1.20.1-47.4.13.jar is missing mods.toml file
+[20:05:17] [main/INFO] [ne.mi.fm.lo.mo.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[20:05:19] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgegametestserveruserdev' with arguments [--gameDir, .]
+[20:05:20] [main/WARN] [os.dr.wi.pe.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[20:05:23] [modloading-worker-0/INFO] [ne.mi.co.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.13, for MC 1.20.1 with MCP 20230612.114412
+[20:05:23] [modloading-worker-0/INFO] [ne.mi.co.MinecraftForge/FORGE]: MinecraftForge v47.4.13 Initialized
+[20:05:23] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[20:05:24] [main/INFO] [mojang/YggdrasilAuthenticationService]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[20:05:24] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.4.13 Target: 47.4.23
+[20:05:24] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/C:/Users/jzy19/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.13_mapped_official_1.20.1/forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[20:05:24] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/C:/Users/jzy19/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.13_mapped_official_1.20.1/forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[20:05:26] [main/INFO] [minecraft/RecipeManager]: Loaded 7 recipes
+[20:05:26] [main/INFO] [minecraft/AdvancementList]: Loaded 1273 advancements
+[20:05:26] [main/INFO] [ne.mi.ga.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [nyctocosm]
+[20:05:26] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[20:05:28] [Worker-Main-4/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[20:05:28] [Worker-Main-4/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[20:05:28] [Worker-Main-4/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[20:05:28] [Worker-Main-2/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 21%
+[20:05:28] [Server thread/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 1723 ms
+[20:05:28] [Server thread/INFO] [minecraft/GameTestServer]: Started game test server
+[20:05:28] [Server thread/INFO] [ne.mi.se.pe.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[20:05:29] [Server thread/INFO] [minecraft/GameTestBatchRunner]: Running test batch 'defaultBatch:1' (47 tests)...
+[20:05:29] [Server thread/INFO] [minecraft/GameTestServer]: 47 tests are now running!
+[20:05:29] [Server thread/ERROR] [minecraft/LogTestReporter]: serpent_laser_survives_reload failed! Cannot invoke "net.minecraft.world.phys.Vec3.scale(double)" because "this.serpentLaserAim" is null
+[20:05:29] [Server thread/ERROR] [minecraft/LogTestReporter]: serpent_twirl_climbs_independently_of_target failed! Twirl target must climb from the head's starting position, independently of the player; y=-51.5
+[20:05:30] [Server thread/INFO] [minecraft/GameTestServer]: [____++X_X_+++++++_+++++++_____++_++++++_+++_+++]
+[20:05:30] [Server thread/ERROR] [minecraft/LogTestReporter]: serpent_normally_travels_at_source_two_blocks_per_tick failed! Serpent did not cover source-speed distance in seven active ticks: 6.950463333156785
+[20:05:30] [Server thread/INFO] [minecraft/GameTestServer]: [__++++XXX_+++++++_+++++++_+_+_++_++++++_+++_+++]
+[20:05:30] [Server thread/INFO] [minecraft/GameTestServer]: [__++++XXX_+++++++_+++++++++_++++_++++++_+++_+++]
+[20:05:31] [Server thread/INFO] [minecraft/GameTestServer]: [+_++++XXX_+++++++++++++++++_++++_++++++_+++_+++]
+[20:05:31] [Server thread/INFO] [minecraft/GameTestServer]: [+_++++XXX_+++++++++++++++++_++++_++++++_+++_+++]
+[20:05:31] [Server thread/INFO] [minecraft/GameTestServer]: [+_++++XXX_+++++++++++++++++_++++_++++++_+++_+++]
+[20:05:32] [Server thread/INFO] [minecraft/GameTestServer]: [+_++++XXX_+++++++++++++++++_++++_++++++++++_+++]
+[20:05:32] [Server thread/INFO] [minecraft/GameTestServer]: [+_++++XXX++++++++++++++++++_+++++++++++++++++++]
+[20:05:32] [Server thread/INFO] [minecraft/GameTestServer]: [+_++++XXX++++++++++++++++++_+++++++++++++++++++]
+[20:05:32] [Server thread/INFO] [minecraft/GameTestServer]: [+_++++XXX++++++++++++++++++_+++++++++++++++++++]
+[20:05:32] [Server thread/INFO] [minecraft/GameTestServer]: [+_++++XXX++++++++++++++++++_+++++++++++++++++++]
+[20:05:32] [Server thread/INFO] [minecraft/GameTestServer]: [+_++++XXX++++++++++++++++++_+++++++++++++++++++]
+[20:05:33] [Server thread/INFO] [minecraft/GameTestServer]: [++++++XXX++++++++++++++++++_+++++++++++++++++++]
+[20:05:33] [Server thread/INFO] [minecraft/GameTestServer]: [++++++XXX++++++++++++++++++_+++++++++++++++++++]
+[20:05:33] [Server thread/INFO] [minecraft/GameTestServer]: [++++++XXX++++++++++++++++++_+++++++++++++++++++]
+[20:05:33] [Server thread/INFO] [minecraft/GameTestServer]: [++++++XXX++++++++++++++++++_+++++++++++++++++++]
+[20:05:33] [Server thread/INFO] [minecraft/GameTestServer]: [++++++XXX++++++++++++++++++_+++++++++++++++++++]
+[20:05:33] [Server thread/ERROR] [minecraft/LogTestReporter]: sorcerer_entrance_continues_into_rise failed! Initial spawn skipped the source rise clip and its plane summon keyframe
+[20:05:33] [Server thread/INFO] [minecraft/GameTestServer]: [++++++XXX++++++++++++++++++X+++++++++++++++++++]
+[20:05:33] [Server thread/INFO] [minecraft/GameTestServer]: ========= 47 GAME TESTS COMPLETE ======================
+[20:05:33] [Server thread/INFO] [minecraft/GameTestServer]: 4 required tests failed :(
+[20:05:33] [Server thread/INFO] [minecraft/GameTestServer]:    - serpent_laser_survives_reload
+[20:05:33] [Server thread/INFO] [minecraft/GameTestServer]:    - serpent_normally_travels_at_source_two_blocks_per_tick
+[20:05:33] [Server thread/INFO] [minecraft/GameTestServer]:    - serpent_twirl_climbs_independently_of_target
+[20:05:33] [Server thread/INFO] [minecraft/GameTestServer]:    - sorcerer_entrance_continues_into_rise
+[20:05:33] [Server thread/INFO] [minecraft/GameTestServer]: ====================================================
+[20:05:33] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[20:05:33] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[20:05:33] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[20:05:33] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[20:05:34] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[20:05:34] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/nyctocosm:emissary_domain
+[20:05:34] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[20:05:34] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/nyctocosm:dusk_plane
+[20:05:34] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/nyctocosm:nyctocosm
+[20:05:34] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[20:05:34] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20:05:34] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (emissary_domain): All chunks are saved
+[20:05:34] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20:05:34] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (dusk_plane): All chunks are saved
+[20:05:34] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (nyctocosm): All chunks are saved
+[20:05:34] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+[20:05:34] [Server thread/INFO] [minecraft/GameTestServer]: Game test server shutting down
+
+> Task :runGameTestServer FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':runGameTestServer'.
+> Process 'command 'C:\Users\jzy19\.jdks\ms-17.0.19\bin\java.exe'' finished with non-zero exit value 4
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 27s
+10 actionable tasks: 4 executed, 6 up-to-date

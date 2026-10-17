@@ -1,0 +1,14 @@
+{
+  "parent": "nyctocosm:root",
+  "display": {
+    "icon": {"item": "minecraft:fire_charge"},
+    "title": {"translate": "advancements.nyctocosm.defeat_emissary.title", "color": "gold"},
+    "description": {"translate": "advancements.nyctocosm.defeat_emissary.description", "color": "gray"},
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {"defeated": {"trigger": "minecraft:impossible"}}
+}

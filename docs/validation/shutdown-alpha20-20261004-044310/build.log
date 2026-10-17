@@ -1,0 +1,174 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Neither the 'eclipse' nor the 'idea' plugins were found, but IDE resource copy has been enabled.
+
+> Task :compileJava
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:653: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            var air=net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.BLOCK,new ResourceLocation(NativeMod.ID,"air"));
+                                                                                                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:1187: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        var passthrough=net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.BLOCK,new ResourceLocation(NativeMod.ID,"passthrough"));
+                                                                                                        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:1270: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        var advancement=server.getServer().getAdvancements().getAdvancement(new ResourceLocation(NativeMod.ID,"bosses/defeat_"+boss));
+                                                                            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\Combat.java:66: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            new net.minecraft.resources.ResourceLocation(NativeMod.ID, element.name().toLowerCase(java.util.Locale.ROOT)));
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:30: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        for(String model:EXTRA)event.register(new ResourceLocation("nyctocosm",model));
+                                              ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:31: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        for(Spell spell:Spell.values())event.register(new ResourceLocation("nyctocosm","magic/spell_circles/"+spell.id()));
+                                                      ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:39: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        for(String id:new String[]{"seelic_scythe","wyrmsliver","nullfissure","semblanceofdoom"})ItemProperties.register(Content.get(id),new ResourceLocation("nyctocosm","casting"),(stack,level,entity,seed)->weaponCoolingDown(stack,entity)?1:0);
+                                                                                                                                         ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:40: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        ItemProperties.register(Content.get("planar_coil"),new ResourceLocation("nyctocosm","casting"),(stack,level,entity,seed)->entity instanceof net.minecraft.world.entity.player.Player player&&player.getCooldowns().isOnCooldown(stack.getItem())?1:0);
+                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:157: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                    model(new ResourceLocation("nyctocosm",EXTRA[6]),pose,buffers,LightTexture.FULL_BRIGHT);pose.popPose();
+                          ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:162: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                if(boss.kind==4)legacyHeadModel(new ResourceLocation("nyctocosm",EXTRA[3]),pose,buffers,light);
+                                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:176: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            if(field.spell()!=null)model(new ResourceLocation("nyctocosm","magic/spell_circles/"+field.spell().id()),pose,buffers,LightTexture.FULL_BRIGHT);
+                                         ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:181: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                legacyHeadModel(new ResourceLocation("nyctocosm","magic/spell_circles/luminescence"),pose,buffers,LightTexture.FULL_BRIGHT);pose.popPose();
+                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:204: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                    legacyHeadModel(new ResourceLocation("nyctocosm",EXTRA[5]),pose,buffers,LightTexture.FULL_BRIGHT);pose.popPose();
+                                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:215: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            model(new ResourceLocation("nyctocosm","magic/spell_circles/"+area.spell().id()),pose,buffers,LightTexture.FULL_BRIGHT);pose.popPose();
+                  ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeNetwork.java:17: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        new ResourceLocation(NativeMod.ID,"main"),()->VERSION,VERSION::equals,VERSION::equals);
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\SeelicField.java:252: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static TagKey<net.minecraft.world.level.block.Block> passthrough(){return TagKey.create(Registries.BLOCK,new ResourceLocation(NativeMod.ID,"passthrough"));}
+                                                                                                                     ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\SpellArea.java:67: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            if(!server.getBlockState(blockPosition()).is(TagKey.create(Registries.BLOCK,new ResourceLocation(NativeMod.ID,"passthrough")))){discard();return;}
+                                                                                        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\SpellArea.java:131: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                if(!server.getBlockState(blockPosition()).is(TagKey.create(Registries.BLOCK,new ResourceLocation(NativeMod.ID,"passthrough")))){discard();return;}
+                                                                                            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\SpellArea.java:141: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        var vacable=TagKey.create(Registries.BLOCK,new ResourceLocation(NativeMod.ID,"vacable"));
+                                                   ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\EmissarySwordPlungeRenderer.java:36: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        return new ResourceLocation("nyctocosm", "textures/emissary/emissarysword.png");
+               ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\GlowingModels.java:50: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            ResourceLocation glow=new ResourceLocation(texture.getNamespace(),texture.getPath()+"_e");
+                                  ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\GlowingModels.java:52: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            if(mc.getResourceManager().getResource(new ResourceLocation(glow.getNamespace(),"textures/"+glow.getPath()+".png")).isEmpty())return Optional.empty();
+                                                   ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\RigLibrary.java:35: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        var resource=Minecraft.getInstance().getResourceManager().getResource(new ResourceLocation("nyctocosm","native_rigs/"+name+".json.gz"));
+                                                                              ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\RigLibrary.java:44: ����: [removal] ResourceLocation �е� ResourceLocation(String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            JsonObject bone=element.getAsJsonObject();bones.add(new Bone(bone.get("name").getAsString(),new ResourceLocation(bone.get("model").getAsString()),matrix(bone.getAsJsonArray("transform"))));
+                                                                                                        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\RigLibrary.java:59: ����: [removal] ResourceLocation �е� ResourceLocation(String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            Map<String,ResourceLocation> models=new HashMap<>();entry.getValue().getAsJsonObject().entrySet().forEach(e->models.put(e.getKey(),new ResourceLocation(e.getValue().getAsString())));
+                                                                                                                                               ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\SerpentWorldRenderer.java:34: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                ClientEvents.serpentModel(new ResourceLocation(NativeMod.ID,"serpent/"+model),yaw,pitch,pose,buffers,light);
+                                          ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\ClientSmokeFeedback19.java:34: ����: [removal] ResourceLocation �е� ResourceLocation(String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                            if(stack.hasTag()&&stack.getTag().contains("FeedbackRigModel"))return Minecraft.getInstance().getModelManager().getModel(new net.minecraft.resources.ResourceLocation(stack.getTag().getString("FeedbackRigModel")));
+                                                                                                                                                     ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\Content.java:91: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            for(String id:sounds.keySet())SOUND_MAP.put(id,SOUNDS.register(id,()->net.minecraft.sounds.SoundEvent.createVariableRangeEvent(new net.minecraft.resources.ResourceLocation(NativeMod.ID,id))));
+                                                                                                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\SpellBolt.java:270: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            net.minecraft.core.registries.Registries.BLOCK,new net.minecraft.resources.ResourceLocation(NativeMod.ID,"passthrough")));
+                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\SpellBolt.java:290: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            new net.minecraft.resources.ResourceLocation(NativeMod.ID,"passthrough"));
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\CryptSlatehengeTrigger.java:24: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation SLATEHENGE = new ResourceLocation(NativeMod.ID, "slatehenge");
+                                                       ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\SpellCollisionPolicy.java:28: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        new ResourceLocation(NativeMod.ID,"passthrough"));
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeEvents.java:28: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation NYCTOCOSM_DIMENSION=new ResourceLocation("nyctocosm","nyctocosm");
+                                                              ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeEvents.java:29: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation EMISSARY_DOMAIN=new ResourceLocation("nyctocosm","emissary_domain");
+                                                          ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeEvents.java:234: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        ServerLevel target=serverPlayer.server.getLevel(ResourceKey.create(Registries.DIMENSION,new ResourceLocation("nyctocosm",destination)));
+                                                                                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeEvents.java:248: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            var advancement=player.server.getAdvancements().getAdvancement(new ResourceLocation(NativeMod.ID,"root"));
+                                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeEvents.java:310: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            ServerLevel domain=serverPlayer.server.getLevel(ResourceKey.create(Registries.DIMENSION,new ResourceLocation("nyctocosm","emissary_domain")));
+                                                                                                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:689: ����: [removal] ProjectileImpactEvent �е� setCanceled(boolean) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            cancelledProjectileImpactsForTest++;event.setCanceled(true);
+                                                     ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:695: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        helper.assertTrue("serpent".equals(NativeEvents.incurrenceBossForBiome(new net.minecraft.resources.ResourceLocation(NativeMod.ID,"night_wastes"))),
+                                                                               ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:697: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        helper.assertTrue("sorcerer".equals(NativeEvents.incurrenceBossForBiome(new net.minecraft.resources.ResourceLocation(NativeMod.ID,"desert_of_rime"))),
+                                                                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:699: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        helper.assertTrue("emissary".equals(NativeEvents.incurrenceBossForBiome(new net.minecraft.resources.ResourceLocation(NativeMod.ID,"infernal_chasms"))),
+                                                                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:701: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        helper.assertTrue(NativeEvents.incurrenceBossForBiome(new net.minecraft.resources.ResourceLocation("othermod","infernal_chasms")).isEmpty(),
+                                                              ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:1523: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        var crypt=level.getStructureManager().get(new net.minecraft.resources.ResourceLocation("structures","crypt/hallways/generic/end")).orElseThrow();
+                                                  ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:1524: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        var slatehenge=level.getStructureManager().get(new net.minecraft.resources.ResourceLocation(NativeMod.ID,"slatehenge")).orElseThrow();
+                                                       ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:3206: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            var advancement=helper.getLevel().getServer().getAdvancements().getAdvancement(new net.minecraft.resources.ResourceLocation(NativeMod.ID,"bosses/defeat_sorcerer"));
+                                                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeMod.java:12: ����: [removal] FMLJavaModLoadingContext �е� get() �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        var bus = FMLJavaModLoadingContext.get().getModEventBus();
+                                          ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\TonyManager.java:29: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceKey<Structure> DREAM_CRYPT=ResourceKey.create(Registries.STRUCTURE,new ResourceLocation("nyctocosm","crypts/dream"));
+                                                                                                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\TonyManager.java:32: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        if(!player.level().dimension().location().equals(new ResourceLocation("nyctocosm","nyctocosm")))return;
+                                                         ^
+ע: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+48 ������
+
+> Task :processResources
+> Task :classes
+> Task :jar
+> Task :downloadMcpConfig
+> Task :extractSrg
+> Task :createMcpToSrg
+> Task :reobfJar
+> Task :jarJar SKIPPED
+> Task :reobfJarJar SKIPPED
+> Task :assemble
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :build
+
+BUILD SUCCESSFUL in 27s
+7 actionable tasks: 7 executed

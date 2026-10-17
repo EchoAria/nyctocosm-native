@@ -1,0 +1,3 @@
+2026-10-03T20:46:39.5371513Z Preflight passed; no shutdown request in VerifyOnly mode.
+2026-10-03T20:47:33.0437761Z Explicit user request; release, successful build, audit and saved TODO verified. Waiting20 seconds before normal shutdown.
+2026-10-03T20:47:53.1624978Z shutdown.exe exit code: 0

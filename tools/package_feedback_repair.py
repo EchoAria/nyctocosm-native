@@ -1,0 +1,143 @@
+"""Save alpha.17 source, regression, client and release evidence after successful verification."""
+from pathlib import Path
+import hashlib,json,re,zipfile
+
+root=Path(__file__).resolve().parents[1]
+digest=lambda path:hashlib.sha256(path.read_bytes()).hexdigest()
+version=re.search(r"^version\s*=\s*'([^']+)'",(root/'build.gradle').read_text(),re.M)[1]
+assert version=='0.3.0-native-alpha.17'
+jar=root/f'build/libs/nyctocosm-native-{version}.jar'
+evidence=root/'docs/validation/feedback-alpha17-20261003'
+evidence.mkdir(exist_ok=True)
+manifest_path=evidence/'manifest.json'
+assert not manifest_path.exists(), 'Preserve the existing delivery manifest'
+test=root/'docs/validation/feedback-alpha17-final-20261003.log'
+test_text=test.read_text(encoding='utf-8',errors='replace')
+assert 'All 262 required tests passed' in test_text and 'BUILD SUCCESSFUL' in test_text and ' failed!' not in test_text
+build=root/'docs/validation/feedback-alpha17-release-build-20261003.log'
+assert 'BUILD SUCCESSFUL' in build.read_text(encoding='utf-8',errors='replace')
+clients=[]
+for suffix in ('client','client-final','ray-client'):
+    path=root/f'docs/validation/feedback-alpha17-{suffix}-20261003.log'
+    text=path.read_text(encoding='utf-8',errors='replace')
+    assert 'VISUAL_REPAIR_CAPTURE_COMPLETE' in text and 'VISUAL_VARIANT_ASSERTIONS_PASS' in text and 'BUILD SUCCESSFUL' in text
+    assert 'Exception in thread' not in text and 'Rendering entity in world' not in text
+    if suffix!='client':
+        assert re.search(r'tick=1380 .*swords=1 .*sword=swordless',text)
+        assert re.search(r'tick=1440 .*phase=3 head=armorful',text)
+        assert re.search(r'tick=1480 .*phase=4 head=armorless',text)
+    assert 'FOCUS_SOURCE_USE bottle' in text and 'FOCUS_SOURCE_USE coil' in text and 'glowing=true' in text
+    if suffix=='ray-client':assert 'FEEDBACK_RAY_SCENE godrays' in text and 'FEEDBACK_RAY_SCENE divine_blast' in text
+    screenshots=root/f'run-feedback-alpha17-{suffix}-20261003/screenshots'
+    assert (screenshots/'feedback-repair-1510.png').exists()
+    clients.append({'log':str(path),'sha256':digest(path),'screenshots':str(screenshots)})
+audit=json.loads((root/'docs/native-audit.json').read_text(encoding='utf-8'))
+assert not audit['errors'] and audit['checks']['jar_sha256']==digest(jar)
+values=json.loads((root/'docs/validation/player-spell-values-20261003.json').read_text())
+assert values['spell_count']==17 and not values['errors']
+source=root.parent/'_nyctocosm_source/datapack/data'
+source_hashes={}
+imported=json.loads((root/'docs/validation/feedback-particle-import-20261003.json').read_text())
+for relative,expected in imported['source_sha256'].items():
+    path=source/relative;assert digest(path)==expected,relative;source_hashes[str(path)]=expected
+for folder in ('spells/functions','emissary/functions/ai/phase/4','emissary/functions/attacks/phase4','emissary/functions/attacks/phase2/sword_plunge','items/functions','animated_java/functions/ajemissary/zzzzzzzz/animations'):
+    for path in (source/folder).rglob('*.mcfunction'):source_hashes[str(path)]=digest(path)
+with zipfile.ZipFile(jar) as archive:
+    entries=archive.namelist()
+    assert not [n for n in entries if 'NativeGameTests' in n or 'ClientSmoke' in n or n.endswith('.mcfunction')]
+    majors=sorted({int.from_bytes(archive.read(n)[6:8],'big') for n in entries if n.endswith('.class')})
+    assert majors==[61]
+    assert version in archive.read('META-INF/mods.toml').decode()
+    asset='assets/nyctocosm/effects/feedback_keyframes.json'
+    assert archive.read(asset)==(root/'src/main/resources'/asset).read_bytes()
+previous={}
+for number,expected in (
+    ('13','1fd0e3caaac1cdcc3b7647bc9e93f92b88c0f3e4875af58024cfabfe124c604c'),
+    ('14','d1ac9901cfde0b4b19dda39cdfdd4e72cdc0fd0bccfba1704ca0c12b66e4c55f'),
+    ('15','7c9a89a5790962a7032ea32d8f82faace927306f4fad98cb50a7c964b037103d'),
+    ('16','81a568b2acd673113e627372d8f87fea3a3c0230c501fc48517671359cc34239')):
+    path=root/f'build/libs/nyctocosm-native-0.3.0-native-alpha.{number}.jar'
+    assert digest(path)==expected;previous[number]=expected
+pending=['Incandescence damage-cancellation burning choice; dedicated source endpoint/substeps not enabled',
+    'Other D28 unapproved statuses, C03 world fire/lightning, D20 party/altar/refund transactions, D02 party/offline, D14 chance, D41 costs',
+    'D22 non-default power/stat pipeline and remaining per-spell collision/particle details',
+    'Real natural AI survival/multiplayer/shader/chunk unload/restart/FPS acceptance and full original-pack combat video comparison']
+manifest={'completed':True,'version':version,'network_protocol':'5','jar':str(jar),'bytes':jar.stat().st_size,'sha256':digest(jar),'entries':len(entries),'java_class_major_versions':majors,
+    'tests':{'required_passed':262,'log':str(test),'sha256':digest(test)},'release_build':{'log':str(build),'sha256':digest(build)},'client_runs':clients,
+    'audit':audit,'source_sha256':source_hashes,'implementation_sha256':{str(p.relative_to(root)):digest(p) for p in (root/'src/main/java').rglob('*.java')},
+    'previous_jars_sha256':previous,'pending':pending}
+manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+report=f'''# alpha.17 实机反馈修复交付（2026-10-03）
+
+本轮可独立实施切片的实现和自动验证完成；以下实机项待验收。没有把51项全部标为完成。
+
+## 产物和证据
+
+- 平台：Minecraft 1.20.1 / Forge 47.4.13 / Java17。版本 **{version}**，协议5，客户端和服务器需同版。
+- JAR：`{jar}`，**{manifest['bytes']:,} bytes／{len(entries)} entries**。
+- SHA-256：`{manifest['sha256']}`。
+- 最终 `runGameTestServer build --offline`：**262/262 required通过**、build/reobf成功、退出0；另一次release build成功。日志 `feedback-alpha17-final-20261003.log`、`feedback-alpha17-release-build-20261003.log`。
+- 包审计 **errors=[]**；所有class major61，新3373行数值效果资源与工作区相同，无GameTest／ClientSmoke／runtime mcfunction。`feedback-alpha17-audit-20261003.json`。
+- 三个新建隔离客户端均捕获完成并退出0。最新 `run-feedback-alpha17-ray-client-20261003/screenshots` 含预警、光束、落剑、瓶／线圈、发光与旧反馈复查。
+- 原包粒子来源hash、逐招源函数hash、实现hash、全部旧包hash与日志hash见 [manifest](feedback-alpha17-20261003/manifest.json)。alpha.13–16保持原SHA，未安装到游戏、未修改源／真实存档／相邻MDK、无提交／推送。
+
+## 本轮修复状态
+
+| 切片 | 原包依据和修改 | 本轮验证与边界 |
+|---|---|---|
+| D06 持剑／落剑 | sword_plunge leaf0/10/45 swordless/swordful/swordless，idle无恢复；block344原ItemDisplay没有Rotation。逐骨骼持久状态与NBT，删除错误随机root旋转，HEAD×10巨剑竖直 | 关键帧/NBT/无倾斜断言通过；客户端1380有独立剑且手中剑隐藏，490模型竖直；世界火焰/完整巨剑shockwave仍待原项 |
+| D18 形态材质 | 用户地面近战是内部phase3，高速飞行phase4；phase3_transition171才armorless | 1440近战armorful，1480飞行armorless；按源每骨骼变体，不再按phase强制覆盖 |
+| phase4飞行 | 删除额外周期换路；25/.5、quick10/.5两次vanilla局部坐标转向；源速度子步数、waypoint/关键帧和NBT恢复 | 独立vanilla execute角度及旧飞行/边界用例通过；96格回航、128格硬边界保留。没有连续原包战斗视频或自然多人路线验收 |
+| phase4攻击 | Corkscrew玩家cube；Divine/Godrays玩家cube截断、脚部4格爆炸；Godrays创建时MASTER50/200与四路红色预警；源27/3行射线／两种shockwave数值 | NPC不挡/不受伤、反射容量/回转路径、时钟/NBT通过。1717预警、1735扫射、1880冲击可见，未用旧近似螺旋替代源数值。真实生存攻击和属性链仍待验 |
+| D20/D25 焦点／灵魂 | 原spellplane1000行三环、独立21tick灵魂爆散，MASTER magic_plane/release1/10，force sculk_soul及瓶/线圈捕获声，镰刀水平2格/Y+1生成点与reap4/10 | 两种焦点1510/1570可见粒子；声事件／受众／声道按源码核对，没有实际听音验收。最近单人捕获和祭坛事务仍待决策 |
+| 玩家默认法术 | 17招damage/duration/cast_time逐一读spells:load，全部匹配；修Glowing／抗性／治疗、发射点、ABH/FUL/GRAV运动和命中；Lum圆环20tick固定位置/NBT | 下表逐招说明。默认值一致不表示动态power、所有粒子或全部行为已等价 |
+
+### 玩家法术逐项核对
+
+持续时间为原包tick值；“修复”只指列出的切片。没有把概略列表里的数值自动当作玩法批准。
+
+| 法术／材料 | 原包基础伤害／持续 | 当前处理及剩余项 |
+|---|---|---|
+| 憎恶／煤 | 15／30 | Y1.625+水平前3，30次1.5移动、双solid端点判定、cube伤害，无额外splash；新增翼部multipart命中。10秒Darkness取消策略待D28，触须完整粒子仍待补 |
+| 禁锢／恶魂之泪 | 0／35 | 水平前3、1.2速度、既有第3tick开始反制保留；逐载体反制边界仍按原项，不扩大同owner反制 |
+| 引力／哭泣黑曜石 | 20／200 | 水平前3、.3移动；当前voxel阻挡时保留heading；源脚部6..9/.2后..6/.4顺序tp、近3伤害、免强制移动保护；多owner边界/完整void粒子未闭合 |
+| 滋养／苹果 | 治疗10／0 | 治疗/饱食与poof50、Radiance源burst已补；动态属性及神器组合仍属D22 |
+| 反射／铁锭 | 容量20／200 | 原默认容量是20，非概略表60；已存在3格反射/归属/容量回归。非默认power和完整视觉待原项 |
+| 潜没／灵魂沙 | 8／0 | 原选择是脚部3..7、最多6个，不是半径30；保留既有实现、安全边界，地下过程/多人/源视觉需后续验收 |
+| 坚定／圆石 | 0／200 | 保留既有锁点及免强制移动；解锁和真实多引力交互待实机 |
+| 炽光／火药 | 10／40 | 发射点改为全俯仰前4、总速度1.5；源三次.5子步、命中cube/双元素和放火仍未完全接入。仍是旧generic FIRE路径；取消伤害燃烧问题已单独提问，没有批准或外推D45 |
+| 抗性／牛排 | 0／250 | 本原包是250，非概略表600。恢复Resistance I和临时击退抗性modifier，退出不覆盖其它modifier；源crit100/endrod/Radiance |
+| 亮光／萤石块 | 0／6000 | 恢复Glowing、持续清Darkness/Blindness与恐惧免疫；删除错误NightVision；20tick世界固定circle及Radiance演出同步/保存。暂不写原包每2tick临时light方块 |
+| 发生／凋零玫瑰 | 0／0 | 既有夜间biome判断、法阵上下文和安全入域保留；组队/离线补偿仍D02待确认 |
+| 消逝／末影之眼 | 0／0 | 既有安全重生点返回保留；多人/owner离线仍待原项 |
+| 共鸣／回声碎片 | 60／0 | 既有独立source射线、charge、传送门触发保留；本轮旧回归通过，完整动态power仍D22 |
+| 传递／末影珍珠 | 原load15／0，传送默认100格 | 安全落地保留；枚举damage15不作为传送伤害。逐步量化/多人仍按未闭合项跟踪 |
+| 空行／玻璃瓶 | 0／100 | 既有液体气泡/恢复与推开保留；原包vacable方块与中心移动等尚待精确验收 |
+| Repellance／羽毛 | 0／50 | 原包另外一招，默认值一致；源载体/世界方块与完整演出仍待后续 |
+| Fulminance／石英 | 7／20 | 原包另外一招，前4、六次1.5子步、源Dissonance端点伤害/反射/NBT已修；Lightning只做视觉，原包真实额外伤害/放火待C03，闪电路径粒子未完整对齐 |
+
+## 失败记录与验证范围
+
+1. 修复前red：250项、3项预期失败（倾斜、荧石不发光、飞行定时换路），原248通过。green4：256/256；green6：259/260，旧Serpent索敌用例失败；诊断7：260/260。
+2. 诊断记录自然游动45tick令该夹具距离120→191，前提不稳定。原失败没有实际距离，不能声称证明唯一根因；最终夹具固定Boss位置，仍让真实AI运行50tick，保留墙/120/200边界。最终262全部通过，未删除失败用例或放宽命中断言。
+3. 第一次focus粒子断言猜测200/400/400有误，改成逐行读取源180/460/360；失败日志保留。三次夹具编译错误日志亦保留。
+4. 第一轮新客户端creative导致新落剑分支未执行；最终两轮该场景临时使用免伤Survival可飞目标，1380独立剑数量1。没有将第一轮充当落剑验收。
+5. 最新客户端截图复查：490竖直巨剑，780蛇头埋石外露身体仍见，585传送门粒子，895巫师死亡灵魂，1440/1480材质，1510/1570焦点，1650亮光，1717/1735 Godrays，1880 Divine冲击。未运行原包完整Boss战斗并录制同机对照视频，当前证据是源可达命令、独立vanilla execute与原生客户端夹具。
+6. 巨蛇柱600新粒子/tick的既有预算保留；4800→600是数量减少87.5%，不是FPS实测。原包Godrays/Divine密集粒子恢复后本机夹具活跃粒子约3.3万，不宣称任何机器或shader均无掉帧。
+
+## 待决策／待实机
+
+- 炽光术若Forge取消伤害是否仍燃烧：等待用户答复；D45确认仅用于Semblance，不外推。其它D28状态、C03世界放火/真实Lightning、D20交易、D02组队/离线、D14未初始化chance和D41成本继续待选。
+- D22非默认属性、全部剩余玩家粒子/碰撞细节、未闭合51项保持原状态。本轮不是整包完整等价验收。
+- 真实自然AI、生存、多人、保护模组、shader、chunk卸载/专服重启、晚加入和FPS未实测。NBT夹具不当作真实重启。
+
+### 手工验收步骤
+
+1. 手动把客户端/服务器都换成alpha.17。在自然使者战斗检查：落剑时手中剑隐藏、巨剑竖直；地面近战仍有护甲，第三形态高速飞行才换材质；确认八区块范围内保持战斗，观察Corkscrew/Grapple/Rain及两种射线。
+2. 生存分别用灵魂瓶和副手位面线圈开阵，检查三环/灵魂爆散及音效、捕获灵魂的声效；在阵旁丢自己投出的萤石块，确认发光和黑暗/失明清除。测试煤、哭泣黑曜石、牛排、苹果及石英的修复切片。
+3. 对模型和状态分别做真实卸载/保存重进、多人/晚加入、伤害保护与shader复验；记录两版连续视频和设置。炽光取消伤害策略答复后再验收其余规则。
+
+按用户明确授权，本轮交付记录保存后安排20秒后正常关机，不使用强制结束应用参数；关机helper另记录启动和请求返回码。
+'''
+(root/'docs/validation/FEEDBACK_REPAIR_ALPHA17.md').write_text(report,encoding='utf-8')
+print(json.dumps({k:manifest[k] for k in ('version','jar','bytes','sha256','entries')},ensure_ascii=False,indent=2))

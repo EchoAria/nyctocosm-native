@@ -1,0 +1,8 @@
+﻿2026-10-02T19:58:20.9227843Z Started; explicit user request: shut down after repairs and successful build. Graceful shutdown without /f.
+2026-10-02T19:58:21.0930297Z Shutdown cancelled due to validation/helper error: 无法将“Get-FileHash”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+2026-10-02T19:59:02.0723321Z Started; explicit user request: shut down after repairs and successful build. Graceful shutdown without /f.
+2026-10-02T19:59:02.2445954Z Shutdown cancelled due to validation/helper error: 找不到路径“D:\MinecraftModDev\DEV - 鍓湰\MAINLINE_GAMEPLAY_PARITY_TODO.md”，因为该路径不存在。
+2026-10-02T19:59:44.0642593Z Started; explicit user request: shut down after repairs and successful build. Graceful shutdown without /f.
+2026-10-02T19:59:44.2538132Z Package SHA256, audit, final test/build logs, three client logs and saved TODO verified; waiting 20 seconds.
+2026-10-02T20:00:04.3794431Z Requesting normal shutdown: shutdown.exe /s /t 0
+2026-10-02T20:00:04.3994483Z shutdown.exe returned exit code 0

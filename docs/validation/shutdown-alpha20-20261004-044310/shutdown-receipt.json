@@ -1,0 +1,11 @@
+﻿{
+    "version":  "0.3.0-native-alpha.20",
+    "sha256":  "28656ccfc2c9d87067b0e9f27647132b5db80bc760886e2327d88b316e5022d7",
+    "helper_pid":  59368,
+    "verified_at_utc":  "2026-10-03T20:47:33.0518063Z",
+    "delay_seconds":  20,
+    "shutdown_command":  "shutdown.exe /s /t 0",
+    "status":  "shutdown_requested",
+    "requested_at_utc":  "2026-10-03T20:47:53.1354997Z",
+    "shutdown_exit_code":  0
+}

@@ -1,0 +1,20 @@
+{
+  "version": "0.3.0-native-alpha.11",
+  "frames": 341,
+  "fps": 10,
+  "trace_ticks": 720,
+  "verified_client_sound_events": 14,
+  "verified_shake_windows": 6,
+  "frame_axes": [
+    "X",
+    "Z"
+  ],
+  "audio": "Reconstructed from the original OGG assets at recorded client sound-event times; not system loopback audio.",
+  "checks": [
+    "Actual Soul Bottle + owned Echo Shard casting",
+    "Both sculk-vein-covered frame interiors activate",
+    "Portal remains closed during animation",
+    "Each of seven sound events plays once per opening"
+  ],
+  "video_sha256": "d034617a87029a45586222930673c7a0468fde7cd6ddddbc6c333e8a3d3e1fbd"
+}

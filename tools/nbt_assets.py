@@ -3,6 +3,12 @@ import gzip
 import io
 import struct
 FORMATS={1:'b',2:'h',3:'i',4:'q',5:'f',6:'d'}
+NATIVE_STRUCTURE_EVENTS={
+    '/datapack/data/structures/structures/crypt/hallways/generic/end.nbt':
+        ({'crypt','slatehengesummon','structure'},'nyctocosm:crypt_slatehenge_trigger'),
+    '/datapack/data/nyctocosm/structures/slatehenge.nbt':
+        ({'crypt','slatehenge','structure'},'nyctocosm:slatehenge_effect'),
+}
 def number(stream,fmt):return struct.unpack('>'+fmt,stream.read(struct.calcsize(fmt)))[0]
 def string(stream):return stream.read(number(stream,'H')).decode('utf-8')
 def payload(stream,kind):
@@ -30,7 +36,19 @@ def encode(kind,value):
 def sanitize(source,destination):
     stream=io.BytesIO(gzip.decompress(source.read_bytes()))
     kind=number(stream,'B');name=string(stream);root=payload(stream,kind)
-    count=len(root.get('entities',(9,(10,[])))[1][1]);root['entities']=(9,(10,[]))
+    entities=root.get('entities',(9,(10,[])))[1][1]
+    suffix=next((key for key in NATIVE_STRUCTURE_EVENTS if source.as_posix().lower().endswith(key)),None)
+    converted=[];converted_counts={}
+    if suffix:
+        expected_tags,native_id=NATIVE_STRUCTURE_EVENTS[suffix]
+        for entity in entities:
+            nbt=entity.get('nbt',(10,{}))[1]
+            tags=set(nbt.get('Tags',(9,(8,[])))[1][1])
+            if nbt.get('id',(8,''))[1]=='minecraft:marker' and tags==expected_tags:
+                converted.append({'blockPos':entity['blockPos'],'pos':entity['pos'],'nbt':(10,{'id':(8,native_id)})})
+                converted_counts[native_id]=converted_counts.get(native_id,0)+1
+    stripped=len(entities)-len(converted)
+    root['entities']=(9,(10,converted))
     forbidden=set()
     for i,block in enumerate(root.get('palette',(9,(10,[])))[1][1]):
         if block['Name'][1] in ('minecraft:command_block','minecraft:chain_command_block','minecraft:repeating_command_block','minecraft:structure_block'):
@@ -39,4 +57,6 @@ def sanitize(source,destination):
         if block.get('state',(3,-1))[1] in forbidden:block.pop('nbt',None)
     destination.parent.mkdir(parents=True,exist_ok=True)
     with gzip.GzipFile(filename=str(destination),mode='wb',mtime=0) as f:f.write(bytes([kind])+encode_string(name)+encode(kind,root))
-    return {'stripped_entities':count,'stripped_executable_palette_entries':len(forbidden)}
+    result={'stripped_entities':stripped,'stripped_executable_palette_entries':len(forbidden)}
+    if converted_counts:result['converted_entities']=converted_counts
+    return result

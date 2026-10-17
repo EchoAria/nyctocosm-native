@@ -1,0 +1,263 @@
+{
+  "source_sha256": "5514be4afee0feae348ad934e02447823e369baa5e9db32f291228bc224cf34d",
+  "spell_count": 17,
+  "rows": [
+    {
+      "spell": "luminescence",
+      "reagent": "glowstone",
+      "source": {
+        "damage": 0,
+        "duration": 6000,
+        "cast_time": 0
+      },
+      "native": {
+        "damage": 0,
+        "duration": 6000,
+        "cast_time": 0
+      },
+      "matches": true
+    },
+    {
+      "spell": "resonance",
+      "reagent": "echo_shard",
+      "source": {
+        "damage": 60,
+        "duration": 0,
+        "cast_time": 80
+      },
+      "native": {
+        "damage": 60,
+        "duration": 0,
+        "cast_time": 80
+      },
+      "matches": true
+    },
+    {
+      "spell": "evanescence",
+      "reagent": "ender_eye",
+      "source": {
+        "damage": 0,
+        "duration": 0,
+        "cast_time": 100
+      },
+      "native": {
+        "damage": 0,
+        "duration": 0,
+        "cast_time": 100
+      },
+      "matches": true
+    },
+    {
+      "spell": "incurrence",
+      "reagent": "wither_rose",
+      "source": {
+        "damage": 0,
+        "duration": 0,
+        "cast_time": 180
+      },
+      "native": {
+        "damage": 0,
+        "duration": 0,
+        "cast_time": 180
+      },
+      "matches": true
+    },
+    {
+      "spell": "abhorrence",
+      "reagent": "coal",
+      "source": {
+        "damage": 15,
+        "duration": 30,
+        "cast_time": 40
+      },
+      "native": {
+        "damage": 15,
+        "duration": 30,
+        "cast_time": 40
+      },
+      "matches": true
+    },
+    {
+      "spell": "forbiddance",
+      "reagent": "ghast_tear",
+      "source": {
+        "damage": 0,
+        "duration": 35,
+        "cast_time": 10
+      },
+      "native": {
+        "damage": 0,
+        "duration": 35,
+        "cast_time": 10
+      },
+      "matches": true
+    },
+    {
+      "spell": "gravitance",
+      "reagent": "crying_obsidian",
+      "source": {
+        "damage": 20,
+        "duration": 200,
+        "cast_time": 60
+      },
+      "native": {
+        "damage": 20,
+        "duration": 200,
+        "cast_time": 60
+      },
+      "matches": true
+    },
+    {
+      "spell": "subsistence",
+      "reagent": "apple",
+      "source": {
+        "damage": 10,
+        "duration": 0,
+        "cast_time": 40
+      },
+      "native": {
+        "damage": 10,
+        "duration": 0,
+        "cast_time": 40
+      },
+      "matches": true
+    },
+    {
+      "spell": "reflectance",
+      "reagent": "iron_ingot",
+      "source": {
+        "damage": 20,
+        "duration": 200,
+        "cast_time": 30
+      },
+      "native": {
+        "damage": 20,
+        "duration": 200,
+        "cast_time": 30
+      },
+      "matches": true
+    },
+    {
+      "spell": "submergence",
+      "reagent": "soul_sand",
+      "source": {
+        "damage": 8,
+        "duration": 0,
+        "cast_time": 80
+      },
+      "native": {
+        "damage": 8,
+        "duration": 0,
+        "cast_time": 80
+      },
+      "matches": true
+    },
+    {
+      "spell": "adamance",
+      "reagent": "cobblestone",
+      "source": {
+        "damage": 0,
+        "duration": 200,
+        "cast_time": 20
+      },
+      "native": {
+        "damage": 0,
+        "duration": 200,
+        "cast_time": 20
+      },
+      "matches": true
+    },
+    {
+      "spell": "incandescence",
+      "reagent": "gunpowder",
+      "source": {
+        "damage": 10,
+        "duration": 40,
+        "cast_time": 20
+      },
+      "native": {
+        "damage": 10,
+        "duration": 40,
+        "cast_time": 20
+      },
+      "matches": true
+    },
+    {
+      "spell": "resistance",
+      "reagent": "cooked_beef",
+      "source": {
+        "damage": 0,
+        "duration": 250,
+        "cast_time": 40
+      },
+      "native": {
+        "damage": 0,
+        "duration": 250,
+        "cast_time": 40
+      },
+      "matches": true
+    },
+    {
+      "spell": "transmittance",
+      "reagent": "ender_pearl",
+      "source": {
+        "damage": 15,
+        "duration": 0,
+        "cast_time": 100
+      },
+      "native": {
+        "damage": 15,
+        "duration": 0,
+        "cast_time": 100
+      },
+      "matches": true
+    },
+    {
+      "spell": "vacance",
+      "reagent": "glass_bottle",
+      "source": {
+        "damage": 0,
+        "duration": 100,
+        "cast_time": 20
+      },
+      "native": {
+        "damage": 0,
+        "duration": 100,
+        "cast_time": 20
+      },
+      "matches": true
+    },
+    {
+      "spell": "repellance",
+      "reagent": "feather",
+      "source": {
+        "damage": 0,
+        "duration": 50,
+        "cast_time": 50
+      },
+      "native": {
+        "damage": 0,
+        "duration": 50,
+        "cast_time": 50
+      },
+      "matches": true
+    },
+    {
+      "spell": "fulminance",
+      "reagent": "quartz",
+      "source": {
+        "damage": 7,
+        "duration": 20,
+        "cast_time": 30
+      },
+      "native": {
+        "damage": 7,
+        "duration": 20,
+        "cast_time": 30
+      },
+      "matches": true
+    }
+  ],
+  "errors": [],
+  "scope": "Loaded default values only; projectile paths, dynamic powers and visual timelines require their own tests."
+}

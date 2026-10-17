@@ -1,0 +1,329 @@
+Picked up JAVA_TOOL_OPTIONS: -Dnet.minecraftforge.gradle.check.certs=false
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Neither the 'eclipse' nor the 'idea' plugins were found, but IDE resource copy has been enabled.
+
+> Task :compileJava
+Picked up JAVA_TOOL_OPTIONS: -Dnet.minecraftforge.gradle.check.certs=false
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:639: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            var air=net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.BLOCK,new ResourceLocation(NativeMod.ID,"air"));
+                                                                                                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:1108: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        var passthrough=net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.BLOCK,new ResourceLocation(NativeMod.ID,"passthrough"));
+                                                                                                        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeBoss.java:1176: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        var advancement=server.getServer().getAdvancements().getAdvancement(new ResourceLocation(NativeMod.ID,"bosses/defeat_"+boss));
+                                                                            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\Combat.java:66: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            new net.minecraft.resources.ResourceLocation(NativeMod.ID, element.name().toLowerCase(java.util.Locale.ROOT)));
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:30: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        for(String model:EXTRA)event.register(new ResourceLocation("nyctocosm",model));
+                                              ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:31: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        for(Spell spell:Spell.values())event.register(new ResourceLocation("nyctocosm","magic/spell_circles/"+spell.id()));
+                                                      ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:39: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        for(String id:new String[]{"seelic_scythe","wyrmsliver","nullfissure","semblanceofdoom"})ItemProperties.register(Content.get(id),new ResourceLocation("nyctocosm","casting"),(stack,level,entity,seed)->weaponCoolingDown(stack,entity)?1:0);
+                                                                                                                                         ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:40: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        ItemProperties.register(Content.get("planar_coil"),new ResourceLocation("nyctocosm","casting"),(stack,level,entity,seed)->entity instanceof net.minecraft.world.entity.player.Player player&&player.getCooldowns().isOnCooldown(stack.getItem())?1:0);
+                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:145: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                    model(new ResourceLocation("nyctocosm",EXTRA[6]),pose,buffers,LightTexture.FULL_BRIGHT);pose.popPose();
+                          ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:150: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                if(boss.kind==4)legacyHeadModel(new ResourceLocation("nyctocosm",EXTRA[3]),pose,buffers,light);
+                                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:165: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            if(field.spell()!=null)model(new ResourceLocation("nyctocosm","magic/spell_circles/"+field.spell().id()),pose,buffers,LightTexture.FULL_BRIGHT);
+                                         ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:187: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                    legacyHeadModel(new ResourceLocation("nyctocosm",EXTRA[5]),pose,buffers,LightTexture.FULL_BRIGHT);pose.popPose();
+                                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\ClientEvents.java:198: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            model(new ResourceLocation("nyctocosm","magic/spell_circles/"+area.spell().id()),pose,buffers,LightTexture.FULL_BRIGHT);pose.popPose();
+                  ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeNetwork.java:17: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        new ResourceLocation(NativeMod.ID,"main"),()->VERSION,VERSION::equals,VERSION::equals);
+        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\SeelicField.java:234: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static TagKey<net.minecraft.world.level.block.Block> passthrough(){return TagKey.create(Registries.BLOCK,new ResourceLocation(NativeMod.ID,"passthrough"));}
+                                                                                                                     ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\SpellArea.java:67: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            if(!server.getBlockState(blockPosition()).is(TagKey.create(Registries.BLOCK,new ResourceLocation(NativeMod.ID,"passthrough")))){discard();return;}
+                                                                                        ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\SpellArea.java:131: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                if(!server.getBlockState(blockPosition()).is(TagKey.create(Registries.BLOCK,new ResourceLocation(NativeMod.ID,"passthrough")))){discard();return;}
+                                                                                            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\SpellArea.java:141: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        var vacable=TagKey.create(Registries.BLOCK,new ResourceLocation(NativeMod.ID,"vacable"));
+                                                   ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\EmissarySwordPlungeRenderer.java:37: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        return new ResourceLocation("nyctocosm", "textures/emissary/emissarysword.png");
+               ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\client\SerpentWorldRenderer.java:35: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+                ClientEvents.serpentModel(new ResourceLocation(NativeMod.ID,"serpent/"+model),yaw,pitch,pose,buffers,light);
+                                          ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\Content.java:89: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            for(String id:sounds.keySet())SOUND_MAP.put(id,SOUNDS.register(id,()->net.minecraft.sounds.SoundEvent.createVariableRangeEvent(new net.minecraft.resources.ResourceLocation(NativeMod.ID,id))));
+                                                                                                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\SpellBolt.java:263: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            net.minecraft.core.registries.Registries.BLOCK,new net.minecraft.resources.ResourceLocation(NativeMod.ID,"passthrough")));
+                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\SpellBolt.java:283: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            new net.minecraft.resources.ResourceLocation(NativeMod.ID,"passthrough"));
+            ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeEvents.java:27: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation NYCTOCOSM_DIMENSION=new ResourceLocation("nyctocosm","nyctocosm");
+                                                              ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeEvents.java:28: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceLocation EMISSARY_DOMAIN=new ResourceLocation("nyctocosm","emissary_domain");
+                                                          ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeEvents.java:214: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        ServerLevel target=serverPlayer.server.getLevel(ResourceKey.create(Registries.DIMENSION,new ResourceLocation("nyctocosm",destination)));
+                                                                                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeEvents.java:228: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            var advancement=player.server.getAdvancements().getAdvancement(new ResourceLocation(NativeMod.ID,"root"));
+                                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeEvents.java:290: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            ServerLevel domain=serverPlayer.server.getLevel(ResourceKey.create(Registries.DIMENSION,new ResourceLocation("nyctocosm","emissary_domain")));
+                                                                                                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:492: ����: [removal] ProjectileImpactEvent �е� setCanceled(boolean) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            cancelledProjectileImpactsForTest++;event.setCanceled(true);
+                                                     ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:498: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        helper.assertTrue("serpent".equals(NativeEvents.incurrenceBossForBiome(new net.minecraft.resources.ResourceLocation(NativeMod.ID,"night_wastes"))),
+                                                                               ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:500: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        helper.assertTrue("sorcerer".equals(NativeEvents.incurrenceBossForBiome(new net.minecraft.resources.ResourceLocation(NativeMod.ID,"desert_of_rime"))),
+                                                                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:502: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        helper.assertTrue("emissary".equals(NativeEvents.incurrenceBossForBiome(new net.minecraft.resources.ResourceLocation(NativeMod.ID,"infernal_chasms"))),
+                                                                                ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:504: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        helper.assertTrue(NativeEvents.incurrenceBossForBiome(new net.minecraft.resources.ResourceLocation("othermod","infernal_chasms")).isEmpty(),
+                                                              ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:1325: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        var crypt=level.getStructureManager().get(new net.minecraft.resources.ResourceLocation("structures","crypt/hallways/generic/end")).orElseThrow();
+                                                  ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:1326: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        var slatehenge=level.getStructureManager().get(new net.minecraft.resources.ResourceLocation(NativeMod.ID,"slatehenge")).orElseThrow();
+                                                       ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeGameTests.java:3003: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            var advancement=helper.getLevel().getServer().getAdvancements().getAdvancement(new net.minecraft.resources.ResourceLocation(NativeMod.ID,"bosses/defeat_sorcerer"));
+                                                                                           ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\NativeMod.java:12: ����: [removal] FMLJavaModLoadingContext �е� get() �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        var bus = FMLJavaModLoadingContext.get().getModEventBus();
+                                          ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\TonyManager.java:29: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+    private static final ResourceKey<Structure> DREAM_CRYPT=ResourceKey.create(Registries.STRUCTURE,new ResourceLocation("nyctocosm","crypts/dream"));
+                                                                                                    ^
+D:\MinecraftModDev\DEV - ����\nyctocosm-native\src\main\java\com\flubberschnub\nyctocosm\TonyManager.java:32: ����: [removal] ResourceLocation �е� ResourceLocation(String,String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+        if(!player.level().dimension().location().equals(new ResourceLocation("nyctocosm","nyctocosm")))return;
+                                                         ^
+ע: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+39 ������
+
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createSrgToMcp UP-TO-DATE
+> Task :downloadMCMeta UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :extractNatives UP-TO-DATE
+> Task :makeSrcDirs
+> Task :prepareRuns
+> Task :prepareRunClient
+> Task :prepareRunClientCompile
+
+> Task :runClient
+2026-10-02 07:53:12,417 main WARN Advanced terminal features are not available in this environment
+[07:53:12] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\jzy19\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.13, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[07:53:12] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.19 by Microsoft; OS Windows 11 arch amd64 version 10.0
+Picked up JAVA_TOOL_OPTIONS: -Dnet.minecraftforge.gradle.check.certs=false
+[07:53:12] [main/WARN] [ne.mi.fm.lo.FMLConfig/CORE]: Configuration file D:\MinecraftModDev\DEV - ����\nyctocosm-native\run-sorcerer-repair-alpha15-client-20261002\config\fml.toml is not correct. Correcting
+[07:53:12] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowSkipGLVersions] was corrected from null to []
+[07:53:12] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowLogHelpMessage] was corrected from null to true
+[07:53:12] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowSquir] was corrected from null to false
+[07:53:12] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowShowCPU] was corrected from null to false
+[07:53:12] [main/INFO] [ne.mi.fm.lo.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[07:53:12] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[07:53:12] [main/INFO] [EARLYDISPLAY/]: If this message is the only thing at the bottom of your log before a crash, you probably have a driver issue.
+
+Possible solutions:
+A) Make sure Minecraft is set to prefer high performance graphics in the OS and/or driver control panel
+B) Check for driver updates on the graphics brand's website
+C) Try reinstalling your graphics drivers
+D) If still not working after trying all of the above, ask for further help on the Forge forums or Discord
+
+You can safely ignore this message if the game starts up successfully.
+[07:53:12] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[07:53:13] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/jzy19/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[07:53:13] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 5070 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 610.47, NVIDIA Corporation
+[07:53:13] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.13\cf01e2179f72bd2829c65f5226d7dd0cfb6c686\javafmllanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[07:53:13] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.13\e3f96129ea14eba84316f2d69816253e228e6e4c\lowcodelanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[07:53:13] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.13\85796906112d9b621a7b2996f8bfda49da991ef0\mclanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[07:53:13] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.13\f77e3021d1eb31d61f8d1b92d18ed4fb3c2806e5\fmlcore-1.20.1-47.4.13.jar is missing mods.toml file
+[07:53:13] [main/INFO] [ne.mi.fm.lo.mo.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[07:53:14] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\jzy19\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[07:53:15] [main/WARN] [os.dr.wi.pe.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[07:53:17] [Datafixer Bootstrap/INFO] [mojang/DataFixerBuilder]: 188 Datafixer optimizations took 87 milliseconds
+[07:53:18] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/C:/Users/jzy19/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.13_mapped_official_1.20.1/forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[07:53:18] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/C:/Users/jzy19/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.13_mapped_official_1.20.1/forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[07:53:18] [Render thread/INFO] [mojang/YggdrasilAuthenticationService]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[07:53:18] [Render thread/INFO] [minecraft/Minecraft]: Setting user: Dev
+[07:53:18] [Render thread/INFO] [minecraft/Minecraft]: Backend library: LWJGL version 3.3.1 build 7
+[07:53:18] [modloading-worker-0/INFO] [ne.mi.co.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.13, for MC 1.20.1 with MCP 20230612.114412
+[07:53:18] [modloading-worker-0/INFO] [ne.mi.co.MinecraftForge/FORGE]: MinecraftForge v47.4.13 Initialized
+[07:53:19] [Render thread/INFO] [ne.mi.ga.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
+[07:53:19] [Render thread/INFO] [minecraft/ReloadableResourceManager]: Reloading ResourceManager: vanilla, mod_resources
+[07:53:19] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Configuration file D:\MinecraftModDev\DEV - ����\nyctocosm-native\run-sorcerer-repair-alpha15-client-20261002\config\forge-client.toml is not correct. Correcting
+[07:53:19] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client was corrected from null to its default, SimpleCommentedConfig:{}. 
+[07:53:19] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.alwaysSetupTerrainOffThread was corrected from null to its default, false. 
+[07:53:19] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.experimentalForgeLightPipelineEnabled was corrected from null to its default, false. 
+[07:53:19] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.showLoadWarnings was corrected from null to its default, true. 
+[07:53:19] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.useCombinedDepthStencilAttachment was corrected from null to its default, false. 
+[07:53:19] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.compressLanIPv6Addresses was corrected from null to its default, true. 
+[07:53:19] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.calculateAllNormals was corrected from null to its default, false. 
+[07:53:19] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.stabilizeDirectionGetNearest was corrected from null to its default, true. 
+[07:53:19] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key client.allowMipmapLowering was corrected from null to its default, false. 
+[07:53:19] [Worker-Main-2/INFO] [minecraft/UnihexProvider]: Found unifont_all_no_pua-15.0.06.hex, loading
+[07:53:19] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[07:53:20] [Worker-Main-5/WARN] [minecraft/SpriteLoader]: Texture nyctocosm:magic/ajspellplane/outer_circle with size 1000x1000 limits mip level from 4 to 3
+[07:53:20] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.4.13 Target: 47.4.23
+[07:53:22] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:item.goat_horn.play
+[07:53:22] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[07:53:22] [Render thread/INFO] [mojang/Library]: OpenAL initialized on device OpenAL Soft on ������ (2- USB Audio Device)
+[07:53:22] [Render thread/INFO] [minecraft/SoundEngine]: Sound engine started
+[07:53:22] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 8192x4096x4 minecraft:textures/atlas/blocks.png-atlas
+[07:53:22] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[07:53:22] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[07:53:22] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[07:53:22] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[07:53:22] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[07:53:22] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[07:53:22] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[07:53:22] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[07:53:22] [Render thread/WARN] [minecraft/ShaderInstance]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[07:53:22] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[07:53:22] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[07:53:22] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[07:53:22] [Realms Notification Availability checker #1/INFO] [mojang/RealmsClient]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[07:53:23] [Render thread/INFO] [minecraft/RecipeManager]: Loaded 7 recipes
+[07:53:23] [Render thread/INFO] [minecraft/AdvancementList]: Loaded 1275 advancements
+[07:53:23] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.20.1
+[07:53:23] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[07:53:23] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Configuration file .\saves\SorcererRepair\serverconfig\forge-server.toml is not correct. Correcting
+[07:53:23] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SimpleCommentedConfig:{}. 
+[07:53:23] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringBlockEntities was corrected from null to its default, false. 
+[07:53:23] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to its default, false. 
+[07:53:23] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false. 
+[07:53:23] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.zombieBaseSummonChance was corrected from null to its default, 0.1. 
+[07:53:23] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.zombieBabyChance was corrected from null to its default, 0.05. 
+[07:53:23] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.permissionHandler was corrected from null to its default, forge:default_handler. 
+[07:53:23] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.advertiseDedicatedServerToLan was corrected from null to its default, true. 
+[07:53:23] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.useItemWithDurationZero was corrected from null to its default, false. 
+[07:53:25] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[07:53:25] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[07:53:25] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[07:53:26] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 2%
+[07:53:26] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 5%
+[07:53:27] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 11%
+[07:53:27] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 19%
+[07:53:28] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 26%
+[07:53:28] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 35%
+[07:53:29] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 43%
+[07:53:29] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 51%
+[07:53:30] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 61%
+[07:53:30] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 68%
+[07:53:31] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 78%
+[07:53:31] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 86%
+[07:53:32] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 97%
+[07:53:32] [Server thread/INFO] [ne.mi.se.pe.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[07:53:32] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 7093 ms
+[07:53:32] [Server thread/INFO] [minecraft/IntegratedServer]: Changing view distance to 12, from 10
+[07:53:32] [Server thread/INFO] [minecraft/IntegratedServer]: Changing simulation distance to 12, from 0
+[07:53:32] [Render thread/WARN] [io.ne.ut.in.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[07:53:32] [Netty Local Client IO #0/INFO] [ne.mi.ne.NetworkHooks/]: Connected to a modded server.
+[07:53:33] [Server thread/INFO] [minecraft/PlayerList]: Dev[local:E:0f21dec2] logged in with entity id 281 at (4.5, 75.0, 0.5)
+[07:53:33] [Server thread/INFO] [minecraft/MinecraftServer]: Dev joined the game
+[07:53:33] [Render thread/INFO] [minecraft/AdvancementList]: Loaded 2 advancements
+SORCERER_REPAIR_TRACE tick=20 hail=0 blades=0 beams=0 particles=1
+SORCERER_REPAIR_SCENE halobeam
+SORCERER_REPAIR_TRACE tick=40 hail=0 blades=0 beams=3 particles=742
+SORCERER_REPAIR_TRACE tick=60 hail=0 blades=0 beams=7 particles=2094
+SORCERER_REPAIR_TRACE tick=80 hail=0 blades=0 beams=8 particles=2762
+SORCERER_REPAIR_TRACE tick=100 hail=0 blades=0 beams=6 particles=8057
+SORCERER_REPAIR_TRACE tick=120 hail=0 blades=0 beams=2 particles=6052
+SORCERER_REPAIR_TRACE tick=140 hail=0 blades=0 beams=0 particles=858
+SORCERER_REPAIR_TRACE tick=160 hail=0 blades=0 beams=0 particles=243
+SORCERER_REPAIR_SCENE shardhail
+SORCERER_REPAIR_TRACE tick=180 hail=0 blades=0 beams=0 particles=0
+SORCERER_REPAIR_TRACE tick=200 hail=0 blades=0 beams=0 particles=52
+SORCERER_REPAIR_TRACE tick=220 hail=1 blades=0 beams=0 particles=401
+SORCERER_REPAIR_TRACE tick=240 hail=23 blades=0 beams=0 particles=752
+SORCERER_REPAIR_TRACE tick=260 hail=31 blades=0 beams=0 particles=4500
+SORCERER_REPAIR_TRACE tick=280 hail=29 blades=0 beams=0 particles=8377
+SORCERER_REPAIR_TRACE tick=300 hail=12 blades=0 beams=0 particles=5509
+SORCERER_REPAIR_TRACE tick=320 hail=3 blades=0 beams=0 particles=2316
+SORCERER_REPAIR_TRACE tick=340 hail=0 blades=0 beams=0 particles=194
+SORCERER_REPAIR_TRACE tick=360 hail=0 blades=0 beams=0 particles=1
+SORCERER_REPAIR_SCENE frozenblades
+SORCERER_REPAIR_TRACE tick=380 hail=0 blades=0 beams=0 particles=194
+SORCERER_REPAIR_TRACE tick=400 hail=0 blades=2 beams=0 particles=536
+SORCERER_REPAIR_TRACE tick=420 hail=0 blades=2 beams=0 particles=649
+SORCERER_REPAIR_TRACE tick=440 hail=0 blades=2 beams=0 particles=684
+SORCERER_REPAIR_SCENE voidbeam
+SORCERER_REPAIR_TRACE tick=460 hail=0 blades=0 beams=0 particles=0
+SORCERER_REPAIR_TRACE tick=480 hail=0 blades=0 beams=1 particles=13730
+SORCERER_REPAIR_TRACE tick=500 hail=0 blades=0 beams=0 particles=14324
+SORCERER_REPAIR_TRACE tick=520 hail=0 blades=0 beams=0 particles=1225
+SORCERER_REPAIR_TRACE tick=540 hail=0 blades=0 beams=0 particles=0
+SORCERER_REPAIR_SCENE dashstrike
+SORCERER_REPAIR_TRACE tick=560 hail=0 blades=0 beams=0 particles=0
+SORCERER_REPAIR_TRACE tick=580 hail=0 blades=0 beams=0 particles=0
+SORCERER_REPAIR_TRACE tick=600 hail=0 blades=0 beams=0 particles=219
+SORCERER_REPAIR_TRACE tick=620 hail=0 blades=0 beams=0 particles=71
+SORCERER_REPAIR_TRACE tick=640 hail=0 blades=0 beams=0 particles=16
+SORCERER_REPAIR_SCENE airdash
+SORCERER_REPAIR_TRACE tick=660 hail=0 blades=0 beams=0 particles=1200
+SORCERER_REPAIR_TRACE tick=680 hail=0 blades=0 beams=0 particles=1356
+SORCERER_REPAIR_TRACE tick=700 hail=0 blades=0 beams=0 particles=586
+SORCERER_REPAIR_TRACE tick=720 hail=0 blades=0 beams=0 particles=134
+SORCERER_REPAIR_TRACE tick=740 hail=0 blades=0 beams=0 particles=21
+SORCERER_REPAIR_TRACE tick=760 hail=0 blades=0 beams=0 particles=0
+SORCERER_REPAIR_CAPTURE_COMPLETE
+[07:54:11] [Render thread/INFO] [minecraft/Minecraft]: Stopping!
+[07:54:11] [Server thread/INFO] [minecraft/ServerGamePacketListenerImpl]: Dev lost connection: Disconnected
+[07:54:11] [Server thread/INFO] [minecraft/MinecraftServer]: Dev left the game
+[07:54:11] [Server thread/INFO] [minecraft/ServerGamePacketListenerImpl]: Stopping singleplayer server as player logged out
+[07:54:11] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[07:54:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[07:54:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[07:54:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[SorcererRepair]'/minecraft:overworld
+[07:54:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[SorcererRepair]'/nyctocosm:nyctocosm
+[07:54:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[SorcererRepair]'/minecraft:the_nether
+[07:54:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[SorcererRepair]'/minecraft:the_end
+[07:54:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[SorcererRepair]'/nyctocosm:emissary_domain
+[07:54:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[SorcererRepair]'/nyctocosm:dusk_plane
+[07:54:12] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (SorcererRepair): All chunks are saved
+[07:54:12] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (nyctocosm): All chunks are saved
+[07:54:12] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[07:54:12] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[07:54:12] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (emissary_domain): All chunks are saved
+[07:54:12] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (dusk_plane): All chunks are saved
+[07:54:12] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 1m 10s
+10 actionable tasks: 4 executed, 6 up-to-date

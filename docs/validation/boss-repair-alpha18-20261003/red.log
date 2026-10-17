@@ -1,0 +1,434 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Neither the 'eclipse' nor the 'idea' plugins were found, but IDE resource copy has been enabled.
+
+> Task :compileJava
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createSrgToMcp UP-TO-DATE
+> Task :downloadMCMeta UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :extractNatives UP-TO-DATE
+> Task :makeSrcDirs
+> Task :prepareRuns
+> Task :prepareRunGameTestServer
+> Task :prepareRunGameTestServerCompile
+
+> Task :runGameTestServer
+2026-10-03 20:57:43,647 main WARN Advanced terminal features are not available in this environment
+[20:57:43] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgegametestserveruserdev, --gameDir, ., --fml.forgeVersion, 47.4.13, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[20:57:43] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.19 by Microsoft; OS Windows 11 arch amd64 version 10.0
+[20:57:43] [main/WARN] [ne.mi.fm.lo.FMLConfig/CORE]: Configuration file D:\MinecraftModDev\DEV - ����\nyctocosm-native\run-boss-repair18-red-20261003\config\fml.toml is not correct. Correcting
+[20:57:43] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowSkipGLVersions] was corrected from null to []
+[20:57:43] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowLogHelpMessage] was corrected from null to true
+[20:57:43] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowSquir] was corrected from null to false
+[20:57:43] [main/INFO] [ne.mi.fm.lo.FMLConfig/CORE]: Incorrect key [earlyWindowShowCPU] was corrected from null to false
+[20:57:43] [main/INFO] [ne.mi.fm.lo.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgegametestserveruserdev
+[20:57:43] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/jzy19/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=SERVER
+[20:57:44] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.13\cf01e2179f72bd2829c65f5226d7dd0cfb6c686\javafmllanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[20:57:44] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.13\e3f96129ea14eba84316f2d69816253e228e6e4c\lowcodelanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[20:57:44] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.13\85796906112d9b621a7b2996f8bfda49da991ef0\mclanguage-1.20.1-47.4.13.jar is missing mods.toml file
+[20:57:44] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\jzy19\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.13\f77e3021d1eb31d61f8d1b92d18ed4fb3c2806e5\fmlcore-1.20.1-47.4.13.jar is missing mods.toml file
+[20:57:44] [main/INFO] [ne.mi.fm.lo.mo.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[20:57:46] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgegametestserveruserdev' with arguments [--gameDir, .]
+[20:57:46] [main/WARN] [os.dr.wi.pe.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[20:57:50] [modloading-worker-0/INFO] [ne.mi.co.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.13, for MC 1.20.1 with MCP 20230612.114412
+[20:57:50] [modloading-worker-0/INFO] [ne.mi.co.MinecraftForge/FORGE]: MinecraftForge v47.4.13 Initialized
+[20:57:51] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[20:57:51] [main/ERROR] [minecraft/Settings]: Failed to load properties from file: server.properties
+java.nio.file.NoSuchFileException: server.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?] {}
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?] {}
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?] {}
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236) ~[?:?] {}
+	at java.nio.file.Files.newByteChannel(Files.java:380) ~[?:?] {}
+	at java.nio.file.Files.newByteChannel(Files.java:432) ~[?:?] {}
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422) ~[?:?] {}
+	at java.nio.file.Files.newInputStream(Files.java:160) ~[?:?] {}
+	at net.minecraft.server.dedicated.Settings.loadFromFile(Settings.java:36) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar:?] {re:classloading}
+	at net.minecraft.server.dedicated.DedicatedServerProperties.fromFile(DedicatedServerProperties.java:137) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar:?] {re:classloading}
+	at net.minecraft.server.dedicated.DedicatedServerSettings.<init>(DedicatedServerSettings.java:12) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:126) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar:?] {re:classloading}
+	at net.minecraftforge.gametest.GameTestMain.main(GameTestMain.java:16) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar:?] {re:classloading}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.ForgeGametestUserdevLaunchHandler.devService(ForgeGametestUserdevLaunchHandler.java:16) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonDevLaunchHandler.lambda$makeService$7(CommonDevLaunchHandler.java:135) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+[20:57:51] [main/INFO] [mojang/YggdrasilAuthenticationService]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[20:57:51] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/C:/Users/jzy19/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.13_mapped_official_1.20.1/forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[20:57:51] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/C:/Users/jzy19/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.13_mapped_official_1.20.1/forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[20:57:52] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.4.13 Target: 47.4.26
+[20:57:53] [main/INFO] [minecraft/RecipeManager]: Loaded 7 recipes
+[20:57:53] [main/INFO] [minecraft/AdvancementList]: Loaded 1275 advancements
+[20:57:53] [main/INFO] [ne.mi.ga.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [nyctocosm]
+[20:57:53] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Configuration file .\world\serverconfig\forge-server.toml is not correct. Correcting
+[20:57:53] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SimpleCommentedConfig:{}. 
+[20:57:53] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringBlockEntities was corrected from null to its default, false. 
+[20:57:53] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to its default, false. 
+[20:57:53] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false. 
+[20:57:53] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.zombieBaseSummonChance was corrected from null to its default, 0.1. 
+[20:57:53] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.zombieBabyChance was corrected from null to its default, 0.05. 
+[20:57:53] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.permissionHandler was corrected from null to its default, forge:default_handler. 
+[20:57:53] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.advertiseDedicatedServerToLan was corrected from null to its default, true. 
+[20:57:53] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.useItemWithDurationZero was corrected from null to its default, false. 
+[20:57:55] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[20:57:56] [Worker-Main-5/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[20:57:56] [Worker-Main-14/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[20:57:56] [Worker-Main-12/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 1%
+[20:57:57] [Worker-Main-2/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 6%
+[20:57:57] [Worker-Main-9/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 9%
+[20:57:58] [Worker-Main-6/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 16%
+[20:57:58] [Worker-Main-5/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 23%
+[20:57:59] [Worker-Main-8/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 31%
+[20:57:59] [Worker-Main-9/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 38%
+[20:58:00] [Worker-Main-1/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 47%
+[20:58:00] [Worker-Main-12/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 55%
+[20:58:01] [Worker-Main-9/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 64%
+[20:58:01] [Worker-Main-14/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 71%
+[20:58:02] [Worker-Main-13/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 83%
+[20:58:02] [Worker-Main-5/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 90%
+[20:58:03] [Server thread/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 7376 ms
+[20:58:03] [Server thread/INFO] [minecraft/GameTestServer]: Started game test server
+[20:58:03] [Server thread/INFO] [ne.mi.se.pe.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[20:58:04] [Server thread/INFO] [minecraft/GameTestBatchRunner]: Running test batch 'sorcerer_beam_source:1' (1 tests)...
+[20:58:04] [Server thread/INFO] [minecraft/GameTestServer]: 265 tests are now running!
+[20:58:08] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5270ms or 105 ticks behind
+[20:58:09] [Server thread/INFO] [minecraft/GameTestServer]: [_                                                                                                                                                                                                                                                                        ]
+[20:58:09] [Server thread/INFO] [minecraft/GameTestServer]: [_                                                                                                                                                                                                                                                                        ]
+[20:58:09] [Server thread/INFO] [minecraft/GameTestServer]: [_                                                                                                                                                                                                                                                                        ]
+[20:58:10] [Server thread/INFO] [minecraft/GameTestServer]: [_                                                                                                                                                                                                                                                                        ]
+[20:58:10] [Server thread/INFO] [minecraft/GameTestServer]: [_                                                                                                                                                                                                                                                                        ]
+[20:58:10] [Server thread/INFO] [minecraft/GameTestServer]: [_                                                                                                                                                                                                                                                                        ]
+[20:58:10] [Server thread/INFO] [minecraft/GameTestBatchRunner]: Running test batch 'feedback_flight_math:1' (1 tests)...
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestServer]: [+_                                                                                                                                                                                                                                                                       ]
+[20:58:12] [Server thread/INFO] [minecraft/GameTestBatchRunner]: Running test batch 'feedback_fulminance_steps:1' (1 tests)...
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:14] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:15] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:15] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:15] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:15] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:15] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:15] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:15] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:15] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:15] [Server thread/INFO] [minecraft/GameTestServer]: [++_                                                                                                                                                                                                                                                                      ]
+[20:58:15] [Server thread/INFO] [minecraft/GameTestBatchRunner]: Running test batch 'wing_blast:1' (4 tests)...
+[20:58:33] [Server thread/INFO] [minecraft/GameTestServer]: [+++____                                                                                                                                                                                                                                                                  ]
+[20:58:33] [Server thread/INFO] [minecraft/GameTestServer]: [+++____                                                                                                                                                                                                                                                                  ]
+[20:58:33] [Server thread/INFO] [minecraft/GameTestServer]: [+++____                                                                                                                                                                                                                                                                  ]
+[20:58:33] [Server thread/INFO] [minecraft/GameTestServer]: [+++____                                                                                                                                                                                                                                                                  ]
+[20:58:34] [Server thread/INFO] [minecraft/GameTestServer]: [++++___                                                                                                                                                                                                                                                                  ]
+[20:58:34] [Server thread/INFO] [minecraft/GameTestServer]: [++++___                                                                                                                                                                                                                                                                  ]
+[20:58:34] [Server thread/INFO] [minecraft/GameTestServer]: [++++___                                                                                                                                                                                                                                                                  ]
+[20:58:34] [Server thread/INFO] [minecraft/GameTestServer]: [++++___                                                                                                                                                                                                                                                                  ]
+[20:58:34] [Server thread/INFO] [minecraft/GameTestServer]: [++++___                                                                                                                                                                                                                                                                  ]
+[20:58:34] [Server thread/INFO] [minecraft/GameTestServer]: [++++___                                                                                                                                                                                                                                                                  ]
+[20:58:34] [Server thread/INFO] [minecraft/GameTestServer]: [++++___                                                                                                                                                                                                                                                                  ]
+[20:58:34] [Server thread/INFO] [minecraft/GameTestServer]: [++++___                                                                                                                                                                                                                                                                  ]
+[20:58:35] [Server thread/INFO] [minecraft/GameTestServer]: [+++++__                                                                                                                                                                                                                                                                  ]
+[20:58:35] [Server thread/INFO] [minecraft/GameTestServer]: [+++++__                                                                                                                                                                                                                                                                  ]
+[20:58:35] [Server thread/INFO] [minecraft/GameTestServer]: [+++++__                                                                                                                                                                                                                                                                  ]
+[20:58:35] [Server thread/INFO] [minecraft/GameTestServer]: [+++++__                                                                                                                                                                                                                                                                  ]
+[20:58:35] [Server thread/INFO] [minecraft/GameTestServer]: [+++++__                                                                                                                                                                                                                                                                  ]
+[20:58:35] [Server thread/INFO] [minecraft/GameTestServer]: [+++++__                                                                                                                                                                                                                                                                  ]
+[20:58:35] [Server thread/INFO] [minecraft/GameTestServer]: [+++++__                                                                                                                                                                                                                                                                  ]
+[20:58:35] [Server thread/INFO] [minecraft/GameTestServer]: [+++++__                                                                                                                                                                                                                                                                  ]
+[20:58:35] [Server thread/INFO] [minecraft/GameTestServer]: [+++++__                                                                                                                                                                                                                                                                  ]
+[20:58:35] [Server thread/INFO] [minecraft/GameTestServer]: [+++++__                                                                                                                                                                                                                                                                  ]
+[20:58:35] [Server thread/INFO] [minecraft/GameTestServer]: [+++++__                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestServer]: [++++++_                                                                                                                                                                                                                                                                  ]
+[20:58:36] [Server thread/INFO] [minecraft/GameTestBatchRunner]: Running test batch 'flame_geysers_groups:1' (1 tests)...
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++_                                                                                                                                                                                                                                                                 ]
+[20:58:38] [Server thread/INFO] [minecraft/GameTestBatchRunner]: Running test batch 'feedback_luminous_circle:1' (1 tests)...
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++_                                                                                                                                                                                                                                                                ]
+[20:58:40] [Server thread/INFO] [minecraft/GameTestBatchRunner]: Running test batch 'incurrence_mode_finish:1' (1 tests)...
+[20:58:41] [Server thread/INFO] [minecraft/GameTestBatchRunner]: Running test batch 'native_boss_attack_restore:1' (5 tests)...
+[20:58:41] [Server thread/INFO] [minecraft/GameTestBatchRunner]: Running test batch 'ice_spikes_nonplayers:1' (1 tests)...
+[20:58:42] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++++++++++_                                                                                                                                                                                                                                                         ]
+[20:58:42] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++++++++++_                                                                                                                                                                                                                                                         ]
+[20:58:42] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++++++++++_                                                                                                                                                                                                                                                         ]
+[20:58:42] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++++++++++_                                                                                                                                                                                                                                                         ]
+[20:58:42] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++++++++++_                                                                                                                                                                                                                                                         ]
+[20:58:42] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++++++++++_                                                                                                                                                                                                                                                         ]
+[20:58:42] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++++++++++_                                                                                                                                                                                                                                                         ]
+[20:58:42] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++++++++++_                                                                                                                                                                                                                                                         ]
+[20:58:42] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++++++++++_                                                                                                                                                                                                                                                         ]
+[20:58:42] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++++++++++_                                                                                                                                                                                                                                                         ]
+[20:58:42] [Server thread/INFO] [minecraft/GameTestBatchRunner]: Running test batch 'feedback_player_origins:1' (1 tests)...
+[20:58:43] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++++++++++_                                                                                                                                                                                                                                                        ]
+[20:58:43] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++++++++++_                                                                                                                                                                                                                                                        ]
+[20:58:43] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++++++++++_                                                                                                                                                                                                                                                        ]
+[20:58:44] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++++++++++_                                                                                                                                                                                                                                                        ]
+[20:58:44] [Server thread/INFO] [minecraft/GameTestBatchRunner]: Running test batch 'frozen_blades_context:1' (1 tests)...
+[20:58:46] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++++++++++++_                                                                                                                                                                                                                                                       ]
+[20:58:48] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++++++++++++_                                                                                                                                                                                                                                                       ]
+[20:58:48] [Server thread/INFO] [minecraft/GameTestBatchRunner]: Running test batch 'feedback_statuses:1' (1 tests)...
+[20:58:48] [Server thread/INFO] [minecraft/GameTestBatchRunner]: Running test batch 'serpent_dive_reference:1' (1 tests)...
+[20:58:54] [Server thread/INFO] [minecraft/GameTestServer]: [+++++++++++++++++++_                                                                                                                                                                                                                                                     ]
+[20:58:54] [Server thread/ERROR] [minecraft/MinecraftServer]: Encountered an unexpected exception
+java.lang.RuntimeException: Could not find structure file gameteststructures\nativegametestsbossrepair.empty.snbt, and the structure is not available in the world structures either.
+	at net.minecraft.gametest.framework.StructureUtils.getStructureTemplate(StructureUtils.java:246) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.gametest.framework.StructureUtils.spawnStructure(StructureUtils.java:139) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.gametest.framework.GameTestBatchRunner.createStructuresForBatch(GameTestBatchRunner.java:108) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.gametest.framework.GameTestBatchRunner.runBatch(GameTestBatchRunner.java:64) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.gametest.framework.GameTestBatchRunner$1.testCompleted(GameTestBatchRunner.java:76) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.gametest.framework.GameTestBatchRunner$1.testPassed(GameTestBatchRunner.java:86) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.gametest.framework.GameTestInfo.lambda$tick$1(GameTestInfo.java:79) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {re:computing_frames}
+	at net.minecraft.gametest.framework.GameTestInfo.tick(GameTestInfo.java:79) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at java.util.concurrent.CopyOnWriteArrayList.forEach(CopyOnWriteArrayList.java:807) ~[?:?] {}
+	at net.minecraft.gametest.framework.GameTestTicker.tick(GameTestTicker.java:20) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:911) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:814) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.gametest.framework.GameTestServer.tickServer(GameTestServer.java:119) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:661) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:251) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {}
+[20:58:54] [Server thread/FATAL] [ne.mi.co.ForgeMod/]: Preparing crash report with UUID b0bd26dc-0298-4f72-bbb8-3529d6a23be1
+[20:58:54] [Server thread/ERROR] [minecraft/MinecraftServer]: This crash report has been saved to: D:\MinecraftModDev\DEV - ����\nyctocosm-native\run-boss-repair18-red-20261003\.\crash-reports\crash-2026-10-03_20.58.54-server.txt
+[20:58:54] [Server thread/FATAL] [ne.mi.co.ForgeMod/]: Preparing crash report with UUID f47c425a-2e8b-4ffd-aa5d-ab3b75f78040
+[20:58:54] [Server thread/ERROR] [minecraft/GameTestServer]: Game test server crashed
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 2026-10-03 20:58:54
+Description: Exception in server tick loop
+
+java.lang.RuntimeException: Could not find structure file gameteststructures\nativegametestsbossrepair.empty.snbt, and the structure is not available in the world structures either.
+	at net.minecraft.gametest.framework.StructureUtils.getStructureTemplate(StructureUtils.java:246) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.gametest.framework.StructureUtils.spawnStructure(StructureUtils.java:139) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.gametest.framework.GameTestBatchRunner.createStructuresForBatch(GameTestBatchRunner.java:108) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.gametest.framework.GameTestBatchRunner.runBatch(GameTestBatchRunner.java:64) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.gametest.framework.GameTestBatchRunner$1.testCompleted(GameTestBatchRunner.java:76) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.gametest.framework.GameTestBatchRunner$1.testPassed(GameTestBatchRunner.java:86) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.gametest.framework.GameTestInfo.lambda$tick$1(GameTestInfo.java:79) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {re:computing_frames}
+	at net.minecraft.gametest.framework.GameTestInfo.tick(GameTestInfo.java:79) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at java.util.concurrent.CopyOnWriteArrayList.forEach(CopyOnWriteArrayList.java:807) ~[?:?] {}
+	at net.minecraft.gametest.framework.GameTestTicker.tick(GameTestTicker.java:20) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:911) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:814) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.gametest.framework.GameTestServer.tickServer(GameTestServer.java:119) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:661) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:251) ~[forge-1.20.1-47.4.13_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.19, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Microsoft
+	Memory: 724306480 bytes (690 MiB) / 3187671040 bytes (3040 MiB) up to 12650020864 bytes (12064 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 9800X3D 8-Core Processor           
+	Identifier: AuthenticAMD Family 26 Model 68 Stepping 0
+	Microarchitecture: unknown
+	Frequency (GHz): 4.69
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: Parsec Virtual Display Adapter
+	Graphics card #0 vendor: Parsec Cloud, Inc.
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: DriverVersion=0.45.0.0
+	Graphics card #1 name: MuMu Virtual Display Adapter
+	Graphics card #1 vendor: MuMu
+	Graphics card #1 VRAM (MB): 0.00
+	Graphics card #1 deviceId: unknown
+	Graphics card #1 versionInfo: DriverVersion=20.36.41.498
+	Graphics card #2 name: Virtual Desktop Monitor
+	Graphics card #2 vendor: Virtual Desktop, Inc.
+	Graphics card #2 VRAM (MB): 0.00
+	Graphics card #2 deviceId: unknown
+	Graphics card #2 versionInfo: DriverVersion=13.50.53.699
+	Graphics card #3 name: AMD Radeon(TM) Graphics
+	Graphics card #3 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #3 VRAM (MB): 512.00
+	Graphics card #3 deviceId: 0x13c0
+	Graphics card #3 versionInfo: DriverVersion=32.0.13036.4
+	Graphics card #4 name: NVIDIA GeForce RTX 5070 Ti
+	Graphics card #4 vendor: NVIDIA (0x10de)
+	Graphics card #4 VRAM (MB): 4095.00
+	Graphics card #4 deviceId: 0x2c05
+	Graphics card #4 versionInfo: DriverVersion=32.0.16.1047
+	Memory slot #0 capacity (MB): 24576.00
+	Memory slot #0 clockSpeed (GHz): 6.00
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MB): 24576.00
+	Memory slot #1 clockSpeed (GHz): 6.00
+	Memory slot #1 type: Unknown
+	Virtual memory max (MB): 65653.00
+	Virtual memory used (MB): 45578.29
+	Swap memory total (MB): 17408.00
+	Swap memory used (MB): 1298.34
+	JVM Flags: 0 total; 
+	Server Running: true
+	Player Count: 0 / 1; []
+	Data Packs: vanilla, mod:nyctocosm, mod:forge
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	Type: Game test server
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgegametestserveruserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.13.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.13.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.13.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.13.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.13.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.20.1-47.4.13_mapped_official_1.20.1.jar   |Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		main                                              |Nyctocosm Native              |nyctocosm                     |0.3.0-native-alpha.1|DONE      |Manifest: NOSIGNATURE
+		                                                  |Forge                         |forge                         |47.4.13             |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: f47c425a-2e8b-4ffd-aa5d-ab3b75f78040
+	FML: 47.4
+	Forge: net.minecraftforge:47.4.13
+
+> Task :runGameTestServer FAILED
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+10 actionable tasks: 4 executed, 6 up-to-date
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':runGameTestServer'.
+> Process 'command 'C:\Users\jzy19\.jdks\ms-17.0.19\bin\java.exe'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 24s

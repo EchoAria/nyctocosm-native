@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "model_files": 1779,
+    "rigs": 10,
+    "animation_frames": 5607,
+    "damage_locator_bundles": 1,
+    "damage_locator_frames": 2601,
+    "sound_events": 247,
+    "runtime_mcfunctions": 0,
+    "native_structure_events": 2,
+    "mod_version": "0.3.0-native-alpha.12",
+    "jar_entries": 3026,
+    "jar": "D:\\MinecraftModDev\\DEV - ����\\nyctocosm-native\\build\\libs\\nyctocosm-native-0.3.0-native-alpha.12.jar",
+    "jar_sha256": "55b1329dfa2bd540844bfe0afc1dd3fe8d5b3e0a26fb8eb4aec6ae3c5bf70586",
+    "jar_bytes": 55726735
+  },
+  "errors": []
+}

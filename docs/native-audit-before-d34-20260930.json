@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "model_files": 1779,
+    "rigs": 10,
+    "animation_frames": 5607,
+    "damage_locator_bundles": 1,
+    "damage_locator_frames": 2601,
+    "sound_events": 247,
+    "runtime_mcfunctions": 0,
+    "native_structure_events": 2,
+    "mod_version": "0.3.0-native-alpha.12",
+    "jar_entries": 3026,
+    "jar": "D:\\MinecraftModDev\\DEV - ����\\nyctocosm-native\\run-d34-wall-player-fixture-final-20260930\\pre-build-nyctocosm-native-0.3.0-native-alpha.12.jar",
+    "jar_sha256": "6e72f036e87cae06566a24d078a0e1afbf4e8168a066afc8a8a8bb1d952271a4",
+    "jar_bytes": 55725023
+  },
+  "errors": []
+}

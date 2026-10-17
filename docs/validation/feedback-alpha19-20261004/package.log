@@ -1,0 +1,31 @@
+{
+  "jar": {
+    "path": "D:\\MinecraftModDev\\DEV - 副本\\nyctocosm-native\\build\\libs\\nyctocosm-native-0.3.0-native-alpha.19.jar",
+    "bytes": 56178052,
+    "sha256": "2e8e7c7928dc4e6f04e39083ba39397cf97e81e14b6652c0720774d56159506b",
+    "entries": 3092,
+    "class_major": [
+      61
+    ]
+  },
+  "required_tests": 288,
+  "screenshots": 42,
+  "source_unchanged": true,
+  "old_jars_unchanged": true,
+  "changed": [
+    "nyctocosm-native/build.gradle",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/NativeBoss.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/NativeGameTests.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/NativeMod.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/SerpentBody.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/client/ClientEvents.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/client/RigLibrary.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/client/SerpentWorldRenderer.java",
+    "nyctocosm-native/src/main/resources/assets/nyctocosm/native_rigs/ajemissary.json.gz"
+  ],
+  "added": [
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/BossVisuals.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/ClientSmokeFeedback19.java",
+    "nyctocosm-native/src/main/java/com/flubberschnub/nyctocosm/NativeGameTestsFeedback19.java"
+  ]
+}

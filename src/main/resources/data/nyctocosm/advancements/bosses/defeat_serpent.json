@@ -1,4 +1,5 @@
 {
+  "parent": "nyctocosm:root",
   "display": {
     "icon": {"item": "nyctocosm:nightmare_scale"},
     "title": {"translate": "advancements.nyctocosm.defeat_serpent.title"},

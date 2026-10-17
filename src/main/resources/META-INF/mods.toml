@@ -3,7 +3,7 @@ loaderVersion="[47,)"
 license="All Rights Reserved; original Nyctocosm assets by Flubberschnub"
 [[mods]]
 modId="nyctocosm"
-version="0.3.0-native-alpha.8"
+version="${mod_version}"
 displayName="Nyctocosm Native"
 authors="Original content: Flubberschnub; native reconstruction"
 description='''Native Forge reconstruction of Nyctocosm. Work in progress, not feature parity with the original datapack.'''

@@ -1,0 +1,50 @@
+{
+  "audit": {
+    "checks": {
+      "model_files": 1779,
+      "rigs": 10,
+      "animation_frames": 5607,
+      "damage_locator_bundles": 1,
+      "damage_locator_frames": 2601,
+      "sound_events": 247,
+      "runtime_mcfunctions": 0,
+      "native_structure_events": 2,
+      "mod_version": "0.3.0-native-alpha.13",
+      "jar_entries": 3039,
+      "jar": "D:\\MinecraftModDev\\DEV - 副本\\nyctocosm-native\\build\\libs\\nyctocosm-native-0.3.0-native-alpha.13.jar",
+      "jar_sha256": "1fd0e3caaac1cdcc3b7647bc9e93f92b88c0f3e4875af58024cfabfe124c604c",
+      "jar_bytes": 55937267
+    },
+    "errors": []
+  },
+  "worldSeeds": {
+    "run-project-recheck-alpha13-final-20261001": 8305437981795680883,
+    "run-project-recheck-alpha13-confirm-20261001": -6212535458866628845
+  },
+  "fileSha256": {
+    "build.gradle": "7b306a519856193266a5aa33dcacf9217752809cd63bd6db8dcd74d119a51673",
+    "src/main/java/com/flubberschnub/nyctocosm/NativeBoss.java": "c79fc05b950ea0f21defd5e858a748db462d49ed097f1bab0f73bbb49bd20491",
+    "src/main/java/com/flubberschnub/nyctocosm/NativeEvents.java": "0a6bcb65b00005cd500cf8a0cf77fb3e129ceaee78b22fb9ea4daf0a99cde022",
+    "src/main/java/com/flubberschnub/nyctocosm/SpellBolt.java": "2d66262b541bfbafc7dc71e9eb4facb34245bf3699fade6b96a0de5cd6b2184d",
+    "src/main/java/com/flubberschnub/nyctocosm/NativeGameTests.java": "e960f6b5ef4e50a7e91491e2a57e5f80f2905532baba74c10d80edbfdc5dba4c",
+    "../_nyctocosm_source/datapack/data/emissary/functions/attacks/phase4/fireball/impact.mcfunction": "6751f880a334997986a8396887a3652e1330c9096835eb99a05be7485f4330dc",
+    "../_nyctocosm_source/datapack/data/emissary/functions/attacks/phase4/fireball/slowcast.mcfunction": "4918908d116a889f249327facbef59772bbe082c8db1d52bee61bea7e7b631d1",
+    "../_nyctocosm_source/datapack/data/emissary/functions/attacks/phase4/fireball/__generated__/block/705.mcfunction": "cbfafd48830deb0f0f5953c71efe8fab5b009967bb169a1959a90c95eaf5ec4a",
+    "../_nyctocosm_source/datapack/data/emissary/functions/attacks/phase4/fireball/__generated__/block/706.mcfunction": "d646c02a9d2cfbe70e2b94bbe0f0438361debe260d2ca39054a2ebd130be772d",
+    "../_nyctocosm_source/datapack/data/emissary/functions/attacks/phase4/fireball/__generated__/block/707.mcfunction": "136be7ceea44ff9c6458f61261b828c086b75f0ae0856cf9bd5e16a38f2b5aae"
+  },
+  "gameTests": [
+    {
+      "directory": "run-project-recheck-alpha13-final-20261001",
+      "total": 219,
+      "passed": 219,
+      "exitCode": 0
+    },
+    {
+      "directory": "run-project-recheck-alpha13-confirm-20261001",
+      "total": 219,
+      "passed": 219,
+      "exitCode": 0
+    }
+  ]
+}

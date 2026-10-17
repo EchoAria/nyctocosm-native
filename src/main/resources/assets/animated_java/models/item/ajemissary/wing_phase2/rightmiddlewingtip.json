@@ -1,0 +1,6 @@
+{
+  "parent": "animated_java:item/ajemissary/wing_config_1/rightmiddlewingtip",
+  "textures": {
+    "4": "nyctocosm:emissary/middlewing_0"
+  }
+}
