@@ -1255,3 +1255,10 @@
 - 新包 `D:\MinecraftModDev\DEV - 副本\nyctocosm-native\build\libs\nyctocosm-native-0.3.0-native-alpha.20.jar`，**56,178,050 bytes／3092 entries／Java17 major61**；SHA-256 **`28656ccfc2c9d87067b0e9f27647132b5db80bc760886e2327d88b316e5022d7`**。audit errors=[]，所有生产class/资源逐字节与alpha.19一致，仅META-INF/mods.toml版本不同；13个旧JAR摘要未变，生产源/资源未改。
 - 本轮只编译及包审计，沿用上一轮288/288和42截图证据，不宣称重跑GameTest或全部玩法验收。待选规则、真实生存/多人/shader/重启卸载/FPS限制继续保留。
 - 交付记录SHUTDOWN_BUILD_ALPHA20.md与 `nyctocosm-native/docs/validation/shutdown-alpha20-20261004-044310/manifest.json`已保存；构建/审计与前后SHA、关机helper预检/启动和请求日志保留在同一目录。保存完毕后，隐藏helper核对包SHA/构建成功/audit为空/既有回归SHA/TODO91，等待20秒请求正常关机，不使用/f；实际状态由shutdown-receipt.json更新。未安装、提交或推送。
+
+
+## 阶段 92 · 2026-10-17 · GitHub私有仓库备份
+
+- 按用户明确要求新建私有仓库 https://github.com/EchoAria/nyctocosm-native，main分支；初始上传提交757f6f33d9d88474f5740f4c0e9991d8be911a07已由GitHub API核对，private=true。源码、资源、Gradle脚本、工具、测试源码和验证/修复文档一并上传。
+- 根目录六份交接/方案/TODO文档复制到模组仓库docs/gameplay；原始文档继续保留。扩展.gitignore排除run*/logs/构建JAR/图像视频输出和本地凭据文件，保留Gradle wrapper JAR。候选文件3042个，约79.8MiB，排除约26GB运行产物。只读原数据包、源ZIP、旁边旧MDK和用户存档不属于本仓库上传范围。
+- GitHub设备流程由用户完成授权；令牌存于Windows凭据管理器，未写入项目或聊天。未改变玩法/重新编译/执行测试/关机，alpha.20产物及上一轮288/288证据保留。
